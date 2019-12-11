@@ -1,0 +1,14 @@
+@mixin backgroundImage{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+	margin: 3px;
+}
+
+
+@mixin flexBox{
+	align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
