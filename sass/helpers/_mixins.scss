@@ -12,3 +12,38 @@
   flex-flow: row nowrap;
   justify-content: center;
 }
+
+@mixin centrarVerticalmente{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin centrarHorizontalmente{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin centrarVH{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+
+@mixin separador{
+  background-image: url("../images/separador.png");
+  display: block;
+  height: 173px;
+  position: absolute;
+  right: 70px;
+  width: 290px;
+}
+
+@mixin verMas{
+  border: 1px solid $morado;
+  color: $morado;
+  display: block;
+  height: 35px;
+  margin: 20px auto 0;
+  text-align: center;
+  width: 130px;
+}

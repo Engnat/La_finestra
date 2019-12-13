@@ -43,6 +43,7 @@ p
 
 #header
   height: 100%
+  position: absolute
   div.menu
     height: 100%
     overflow: auto
@@ -98,6 +99,185 @@ p
             width: 30px
           a
             font-size: 60%
+section
+  h2
+    color: $morado
+  #banner-principal
+    background-image: url("../images/fotografia/bg-home.jpg")
+    @include backgroundImage
+    background-size: cover
+    height: 100vh
+    position: relative
+    aside
+      @include flexBox
+      flex-flow: row wrap
+      height: auto
+      position: fixed
+      right: 0
+      top: 25%
+      transform: translateY(-25%)
+      width: 60px
+      z-index: 1
+      a
+        img
+          display: block
+          margin: 7px auto 0
+          width: 70%
+    section.contenido-texto-banner
+      @include centrarVH
+      height: auto
+      position: absolute
+      width: 100%
+      span
+        background-image: url("../images/icono-finestra-blanco.png")
+        @include backgroundImage
+        @include centrarHorizontalmente
+        height: 90px
+        position: absolute
+        top: -55px
+        width: 30%
+      section
+        background-color: rgba(3, 138, 110, 0.5)
+        margin: 0 auto
+        padding: 40px 20px
+        width: 80%
+        p
+          color: #fff
+          text-align: center
+    a
+      span
+        background-image: url("../images/icono-abajo.png")
+        bottom: 100px
+        display: block
+        height: 48px
+        @include backgroundImage
+        @include centrarHorizontalmente
+        position: absolute
+        width: 65px
+  #banner-principal::before
+    background-color: rgba(71, 0, 82, 0.4)
+    content: ''
+    display: block
+    height: 100%
+  #banner-principal::after
+    content: url("../images/cenefa.png")
+    bottom: -5px
+    left: -490px
+    position: absolute
+    width: 100%
+  #bienvenida
+    height: auto
+    margin: 0 auto
+    width: 80%
+    section
+      padding: 20px 0
+      p
+        line-height: 2
+        margin: 30px auto
+      &:first-child
+        span
+          @include backgroundImage
+          @include separador
+        p
+          text-align: left
+          width: 70%
+      &:nth-child(2)
+        section
+          position: relative
+          span
+            background-color: $lila
+            bottom: 0
+            display: block
+            height: 50px
+            position: absolute
+            right: 0
+            width: 150px
+          img
+            display: block
+            height: 280px
+            margin: 0 auto
+            position: relative
+            width: 280px
+            z-index: 1
+      &:last-child
+        p
+          text-align: center
+  #servicios
+    height: 590px
+    position: relative
+    section
+      &:first-child
+        background-image: url("../images/fotografia/bg-servicios.jpg")
+        @include backgroundImage
+        background-size: cover
+        display: block
+        width: 100%
+        height: 300px
+
+      &:last-child
+        background-color: #fff
+        bottom: 40px
+        box-shadow: 3px 5px 8px #ccc
+        @include centrarHorizontalmente
+        height: auto
+        margin: 0 auto
+        padding: 20px
+        position: absolute
+        width: 75%
+        h2
+          padding: 10px 0 5px
+          text-align: center
+        p
+          line-height: 1.5
+          margin: 0 auto
+          text-align: center
+          width: 90%
+        a
+          @include verMas
+  #habitaciones
+    height: auto
+    margin: 70px auto
+    width: 80%
+    section
+      position: relative
+      &:first-child
+        margin: 10px auto 110px
+        h2
+          margin: 0 auto
+          text-align: center
+          width: 60%
+        span
+          @include separador
+          right: 20px
+          top: -20px
+      &:nth-child(2)
+        height: 250px
+        span
+          background-color: $lila
+          bottom: 30px
+          display: block
+          height: 50px
+          left: 50%
+          position: absolute
+          transform: translateX(-50%)
+          width: 230px
+        img
+          display: block
+          margin: 0 auto
+          position: relative
+          width: 90%
+      &:last-child
+        p
+          text-align: center
+        a
+          @include verMas
+  #slogan
+    height: auto
+    margin: 0 auto 70px
+    width: 80%
+    p
+      font-size: 150%
+      text-align: center
 
 
 
