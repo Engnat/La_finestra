@@ -363,6 +363,7 @@ section h2 {
   color: #470052; }
 section #banner-principal {
   background-image: url("../images/fotografia/bg-home.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -569,10 +570,92 @@ section #habitaciones {
       width: 130px; }
 section #slogan {
   height: auto;
-  margin: 0 auto 70px;
+  margin: 0 auto 100px;
   width: 80%; }
   section #slogan p {
     font-size: 150%;
+    text-align: center; }
+
+footer::before {
+  content: url("../images/cenefa-footer.png");
+  left: -490px;
+  position: absolute;
+  top: -229px;
+  width: 100%; }
+
+footer {
+  background-color: #0d0b12;
+  clear: both;
+  display: block;
+  height: auto;
+  padding: 50px;
+  position: relative;
+  width: 100%; }
+  footer section:first-child section {
+    padding: 10px 0; }
+    footer section:first-child section h3 {
+      color: #33CC99; }
+    footer section:first-child section hr {
+      border: 3px solid #33CC99;
+      width: 20%; }
+    footer section:first-child section p, footer section:first-child section a, footer section:first-child section li {
+      font-size: 75%; }
+    footer section:first-child section p, footer section:first-child section li {
+      color: #fff; }
+    footer section:first-child section p b {
+      color: #33CC99; }
+    footer section:first-child section ul {
+      list-style: none; }
+    footer section:first-child section ul, footer section:first-child section p {
+      line-height: 1.3;
+      padding-top: 10px; }
+    footer section:first-child section:last-child section:first-child img {
+      display: block;
+      margin: 10px auto;
+      width: 40%; }
+    footer section:first-child section:last-child section:first-child h2 {
+      color: #33CC99;
+      font-size: 98%;
+      text-align: center; }
+    footer section:first-child section:last-child section:last-child section:first-child iframe {
+      display: block;
+      margin: 0 auto;
+      width: 80%; }
+    footer section:first-child section:last-child section:last-child section:last-child div {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 80%; }
+      footer section:first-child section:last-child section:last-child section:last-child div span {
+        display: block;
+        height: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        margin: 3px 5px;
+        width: 20px; }
+      footer section:first-child section:last-child section:last-child section:last-child div a {
+        color: #fff; }
+      footer section:first-child section:last-child section:last-child section:last-child div:first-child span {
+        background-image: url("../images/icono-ubicacion.png"); }
+      footer section:first-child section:last-child section:last-child section:last-child div:last-child span {
+        background-image: url("../images/icono-telefono.png"); }
+  footer section:last-child section#redes-footer {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+  footer section:last-child hr {
+    border: 1px solid #33CC99;
+    width: 100%; }
+  footer section:last-child section.copyright p {
+    color: #33CC99;
+    font-size: 75%;
+    margin: 10px auto;
     text-align: center; }
 
 @media all and (min-width: 360px) {
@@ -600,7 +683,86 @@ section #slogan {
       #header div.menu nav section:nth-child(2) img {
         width: 20%; }
     #header div.menu nav section:last-child {
-      bottom: 0; } }
+      bottom: 0; }
+
+  section #banner-principal::after {
+    left: -304px; }
+  section #banner-principal section.contenido-texto-banner span {
+    top: -65px; }
+  section #banner-principal section.contenido-texto-banner section {
+    padding: 60px 20px;
+    width: 60%; }
+    section #banner-principal section.contenido-texto-banner section p {
+      font-size: 130%; }
+  section #bienvenida section:first-child {
+    height: 245px; }
+    section #bienvenida section:first-child span {
+      right: auto; }
+    section #bienvenida section:first-child p {
+      float: right;
+      width: 50%; }
+  section #bienvenida section:nth-child(2) section span {
+    right: 140px; }
+  section #bienvenida section:last-child {
+    width: 50%; }
+    section #bienvenida section:last-child p {
+      text-align: left; }
+  section #servicios {
+    height: 400px; }
+    section #servicios section:last-child {
+      bottom: 0;
+      left: auto;
+      padding: 20px;
+      right: 0;
+      transform: none;
+      width: 41%; }
+  section #habitaciones {
+    height: 390px;
+    margin: 0 auto;
+    position: relative;
+    width: 88%; }
+    section #habitaciones section:first-child {
+      margin: 10px auto 50px; }
+      section #habitaciones section:first-child h2 {
+        margin: 0;
+        text-align: left; }
+      section #habitaciones section:first-child span {
+        left: 90px;
+        right: 0;
+        top: 38px; }
+    section #habitaciones section:nth-child(2) {
+      height: auto;
+      width: 50%; }
+      section #habitaciones section:nth-child(2) span {
+        bottom: -20px;
+        left: auto;
+        transform: none;
+        right: 0; }
+    section #habitaciones section:last-child {
+      position: absolute;
+      right: 0;
+      top: 120px;
+      width: 40%; }
+      section #habitaciones section:last-child p {
+        text-align: left; }
+      section #habitaciones section:last-child a {
+        float: left; }
+  section #slogan {
+    height: 200px;
+    width: 70%; }
+
+  footer::before {
+    left: -300px; }
+
+  footer section:first-child {
+    height: 400px; }
+    footer section:first-child section {
+      float: left;
+      height: auto;
+      width: 50%; }
+      footer section:first-child section section {
+        float: none;
+        width: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }

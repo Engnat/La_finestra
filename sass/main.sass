@@ -99,11 +99,13 @@ p
             width: 30px
           a
             font-size: 60%
+
 section
   h2
     color: $morado
   #banner-principal
     background-image: url("../images/fotografia/bg-home.jpg")
+    background-attachment: fixed
     @include backgroundImage
     background-size: cover
     height: 100vh
@@ -273,12 +275,99 @@ section
           @include verMas
   #slogan
     height: auto
-    margin: 0 auto 70px
+    margin: 0 auto 100px
     width: 80%
     p
       font-size: 150%
       text-align: center
 
+
+footer::before
+  content: url("../images/cenefa-footer.png")
+  left: -490px
+  position: absolute
+  top: -229px
+  width: 100%
+footer
+  background-color: #0d0b12
+  clear: both
+  display: block
+  height: auto
+  padding: 50px
+  position: relative
+  width: 100%
+
+  // contenido info bancaria y ubicacion
+  section:first-child
+    section
+      padding: 10px 0
+      h3
+        color: $verde-claro
+      hr
+        border: 3px solid $verde-claro
+        width: 20%
+      p , a , li
+        font-size: 75%
+      p , li
+        color: #fff
+      p
+        b
+          color: $verde-claro
+      ul
+        list-style: none
+      ul, p
+        line-height: 1.3
+        padding-top: 10px
+      // Ubicacion
+      &:last-child
+        section:first-child
+          img
+            display: block
+            margin: 10px auto
+            width: 40%
+          h2
+            color: $verde-claro
+            font-size: 98%
+            text-align: center
+        section:last-child
+          section:first-child
+            iframe
+              display: block
+              margin: 0 auto
+              width: 80%
+          section:last-child
+            div
+              @include flexBox
+              justify-content: flex-start
+              margin: 0 auto
+              width: 80%
+              span
+                display: block
+                height: 20px
+                @include backgroundImage
+                margin: 3px 5px
+                width: 20px
+              a
+                color: #fff
+              &:first-child
+                span
+                  background-image: url("../images/icono-ubicacion.png")
+              &:last-child
+                span
+                  background-image: url("../images/icono-telefono.png")
+  // Redes sociales
+  section:last-child
+    section#redes-footer
+      @include flexBox
+    hr
+      border: 1px solid $verde-claro
+      width: 100%
+    section.copyright
+      p
+        color: $verde-claro
+        font-size: 75%
+        margin: 10px auto
+        text-align: center
 
 
 @media all and (min-width: 360px)
@@ -315,6 +404,100 @@ section
             width: 20%
         section:last-child
           bottom: 0
+
+  section
+    #banner-principal::after
+      left: -304px
+    #banner-principal
+      section.contenido-texto-banner
+        span
+          top: -65px
+        section
+          padding: 60px 20px
+          width: 60%
+          p
+            font-size: 130%
+    #bienvenida
+      section
+        &:first-child
+          height: 245px
+          span
+            right: auto
+          p
+            float: right
+            width: 50%
+        &:nth-child(2)
+          section
+            span
+              right: 140px
+        &:last-child
+          width: 50%
+          p
+            text-align: left
+    #servicios
+      height: 400px
+      section
+        &:last-child
+          bottom: 0
+          left: auto
+          padding: 20px
+          right: 0
+          transform: none
+          width: 41%
+    #habitaciones
+      height: 390px
+      margin: 0 auto
+      position: relative
+      width: 88%
+      section
+        &:first-child
+          margin: 10px auto 50px
+          h2
+            margin: 0
+            text-align: left
+          span
+            left: 90px
+            right: 0
+            top: 38px
+        &:nth-child(2)
+          height: auto
+          width: 50%
+          span
+            bottom: -20px
+            left: auto
+            transform: none
+            right: 0
+        &:last-child
+          position: absolute
+          right: 0
+          top: 120px
+          width: 40%
+          p
+            text-align: left
+          a
+            float: left
+    #slogan
+      height: 200px
+      width: 70%
+
+  footer::before
+    left: -300px
+  footer
+    section:first-child
+      height: 400px
+      section
+        float: left
+        height: auto
+        width: 50%
+        section
+          float: none
+          width: 100%
+
+
+
+
+
+
 
 
 
