@@ -755,14 +755,48 @@ footer {
     left: -300px; }
 
   footer section:first-child {
-    height: 400px; }
+    height: 350px; }
     footer section:first-child section {
       float: left;
       height: auto;
       width: 50%; }
-      footer section:first-child section section {
-        float: none;
-        width: 100%; } }
+      footer section:first-child section:first-child {
+        padding-right: 10px;
+        width: 40%; }
+        footer section:first-child section:first-child section {
+          float: none;
+          width: 100%; }
+      footer section:first-child section:last-child {
+        width: 60%; }
+        footer section:first-child section:last-child section {
+          float: none;
+          width: 100%; }
+        footer section:first-child section:last-child section:first-child img {
+          width: 30%; }
+        footer section:first-child section:last-child section:last-child {
+          align-content: center;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center; }
+          footer section:first-child section:last-child section:last-child section {
+            flex-flow: column;
+            width: 60%; }
+          footer section:first-child section:last-child section:last-child section:last-child {
+            width: 40%; }
+            footer section:first-child section:last-child section:last-child section:last-child div {
+              width: 100%; }
+            footer section:first-child section:last-child section:last-child section:last-child div:first-child span {
+              height: 30px;
+              width: 30px; }
+            footer section:first-child section:last-child section:last-child section:last-child div:last-child {
+              flex-flow: row wrap;
+              padding-top: 10px; }
+              footer section:first-child section:last-child section:last-child section:last-child div:last-child a {
+                font-size: 75%; }
+              footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child {
+                padding-left: 30px; }
+  footer section:last-child section#redes-footer {
+    height: auto; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }

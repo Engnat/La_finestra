@@ -484,14 +484,50 @@ footer
     left: -300px
   footer
     section:first-child
-      height: 400px
+      height: 350px
       section
         float: left
         height: auto
         width: 50%
-        section
-          float: none
-          width: 100%
+
+        &:first-child
+          padding-right: 10px
+          width: 40%
+          section
+            float: none
+            width: 100%
+        &:last-child
+          width: 60%
+          section
+            float: none
+            width: 100%
+          section:first-child
+            img
+              width: 30%
+          section:last-child
+            @include flexBox
+            section
+              flex-flow: column
+              width: 60%
+            section:last-child
+              width: 40%
+              div
+                width: 100%
+              div:first-child
+                span
+                  height: 30px
+                  width: 30px
+              div:last-child
+                flex-flow: row wrap
+                padding-top: 10px
+                a
+                  font-size: 75%
+                a:last-child
+                  padding-left: 30px
+    section:last-child
+      section#redes-footer
+        height: auto      
+
 
 
 
