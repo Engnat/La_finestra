@@ -941,13 +941,14 @@ footer {
     left: -35px; }
   section #bienvenida {
     width: 80%; }
+    section #bienvenida section p {
+      font-size: 120%; }
     section #bienvenida section:first-child {
       margin: 0 auto;
       width: 90%; }
       section #bienvenida section:first-child h2 {
         font-size: 200%; }
       section #bienvenida section:first-child p {
-        font-size: 120%;
         margin-right: 60px;
         width: 40%; }
   section #servicios {
@@ -962,6 +963,17 @@ footer {
       section #servicios section:last-child p {
         font-size: 120%;
         margin: 30px auto; }
+  section #habitaciones {
+    height: 490px; }
+    section #habitaciones h2 {
+      font-size: 200%; }
+    section #habitaciones section p {
+      font-size: 120%; }
+    section #habitaciones section:nth-child(2) {
+      height: 300px;
+      width: 40%; }
+    section #habitaciones section:last-child {
+      margin-right: 100px; }
 
   footer::before {
     left: 0; }
