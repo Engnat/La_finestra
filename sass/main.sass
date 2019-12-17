@@ -270,6 +270,7 @@ section
           width: 90%
       &:last-child
         p
+          line-height: 1.5
           text-align: center
         a
           @include verMas
@@ -526,15 +527,7 @@ footer
                   padding-left: 30px
     section:last-child
       section#redes-footer
-        height: auto      
-
-
-
-
-
-
-
-
+        height: auto
 
 
 @media all and (min-width: 1024px)
@@ -542,6 +535,7 @@ footer
     display: block
   .tablet
     display: none
+
 
   #header
     .nav-toggle.expanded
@@ -565,6 +559,119 @@ footer
             width: 40%
             a
               margin: 5px
+  section
+    #banner-principal::after
+      left: -171px
+    #banner-principal
+      section.contenido-texto-banner
+        section
+          width: 40%
+      aside
+        top: 50%
+        transform: translateY(-50%)
+    #bienvenida
+      height: 860px
+      position: relative
+      width: 90%
+      section
+        &:first-child
+          span
+            left: 150px
+        &:nth-child(2)
+          height: 540px
+          position: relative
+          section
+            height: auto
+            position: absolute
+            width: auto
+            &:first-child
+              left: 0
+              width: 53%
+              span
+                bottom: auto
+                height: 110px
+                left: 0
+                right: auto
+                top: 0
+                width: 210px
+              img
+                height: 250px
+                margin: 0 24px
+                width: 400px
+            &:nth-child(2)
+              bottom: 0
+              @include centrarHorizontalmente
+              z-index: 2
+              span
+                height: 110px
+                left: auto
+                right: -24px
+                width: 210px
+            &:last-child
+              right: 0
+              top: 110px
+              span
+                bottom: auto
+                height: 110px
+                left: auto
+                right: 0
+                top: 0
+                width: 210px
+              img
+                float: right
+                height: 220px
+                margin: 0 24px
+                width: 400px
+        &:last-child
+          bottom: 0
+          position: absolute
+          width: 33%
+    #servicios
+      height: 500px
+      section
+        &:first-child
+          height: 370px
+        &:last-child
+          width: 30%
+    #habitaciones
+      height: 450px
+      section
+        &:first-child
+          span
+            left: 167px
+        &:nth-child(2)
+          height: 288px
+          span
+            bottom: 0
+          img
+            float: left
+        &:last-child
+          right: 50px
+          width: 35%
+    #slogan
+      width: 50%
+      p
+        font-size: 200%
+
+  footer::before
+    left: -107px
+  footer
+    section:first-child
+      section:last-child
+        section:first-child
+          img
+            width: 25%
+        section:last-child
+          section:last-child
+            div:last-child
+              a
+                padding-left: 8px
+                width: 85%
+              a:hover
+                border: 0
+                padding: 0
+              a:last-child:hover
+                padding-left: 30px
 
 
 
@@ -585,7 +692,47 @@ footer
         section:last-child
           div#contacto-menu
             align-self: center
+  section
+    #banner-principal::after
+      left: -35px
+    #bienvenida
+      width: 80%
+      section
+        &:first-child
+          margin: 0 auto
+          width: 90%
+          h2
+            font-size: 200%
+          p
+            font-size: 120%
+            margin-right: 60px
+            width: 40%
+    #servicios
+      height: 700px
+      section
+        &:first-child
+          height: 520px
+        &:last-child
+          height: 390px
+          padding: 40px
+          h2
+            font-size: 200%
+          p
+            font-size: 120%
+            margin: 30px auto
 
+  footer::before
+    left: 0
+  footer
+    padding: 0 100px 50px
+    section:first-child
+      section:last-child
+        section:first-child
+          img
+            width: 15%
+        section:last-child
+          section
+            width: 45%
 
 
 //DESKTOP Hi-Res
