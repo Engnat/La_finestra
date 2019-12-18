@@ -34,7 +34,7 @@
   display: block;
   height: 173px;
   position: absolute;
-  right: 70px;
+  right: 40px;
   width: 290px;
 }
 
@@ -45,5 +45,12 @@
   height: 35px;
   margin: 20px auto 0;
   text-align: center;
+  transition-duration: 0.8s;
   width: 130px;
+  &:hover{
+    background-color: $morado;
+    border: 0;
+    color: #fff;
+    padding: 0;
+  }
 }

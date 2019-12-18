@@ -1,15 +1,9 @@
 @font-face {
-  font-family: 'Monserrat-bold';
-  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold.ttf") format("truetype"); }
+  font-family: 'madame';
+  src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
   font-family: 'Monserrat-light';
   src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Monserrat-medium';
-  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff"), url("../fonts/montserrat-medium.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Monserrat-regular';
-  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular.ttf") format("truetype"); }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -283,9 +277,13 @@ html, body {
   width: 100%;
   height: 100%; }
 
-h1, h2, h3 {
+h1 {
   font-family: "Monserrat-bold";
   margin: 0; }
+
+h2 {
+  font-family: "madame";
+  font-size: 370%; }
 
 p {
   font-family: "Monserrat-regular"; }
@@ -384,6 +382,9 @@ section #banner-principal {
     transform: translateY(-25%);
     width: 60px;
     z-index: 1; }
+    section #banner-principal aside a:hover {
+      border: 0;
+      padding: 0; }
     section #banner-principal aside a img {
       display: block;
       margin: 7px auto 0;
@@ -457,7 +458,7 @@ section #bienvenida {
       display: block;
       height: 173px;
       position: absolute;
-      right: 70px;
+      right: 40px;
       width: 290px; }
     section #bienvenida section:first-child p {
       text-align: left;
@@ -477,7 +478,7 @@ section #bienvenida {
         height: 280px;
         margin: 0 auto;
         position: relative;
-        width: 280px;
+        width: 100%;
         z-index: 1; }
     section #bienvenida section:last-child p {
       text-align: center; }
@@ -520,7 +521,13 @@ section #servicios {
       height: 35px;
       margin: 20px auto 0;
       text-align: center;
+      transition-duration: 0.8s;
       width: 130px; }
+      section #servicios section:last-child a:hover {
+        background-color: #470052;
+        border: 0;
+        color: #fff;
+        padding: 0; }
 section #habitaciones {
   height: auto;
   margin: 70px auto;
@@ -528,19 +535,20 @@ section #habitaciones {
   section #habitaciones section {
     position: relative; }
     section #habitaciones section:first-child {
-      margin: 10px auto 110px; }
+      margin: 10px auto 60px; }
       section #habitaciones section:first-child h2 {
+        line-height: 1;
         margin: 0 auto;
         text-align: center;
-        width: 60%; }
+        width: 90%; }
       section #habitaciones section:first-child span {
         background-image: url("../images/separador.png");
         display: block;
         height: 173px;
         position: absolute;
-        right: 70px;
+        right: 40px;
         width: 290px;
-        right: 20px;
+        right: 0px;
         top: -20px; }
     section #habitaciones section:nth-child(2) {
       height: 250px; }
@@ -568,7 +576,13 @@ section #habitaciones {
       height: 35px;
       margin: 20px auto 0;
       text-align: center;
+      transition-duration: 0.8s;
       width: 130px; }
+      section #habitaciones section:last-child a:hover {
+        background-color: #470052;
+        border: 0;
+        color: #fff;
+        padding: 0; }
 section #slogan {
   height: auto;
   margin: 0 auto 100px;
@@ -650,6 +664,9 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center; }
+    footer section:last-child section#redes-footer a:hover {
+      border: 0;
+      padding: 0; }
   footer section:last-child hr {
     border: 1px solid #33CC99;
     width: 100%; }
@@ -704,6 +721,8 @@ footer {
       width: 50%; }
   section #bienvenida section:nth-child(2) section span {
     right: 140px; }
+  section #bienvenida section:nth-child(2) section img {
+    width: 50%; }
   section #bienvenida section:last-child {
     width: 50%; }
     section #bienvenida section:last-child p {
@@ -718,21 +737,26 @@ footer {
       transform: none;
       width: 41%; }
   section #habitaciones {
-    height: 390px;
+    height: 330px;
     margin: 0 auto;
     position: relative;
     width: 88%; }
     section #habitaciones section:first-child {
-      margin: 10px auto 50px; }
+      margin: 0;
+      position: absolute;
+      top: -40px; }
       section #habitaciones section:first-child h2 {
         margin: 0;
-        text-align: left; }
+        text-align: left;
+        width: 80%; }
       section #habitaciones section:first-child span {
         left: 90px;
         right: 0;
-        top: 38px; }
+        top: 130px; }
     section #habitaciones section:nth-child(2) {
+      bottom: 0;
       height: auto;
+      position: absolute;
       width: 50%; }
       section #habitaciones section:nth-child(2) span {
         bottom: -20px;
@@ -749,7 +773,8 @@ footer {
       section #habitaciones section:last-child a {
         float: left; }
   section #slogan {
-    height: 200px;
+    height: 165px;
+    margin: 100px auto 0;
     width: 70%; }
 
   footer::before {
@@ -869,8 +894,10 @@ footer {
           section #bienvenida section:nth-child(2) section:nth-child(2) span {
             height: 110px;
             left: auto;
-            right: -24px;
-            width: 210px; }
+            right: 70px;
+            width: 163px; }
+          section #bienvenida section:nth-child(2) section:nth-child(2) img {
+            width: 60%; }
         section #bienvenida section:nth-child(2) section:last-child {
           right: 0;
           top: 110px; }
@@ -910,6 +937,7 @@ footer {
       right: 50px;
       width: 35%; }
   section #slogan {
+    height: 255px;
     width: 50%; }
     section #slogan p {
       font-size: 200%; }
@@ -924,9 +952,11 @@ footer {
     width: 85%; }
   footer section:first-child section:last-child section:last-child section:last-child div:last-child a:hover {
     border: 0;
-    padding: 0; }
+    padding: 0 0 0 8px; }
+  footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child {
+    padding-left: 38px; }
   footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child:hover {
-    padding-left: 30px; } }
+    padding-left: 38px; } }
 @media all and (min-width: 1124px) {
   #header .nav-toggle.expanded {
     left: 760px; }
@@ -946,8 +976,6 @@ footer {
     section #bienvenida section:first-child {
       margin: 0 auto;
       width: 90%; }
-      section #bienvenida section:first-child h2 {
-        font-size: 200%; }
       section #bienvenida section:first-child p {
         margin-right: 60px;
         width: 40%; }
@@ -958,15 +986,11 @@ footer {
     section #servicios section:last-child {
       height: 390px;
       padding: 40px; }
-      section #servicios section:last-child h2 {
-        font-size: 200%; }
       section #servicios section:last-child p {
         font-size: 120%;
         margin: 30px auto; }
   section #habitaciones {
     height: 490px; }
-    section #habitaciones h2 {
-      font-size: 200%; }
     section #habitaciones section p {
       font-size: 120%; }
     section #habitaciones section:nth-child(2) {
@@ -976,7 +1000,7 @@ footer {
       margin-right: 100px; }
 
   footer::before {
-    left: 0; }
+    left: -1px; }
 
   footer {
     padding: 0 100px 50px; }
