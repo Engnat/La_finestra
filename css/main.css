@@ -2,8 +2,11 @@
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Monserrat-light';
-  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light.ttf") format("truetype"); }
+  font-family: 'Arsenal-Italic';
+  src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -169,7 +172,7 @@ template, [hidden] {
 a {
   color: #33CC99;
   cursor: pointer;
-  font-family: "Monserrat-light";
+  font-family: "Arsenal-Italic";
   font-size: 100%;
   line-height: 2;
   padding: 0;
@@ -194,7 +197,7 @@ a {
   position: fixed;
   top: 30px;
   width: 30px;
-  z-index: 4; }
+  z-index: 5; }
   .nav-toggle:hover {
     opacity: 0.8; }
   .nav-toggle.expanded {
@@ -253,7 +256,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3; }
+  z-index: 4; }
   #navM.expanded {
     left: 0;
     width: 100%; }
@@ -278,7 +281,6 @@ html, body {
   height: 100%; }
 
 h1 {
-  font-family: "Monserrat-bold";
   margin: 0; }
 
 h2 {
@@ -286,7 +288,7 @@ h2 {
   font-size: 370%; }
 
 p {
-  font-family: "Monserrat-regular"; }
+  font-family: "Arsenal-Regular"; }
 
 .desktop, .tablet {
   display: none; }
@@ -357,239 +359,281 @@ p {
       #header div.menu nav section:last-child div#contacto-menu a {
         font-size: 60%; }
 
-section h2 {
-  color: #470052; }
-section #banner-principal {
-  background-image: url("../images/fotografia/bg-home.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 3px;
-  background-size: cover;
-  height: 100vh;
+section {
   position: relative; }
-  section #banner-principal aside {
-    align-content: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    flex-flow: row wrap;
-    height: auto;
-    position: fixed;
-    right: 0;
-    top: 25%;
-    transform: translateY(-25%);
-    width: 60px;
-    z-index: 1; }
-    section #banner-principal aside a:hover {
-      border: 0;
-      padding: 0; }
-    section #banner-principal aside a img {
+  section h2 {
+    color: #470052; }
+  section #banner-principal {
+    background-image: url("../images/fotografia/bg-home.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative; }
+    section #banner-principal aside {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      flex-flow: row wrap;
+      height: auto;
+      position: fixed;
+      right: 0;
+      top: 25%;
+      transform: translateY(-25%);
+      width: 60px;
+      z-index: 3; }
+      section #banner-principal aside a:hover {
+        border: 0;
+        padding: 0; }
+      section #banner-principal aside a img {
+        display: block;
+        margin: 7px auto 0;
+        width: 70%; }
+    section #banner-principal section.contenido-texto-banner {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      position: absolute;
+      width: 100%; }
+      section #banner-principal section.contenido-texto-banner span {
+        background-image: url("../images/icono-finestra-blanco.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 90px;
+        position: absolute;
+        top: -55px;
+        width: 30%;
+        z-index: 1; }
+      section #banner-principal section.contenido-texto-banner section {
+        background-color: rgba(3, 138, 110, 0.5);
+        margin: 0 auto;
+        padding: 40px 20px;
+        width: 80%; }
+        section #banner-principal section.contenido-texto-banner section p {
+          color: #fff;
+          text-align: center; }
+    section #banner-principal a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 100px;
       display: block;
-      margin: 7px auto 0;
-      width: 70%; }
-  section #banner-principal section.contenido-texto-banner {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    position: absolute;
-    width: 100%; }
-    section #banner-principal section.contenido-texto-banner span {
-      background-image: url("../images/icono-finestra-blanco.png");
+      height: 48px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
-      height: 90px;
       position: absolute;
-      top: -55px;
-      width: 30%; }
-    section #banner-principal section.contenido-texto-banner section {
-      background-color: rgba(3, 138, 110, 0.5);
-      margin: 0 auto;
-      padding: 40px 20px;
-      width: 80%; }
-      section #banner-principal section.contenido-texto-banner section p {
-        color: #fff;
-        text-align: center; }
-  section #banner-principal a span {
-    background-image: url("../images/icono-abajo.png");
-    bottom: 100px;
+      width: 65px; }
+  section #banner-principal::before {
+    background-color: rgba(71, 0, 82, 0.4);
+    content: "";
     display: block;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100%; }
+  section #banner-principal::after {
+    content: url("../images/cenefa.png");
+    bottom: -5px;
+    left: -490px;
     position: absolute;
-    width: 65px; }
-section #banner-principal::before {
-  background-color: rgba(71, 0, 82, 0.4);
-  content: "";
-  display: block;
-  height: 100%; }
-section #banner-principal::after {
-  content: url("../images/cenefa.png");
-  bottom: -5px;
-  left: -490px;
-  position: absolute;
-  width: 100%; }
-section #bienvenida {
-  height: auto;
-  margin: 0 auto;
-  width: 80%; }
-  section #bienvenida section {
-    padding: 20px 0; }
-    section #bienvenida section p {
-      line-height: 2;
-      margin: 30px auto; }
-    section #bienvenida section:first-child span {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      margin: 3px;
-      background-image: url("../images/separador.png");
-      display: block;
-      height: 173px;
-      position: absolute;
-      right: 40px;
-      width: 290px; }
-    section #bienvenida section:first-child p {
-      text-align: left;
-      width: 70%; }
-    section #bienvenida section:nth-child(2) section {
-      position: relative; }
-      section #bienvenida section:nth-child(2) section span {
-        background-color: #584880;
-        bottom: 0;
-        display: block;
-        height: 50px;
-        position: absolute;
-        right: 0;
-        width: 150px; }
-      section #bienvenida section:nth-child(2) section img {
-        display: block;
-        height: 280px;
-        margin: 0 auto;
-        position: relative;
-        width: 100%;
-        z-index: 1; }
-    section #bienvenida section:last-child p {
-      text-align: center; }
-section #servicios {
-  height: 590px;
-  position: relative; }
-  section #servicios section:first-child {
-    background-image: url("../images/fotografia/bg-servicios.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    display: block;
-    width: 100%;
-    height: 300px; }
-  section #servicios section:last-child {
-    background-color: #fff;
-    bottom: 40px;
-    box-shadow: 3px 5px 8px #ccc;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%; }
+  section #bienvenida {
     height: auto;
     margin: 0 auto;
-    padding: 20px;
-    position: absolute;
-    width: 75%; }
-    section #servicios section:last-child h2 {
-      padding: 10px 0 5px;
-      text-align: center; }
-    section #servicios section:last-child p {
-      line-height: 1.5;
-      margin: 0 auto;
-      text-align: center;
-      width: 90%; }
-    section #servicios section:last-child a {
-      border: 1px solid #470052;
-      color: #470052;
-      display: block;
-      height: 35px;
-      margin: 20px auto 0;
-      text-align: center;
-      transition-duration: 0.8s;
-      width: 130px; }
-      section #servicios section:last-child a:hover {
-        background-color: #470052;
-        border: 0;
-        color: #fff;
-        padding: 0; }
-section #habitaciones {
-  height: auto;
-  margin: 70px auto;
-  width: 80%; }
-  section #habitaciones section {
-    position: relative; }
-    section #habitaciones section:first-child {
-      margin: 10px auto 60px; }
-      section #habitaciones section:first-child h2 {
-        line-height: 1;
-        margin: 0 auto;
-        text-align: center;
-        width: 90%; }
-      section #habitaciones section:first-child span {
+    width: 80%; }
+    section #bienvenida section {
+      padding: 20px 0; }
+      section #bienvenida section p {
+        line-height: 1.5;
+        margin: 30px auto; }
+      section #bienvenida section:first-child span {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
         background-image: url("../images/separador.png");
         display: block;
         height: 173px;
         position: absolute;
         right: 40px;
-        width: 290px;
-        right: 0px;
-        top: -20px; }
-    section #habitaciones section:nth-child(2) {
-      height: 250px; }
-      section #habitaciones section:nth-child(2) span {
-        background-color: #584880;
-        bottom: 30px;
-        display: block;
-        height: 50px;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        width: 230px; }
-      section #habitaciones section:nth-child(2) img {
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        width: 90%; }
-    section #habitaciones section:last-child p {
-      line-height: 1.5;
-      text-align: center; }
-    section #habitaciones section:last-child a {
-      border: 1px solid #470052;
-      color: #470052;
+        width: 290px; }
+      section #bienvenida section:first-child p {
+        text-align: left;
+        width: 67%; }
+      section #bienvenida section:nth-child(2) section {
+        position: relative; }
+        section #bienvenida section:nth-child(2) section span {
+          background-color: #584880;
+          bottom: 0;
+          display: block;
+          height: 50px;
+          position: absolute;
+          right: 0;
+          width: 150px; }
+        section #bienvenida section:nth-child(2) section img {
+          display: block;
+          height: 250px;
+          margin: 0 auto;
+          position: relative;
+          width: 250px;
+          z-index: 1; }
+      section #bienvenida section:last-child p {
+        text-align: center;
+        width: 79%; }
+  section #servicios {
+    height: 590px;
+    position: relative; }
+    section #servicios section:first-child {
+      background-image: url("../images/fotografia/bg-servicios.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      background-size: cover;
       display: block;
-      height: 35px;
-      margin: 20px auto 0;
-      text-align: center;
-      transition-duration: 0.8s;
-      width: 130px; }
-      section #habitaciones section:last-child a:hover {
-        background-color: #470052;
-        border: 0;
-        color: #fff;
-        padding: 0; }
-section #slogan {
-  height: auto;
-  margin: 0 auto 100px;
-  width: 80%; }
-  section #slogan p {
-    font-size: 150%;
-    text-align: center; }
+      width: 100%;
+      height: 300px;
+      z-index: 1; }
+    section #servicios section:last-child {
+      background-color: #fff;
+      bottom: 40px;
+      box-shadow: 3px 5px 8px #ccc;
+      left: 50%;
+      transform: translateX(-50%);
+      height: auto;
+      margin: 0 auto;
+      padding: 20px;
+      position: absolute;
+      width: 75%;
+      z-index: 2; }
+      section #servicios section:last-child h2 {
+        padding: 10px 0 5px;
+        text-align: center; }
+      section #servicios section:last-child p {
+        line-height: 1.5;
+        margin: 0 auto;
+        text-align: center;
+        width: 90%; }
+      section #servicios section:last-child a {
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px; }
+        section #servicios section:last-child a:hover {
+          background-color: #470052;
+          border: 0;
+          color: #fff;
+          padding: 0; }
+  section #habitaciones {
+    height: auto;
+    margin: 70px auto;
+    width: 80%; }
+    section #habitaciones section {
+      position: relative; }
+      section #habitaciones section:first-child {
+        margin: 10px auto 60px; }
+        section #habitaciones section:first-child h2 {
+          line-height: 1;
+          margin: 0 auto;
+          text-align: center;
+          width: 90%; }
+        section #habitaciones section:first-child span {
+          background-image: url("../images/separador.png");
+          display: block;
+          height: 173px;
+          position: absolute;
+          right: 40px;
+          width: 290px;
+          right: 0px;
+          top: -20px; }
+      section #habitaciones section:nth-child(2) {
+        height: 250px;
+        z-index: 1; }
+        section #habitaciones section:nth-child(2) span {
+          background-color: #584880;
+          bottom: 30px;
+          display: block;
+          height: 50px;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+          width: 230px; }
+        section #habitaciones section:nth-child(2) img {
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          width: 90%; }
+      section #habitaciones section:last-child p {
+        line-height: 1.5;
+        text-align: center; }
+      section #habitaciones section:last-child a {
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px; }
+        section #habitaciones section:last-child a:hover {
+          background-color: #470052;
+          border: 0;
+          color: #fff;
+          padding: 0; }
+  section #slogan {
+    height: auto;
+    margin: 0 auto 100px;
+    width: 80%; }
+    section #slogan p {
+      font-size: 150%;
+      text-align: center; }
+  section #hojas {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #hojas span {
+      position: absolute;
+      right: -245px;
+      top: 650px; }
+      section #hojas span img {
+        width: 30%; }
+    section #hojas span.left {
+      right: auto;
+      left: -30px;
+      top: 800px; }
+      section #hojas span.left img {
+        width: 50%; }
+    section #hojas span#morada {
+      right: -90px;
+      top: 1080px; }
+      section #hojas span#morada img {
+        width: 80%; }
+    section #hojas span#hoja-hab {
+      top: 1600px; }
+      section #hojas span#hoja-hab img {
+        width: 30%; }
+    section #hojas span#hoja-der-slogan {
+      top: 1780px; }
+      section #hojas span#hoja-der-slogan img {
+        width: 50%; }
+    section #hojas span#hoja-pino-slogan {
+      left: -80px;
+      top: 1480px; }
+      section #hojas span#hoja-pino-slogan img {
+        width: 50%; }
 
 footer::before {
   content: url("../images/cenefa-footer.png");
@@ -614,6 +658,7 @@ footer {
       border: 3px solid #33CC99;
       width: 20%; }
     footer section:first-child section p, footer section:first-child section a, footer section:first-child section li {
+      font-family: "Arsenal-Regular";
       font-size: 75%; }
     footer section:first-child section p, footer section:first-child section li {
       color: #fff; }
@@ -630,6 +675,7 @@ footer {
       width: 40%; }
     footer section:first-child section:last-child section:first-child h2 {
       color: #33CC99;
+      font-family: inherit;
       font-size: 98%;
       text-align: center; }
     footer section:first-child section:last-child section:last-child section:first-child iframe {
@@ -776,6 +822,28 @@ footer {
     height: 165px;
     margin: 100px auto 0;
     width: 70%; }
+  section #hojas span {
+    right: -220px;
+    top: 1020px; }
+    section #hojas span img {
+      width: 40%; }
+  section #hojas span.left {
+    left: -30px;
+    top: 1120px; }
+    section #hojas span.left img {
+      width: 70%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1450px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1780px; }
+  section #hojas span#hoja-der-slogan {
+    top: 1980px; }
+  section #hojas span#hoja-pino-slogan {
+    left: -80px;
+    top: 1980px; }
 
   footer::before {
     left: -300px; }
@@ -835,7 +903,9 @@ footer {
   #header #contenedor-velo {
     background-color: transparent; }
   #header #contenedor-velo.expanded {
-    background-color: rgba(71, 0, 82, 0.4); }
+    background-color: rgba(71, 0, 82, 0.4);
+    position: fixed;
+    z-index: 3; }
   #header div.menu nav {
     padding: 68px 0 50px;
     width: 60%; }
@@ -865,6 +935,9 @@ footer {
     width: 90%; }
     section #bienvenida section:first-child span {
       left: 150px; }
+    section #bienvenida section:first-child p {
+      margin: 30px 110px 0 0;
+      width: 30%; }
     section #bienvenida section:nth-child(2) {
       height: 540px;
       position: relative; }
@@ -941,6 +1014,28 @@ footer {
     width: 50%; }
     section #slogan p {
       font-size: 200%; }
+  section #hojas span {
+    right: -139px;
+    top: 760px; }
+    section #hojas span img {
+      width: 40%; }
+  section #hojas span.left {
+    left: -30px;
+    top: 780px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1200px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1580px; }
+  section #hojas span#hoja-der-slogan {
+    top: 1780px; }
+  section #hojas span#hoja-pino-slogan {
+    left: -10px;
+    top: 1880px; }
 
   footer::before {
     left: -107px; }
@@ -990,14 +1085,41 @@ footer {
         font-size: 120%;
         margin: 30px auto; }
   section #habitaciones {
-    height: 490px; }
+    height: 490px;
+    width: 80%; }
     section #habitaciones section p {
       font-size: 120%; }
     section #habitaciones section:nth-child(2) {
       height: 300px;
       width: 40%; }
     section #habitaciones section:last-child {
-      margin-right: 100px; }
+      margin-right: 170px;
+      top: 190px;
+      width: 25%; }
+  section #hojas span {
+    top: 600px; }
+  section #hojas span.left {
+    left: -10px;
+    top: 620px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1000px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1500px; }
+  section #hojas span#hoja-der-slogan {
+    right: -50px;
+    top: 1600px; }
+    section #hojas span#hoja-der-slogan img {
+      width: 70%; }
+  section #hojas span#hoja-pino-slogan {
+    left: -20px;
+    top: 1650px; }
+    section #hojas span#hoja-pino-slogan img {
+      width: 70%; }
 
   footer::before {
     left: -1px; }
@@ -1008,5 +1130,22 @@ footer {
       width: 15%; }
     footer section:first-child section:last-child section:last-child section {
       width: 45%; } }
+@media all and (min-width: 1440px) {
+  section #hojas span {
+    top: 890px; }
+  section #hojas span.left {
+    top: 880px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    top: 1360px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1900px; }
+  section #hojas span#hoja-der-slogan {
+    top: 2100px; }
+  section #hojas span#hoja-pino-slogan {
+    top: 2200px; } }
 
 /*# sourceMappingURL=main.css.map */

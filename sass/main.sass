@@ -27,14 +27,13 @@ html, body
   height: 100%
 
 h1
-  font-family: 'Monserrat-bold'
   margin: 0
 
 h2
   font-family: 'madame'
   font-size: 370%
 p
-  font-family: 'Monserrat-regular'
+  font-family: 'Arsenal-Regular'
 
 .desktop, .tablet
   display: none
@@ -105,6 +104,7 @@ p
             font-size: 60%
 
 section
+  position: relative
   h2
     color: $morado
   #banner-principal
@@ -113,6 +113,7 @@ section
     @include backgroundImage
     background-size: cover
     height: 100vh
+    margin: 0
     position: relative
     aside
       @include flexBox
@@ -123,7 +124,7 @@ section
       top: 25%
       transform: translateY(-25%)
       width: 60px
-      z-index: 1
+      z-index: 3
       a:hover
         border: 0
         padding: 0
@@ -145,6 +146,7 @@ section
         position: absolute
         top: -55px
         width: 30%
+        z-index: 1
       section
         background-color: rgba(3, 138, 110, 0.5)
         margin: 0 auto
@@ -181,7 +183,7 @@ section
     section
       padding: 20px 0
       p
-        line-height: 2
+        line-height: 1.5
         margin: 30px auto
       &:first-child
         span
@@ -189,7 +191,7 @@ section
           @include separador
         p
           text-align: left
-          width: 70%
+          width: 67%
       &:nth-child(2)
         section
           position: relative
@@ -203,14 +205,15 @@ section
             width: 150px
           img
             display: block
-            height: 280px
+            height: 250px
             margin: 0 auto
             position: relative
-            width: 100%
+            width: 250px
             z-index: 1
       &:last-child
         p
           text-align: center
+          width: 79%
   #servicios
     height: 590px
     position: relative
@@ -222,6 +225,7 @@ section
         display: block
         width: 100%
         height: 300px
+        z-index: 1
 
       &:last-child
         background-color: #fff
@@ -233,6 +237,7 @@ section
         padding: 20px
         position: absolute
         width: 75%
+        z-index: 2
         h2
           padding: 10px 0 5px
           text-align: center
@@ -262,6 +267,7 @@ section
           top: -20px
       &:nth-child(2)
         height: 250px
+        z-index: 1
         span
           background-color: $lila
           bottom: 30px
@@ -289,7 +295,40 @@ section
     p
       font-size: 150%
       text-align: center
-
+  #hojas
+    position: absolute
+    top: 0
+    width: 100%
+    span
+      position: absolute
+      right: -245px
+      top: 650px
+      img
+        width: 30%
+    span.left
+      right: auto
+      left: -30px
+      top: 800px
+      img
+        width: 50%
+    span#morada
+      right: -90px
+      top: 1080px
+      img
+        width: 80%
+    span#hoja-hab
+      top: 1600px
+      img
+        width: 30%
+    span#hoja-der-slogan
+      top: 1780px
+      img
+        width: 50%
+    span#hoja-pino-slogan
+      left: -80px
+      top: 1480px
+      img
+        width: 50%
 
 footer::before
   content: url("../images/cenefa-footer.png")
@@ -316,6 +355,7 @@ footer
         border: 3px solid $verde-claro
         width: 20%
       p , a , li
+        font-family: 'Arsenal-Regular'
         font-size: 75%
       p , li
         color: #fff
@@ -336,6 +376,7 @@ footer
             width: 40%
           h2
             color: $verde-claro
+            font-family: inherit
             font-size: 98%
             text-align: center
         section:last-child
@@ -499,6 +540,29 @@ footer
       height: 165px
       margin: 100px auto 0
       width: 70%
+    #hojas
+      span
+        right: -220px
+        top: 1020px
+        img
+          width: 40%
+      span.left
+        left: -30px
+        top: 1120px
+        img
+          width: 70%
+      span#morada
+        right: -20px
+        top: 1450px
+        img
+          width: 100%
+      span#hoja-hab
+        top: 1780px
+      span#hoja-der-slogan
+        top: 1980px
+      span#hoja-pino-slogan
+        left: -80px
+        top: 1980px
 
   footer::before
     left: -300px
@@ -563,6 +627,8 @@ footer
       background-color: transparent
     #contenedor-velo.expanded
       background-color: rgba(71, 0, 82, 0.4)
+      position: fixed
+      z-index: 3
     div.menu
       nav
         padding: 68px 0 50px
@@ -596,6 +662,9 @@ footer
         &:first-child
           span
             left: 150px
+          p
+            margin: 30px 110px 0 0
+            width: 30%
         &:nth-child(2)
           height: 540px
           position: relative
@@ -674,6 +743,32 @@ footer
       width: 50%
       p
         font-size: 200%
+    #hojas
+      span
+        right: -139px
+        top: 760px
+        img
+          width: 40%
+      span.left
+        left: -30px
+        top: 780px
+        img
+          width: 50%
+      span#morada
+        right: -20px
+        top: 1200px
+        img
+          width: 100%
+      span#hoja-hab
+        top: 1580px
+      span#hoja-der-slogan
+        top: 1780px
+      span#hoja-pino-slogan
+        left: -10px
+        top: 1880px
+
+
+
 
   footer::before
     left: -107px
@@ -744,6 +839,7 @@ footer
             margin: 30px auto
     #habitaciones
       height: 490px
+      width: 80%
       section
         p
           font-size: 120%
@@ -751,7 +847,34 @@ footer
           height: 300px
           width: 40%
         &:last-child
-          margin-right: 100px
+          margin-right: 170px
+          top: 190px
+          width: 25%
+    #hojas
+      span
+        top: 600px
+      span.left
+        left: -10px
+        top: 620px
+        img
+          width: 50%
+      span#morada
+        right: -20px
+        top: 1000px
+        img
+          width: 100%
+      span#hoja-hab
+        top: 1500px
+      span#hoja-der-slogan
+        right: -50px
+        top: 1600px
+        img
+          width: 70%
+      span#hoja-pino-slogan
+        left: -20px
+        top: 1650px
+        img
+          width: 70%
 
   footer::before
     left: -1px
@@ -769,3 +892,22 @@ footer
 
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)
+
+  section
+    #hojas
+      span
+        top: 890px
+      span.left
+        top: 880px
+        img
+          width: 50%
+      span#morada
+        top: 1360px
+        img
+          width: 100%
+      span#hoja-hab
+        top: 1900px
+      span#hoja-der-slogan
+        top: 2100px
+      span#hoja-pino-slogan
+        top: 2200px
