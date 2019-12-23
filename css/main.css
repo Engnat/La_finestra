@@ -166,106 +166,173 @@ canvas {
 template, [hidden] {
   display: none; }
 
-/* colors */
-/* variables */
-/* mixins */
+@font-face {
+  font-family: 'madame';
+  src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Italic';
+  src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
 a {
-  color: #33CC99;
-  cursor: pointer;
-  font-family: "Arsenal-Italic";
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
+    outline-width: 0; }
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
   font-size: 100%;
-  line-height: 2;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
   padding: 0;
-  text-decoration: none; }
-  a:hover {
-    border: 3px solid #33CC99;
-    padding: 5px 20px; }
+  white-space: normal; }
 
-/* nav toggle */
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-transition: left 0.8s ease;
-  -moz-transition: left 0.8s ease;
-  -ms-transition: left 0.8s ease;
-  -o-transition: left 0.8s ease;
-  transition: left 0.8s ease;
-  cursor: pointer;
-  height: 20px;
-  left: 20px;
-  position: fixed;
-  top: 30px;
-  width: 30px;
-  z-index: 5; }
-  .nav-toggle:hover {
-    opacity: 0.8; }
-  .nav-toggle.expanded {
-    left: 270px; }
-  .nav-toggle .nav-toggle-bar,
-  .nav-toggle .nav-toggle-bar::after,
-  .nav-toggle .nav-toggle-bar::before {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    background: #33CC99;
-    content: '';
-    height: 4px;
-    width: 100%; }
-  .nav-toggle .nav-toggle-bar {
-    margin-top: 0; }
-  .nav-toggle .nav-toggle-bar::after {
-    margin-top: 8px; }
-  .nav-toggle .nav-toggle-bar::before {
-    margin-top: -8px; }
-  .nav-toggle.expanded .nav-toggle-bar {
-    background: transparent; }
-  .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
-    background: #33CC99;
-    margin-top: 0; }
-  .nav-toggle.expanded .nav-toggle-bar::after {
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .nav-toggle.expanded .nav-toggle-bar::before {
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
 
-/* nav */
-#navM {
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  background: #470052;
-  color: #33CC99;
-  cursor: pointer;
-  font-size: 2rem;
-  height: 100%;
-  left: -100%;
-  padding: 90px 0 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4; }
-  #navM.expanded {
-    left: 0;
-    width: 100%; }
-  #navM ul {
-    font-size: 80%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; }
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template, [hidden] {
+  display: none; }
 
 * {
   padding: 0;
@@ -293,71 +360,506 @@ p {
 .desktop, .tablet {
   display: none; }
 
-.menu-oculto {
-  display: none;
-  transition-duration: 0.8s; }
-
-#header {
-  height: 100%;
-  position: absolute; }
-  #header div.menu {
-    height: 100%;
-    overflow: auto;
-    width: 100%; }
-    #header div.menu div:first-child p {
-      color: #33CC99;
-      font-size: 12px;
-      left: 50%;
-      position: absolute;
-      top: -15px;
-      transform: translateX(-50%); }
-    #header div.menu nav ul li span {
-      font-family: "Monserrat-light";
-      line-height: 2; }
-    #header div.menu nav ul li span:hover {
-      border: 3px solid #33CC99;
-      padding: 5px 20px; }
-    #header div.menu nav section {
-      margin: 30px auto;
-      position: relative;
-      width: 90%; }
-    #header div.menu nav section:nth-child(2) {
-      border-bottom: 1px solid #33CC99; }
-      #header div.menu nav section:nth-child(2) img {
-        display: block;
-        margin: 10px auto;
-        width: 30%; }
-      #header div.menu nav section:nth-child(2) h1 {
-        font-size: 50%;
-        padding-bottom: 10px;
-        text-align: center;
-        width: 100%; }
-    #header div.menu nav section:last-child a:hover {
-      border: 0;
-      padding: 0; }
-    #header div.menu nav section:last-child div#redes-menu {
+section {
+  position: relative; }
+  section h2 {
+    color: #470052; }
+  section #banner-principal-hab {
+    background-image: url("../images/fotografia/bg-principal-hab.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative; }
+    section #banner-principal-hab aside {
       align-content: center;
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
+      flex-flow: row wrap;
+      height: auto;
+      position: fixed;
+      right: 0;
+      top: 25%;
+      transform: translateY(-25%);
+      width: 60px;
+      z-index: 3; }
+      section #banner-principal-hab aside a:hover {
+        border: 0;
+        padding: 0; }
+      section #banner-principal-hab aside a img {
+        display: block;
+        margin: 7px auto 0;
+        width: 70%; }
+    section #banner-principal-hab section.contenido-texto-banner {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      position: absolute;
       width: 100%; }
-      #header div.menu nav section:last-child div#redes-menu a {
-        font-size: 70%; }
-    #header div.menu nav section:last-child div#contacto-menu {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center; }
-      #header div.menu nav section:last-child div#contacto-menu span {
-        background-image: url("../images/icono-telefono.png");
+      section #banner-principal-hab section.contenido-texto-banner span {
+        background-image: url("../images/icono-finestra-blanco.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 3px;
-        height: 30px;
-        width: 30px; }
-      #header div.menu nav section:last-child div#contacto-menu a {
-        font-size: 60%; }
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -80px;
+        height: 90px;
+        position: absolute;
+        width: 20%;
+        z-index: 1; }
+      section #banner-principal-hab section.contenido-texto-banner section {
+        margin: 0 auto;
+        width: 80%; }
+        section #banner-principal-hab section.contenido-texto-banner section h2 {
+          color: #fff;
+          font-size: 470%;
+          line-height: 0.8;
+          text-align: center; }
+    section #banner-principal-hab a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 100px;
+      display: block;
+      height: 48px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px; }
+  section #banner-principal-hab::before {
+    background-color: rgba(71, 0, 82, 0.4);
+    content: "";
+    display: block;
+    height: 100%; }
+  section #banner-principal-hab::after {
+    content: url("../images/cenefa.png");
+    bottom: -5px;
+    left: -733px;
+    position: absolute;
+    width: 100%; }
+  section #bienvenida-hab {
+    height: auto;
+    margin: 0 auto;
+    width: 80%; }
+    section #bienvenida-hab section {
+      padding: 20px 0; }
+      section #bienvenida-hab section p {
+        line-height: 1.5;
+        margin: 30px auto; }
+      section #bienvenida-hab section:first-child span {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        background-image: url("../images/separador.png");
+        display: block;
+        height: 173px;
+        position: absolute;
+        right: 40px;
+        width: 290px; }
+      section #bienvenida-hab section:first-child p {
+        text-align: left;
+        width: 67%; }
+      section #bienvenida-hab section:nth-child(2) section {
+        position: relative; }
+        section #bienvenida-hab section:nth-child(2) section span {
+          background-color: #584880;
+          bottom: 0;
+          display: block;
+          height: 50px;
+          position: absolute;
+          right: 0;
+          width: 150px; }
+        section #bienvenida-hab section:nth-child(2) section img {
+          display: block;
+          height: 250px;
+          margin: 0 auto;
+          position: relative;
+          width: 250px;
+          z-index: 1; }
+      section #bienvenida-hab section:last-child p {
+        text-align: center;
+        width: 79%; }
+  section #contenedor-habitaciones {
+    height: auto;
+    margin: 70px auto;
+    width: 80%; }
+    section #contenedor-habitaciones section {
+      position: relative; }
+      section #contenedor-habitaciones section:first-child {
+        height: 250px;
+        z-index: 1; }
+        section #contenedor-habitaciones section:first-child span {
+          background-color: #584880;
+          bottom: 30px;
+          display: block;
+          height: 50px;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+          width: 230px; }
+        section #contenedor-habitaciones section:first-child img {
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          width: 90%; }
+      section #contenedor-habitaciones section:last-child p {
+        line-height: 1.5;
+        text-align: center; }
+      section #contenedor-habitaciones section:last-child a {
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px; }
+        section #contenedor-habitaciones section:last-child a:hover {
+          background-color: #470052;
+          border: 0;
+          color: #fff;
+          padding: 0; }
+  section #hojas {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #hojas span {
+      position: absolute;
+      right: -245px;
+      top: 650px; }
+      section #hojas span img {
+        width: 30%; }
+    section #hojas span.left {
+      right: auto;
+      left: -30px;
+      top: 800px; }
+      section #hojas span.left img {
+        width: 50%; }
+    section #hojas span#morada {
+      right: -90px;
+      top: 1080px; }
+      section #hojas span#morada img {
+        width: 80%; }
+    section #hojas span#hoja-hab {
+      top: 1450px; }
+      section #hojas span#hoja-hab img {
+        width: 30%; }
+    section #hojas span#hoja-der-slogan {
+      top: 1780px; }
+      section #hojas span#hoja-der-slogan img {
+        width: 50%; }
+    section #hojas span#hoja-pino-slogan {
+      left: -80px;
+      top: 1480px; }
+      section #hojas span#hoja-pino-slogan img {
+        width: 50%; }
+
+@media all and (min-width: 480px) {
+  section #banner-principal-hab a span {
+    bottom: 30px; }
+  section #banner-principal-hab::after {
+    left: -663px; }
+  section #bienvenida-hab section:nth-child(2) section span {
+    right: 43px; }
+  section #hojas span {
+    top: 320px; }
+  section #hojas span.left {
+    top: 400px; }
+  section #hojas span#morada {
+    top: 550px; }
+  section #hojas span#hoja-hab {
+    top: 880px; }
+  section #hojas span#hoja-der-slogan {
+    top: 830px; }
+  section #hojas span#hoja-pino-slogan {
+    top: 850px; } }
+@media all and (min-width: 737px) {
+  .desktop {
+    display: none; }
+
+  .tablet {
+    display: block; }
+
+  section #banner-principal-hab::after {
+    left: -480px; }
+  section #banner-principal-hab section.contenido-texto-banner span {
+    top: -65px; }
+  section #banner-principal-hab section.contenido-texto-banner section {
+    padding: 60px 20px;
+    width: 60%; }
+    section #banner-principal-hab section.contenido-texto-banner section p {
+      font-size: 130%; }
+  section #bienvenida-hab section:first-child {
+    height: 245px; }
+    section #bienvenida-hab section:first-child span {
+      right: auto; }
+    section #bienvenida-hab section:first-child p {
+      float: right;
+      width: 50%; }
+  section #bienvenida-hab section:nth-child(2) section span {
+    right: 140px; }
+  section #bienvenida-hab section:nth-child(2) section img {
+    width: 50%; }
+  section #bienvenida-hab section:last-child {
+    width: 50%; }
+    section #bienvenida-hab section:last-child p {
+      text-align: left; }
+  section #contenedor-habitaciones {
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    width: 88%; }
+    section #contenedor-habitaciones section:first-child {
+      bottom: 0;
+      height: auto;
+      position: absolute;
+      width: 50%; }
+      section #contenedor-habitaciones section:first-child span {
+        bottom: -20px;
+        left: auto;
+        transform: none;
+        right: 0; }
+    section #contenedor-habitaciones section:last-child {
+      position: absolute;
+      right: 0;
+      top: 120px;
+      width: 40%; }
+      section #contenedor-habitaciones section:last-child p {
+        text-align: left; }
+      section #contenedor-habitaciones section:last-child a {
+        float: left; }
+  section #hojas span {
+    right: -220px;
+    top: 1020px; }
+    section #hojas span img {
+      width: 40%; }
+  section #hojas span.left {
+    left: -30px;
+    top: 1120px; }
+    section #hojas span.left img {
+      width: 70%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1450px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1780px; }
+  section #hojas span#hoja-der-slogan {
+    top: 1980px; }
+  section #hojas span#hoja-pino-slogan {
+    left: -80px;
+    top: 1980px; } }
+@media all and (min-width: 1024px) {
+  .desktop {
+    display: block; }
+
+  .tablet {
+    display: none; }
+
+  section #banner-principal-hab::after {
+    left: -361px; }
+  section #banner-principal-hab section.contenido-texto-banner section {
+    width: 40%; }
+  section #banner-principal-hab aside {
+    top: 50%;
+    transform: translateY(-50%); }
+  section #bienvenida-hab {
+    height: 860px;
+    position: relative;
+    width: 90%; }
+    section #bienvenida-hab section:first-child span {
+      left: 150px; }
+    section #bienvenida-hab section:first-child p {
+      margin: 30px 110px 0 0;
+      width: 30%; }
+    section #bienvenida-hab section:nth-child(2) {
+      height: 540px;
+      position: relative; }
+      section #bienvenida-hab section:nth-child(2) section {
+        height: auto;
+        position: absolute;
+        width: auto; }
+        section #bienvenida-hab section:nth-child(2) section:first-child {
+          left: 0;
+          width: 53%; }
+          section #bienvenida-hab section:nth-child(2) section:first-child span {
+            bottom: auto;
+            height: 110px;
+            left: 0;
+            right: auto;
+            top: 0;
+            width: 210px; }
+          section #bienvenida-hab section:nth-child(2) section:first-child img {
+            height: 250px;
+            margin: 0 24px;
+            width: 400px; }
+        section #bienvenida-hab section:nth-child(2) section:nth-child(2) {
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2; }
+          section #bienvenida-hab section:nth-child(2) section:nth-child(2) span {
+            height: 110px;
+            left: auto;
+            right: 70px;
+            width: 163px; }
+          section #bienvenida-hab section:nth-child(2) section:nth-child(2) img {
+            width: 60%; }
+        section #bienvenida-hab section:nth-child(2) section:last-child {
+          right: 0;
+          top: 110px; }
+          section #bienvenida-hab section:nth-child(2) section:last-child span {
+            bottom: auto;
+            height: 110px;
+            left: auto;
+            right: 0;
+            top: 0;
+            width: 210px; }
+          section #bienvenida-hab section:nth-child(2) section:last-child img {
+            float: right;
+            height: 220px;
+            margin: 0 24px;
+            width: 400px; }
+    section #bienvenida-hab section:last-child {
+      bottom: 0;
+      position: absolute;
+      width: 33%; }
+  section #contenedor-habitaciones {
+    height: 450px; }
+    section #contenedor-habitaciones section:first-child {
+      height: 288px; }
+      section #contenedor-habitaciones section:first-child span {
+        bottom: 0; }
+      section #contenedor-habitaciones section:first-child img {
+        float: left; }
+    section #contenedor-habitaciones section:last-child {
+      right: 50px;
+      width: 35%; }
+  section #hojas span {
+    right: -139px;
+    top: 760px; }
+    section #hojas span img {
+      width: 40%; }
+  section #hojas span.left {
+    left: -30px;
+    top: 780px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1200px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1580px; }
+  section #hojas span#hoja-der-slogan {
+    top: 1780px; }
+  section #hojas span#hoja-pino-slogan {
+    left: -10px;
+    top: 1880px; } }
+@media all and (min-width: 1124px) {
+  section #banner-principal-hab::after {
+    left: -155px; }
+  section #bienvenida-hab {
+    width: 80%; }
+    section #bienvenida-hab section p {
+      font-size: 120%; }
+    section #bienvenida-hab section:first-child {
+      margin: 0 auto;
+      width: 90%; }
+      section #bienvenida-hab section:first-child p {
+        margin-right: 60px;
+        width: 40%; }
+  section #contenedor-habitaciones {
+    height: 490px;
+    width: 80%; }
+    section #contenedor-habitaciones section p {
+      font-size: 120%; }
+    section #contenedor-habitaciones section:first-child {
+      height: 300px;
+      width: 40%; }
+    section #contenedor-habitaciones section:last-child {
+      margin-right: 170px;
+      top: 190px;
+      width: 25%; }
+  section #hojas span {
+    top: 1050px; }
+  section #hojas span.left {
+    left: -10px;
+    top: 1160px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    right: -20px;
+    top: 1540px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 2130px; }
+  section #hojas span#hoja-der-slogan {
+    right: -50px;
+    top: 2420px; }
+    section #hojas span#hoja-der-slogan img {
+      width: 70%; }
+  section #hojas span#hoja-pino-slogan {
+    left: -20px;
+    top: 2420px; }
+    section #hojas span#hoja-pino-slogan img {
+      width: 70%; } }
+@media all and (min-width: 1440px) {
+  section #hojas span {
+    top: 680px; }
+  section #hojas span.left {
+    top: 880px; }
+    section #hojas span.left img {
+      width: 50%; }
+  section #hojas span#morada {
+    top: 1100px; }
+    section #hojas span#morada img {
+      width: 100%; }
+  section #hojas span#hoja-hab {
+    top: 1660px; }
+  section #hojas span#hoja-der-slogan {
+    top: 1850px; }
+  section #hojas span#hoja-pino-slogan {
+    top: 1850px; } }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  font-family: "madame";
+  font-size: 370%; }
+
+p {
+  font-family: "Arsenal-Regular"; }
+
+.desktop, .tablet {
+  display: none; }
 
 section {
   position: relative; }
@@ -443,7 +945,7 @@ section {
   section #banner-principal::after {
     content: url("../images/cenefa.png");
     bottom: -5px;
-    left: -490px;
+    left: -733px;
     position: absolute;
     width: 100%; }
   section #bienvenida {
@@ -622,7 +1124,7 @@ section {
       section #hojas span#morada img {
         width: 80%; }
     section #hojas span#hoja-hab {
-      top: 1600px; }
+      top: 1450px; }
       section #hojas span#hoja-hab img {
         width: 30%; }
     section #hojas span#hoja-der-slogan {
@@ -635,96 +1137,25 @@ section {
       section #hojas span#hoja-pino-slogan img {
         width: 50%; }
 
-footer::before {
-  content: url("../images/cenefa-footer.png");
-  left: -780px;
-  position: absolute;
-  top: -179px;
-  width: 100%; }
-
-footer {
-  background-color: #0d0b12;
-  clear: both;
-  display: block;
-  height: auto;
-  padding: 50px;
-  position: relative;
-  width: 100%; }
-  footer section:first-child section {
-    padding: 10px 0; }
-    footer section:first-child section h3 {
-      color: #33CC99; }
-    footer section:first-child section hr {
-      border: 3px solid #33CC99;
-      width: 20%; }
-    footer section:first-child section p, footer section:first-child section a, footer section:first-child section li {
-      font-family: "Arsenal-Regular";
-      font-size: 75%; }
-    footer section:first-child section p, footer section:first-child section li {
-      color: #fff; }
-    footer section:first-child section p b {
-      color: #33CC99; }
-    footer section:first-child section ul {
-      list-style: none; }
-    footer section:first-child section ul, footer section:first-child section p {
-      line-height: 1.3;
-      padding-top: 10px; }
-    footer section:first-child section:last-child section:first-child img {
-      display: block;
-      margin: 10px auto;
-      width: 40%; }
-    footer section:first-child section:last-child section:first-child h2 {
-      color: #33CC99;
-      font-family: inherit;
-      font-size: 98%;
-      text-align: center; }
-    footer section:first-child section:last-child section:last-child section:first-child iframe {
-      display: block;
-      margin: 0 auto;
-      width: 80%; }
-    footer section:first-child section:last-child section:last-child section:last-child div {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      justify-content: flex-start;
-      margin: 0 auto;
-      width: 80%; }
-      footer section:first-child section:last-child section:last-child section:last-child div span {
-        display: block;
-        height: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        margin: 3px 5px;
-        width: 20px; }
-      footer section:first-child section:last-child section:last-child section:last-child div a {
-        color: #fff; }
-      footer section:first-child section:last-child section:last-child section:last-child div:first-child span {
-        background-image: url("../images/icono-ubicacion.png"); }
-      footer section:first-child section:last-child section:last-child section:last-child div:last-child span {
-        background-image: url("../images/icono-telefono.png"); }
-  footer section:last-child section#redes-footer {
-    align-content: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center; }
-    footer section:last-child section#redes-footer a:hover {
-      border: 0;
-      padding: 0; }
-  footer section:last-child hr {
-    border: 1px solid #33CC99;
-    width: 100%; }
-  footer section:last-child section.copyright p {
-    color: #33CC99;
-    font-size: 75%;
-    margin: 10px auto;
-    text-align: center; }
-
-@media all and (min-width: 360px) {
-  #header .nav-toggle.expanded {
-    left: 320px; } }
+@media all and (min-width: 480px) {
+  section #banner-principal a span {
+    bottom: 30px; }
+  section #banner-principal::after {
+    left: -663px; }
+  section #bienvenida section:nth-child(2) section span {
+    right: 43px; }
+  section #hojas span {
+    top: 320px; }
+  section #hojas span.left {
+    top: 400px; }
+  section #hojas span#morada {
+    top: 550px; }
+  section #hojas span#hoja-hab {
+    top: 880px; }
+  section #hojas span#hoja-der-slogan {
+    top: 830px; }
+  section #hojas span#hoja-pino-slogan {
+    top: 850px; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -732,25 +1163,8 @@ footer {
   .tablet {
     display: block; }
 
-  #header .nav-toggle.expanded {
-    left: 710px; }
-  #header div.menu nav {
-    padding: 300px 0 50px; }
-    #header div.menu nav ul li a, #header div.menu nav ul li span {
-      font-size: 150%; }
-    #header div.menu nav section {
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%); }
-    #header div.menu nav section:nth-child(2) {
-      bottom: 100px; }
-      #header div.menu nav section:nth-child(2) img {
-        width: 20%; }
-    #header div.menu nav section:last-child {
-      bottom: 0; }
-
   section #banner-principal::after {
-    left: -304px; }
+    left: -480px; }
   section #banner-principal section.contenido-texto-banner span {
     top: -65px; }
   section #banner-principal section.contenido-texto-banner section {
@@ -843,54 +1257,7 @@ footer {
     top: 1980px; }
   section #hojas span#hoja-pino-slogan {
     left: -80px;
-    top: 1980px; }
-
-  footer::before {
-    left: -300px; }
-
-  footer section:first-child {
-    height: 350px; }
-    footer section:first-child section {
-      float: left;
-      height: auto;
-      width: 50%; }
-      footer section:first-child section:first-child {
-        padding-right: 10px;
-        width: 40%; }
-        footer section:first-child section:first-child section {
-          float: none;
-          width: 100%; }
-      footer section:first-child section:last-child {
-        width: 60%; }
-        footer section:first-child section:last-child section {
-          float: none;
-          width: 100%; }
-        footer section:first-child section:last-child section:first-child img {
-          width: 30%; }
-        footer section:first-child section:last-child section:last-child {
-          align-content: center;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center; }
-          footer section:first-child section:last-child section:last-child section {
-            flex-flow: column;
-            width: 60%; }
-          footer section:first-child section:last-child section:last-child section:last-child {
-            width: 40%; }
-            footer section:first-child section:last-child section:last-child section:last-child div {
-              width: 100%; }
-            footer section:first-child section:last-child section:last-child section:last-child div:first-child span {
-              height: 30px;
-              width: 30px; }
-            footer section:first-child section:last-child section:last-child section:last-child div:last-child {
-              flex-flow: row wrap;
-              padding-top: 10px; }
-              footer section:first-child section:last-child section:last-child section:last-child div:last-child a {
-                font-size: 75%; }
-              footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child {
-                padding-left: 30px; }
-  footer section:last-child section#redes-footer {
-    height: auto; } }
+    top: 1980px; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -898,32 +1265,8 @@ footer {
   .tablet {
     display: none; }
 
-  #header .nav-toggle.expanded {
-    left: 560px; }
-  #header #contenedor-velo {
-    background-color: transparent; }
-  #header #contenedor-velo.expanded {
-    background-color: rgba(71, 0, 82, 0.4);
-    position: fixed;
-    z-index: 3; }
-  #header div.menu nav {
-    padding: 68px 0 50px;
-    width: 60%; }
-    #header div.menu nav ul li a, #header div.menu nav ul li span {
-      font-size: 120%; }
-    #header div.menu nav section:last-child {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center; }
-      #header div.menu nav section:last-child div#redes-menu {
-        justify-content: flex-start;
-        width: 40%; }
-        #header div.menu nav section:last-child div#redes-menu a {
-          margin: 5px; }
-
   section #banner-principal::after {
-    left: -171px; }
+    left: -361px; }
   section #banner-principal section.contenido-texto-banner section {
     width: 40%; }
   section #banner-principal aside {
@@ -1035,33 +1378,8 @@ footer {
     top: 1780px; }
   section #hojas span#hoja-pino-slogan {
     left: -10px;
-    top: 1880px; }
-
-  footer::before {
-    left: -107px; }
-
-  footer section:first-child section:last-child section:first-child img {
-    width: 25%; }
-  footer section:first-child section:last-child section:last-child section:last-child div:last-child a {
-    padding-left: 8px;
-    width: 85%; }
-  footer section:first-child section:last-child section:last-child section:last-child div:last-child a:hover {
-    border: 0;
-    padding: 0 0 0 8px; }
-  footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child {
-    padding-left: 38px; }
-  footer section:first-child section:last-child section:last-child section:last-child div:last-child a:last-child:hover {
-    padding-left: 38px; } }
+    top: 1880px; } }
 @media all and (min-width: 1124px) {
-  #header .nav-toggle.expanded {
-    left: 760px; }
-  #header div.menu nav ul li a, #header div.menu nav ul li span {
-    font-size: 100%; }
-  #header div.menu nav section:nth-child(2) {
-    bottom: 80px; }
-  #header div.menu nav section:last-child div#contacto-menu {
-    align-self: center; }
-
   section #banner-principal::after {
     left: -155px; }
   section #bienvenida {
@@ -1097,56 +1415,45 @@ footer {
       top: 190px;
       width: 25%; }
   section #hojas span {
-    top: 600px; }
+    top: 1050px; }
   section #hojas span.left {
     left: -10px;
-    top: 620px; }
+    top: 1160px; }
     section #hojas span.left img {
       width: 50%; }
   section #hojas span#morada {
     right: -20px;
-    top: 1000px; }
+    top: 1540px; }
     section #hojas span#morada img {
       width: 100%; }
   section #hojas span#hoja-hab {
-    top: 1500px; }
+    top: 2130px; }
   section #hojas span#hoja-der-slogan {
     right: -50px;
-    top: 1600px; }
+    top: 2420px; }
     section #hojas span#hoja-der-slogan img {
       width: 70%; }
   section #hojas span#hoja-pino-slogan {
     left: -20px;
-    top: 1650px; }
+    top: 2420px; }
     section #hojas span#hoja-pino-slogan img {
-      width: 70%; }
-
-  footer::before {
-    left: -1px;
-    top: -188px; }
-
-  footer {
-    padding: 0 100px 50px; }
-    footer section:first-child section:last-child section:first-child img {
-      width: 15%; }
-    footer section:first-child section:last-child section:last-child section {
-      width: 45%; } }
+      width: 70%; } }
 @media all and (min-width: 1440px) {
   section #hojas span {
-    top: 890px; }
+    top: 680px; }
   section #hojas span.left {
     top: 880px; }
     section #hojas span.left img {
       width: 50%; }
   section #hojas span#morada {
-    top: 1360px; }
+    top: 1100px; }
     section #hojas span#morada img {
       width: 100%; }
   section #hojas span#hoja-hab {
-    top: 1900px; }
+    top: 1660px; }
   section #hojas span#hoja-der-slogan {
-    top: 2100px; }
+    top: 1850px; }
   section #hojas span#hoja-pino-slogan {
-    top: 2200px; } }
+    top: 1850px; } }
 
 /*# sourceMappingURL=main.css.map */
