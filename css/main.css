@@ -7,6 +7,9 @@
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -175,6 +178,9 @@ template, [hidden] {
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -374,7 +380,8 @@ section {
     background-size: cover;
     height: 100vh;
     margin: 0;
-    position: relative; }
+    position: relative;
+    z-index: 1; }
     section #banner-principal-hab aside {
       align-content: center;
       display: flex;
@@ -425,7 +432,7 @@ section {
           text-align: center; }
     section #banner-principal-hab a span {
       background-image: url("../images/icono-abajo.png");
-      bottom: 100px;
+      bottom: 40px;
       display: block;
       height: 48px;
       background-position: center;
@@ -453,70 +460,26 @@ section {
     width: 80%; }
     section #bienvenida-hab section {
       padding: 20px 0; }
-      section #bienvenida-hab section p {
-        line-height: 1.5;
-        margin: 30px auto; }
-      section #bienvenida-hab section:first-child span {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        background-image: url("../images/separador.png");
-        display: block;
-        height: 173px;
-        position: absolute;
-        right: 40px;
-        width: 290px; }
-      section #bienvenida-hab section:first-child p {
-        text-align: left;
-        width: 67%; }
-      section #bienvenida-hab section:nth-child(2) section {
-        position: relative; }
-        section #bienvenida-hab section:nth-child(2) section span {
-          background-color: #584880;
-          bottom: 0;
-          display: block;
-          height: 50px;
-          position: absolute;
-          right: 0;
-          width: 150px; }
-        section #bienvenida-hab section:nth-child(2) section img {
-          display: block;
-          height: 250px;
-          margin: 0 auto;
-          position: relative;
-          width: 250px;
-          z-index: 1; }
-      section #bienvenida-hab section:last-child p {
-        text-align: center;
-        width: 79%; }
+      section #bienvenida-hab section h2 {
+        color: #333333;
+        font-size: 180%;
+        margin: 30px auto;
+        text-align: center; }
   section #contenedor-habitaciones {
     height: auto;
     margin: 70px auto;
     width: 80%; }
-    section #contenedor-habitaciones section {
+    section #contenedor-habitaciones section.min-habitacion {
+      margin-bottom: 30px;
       position: relative; }
-      section #contenedor-habitaciones section:first-child {
-        height: 250px;
-        z-index: 1; }
-        section #contenedor-habitaciones section:first-child span {
-          background-color: #584880;
-          bottom: 30px;
-          display: block;
-          height: 50px;
-          left: 50%;
-          position: absolute;
-          transform: translateX(-50%);
-          width: 230px; }
-        section #contenedor-habitaciones section:first-child img {
-          display: block;
-          margin: 0 auto;
-          position: relative;
-          width: 90%; }
-      section #contenedor-habitaciones section:last-child p {
-        line-height: 1.5;
+      section #contenedor-habitaciones section.min-habitacion h2 {
+        font-size: 200%;
         text-align: center; }
-      section #contenedor-habitaciones section:last-child a {
+      section #contenedor-habitaciones section.min-habitacion p {
+        line-height: 1.5;
+        font-size: 100%;
+        text-align: center; }
+      section #contenedor-habitaciones section.min-habitacion a {
         border: 1px solid #470052;
         color: #470052;
         display: block;
@@ -525,46 +488,84 @@ section {
         text-align: center;
         transition-duration: 0.8s;
         width: 130px; }
-        section #contenedor-habitaciones section:last-child a:hover {
+        section #contenedor-habitaciones section.min-habitacion a:hover {
           background-color: #470052;
           border: 0;
           color: #fff;
           padding: 0; }
-  section #hojas {
+      section #contenedor-habitaciones section.min-habitacion section:first-child {
+        height: 250px;
+        z-index: 1; }
+        section #contenedor-habitaciones section.min-habitacion section:first-child span {
+          background-color: #584880;
+          bottom: 30px;
+          display: block;
+          height: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          width: 230px; }
+        section #contenedor-habitaciones section.min-habitacion section:first-child img {
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          width: 100%; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
+      background-color: #038A6E; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(3) section:first-child span {
+      background-color: #00A06D; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
+      background-color: #33CC99; }
+  section #hojas span {
     position: absolute;
-    top: 0;
-    width: 100%; }
-    section #hojas span {
-      position: absolute;
-      right: -245px;
-      top: 650px; }
-      section #hojas span img {
-        width: 30%; }
-    section #hojas span.left {
+    right: -260px; }
+    section #hojas span:first-child, section #hojas span:nth-child(2) {
+      top: 420px; }
+      section #hojas span:first-child img, section #hojas span:nth-child(2) img {
+        width: 20%; }
+    section #hojas span:first-child, section #hojas span:nth-child(3) {
       right: auto;
-      left: -30px;
-      top: 800px; }
-      section #hojas span.left img {
-        width: 50%; }
-    section #hojas span#morada {
-      right: -90px;
-      top: 1080px; }
-      section #hojas span#morada img {
-        width: 80%; }
-    section #hojas span#hoja-hab {
-      top: 1450px; }
-      section #hojas span#hoja-hab img {
+      left: 0; }
+    section #hojas span:nth-child(3), section #hojas span:nth-child(4) {
+      top: 560px; }
+      section #hojas span:nth-child(3) img, section #hojas span:nth-child(4) img {
         width: 30%; }
-    section #hojas span#hoja-der-slogan {
-      top: 1780px; }
-      section #hojas span#hoja-der-slogan img {
-        width: 50%; }
-    section #hojas span#hoja-pino-slogan {
-      left: -80px;
-      top: 1480px; }
-      section #hojas span#hoja-pino-slogan img {
-        width: 50%; }
+    section #hojas span:first-child {
+      top: 410px; }
+    section #hojas span:nth-child(4) {
+      top: 490px; }
+    section #hojas span:nth-child(5) {
+      left: -170px;
+      top: 1110px; }
+      section #hojas span:nth-child(5) img {
+        width: 30%; }
+    section #hojas span:nth-child(6) {
+      right: -170px;
+      top: 1330px; }
+      section #hojas span:nth-child(6) img {
+        width: 80%; }
+    section #hojas span:last-child {
+      top: 1280px; }
+      section #hojas span:last-child img {
+        width: 30%; }
 
+@media all and (min-width: 360px) {
+  section #hojas span:first-child {
+    top: 600px; }
+  section #hojas span:nth-child(2) {
+    top: 620px; }
+  section #hojas span:nth-child(3) {
+    top: 700px; }
+  section #hojas span:nth-child(4) {
+    top: 660px; }
+  section #hojas span:nth-child(5) {
+    left: -170px;
+    top: 1380px; }
+  section #hojas span:nth-child(6) {
+    right: -170px;
+    top: 1630px; }
+  section #hojas span:last-child {
+    top: 1780px; } }
 @media all and (min-width: 480px) {
   section #banner-principal-hab a span {
     bottom: 30px; }
@@ -572,18 +573,28 @@ section {
     left: -663px; }
   section #bienvenida-hab section:nth-child(2) section span {
     right: 43px; }
-  section #hojas span {
-    top: 320px; }
-  section #hojas span.left {
-    top: 400px; }
-  section #hojas span#morada {
-    top: 550px; }
-  section #hojas span#hoja-hab {
-    top: 880px; }
-  section #hojas span#hoja-der-slogan {
-    top: 830px; }
-  section #hojas span#hoja-pino-slogan {
-    top: 850px; } }
+  section #contenedor-habitaciones section.min-habitacion section:first-child img {
+    width: 80%; }
+  section #contenedor-habitaciones section.min-habitacion section:first-child span {
+    bottom: 15px;
+    left: auto;
+    right: -20px;
+    transform: none; }
+  section #hojas span:first-child {
+    top: 270px; }
+  section #hojas span:nth-child(2) {
+    top: 250px; }
+  section #hojas span:nth-child(3) {
+    top: 370px; }
+  section #hojas span:nth-child(4) {
+    top: 230px; }
+  section #hojas span:nth-child(5) {
+    top: 780px; }
+  section #hojas span:nth-child(6) {
+    right: -170px;
+    top: 800px; }
+  section #hojas span:last-child {
+    top: 810px; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -594,73 +605,59 @@ section {
   section #banner-principal-hab::after {
     left: -480px; }
   section #banner-principal-hab section.contenido-texto-banner span {
-    top: -65px; }
+    bottom: -35px;
+    width: 15%; }
   section #banner-principal-hab section.contenido-texto-banner section {
     padding: 60px 20px;
     width: 60%; }
     section #banner-principal-hab section.contenido-texto-banner section p {
       font-size: 130%; }
-  section #bienvenida-hab section:first-child {
-    height: 245px; }
-    section #bienvenida-hab section:first-child span {
-      right: auto; }
-    section #bienvenida-hab section:first-child p {
-      float: right;
-      width: 50%; }
-  section #bienvenida-hab section:nth-child(2) section span {
-    right: 140px; }
-  section #bienvenida-hab section:nth-child(2) section img {
-    width: 50%; }
-  section #bienvenida-hab section:last-child {
-    width: 50%; }
-    section #bienvenida-hab section:last-child p {
-      text-align: left; }
+  section #bienvenida-hab section h2 {
+    font-size: 250%;
+    width: 60%; }
   section #contenedor-habitaciones {
-    height: 330px;
-    margin: 0 auto;
-    position: relative;
-    width: 88%; }
-    section #contenedor-habitaciones section:first-child {
-      bottom: 0;
-      height: auto;
-      position: absolute;
-      width: 50%; }
-      section #contenedor-habitaciones section:first-child span {
-        bottom: -20px;
-        left: auto;
-        transform: none;
-        right: 0; }
-    section #contenedor-habitaciones section:last-child {
-      position: absolute;
-      right: 0;
-      top: 120px;
-      width: 40%; }
-      section #contenedor-habitaciones section:last-child p {
-        text-align: left; }
-      section #contenedor-habitaciones section:last-child a {
-        float: left; }
-  section #hojas span {
-    right: -220px;
-    top: 1020px; }
-    section #hojas span img {
-      width: 40%; }
-  section #hojas span.left {
-    left: -30px;
-    top: 1120px; }
-    section #hojas span.left img {
+    margin: 70px auto 100px; }
+    section #contenedor-habitaciones section.min-habitacion {
+      margin: 0 auto 30px;
       width: 70%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1450px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 1780px; }
-  section #hojas span#hoja-der-slogan {
-    top: 1980px; }
-  section #hojas span#hoja-pino-slogan {
-    left: -80px;
-    top: 1980px; } }
+      section #contenedor-habitaciones section.min-habitacion h2 {
+        font-size: 250%; }
+      section #contenedor-habitaciones section.min-habitacion p {
+        font-size: 120%; }
+      section #contenedor-habitaciones section.min-habitacion section:first-child {
+        height: 320px; }
+        section #contenedor-habitaciones section.min-habitacion section:first-child img {
+          width: 100%; }
+  section #hojas span:first-child {
+    left: 30px;
+    top: 980px; }
+    section #hojas span:first-child img {
+      width: 30%; }
+  section #hojas span:nth-child(2) {
+    right: -180px;
+    top: 1000px; }
+    section #hojas span:nth-child(2) img {
+      width: 30%; }
+  section #hojas span:nth-child(3) {
+    top: 1100px; }
+    section #hojas span:nth-child(3) img {
+      width: 50%; }
+  section #hojas span:nth-child(4) {
+    right: -180px;
+    top: 1030px; }
+    section #hojas span:nth-child(4) img {
+      width: 50%; }
+  section #hojas span:nth-child(5) {
+    left: -60px;
+    top: 1830px; }
+    section #hojas span:nth-child(5) img {
+      width: 25%; }
+  section #hojas span:nth-child(6) {
+    right: -100px;
+    top: 2200px; }
+  section #hojas span:last-child {
+    right: auto;
+    top: 2480px; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -672,169 +669,99 @@ section {
     left: -361px; }
   section #banner-principal-hab section.contenido-texto-banner section {
     width: 40%; }
+  section #banner-principal-hab section.contenido-texto-banner span {
+    bottom: -20px;
+    width: 10%; }
+  section #banner-principal-hab section.contenido-texto-banner section::after {
+    content: url("../images/deco-titulos.png");
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; }
   section #banner-principal-hab aside {
     top: 50%;
     transform: translateY(-50%); }
-  section #bienvenida-hab {
-    height: 860px;
-    position: relative;
-    width: 90%; }
-    section #bienvenida-hab section:first-child span {
-      left: 150px; }
-    section #bienvenida-hab section:first-child p {
-      margin: 30px 110px 0 0;
-      width: 30%; }
-    section #bienvenida-hab section:nth-child(2) {
-      height: 540px;
-      position: relative; }
-      section #bienvenida-hab section:nth-child(2) section {
-        height: auto;
-        position: absolute;
-        width: auto; }
-        section #bienvenida-hab section:nth-child(2) section:first-child {
-          left: 0;
-          width: 53%; }
-          section #bienvenida-hab section:nth-child(2) section:first-child span {
-            bottom: auto;
-            height: 110px;
-            left: 0;
-            right: auto;
-            top: 0;
-            width: 210px; }
-          section #bienvenida-hab section:nth-child(2) section:first-child img {
-            height: 250px;
-            margin: 0 24px;
-            width: 400px; }
-        section #bienvenida-hab section:nth-child(2) section:nth-child(2) {
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 2; }
-          section #bienvenida-hab section:nth-child(2) section:nth-child(2) span {
-            height: 110px;
-            left: auto;
-            right: 70px;
-            width: 163px; }
-          section #bienvenida-hab section:nth-child(2) section:nth-child(2) img {
-            width: 60%; }
-        section #bienvenida-hab section:nth-child(2) section:last-child {
-          right: 0;
-          top: 110px; }
-          section #bienvenida-hab section:nth-child(2) section:last-child span {
-            bottom: auto;
-            height: 110px;
-            left: auto;
-            right: 0;
-            top: 0;
-            width: 210px; }
-          section #bienvenida-hab section:nth-child(2) section:last-child img {
-            float: right;
-            height: 220px;
-            margin: 0 24px;
-            width: 400px; }
-    section #bienvenida-hab section:last-child {
-      bottom: 0;
-      position: absolute;
-      width: 33%; }
-  section #contenedor-habitaciones {
-    height: 450px; }
-    section #contenedor-habitaciones section:first-child {
-      height: 288px; }
-      section #contenedor-habitaciones section:first-child span {
-        bottom: 0; }
-      section #contenedor-habitaciones section:first-child img {
-        float: left; }
-    section #contenedor-habitaciones section:last-child {
-      right: 50px;
-      width: 35%; }
-  section #hojas span {
-    right: -139px;
+  section #contenedor-habitaciones section.min-habitacion {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-content: space-between;
+    width: 85%; }
+    section #contenedor-habitaciones section.min-habitacion section:first-child span {
+      bottom: 48px;
+      right: -8px; }
+    section #contenedor-habitaciones section.min-habitacion section:first-child img {
+      width: 90%; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child {
+      order: 2; }
+      section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
+        right: auto; }
+    section #contenedor-habitaciones section.min-habitacion:last-child section:first-child {
+      order: 2; }
+      section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
+        right: auto; }
+  section #hojas span:first-child {
     top: 760px; }
-    section #hojas span img {
-      width: 40%; }
-  section #hojas span.left {
-    left: -30px;
-    top: 780px; }
-    section #hojas span.left img {
-      width: 50%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1200px; }
-    section #hojas span#morada img {
+  section #hojas span:nth-child(2) {
+    top: 790px; }
+  section #hojas span:nth-child(3) {
+    top: 920px; }
+  section #hojas span:nth-child(4) {
+    top: 870px; }
+  section #hojas span:nth-child(5) {
+    left: -90px;
+    top: 1290px; }
+    section #hojas span:nth-child(5) img {
+      width: 25%; }
+  section #hojas span:nth-child(6) {
+    right: -70px;
+    top: 1510px; }
+    section #hojas span:nth-child(6) img {
       width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 1580px; }
-  section #hojas span#hoja-der-slogan {
-    top: 1780px; }
-  section #hojas span#hoja-pino-slogan {
-    left: -10px;
-    top: 1880px; } }
+  section #hojas span:last-child {
+    top: 1600px; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-hab::after {
     left: -155px; }
+  section #banner-principal-hab section.contenido-texto-banner span {
+    width: 7%; }
   section #bienvenida-hab {
+    height: auto;
+    margin: 0 auto 130px;
     width: 80%; }
-    section #bienvenida-hab section p {
-      font-size: 120%; }
-    section #bienvenida-hab section:first-child {
-      margin: 0 auto;
-      width: 90%; }
-      section #bienvenida-hab section:first-child p {
-        margin-right: 60px;
-        width: 40%; }
-  section #contenedor-habitaciones {
-    height: 490px;
-    width: 80%; }
-    section #contenedor-habitaciones section p {
-      font-size: 120%; }
-    section #contenedor-habitaciones section:first-child {
-      height: 300px;
-      width: 40%; }
-    section #contenedor-habitaciones section:last-child {
-      margin-right: 170px;
-      top: 190px;
-      width: 25%; }
-  section #hojas span {
-    top: 1050px; }
-  section #hojas span.left {
+    section #bienvenida-hab section {
+      padding: 80px 0; }
+  section #contenedor-habitaciones section.min-habitacion {
+    height: auto; }
+    section #contenedor-habitaciones section.min-habitacion section:first-child {
+      height: 440px; }
+      section #contenedor-habitaciones section.min-habitacion section:first-child span {
+        bottom: 90px;
+        right: 22px; }
+      section #contenedor-habitaciones section.min-habitacion section:first-child img {
+        width: 80%; }
+  section #hojas span:first-child {
+    left: 100px;
+    top: 660px; }
+  section #hojas span:nth-child(2) {
+    right: -130px;
+    top: 690px; }
+  section #hojas span:nth-child(3) {
+    left: 130px;
+    top: 810px; }
+  section #hojas span:nth-child(4) {
+    right: 0;
+    top: 770px; }
+  section #hojas span:nth-child(5) {
     left: -10px;
-    top: 1160px; }
-    section #hojas span.left img {
-      width: 50%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1540px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 2130px; }
-  section #hojas span#hoja-der-slogan {
-    right: -50px;
-    top: 2420px; }
-    section #hojas span#hoja-der-slogan img {
-      width: 70%; }
-  section #hojas span#hoja-pino-slogan {
-    left: -20px;
-    top: 2420px; }
-    section #hojas span#hoja-pino-slogan img {
-      width: 70%; } }
-@media all and (min-width: 1440px) {
-  section #hojas span {
-    top: 680px; }
-  section #hojas span.left {
-    top: 880px; }
-    section #hojas span.left img {
-      width: 50%; }
-  section #hojas span#morada {
-    top: 1100px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 1660px; }
-  section #hojas span#hoja-der-slogan {
-    top: 1850px; }
-  section #hojas span#hoja-pino-slogan {
-    top: 1850px; } }
+    top: 1290px; }
+    section #hojas span:nth-child(5) img {
+      width: 15%; }
+  section #hojas span:nth-child(6) {
+    top: 1670px; }
+  section #hojas span:last-child {
+    top: 1690px; } }
 * {
   padding: 0;
   margin: 0;
