@@ -1,0 +1,480 @@
+@import "../helpers/fonts"
+@import "../helpers/normalize"
+@import "../helpers/bourbon"
+@import "../helpers/mixins"
+
+
+
+$lila: #584880
+$morado: #470052
+$verde-claro: #33CC99
+$verde-oscuro: #038A6E
+$verde-medio: #00A06D
+$gris-texto: #333333
+
+$font-nav: 'Arsenal-Italic'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+html
+  box-sizing: border-box
+  overflow-x: hidden
+
+html, body
+  width: 100%
+  height: 100%
+
+h1
+  margin: 0
+
+h2
+  font-family: 'madame'
+  font-size: 370%
+p
+  font-family: 'Arsenal-Regular'
+
+.desktop, .tablet
+  display: none
+
+section
+  position: relative
+  h2
+    color: $morado
+  #banner-principal-hab
+    background-image: url("../images/fotografia/bg-principal-hab.jpg")
+    background-attachment: fixed
+    @include backgroundImage
+    background-size: cover
+    height: 100vh
+    margin: 0
+    position: relative
+    z-index: 1
+    aside
+      @include flexBox
+      flex-flow: row wrap
+      height: auto
+      position: fixed
+      right: 0
+      top: 25%
+      transform: translateY(-25%)
+      width: 60px
+      z-index: 3
+      a:hover
+        border: 0
+        padding: 0
+      a
+        img
+          display: block
+          margin: 7px auto 0
+          width: 70%
+    section.contenido-texto-banner
+      @include centrarVH
+      height: auto
+      position: absolute
+      width: 100%
+      span
+        background-image: url("../images/icono-finestra-blanco.png")
+        @include backgroundImage
+        @include centrarHorizontalmente
+        bottom: -80px
+        height: 90px
+        position: absolute
+        width: 20%
+        z-index: 1
+      section
+        margin: 0 auto
+        width: 80%
+        h2
+          color: #fff
+          font-size: 470%
+          line-height: 0.8
+          text-align: center
+    a
+      span
+        background-image: url("../images/icono-abajo.png")
+        bottom: 40px
+        display: block
+        height: 48px
+        @include backgroundImage
+        @include centrarHorizontalmente
+        position: absolute
+        width: 65px
+  #banner-principal-hab::before
+    background-color: rgba(71, 0, 82, 0.4)
+    content: ''
+    display: block
+    height: 100%
+  #banner-principal-hab::after
+    content: url("../images/cenefa.png")
+    bottom: -5px
+    left: -733px
+    position: absolute
+    width: 100%
+  #bienvenida-hab
+    height: auto
+    margin: 0 auto
+    width: 80%
+    section
+      padding: 20px 0
+      h2
+        color: $gris-texto
+        font-size: 180%
+        margin: 30px auto
+        text-align: center
+  #contenedor-habitaciones
+    height: auto
+    margin: 70px auto
+    width: 80%
+    section.min-habitacion
+      margin-bottom: 30px
+      position: relative
+      h2
+        font-size: 200%
+        text-align: center
+      p
+        line-height: 1.5
+        font-size: 100%
+        text-align: center
+      a
+        @include verMas
+      section
+        &:first-child
+          height: 250px
+          z-index: 1
+          span
+            background-color: $lila
+            bottom: 30px
+            display: block
+            height: 50px
+            @include centrarHorizontalmente
+            position: absolute
+            width: 230px
+          img
+            display: block
+            margin: 0 auto
+            position: relative
+            width: 100%
+
+    section.min-habitacion:nth-child(2)
+      section
+        &:first-child
+          span
+            background-color: $verde-oscuro
+    section.min-habitacion:nth-child(3)
+      section
+        &:first-child
+          span
+            background-color: $verde-medio
+    section.min-habitacion:nth-child(4)
+      section
+        &:first-child
+          span
+            background-color: $verde-claro
+  #hojas
+    span
+      position: absolute
+      right: -260px
+      &:first-child , &:nth-child(2)
+        top: 420px
+        img
+          width: 20%
+      &:first-child , &:nth-child(3)
+        right: auto
+        left: 0
+      &:nth-child(3) , &:nth-child(4)
+        top: 560px
+        img
+          width: 30%
+      &:first-child
+        top: 410px
+      &:nth-child(4)
+        top: 490px
+      &:nth-child(5)
+        left: -170px
+        top: 1110px
+        img
+          width: 30%
+      &:nth-child(6)
+        right: -170px
+        top: 1330px
+        img
+          width: 80%
+      &:last-child
+        top: 1280px
+        img
+          width: 30%
+
+@media all and (min-width: 360px)
+  section
+    #hojas
+      span
+        &:first-child
+          top: 600px
+        &:nth-child(2)
+          top: 620px
+        &:nth-child(3)
+          top: 700px
+        &:nth-child(4)
+          top: 660px
+        &:nth-child(5)
+          left: -170px
+          top: 1380px
+        &:nth-child(6)
+          right: -170px
+          top: 1630px
+        &:last-child
+          top: 1780px
+
+
+@media all and (min-width: 480px)
+  section
+    #banner-principal-hab
+      a
+        span
+          bottom: 30px
+    #banner-principal-hab::after
+      left: -663px
+    #bienvenida-hab
+      section:nth-child(2)
+        section
+          span
+            right: 43px
+    #contenedor-habitaciones
+      section.min-habitacion
+        section
+          &:first-child
+            img
+              width: 80%
+            span
+              bottom: 15px
+              left: auto
+              right: -20px
+              transform: none
+    #hojas
+      span
+        &:first-child
+          top: 270px
+        &:nth-child(2)
+          top: 250px
+        &:nth-child(3)
+          top: 370px
+        &:nth-child(4)
+          top: 230px
+        &:nth-child(5)
+          top: 780px
+        &:nth-child(6)
+          right: -170px
+          top: 800px
+        &:last-child
+          top: 810px
+
+
+
+//TABLETS
+@media all and (min-width: 737px)
+  .desktop
+    display: none
+  .tablet
+    display: block
+
+
+  section
+    #banner-principal-hab::after
+      left: -480px
+    #banner-principal-hab
+      section.contenido-texto-banner
+        span
+          bottom: -35px
+          width: 15%
+        section
+          padding: 60px 20px
+          width: 60%
+          p
+            font-size: 130%
+    #bienvenida-hab
+      section
+        h2
+          font-size: 250%
+          width: 60%
+
+    #contenedor-habitaciones
+      margin: 70px auto 100px
+      section.min-habitacion
+        margin: 0 auto 30px
+        width: 70%
+        h2
+          font-size: 250%
+        p
+          font-size: 120%
+        section
+          &:first-child
+            height: 320px
+            img
+              width: 100%
+
+    #hojas
+      span
+        &:first-child
+          left: 30px
+          top: 980px
+          img
+            width: 30%
+        &:nth-child(2)
+          right: -180px
+          top: 1000px
+          img
+            width: 30%
+        &:nth-child(3)
+          top: 1100px
+          img
+            width: 50%
+        &:nth-child(4)
+          right: -180px
+          top: 1030px
+          img
+            width: 50%
+        &:nth-child(5)
+          left: -60px
+          top: 1830px
+          img
+            width: 25%
+        &:nth-child(6)
+          right: -100px
+          top: 2200px
+        &:last-child
+          right: auto
+          top: 2480px
+
+
+
+@media all and (min-width: 1024px)
+  .desktop
+    display: block
+  .tablet
+    display: none
+
+
+  section
+    #banner-principal-hab::after
+      left: -361px
+    #banner-principal-hab
+      section.contenido-texto-banner
+        section
+          width: 40%
+        span
+          bottom: -20px
+          width: 10%
+        section::after
+          content: url("../images/deco-titulos.png")
+          bottom: 40px
+          @include centrarHorizontalmente
+          position: absolute
+      aside
+        top: 50%
+        transform: translateY(-50%)
+    #contenedor-habitaciones
+      section.min-habitacion
+        @include flexBox
+        justify-content: space-between
+        width: 85%
+        section
+          &:first-child
+            span
+              bottom: 48px
+              right: -8px
+            img
+              width: 90%
+        &:nth-child(2)
+          section
+            &:first-child
+              order: 2
+              span
+                right: auto
+        &:last-child
+          section
+            &:first-child
+              order: 2
+              span
+                right: auto
+    #hojas
+      span
+        &:first-child
+          top: 760px
+        &:nth-child(2)
+          top: 790px
+        &:nth-child(3)
+          top: 920px
+        &:nth-child(4)
+          top: 870px
+        &:nth-child(5)
+          left: -90px
+          top: 1290px
+          img
+            width: 25%
+        &:nth-child(6)
+          right: -70px
+          top: 1510px
+          img
+            width: 100%
+        &:last-child
+          top: 1600px
+
+
+//DESKTOP
+@media all and (min-width:1124px)
+
+  section
+    #banner-principal-hab::after
+      left: -155px
+    #banner-principal-hab
+      section.contenido-texto-banner
+        span
+          width: 7%
+    #bienvenida-hab
+      height: auto
+      margin: 0 auto 130px
+      width: 80%
+      section
+        padding: 80px 0
+    #contenedor-habitaciones
+      section.min-habitacion
+        height: auto
+        section
+          &:first-child
+            height: 440px
+            span
+              bottom: 90px
+              right: 22px
+            img
+              width: 80%
+    #hojas
+      span
+        &:first-child
+          left: 100px
+          top: 660px
+        &:nth-child(2)
+          right: -130px
+          top: 690px
+        &:nth-child(3)
+          left: 130px
+          top: 810px
+        &:nth-child(4)
+          right: 0
+          top: 770px
+        &:nth-child(5)
+          left: -10px
+          top: 1290px
+          img
+            width: 15%
+        &:nth-child(6)
+          top: 1670px
+        &:last-child
+          top: 1690px
+
+
+
+//DESKTOP Hi-Res
+@media all and (min-width:1440px)

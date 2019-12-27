@@ -4,8 +4,6 @@
 		navToggle: document.querySelector('.nav-toggle'),
 		nav: document.getElementById('navM'),
 		velo: document.getElementById('contenedor-velo'),
-
-
 		doToggle: function(e) {
 			e.preventDefault();
 			this.navToggle.classList.toggle('expanded');
@@ -14,20 +12,18 @@
 		}
 	};
 
-	hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+	hamburger.navToggle.addEventListener('click',function(e) { hamburger.doToggle(e); });
 
 	/*Botones Links*/
 	$('a[href^="#"]').on('click', function(event) {
-
-	    var target = $(this.getAttribute('href'));
-
-	    if( target.length ) {
-	        event.preventDefault();
-	        $('html, body').stop().animate({
-	            scrollTop: target.offset().top
-	        }, 1000);
-	      }
-	    });
+  	var target = $(this.getAttribute('href'));
+    if( target.length ) {
+    	event.preventDefault();
+	    $('html, body').stop().animate({
+	    scrollTop: target.offset().top
+	    }, 1000);
+	   }
+	 });
 
 	/*Menu oculto*/
 	$("#btn-lista-hotel").click(function(){

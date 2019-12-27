@@ -1,7 +1,7 @@
-@import "fonts"
-@import "normalize"
-@import "bourbon"
-@import "mixins"
+@import "../helpers/fonts"
+@import "../helpers/normalize"
+@import "../helpers/bourbon"
+@import "../helpers/mixins"
 
 
 
@@ -13,19 +13,6 @@ $verde-medio: #00A06D
 $gris-texto: #333333
 
 $font-nav: 'Arsenal-Italic'
-
-*
-  padding: 0
-  margin: 0
-  box-sizing: border-box
-
-html
-  box-sizing: border-box
-  overflow-x: hidden
-
-html, body
-  width: 100%
-  height: 100%
 
 h1
   margin: 0
@@ -43,8 +30,8 @@ section
   position: relative
   h2
     color: $morado
-  #banner-principal-hab
-    background-image: url("../images/fotografia/bg-principal-hab.jpg")
+  #banner-principal-hab-general
+    background-image: url("../images/fotografia/bg-luna-piena.jpg")
     background-attachment: fixed
     @include backgroundImage
     background-size: cover
@@ -102,12 +89,12 @@ section
         @include centrarHorizontalmente
         position: absolute
         width: 65px
-  #banner-principal-hab::before
+  #banner-principal-hab-general::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
     display: block
     height: 100%
-  #banner-principal-hab::after
+  #banner-principal-hab-general::after
     content: url("../images/cenefa.png")
     bottom: -5px
     left: -733px
@@ -119,60 +106,128 @@ section
     width: 80%
     section
       padding: 20px 0
+      z-index: 1
       h2
         color: $gris-texto
         font-size: 180%
         margin: 30px auto
         text-align: center
-  #contenedor-habitaciones
+  #equipamiento
     height: auto
-    margin: 70px auto
-    width: 80%
-    section.min-habitacion
-      margin-bottom: 30px
-      position: relative
-      h2
-        font-size: 200%
-        text-align: center
-      p
-        line-height: 1.5
-        font-size: 100%
-        text-align: center
-      a
-        @include verMas
+    h2
+      line-height: .7
+      margin: 40px auto
+      text-align: center
+      width: 80%
+    section
+      img
+        width: 100%
       section
-        &:first-child
-          height: 250px
-          z-index: 1
-          span
-            background-color: $lila
-            bottom: 30px
-            display: block
-            height: 50px
-            @include centrarHorizontalmente
-            position: absolute
-            width: 230px
-          img
-            display: block
+        ul.listado-equipamiento
+          list-style: none
+          li
+            line-height: 2.5
             margin: 0 auto
             position: relative
-            width: 100%
+            width: 50%
+          li::before
+            content: url("../images/bullet.png")
+            left: -34px
+            position: absolute
+            top: 6px
+          &:first-child
+            background-color: $lila
+            padding: 30px
+            li
+              color: #fff
+        ul.listado-equipamiento:nth-child(2)
+          padding: 30px
+        ul.listado-equipamiento:last-child
+          border: 3px solid $verde-claro
+          padding: 30px
+  #galeria::before
+    border-bottom: 61px solid $verde-oscuro
+    border-right: 553px solid transparent
+    content: ''
+    height: 0
+    left: 0
+    position: absolute
+    top: -60px
+    width: 0
+  #galeria
+    @include flexBox
+    flex-flow: row wrap
+    margin: 100px auto
+    position: relative
+    section:first-child
+      background-color: $verde-oscuro
+      @include flexBox
+      flex-flow: row wrap
+      height: 380px
+      width: 100%
+      section:first-child
+        background-color: #fff
+        box-shadow: 2px 2px 10px $gris-texto
+        bottom: -38px
+        height: 240px
+        margin: 0 auto
+        order: 2
+        position: absolute
+        width: 74%
+        z-index: 2
+      section:last-child
+        position: absolute
+        p
+          color: #fff
+          font-size: 115%
+          margin: 40px auto
+          text-align: center
+          width: 70%
+    section:last-child
+      width: 100%
+      div.img-galeria-hab
+        background-image: url("../images/fotografia/bg-principal-hab.jpg")
+        @include backgroundImage
+        background-size: cover
+        height: 500px
+        width: 100%
+      .owl-theme .owl-nav
+        margin: 0
+        position: absolute
+        @include centrarVerticalmente
+        width: 100%
+      .owl-theme
+        .owl-nav
+          button
+            width: 47%
+            span.btn-anterior
+              background-image: url("../images/anterior.png")
+              @include backgroundImage
+              display: block
+              height: 30px
+              width: 30px
+            span.btn-siguiente
+              background-image: url("../images/siguiente.png")
+              @include backgroundImage
+              display: block
+              float: right
+              height: 30px
+              width: 30px
+          [class*=owl-]:hover
+            background: transparent
+        .owl-dots
+          display: none
+  #formulario
+    height: auto
+    margin: 0 auto 100px
+    width: 80%
+    h2
+      text-align: center
+    p
+      text-align: center
 
-    section.min-habitacion:nth-child(2)
-      section
-        &:first-child
-          span
-            background-color: $verde-oscuro
-    section.min-habitacion:nth-child(3)
-      section
-        &:first-child
-          span
-            background-color: $verde-medio
-    section.min-habitacion:nth-child(4)
-      section
-        &:first-child
-          span
-            background-color: $verde-claro
+
+
   #hojas
     span
       position: absolute
@@ -231,28 +286,18 @@ section
 
 @media all and (min-width: 480px)
   section
-    #banner-principal-hab
+    #banner-principal-hab-general
       a
         span
           bottom: 30px
-    #banner-principal-hab::after
+    #banner-principal-hab-general::after
       left: -663px
     #bienvenida-hab
       section:nth-child(2)
         section
           span
             right: 43px
-    #contenedor-habitaciones
-      section.min-habitacion
-        section
-          &:first-child
-            img
-              width: 80%
-            span
-              bottom: 15px
-              left: auto
-              right: -20px
-              transform: none
+    #equipamiento
     #hojas
       span
         &:first-child
@@ -282,9 +327,9 @@ section
 
 
   section
-    #banner-principal-hab::after
+    #banner-principal-hab-general::after
       left: -480px
-    #banner-principal-hab
+    #banner-principal-hab-general
       section.contenido-texto-banner
         span
           bottom: -35px
@@ -300,20 +345,8 @@ section
           font-size: 250%
           width: 60%
 
-    #contenedor-habitaciones
+    #equipamiento
       margin: 70px auto 100px
-      section.min-habitacion
-        margin: 0 auto 30px
-        width: 70%
-        h2
-          font-size: 250%
-        p
-          font-size: 120%
-        section
-          &:first-child
-            height: 320px
-            img
-              width: 100%
 
     #hojas
       span
@@ -358,9 +391,9 @@ section
 
 
   section
-    #banner-principal-hab::after
+    #banner-principal-hab-general::after
       left: -361px
-    #banner-principal-hab
+    #banner-principal-hab-general
       section.contenido-texto-banner
         section
           width: 40%
@@ -375,31 +408,7 @@ section
       aside
         top: 50%
         transform: translateY(-50%)
-    #bienvenida-hab
-    #contenedor-habitaciones
-      section.min-habitacion
-        @include flexBox
-        justify-content: space-between
-        width: 85%
-        section
-          &:first-child
-            span
-              bottom: 48px
-              right: -8px
-            img
-              width: 90%
-        &:nth-child(2)
-          section
-            &:first-child
-              order: 2
-              span
-                right: auto
-        &:last-child
-          section
-            &:first-child
-              order: 2
-              span
-                right: auto
+    #equipamiento
     #hojas
       span
         &:first-child
@@ -428,9 +437,9 @@ section
 @media all and (min-width:1124px)
 
   section
-    #banner-principal-hab::after
+    #banner-principal-hab-general::after
       left: -155px
-    #banner-principal-hab
+    #banner-principal-hab-general
       section.contenido-texto-banner
         span
           width: 7%
@@ -440,17 +449,7 @@ section
       width: 80%
       section
         padding: 80px 0
-    #contenedor-habitaciones
-      section.min-habitacion
-        height: auto
-        section
-          &:first-child
-            height: 440px
-            span
-              bottom: 90px
-              right: 22px
-            img
-              width: 80%
+    #equipamiento
     #hojas
       span
         &:first-child
@@ -479,6 +478,3 @@ section
 
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)
-
-  section
-    #hojas

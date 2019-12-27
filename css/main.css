@@ -762,6 +762,614 @@ section {
     top: 1670px; }
   section #hojas span:last-child {
     top: 1690px; } }
+@font-face {
+  font-family: 'madame';
+  src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Italic';
+  src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
+    outline-width: 0; }
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template, [hidden] {
+  display: none; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  font-family: "madame";
+  font-size: 370%; }
+
+p {
+  font-family: "Arsenal-Regular"; }
+
+.desktop, .tablet {
+  display: none; }
+
+section {
+  position: relative; }
+  section h2 {
+    color: #470052; }
+  section #banner-principal-hab-general {
+    background-image: url("../images/fotografia/bg-luna-piena.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    z-index: 1; }
+    section #banner-principal-hab-general aside {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      flex-flow: row wrap;
+      height: auto;
+      position: fixed;
+      right: 0;
+      top: 25%;
+      transform: translateY(-25%);
+      width: 60px;
+      z-index: 3; }
+      section #banner-principal-hab-general aside a:hover {
+        border: 0;
+        padding: 0; }
+      section #banner-principal-hab-general aside a img {
+        display: block;
+        margin: 7px auto 0;
+        width: 70%; }
+    section #banner-principal-hab-general section.contenido-texto-banner {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      position: absolute;
+      width: 100%; }
+      section #banner-principal-hab-general section.contenido-texto-banner span {
+        background-image: url("../images/icono-finestra-blanco.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -80px;
+        height: 90px;
+        position: absolute;
+        width: 20%;
+        z-index: 1; }
+      section #banner-principal-hab-general section.contenido-texto-banner section {
+        margin: 0 auto;
+        width: 80%; }
+        section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+          color: #fff;
+          font-size: 470%;
+          line-height: 0.8;
+          text-align: center; }
+    section #banner-principal-hab-general a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 40px;
+      display: block;
+      height: 48px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px; }
+  section #banner-principal-hab-general::before {
+    background-color: rgba(71, 0, 82, 0.4);
+    content: "";
+    display: block;
+    height: 100%; }
+  section #banner-principal-hab-general::after {
+    content: url("../images/cenefa.png");
+    bottom: -5px;
+    left: -733px;
+    position: absolute;
+    width: 100%; }
+  section #bienvenida-hab {
+    height: auto;
+    margin: 0 auto;
+    width: 80%; }
+    section #bienvenida-hab section {
+      padding: 20px 0;
+      z-index: 1; }
+      section #bienvenida-hab section h2 {
+        color: #333333;
+        font-size: 180%;
+        margin: 30px auto;
+        text-align: center; }
+  section #equipamiento {
+    height: auto; }
+    section #equipamiento h2 {
+      line-height: 0.7;
+      margin: 40px auto;
+      text-align: center;
+      width: 80%; }
+    section #equipamiento section img {
+      width: 100%; }
+    section #equipamiento section section ul.listado-equipamiento {
+      list-style: none; }
+      section #equipamiento section section ul.listado-equipamiento li {
+        line-height: 2.5;
+        margin: 0 auto;
+        position: relative;
+        width: 50%; }
+      section #equipamiento section section ul.listado-equipamiento li::before {
+        content: url("../images/bullet.png");
+        left: -34px;
+        position: absolute;
+        top: 6px; }
+      section #equipamiento section section ul.listado-equipamiento:first-child {
+        background-color: #584880;
+        padding: 30px; }
+        section #equipamiento section section ul.listado-equipamiento:first-child li {
+          color: #fff; }
+    section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
+      padding: 30px; }
+    section #equipamiento section section ul.listado-equipamiento:last-child {
+      border: 3px solid #33CC99;
+      padding: 30px; }
+  section #galeria::before {
+    border-bottom: 61px solid #038A6E;
+    border-right: 553px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -60px;
+    width: 0; }
+  section #galeria {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 100px auto;
+    position: relative; }
+    section #galeria section:first-child {
+      background-color: #038A6E;
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      flex-flow: row wrap;
+      height: 380px;
+      width: 100%; }
+      section #galeria section:first-child section:first-child {
+        background-color: #fff;
+        box-shadow: 2px 2px 10px #333333;
+        bottom: -38px;
+        height: 240px;
+        margin: 0 auto;
+        order: 2;
+        position: absolute;
+        width: 74%;
+        z-index: 2; }
+      section #galeria section:first-child section:last-child {
+        position: absolute; }
+        section #galeria section:first-child section:last-child p {
+          color: #fff;
+          font-size: 115%;
+          margin: 40px auto;
+          text-align: center;
+          width: 70%; }
+    section #galeria section:last-child {
+      width: 100%; }
+      section #galeria section:last-child div.img-galeria-hab {
+        background-image: url("../images/fotografia/bg-principal-hab.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        background-size: cover;
+        height: 500px;
+        width: 100%; }
+      section #galeria section:last-child .owl-theme .owl-nav {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%; }
+      section #galeria section:last-child .owl-theme .owl-nav button {
+        width: 47%; }
+        section #galeria section:last-child .owl-theme .owl-nav button span.btn-anterior {
+          background-image: url("../images/anterior.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 3px;
+          display: block;
+          height: 30px;
+          width: 30px; }
+        section #galeria section:last-child .owl-theme .owl-nav button span.btn-siguiente {
+          background-image: url("../images/siguiente.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 3px;
+          display: block;
+          float: right;
+          height: 30px;
+          width: 30px; }
+      section #galeria section:last-child .owl-theme .owl-nav [class*=owl-]:hover {
+        background: transparent; }
+      section #galeria section:last-child .owl-theme .owl-dots {
+        display: none; }
+  section #formulario {
+    height: auto;
+    margin: 0 auto 100px;
+    width: 80%; }
+    section #formulario h2 {
+      text-align: center; }
+    section #formulario p {
+      text-align: center; }
+  section #hojas span {
+    position: absolute;
+    right: -260px; }
+    section #hojas span:first-child, section #hojas span:nth-child(2) {
+      top: 420px; }
+      section #hojas span:first-child img, section #hojas span:nth-child(2) img {
+        width: 20%; }
+    section #hojas span:first-child, section #hojas span:nth-child(3) {
+      right: auto;
+      left: 0; }
+    section #hojas span:nth-child(3), section #hojas span:nth-child(4) {
+      top: 560px; }
+      section #hojas span:nth-child(3) img, section #hojas span:nth-child(4) img {
+        width: 30%; }
+    section #hojas span:first-child {
+      top: 410px; }
+    section #hojas span:nth-child(4) {
+      top: 490px; }
+    section #hojas span:nth-child(5) {
+      left: -170px;
+      top: 1110px; }
+      section #hojas span:nth-child(5) img {
+        width: 30%; }
+    section #hojas span:nth-child(6) {
+      right: -170px;
+      top: 1330px; }
+      section #hojas span:nth-child(6) img {
+        width: 80%; }
+    section #hojas span:last-child {
+      top: 1280px; }
+      section #hojas span:last-child img {
+        width: 30%; }
+
+@media all and (min-width: 360px) {
+  section #hojas span:first-child {
+    top: 600px; }
+  section #hojas span:nth-child(2) {
+    top: 620px; }
+  section #hojas span:nth-child(3) {
+    top: 700px; }
+  section #hojas span:nth-child(4) {
+    top: 660px; }
+  section #hojas span:nth-child(5) {
+    left: -170px;
+    top: 1380px; }
+  section #hojas span:nth-child(6) {
+    right: -170px;
+    top: 1630px; }
+  section #hojas span:last-child {
+    top: 1780px; } }
+@media all and (min-width: 480px) {
+  section #banner-principal-hab-general a span {
+    bottom: 30px; }
+  section #banner-principal-hab-general::after {
+    left: -663px; }
+  section #bienvenida-hab section:nth-child(2) section span {
+    right: 43px; }
+  section #hojas span:first-child {
+    top: 270px; }
+  section #hojas span:nth-child(2) {
+    top: 250px; }
+  section #hojas span:nth-child(3) {
+    top: 370px; }
+  section #hojas span:nth-child(4) {
+    top: 230px; }
+  section #hojas span:nth-child(5) {
+    top: 780px; }
+  section #hojas span:nth-child(6) {
+    right: -170px;
+    top: 800px; }
+  section #hojas span:last-child {
+    top: 810px; } }
+@media all and (min-width: 737px) {
+  .desktop {
+    display: none; }
+
+  .tablet {
+    display: block; }
+
+  section #banner-principal-hab-general::after {
+    left: -480px; }
+  section #banner-principal-hab-general section.contenido-texto-banner span {
+    bottom: -35px;
+    width: 15%; }
+  section #banner-principal-hab-general section.contenido-texto-banner section {
+    padding: 60px 20px;
+    width: 60%; }
+    section #banner-principal-hab-general section.contenido-texto-banner section p {
+      font-size: 130%; }
+  section #bienvenida-hab section h2 {
+    font-size: 250%;
+    width: 60%; }
+  section #equipamiento {
+    margin: 70px auto 100px; }
+  section #hojas span:first-child {
+    left: 30px;
+    top: 980px; }
+    section #hojas span:first-child img {
+      width: 30%; }
+  section #hojas span:nth-child(2) {
+    right: -180px;
+    top: 1000px; }
+    section #hojas span:nth-child(2) img {
+      width: 30%; }
+  section #hojas span:nth-child(3) {
+    top: 1100px; }
+    section #hojas span:nth-child(3) img {
+      width: 50%; }
+  section #hojas span:nth-child(4) {
+    right: -180px;
+    top: 1030px; }
+    section #hojas span:nth-child(4) img {
+      width: 50%; }
+  section #hojas span:nth-child(5) {
+    left: -60px;
+    top: 1830px; }
+    section #hojas span:nth-child(5) img {
+      width: 25%; }
+  section #hojas span:nth-child(6) {
+    right: -100px;
+    top: 2200px; }
+  section #hojas span:last-child {
+    right: auto;
+    top: 2480px; } }
+@media all and (min-width: 1024px) {
+  .desktop {
+    display: block; }
+
+  .tablet {
+    display: none; }
+
+  section #banner-principal-hab-general::after {
+    left: -361px; }
+  section #banner-principal-hab-general section.contenido-texto-banner section {
+    width: 40%; }
+  section #banner-principal-hab-general section.contenido-texto-banner span {
+    bottom: -20px;
+    width: 10%; }
+  section #banner-principal-hab-general section.contenido-texto-banner section::after {
+    content: url("../images/deco-titulos.png");
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; }
+  section #banner-principal-hab-general aside {
+    top: 50%;
+    transform: translateY(-50%); }
+  section #hojas span:first-child {
+    top: 760px; }
+  section #hojas span:nth-child(2) {
+    top: 790px; }
+  section #hojas span:nth-child(3) {
+    top: 920px; }
+  section #hojas span:nth-child(4) {
+    top: 870px; }
+  section #hojas span:nth-child(5) {
+    left: -90px;
+    top: 1290px; }
+    section #hojas span:nth-child(5) img {
+      width: 25%; }
+  section #hojas span:nth-child(6) {
+    right: -70px;
+    top: 1510px; }
+    section #hojas span:nth-child(6) img {
+      width: 100%; }
+  section #hojas span:last-child {
+    top: 1600px; } }
+@media all and (min-width: 1124px) {
+  section #banner-principal-hab-general::after {
+    left: -155px; }
+  section #banner-principal-hab-general section.contenido-texto-banner span {
+    width: 7%; }
+  section #bienvenida-hab {
+    height: auto;
+    margin: 0 auto 130px;
+    width: 80%; }
+    section #bienvenida-hab section {
+      padding: 80px 0; }
+  section #hojas span:first-child {
+    left: 100px;
+    top: 660px; }
+  section #hojas span:nth-child(2) {
+    right: -130px;
+    top: 690px; }
+  section #hojas span:nth-child(3) {
+    left: 130px;
+    top: 810px; }
+  section #hojas span:nth-child(4) {
+    right: 0;
+    top: 770px; }
+  section #hojas span:nth-child(5) {
+    left: -10px;
+    top: 1290px; }
+    section #hojas span:nth-child(5) img {
+      width: 15%; }
+  section #hojas span:nth-child(6) {
+    top: 1670px; }
+  section #hojas span:last-child {
+    top: 1690px; } }
 * {
   padding: 0;
   margin: 0;
