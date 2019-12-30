@@ -144,7 +144,10 @@ section
           padding: 30px
         ul.listado-equipamiento:last-child
           border: 3px solid $verde-claro
+          border-radius: 10px
+          margin-left: 40px
           padding: 30px
+          width: 90%
   #galeria::before
     border-bottom: 61px solid $verde-oscuro
     border-right: 553px solid transparent
@@ -157,7 +160,7 @@ section
   #galeria
     @include flexBox
     flex-flow: row wrap
-    margin: 100px auto
+    margin: 100px auto 70px
     position: relative
     section:first-child
       background-color: $verde-oscuro
@@ -169,12 +172,24 @@ section
         background-color: #fff
         box-shadow: 2px 2px 10px $gris-texto
         bottom: -38px
+        border-radius: 5px
+        flex-direction: column
         height: 240px
         margin: 0 auto
         order: 2
         position: absolute
         width: 74%
         z-index: 2
+        h2
+          font-size: 240%
+          line-height: .7
+          text-align: center
+        p
+          font-size: 150%
+          margin: 10px auto
+          text-align: center
+        a
+          @include verMas
       section:last-child
         position: absolute
         p
@@ -188,6 +203,7 @@ section
       div.img-galeria-hab
         background-image: url("../images/fotografia/bg-principal-hab.jpg")
         @include backgroundImage
+        margin: 0
         background-size: cover
         height: 500px
         width: 100%
@@ -199,20 +215,17 @@ section
       .owl-theme
         .owl-nav
           button
-            width: 47%
+            width: 45%
+            span
+              display: block
+              height: 50px
+              @include backgroundImage
+              width: 50px
             span.btn-anterior
               background-image: url("../images/anterior.png")
-              @include backgroundImage
-              display: block
-              height: 30px
-              width: 30px
             span.btn-siguiente
               background-image: url("../images/siguiente.png")
-              @include backgroundImage
-              display: block
               float: right
-              height: 30px
-              width: 30px
           [class*=owl-]:hover
             background: transparent
         .owl-dots
@@ -224,11 +237,41 @@ section
     h2
       text-align: center
     p
+      color: $gris-texto
+      font-size: 115%
+      margin: 20px auto 50px
       text-align: center
+    section
+      &:last-child
+        height: auto
+        margin: 20px auto
+        width: 100%
+        form
+          margin: 0 auto
+          width: 90%
+          label
+            color: $gris-texto
+            display: block
+            font-family: 'Arsenal-Regular'
+            font-size: 115%
+            height: 80px
+            padding-bottom: 5px
+            width: 100%
+            input
+              border: 1px solid $morado
+              border-radius: 5px
+              height: 40px
+              width: 100%
+          button
+            background-color: $verde-claro
+            -webkit-appearance: none
+            @include verMas
+            color: #fff
+            border: 0
 
 
 
-  #hojas
+  #hojas-h
     span
       position: absolute
       right: -260px
@@ -247,24 +290,12 @@ section
         top: 410px
       &:nth-child(4)
         top: 490px
-      &:nth-child(5)
-        left: -170px
-        top: 1110px
-        img
-          width: 30%
-      &:nth-child(6)
-        right: -170px
-        top: 1330px
-        img
-          width: 80%
-      &:last-child
-        top: 1280px
-        img
-          width: 30%
+
+
 
 @media all and (min-width: 360px)
   section
-    #hojas
+    #hojas-h
       span
         &:first-child
           top: 600px
@@ -274,14 +305,8 @@ section
           top: 700px
         &:nth-child(4)
           top: 660px
-        &:nth-child(5)
-          left: -170px
-          top: 1380px
-        &:nth-child(6)
-          right: -170px
-          top: 1630px
-        &:last-child
-          top: 1780px
+
+
 
 
 @media all and (min-width: 480px)
@@ -298,7 +323,7 @@ section
           span
             right: 43px
     #equipamiento
-    #hojas
+    #hojas-h
       span
         &:first-child
           top: 270px
@@ -308,13 +333,8 @@ section
           top: 370px
         &:nth-child(4)
           top: 230px
-        &:nth-child(5)
-          top: 780px
-        &:nth-child(6)
-          right: -170px
-          top: 800px
-        &:last-child
-          top: 810px
+
+
 
 
 
@@ -346,9 +366,28 @@ section
           width: 60%
 
     #equipamiento
+      height: 900px
       margin: 70px auto 100px
+      position: relative
+      h2
+        position: absolute
+        right: 0
+        top: 270px
+        width: 50%
+      section
+        position: relative
+        img
+          position: absolute
+          @include centrarHorizontalmente
+          width: 50%
+          z-index: 1
+        section
+          position: absolute
+          width: 50%
+          ul
+            width: 100%
 
-    #hojas
+    #hojas-h
       span
         &:first-child
           left: 30px
@@ -369,17 +408,7 @@ section
           top: 1030px
           img
             width: 50%
-        &:nth-child(5)
-          left: -60px
-          top: 1830px
-          img
-            width: 25%
-        &:nth-child(6)
-          right: -100px
-          top: 2200px
-        &:last-child
-          right: auto
-          top: 2480px
+
 
 
 
@@ -409,7 +438,7 @@ section
         top: 50%
         transform: translateY(-50%)
     #equipamiento
-    #hojas
+    #hojas-h
       span
         &:first-child
           top: 760px
@@ -429,8 +458,7 @@ section
           top: 1510px
           img
             width: 100%
-        &:last-child
-          top: 1600px
+
 
 
 //DESKTOP
@@ -450,7 +478,7 @@ section
       section
         padding: 80px 0
     #equipamiento
-    #hojas
+    #hojas-h
       span
         &:first-child
           left: 100px
@@ -471,8 +499,6 @@ section
             width: 15%
         &:nth-child(6)
           top: 1670px
-        &:last-child
-          top: 1690px
 
 
 

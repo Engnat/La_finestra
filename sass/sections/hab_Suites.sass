@@ -173,11 +173,12 @@ section
         &:first-child
           span
             background-color: $verde-claro
-  #hojas
+  #hojas-hs
     span
       position: absolute
-      right: -260px
+
       &:first-child , &:nth-child(2)
+        right: -250px
         top: 420px
         img
           width: 20%
@@ -189,14 +190,16 @@ section
         img
           width: 30%
       &:first-child
+        left: auto
         top: 410px
       &:nth-child(4)
+        right: -240px
         top: 490px
       &:nth-child(5)
-        left: -170px
+        left: -150px
         top: 1110px
         img
-          width: 30%
+          width: 70%
       &:nth-child(6)
         right: -170px
         top: 1330px
@@ -209,7 +212,7 @@ section
 
 @media all and (min-width: 360px)
   section
-    #hojas
+    #hojas-hs
       span
         &:first-child
           top: 600px
@@ -253,7 +256,7 @@ section
               left: auto
               right: -20px
               transform: none
-    #hojas
+    #hojas-hs
       span
         &:first-child
           top: 270px
@@ -315,7 +318,7 @@ section
             img
               width: 100%
 
-    #hojas
+    #hojas-hs
       span
         &:first-child
           left: 30px
@@ -340,7 +343,7 @@ section
           left: -60px
           top: 1830px
           img
-            width: 25%
+            width: 75%
         &:nth-child(6)
           right: -100px
           top: 2200px
@@ -399,7 +402,7 @@ section
               order: 2
               span
                 right: auto
-    #hojas
+    #hojas-hs
       span
         &:first-child
           top: 760px
@@ -412,8 +415,6 @@ section
         &:nth-child(5)
           left: -90px
           top: 1290px
-          img
-            width: 25%
         &:nth-child(6)
           right: -70px
           top: 1510px
@@ -450,7 +451,7 @@ section
               right: 22px
             img
               width: 80%
-    #hojas
+    #hojas-hs
       span
         &:first-child
           left: 100px
@@ -467,8 +468,6 @@ section
         &:nth-child(5)
           left: -10px
           top: 1290px
-          img
-            width: 15%
         &:nth-child(6)
           top: 1670px
         &:last-child

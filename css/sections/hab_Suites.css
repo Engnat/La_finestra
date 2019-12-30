@@ -345,55 +345,57 @@ section {
       background-color: #00A06D; }
     section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
       background-color: #33CC99; }
-  section #hojas span {
-    position: absolute;
-    right: -260px; }
-    section #hojas span:first-child, section #hojas span:nth-child(2) {
+  section #hojas-hs span {
+    position: absolute; }
+    section #hojas-hs span:first-child, section #hojas-hs span:nth-child(2) {
+      right: -250px;
       top: 420px; }
-      section #hojas span:first-child img, section #hojas span:nth-child(2) img {
+      section #hojas-hs span:first-child img, section #hojas-hs span:nth-child(2) img {
         width: 20%; }
-    section #hojas span:first-child, section #hojas span:nth-child(3) {
+    section #hojas-hs span:first-child, section #hojas-hs span:nth-child(3) {
       right: auto;
       left: 0; }
-    section #hojas span:nth-child(3), section #hojas span:nth-child(4) {
+    section #hojas-hs span:nth-child(3), section #hojas-hs span:nth-child(4) {
       top: 560px; }
-      section #hojas span:nth-child(3) img, section #hojas span:nth-child(4) img {
+      section #hojas-hs span:nth-child(3) img, section #hojas-hs span:nth-child(4) img {
         width: 30%; }
-    section #hojas span:first-child {
+    section #hojas-hs span:first-child {
+      left: auto;
       top: 410px; }
-    section #hojas span:nth-child(4) {
+    section #hojas-hs span:nth-child(4) {
+      right: -240px;
       top: 490px; }
-    section #hojas span:nth-child(5) {
-      left: -170px;
+    section #hojas-hs span:nth-child(5) {
+      left: -150px;
       top: 1110px; }
-      section #hojas span:nth-child(5) img {
-        width: 30%; }
-    section #hojas span:nth-child(6) {
+      section #hojas-hs span:nth-child(5) img {
+        width: 70%; }
+    section #hojas-hs span:nth-child(6) {
       right: -170px;
       top: 1330px; }
-      section #hojas span:nth-child(6) img {
+      section #hojas-hs span:nth-child(6) img {
         width: 80%; }
-    section #hojas span:last-child {
+    section #hojas-hs span:last-child {
       top: 1280px; }
-      section #hojas span:last-child img {
+      section #hojas-hs span:last-child img {
         width: 30%; }
 
 @media all and (min-width: 360px) {
-  section #hojas span:first-child {
+  section #hojas-hs span:first-child {
     top: 600px; }
-  section #hojas span:nth-child(2) {
+  section #hojas-hs span:nth-child(2) {
     top: 620px; }
-  section #hojas span:nth-child(3) {
+  section #hojas-hs span:nth-child(3) {
     top: 700px; }
-  section #hojas span:nth-child(4) {
+  section #hojas-hs span:nth-child(4) {
     top: 660px; }
-  section #hojas span:nth-child(5) {
+  section #hojas-hs span:nth-child(5) {
     left: -170px;
     top: 1380px; }
-  section #hojas span:nth-child(6) {
+  section #hojas-hs span:nth-child(6) {
     right: -170px;
     top: 1630px; }
-  section #hojas span:last-child {
+  section #hojas-hs span:last-child {
     top: 1780px; } }
 @media all and (min-width: 480px) {
   section #banner-principal-hab a span {
@@ -409,20 +411,20 @@ section {
     left: auto;
     right: -20px;
     transform: none; }
-  section #hojas span:first-child {
+  section #hojas-hs span:first-child {
     top: 270px; }
-  section #hojas span:nth-child(2) {
+  section #hojas-hs span:nth-child(2) {
     top: 250px; }
-  section #hojas span:nth-child(3) {
+  section #hojas-hs span:nth-child(3) {
     top: 370px; }
-  section #hojas span:nth-child(4) {
+  section #hojas-hs span:nth-child(4) {
     top: 230px; }
-  section #hojas span:nth-child(5) {
+  section #hojas-hs span:nth-child(5) {
     top: 780px; }
-  section #hojas span:nth-child(6) {
+  section #hojas-hs span:nth-child(6) {
     right: -170px;
     top: 800px; }
-  section #hojas span:last-child {
+  section #hojas-hs span:last-child {
     top: 810px; } }
 @media all and (min-width: 737px) {
   .desktop {
@@ -457,34 +459,34 @@ section {
         height: 320px; }
         section #contenedor-habitaciones section.min-habitacion section:first-child img {
           width: 100%; }
-  section #hojas span:first-child {
+  section #hojas-hs span:first-child {
     left: 30px;
     top: 980px; }
-    section #hojas span:first-child img {
+    section #hojas-hs span:first-child img {
       width: 30%; }
-  section #hojas span:nth-child(2) {
+  section #hojas-hs span:nth-child(2) {
     right: -180px;
     top: 1000px; }
-    section #hojas span:nth-child(2) img {
+    section #hojas-hs span:nth-child(2) img {
       width: 30%; }
-  section #hojas span:nth-child(3) {
+  section #hojas-hs span:nth-child(3) {
     top: 1100px; }
-    section #hojas span:nth-child(3) img {
+    section #hojas-hs span:nth-child(3) img {
       width: 50%; }
-  section #hojas span:nth-child(4) {
+  section #hojas-hs span:nth-child(4) {
     right: -180px;
     top: 1030px; }
-    section #hojas span:nth-child(4) img {
+    section #hojas-hs span:nth-child(4) img {
       width: 50%; }
-  section #hojas span:nth-child(5) {
+  section #hojas-hs span:nth-child(5) {
     left: -60px;
     top: 1830px; }
-    section #hojas span:nth-child(5) img {
-      width: 25%; }
-  section #hojas span:nth-child(6) {
+    section #hojas-hs span:nth-child(5) img {
+      width: 75%; }
+  section #hojas-hs span:nth-child(6) {
     right: -100px;
     top: 2200px; }
-  section #hojas span:last-child {
+  section #hojas-hs span:last-child {
     right: auto;
     top: 2480px; } }
 @media all and (min-width: 1024px) {
@@ -530,25 +532,23 @@ section {
       order: 2; }
       section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
         right: auto; }
-  section #hojas span:first-child {
+  section #hojas-hs span:first-child {
     top: 760px; }
-  section #hojas span:nth-child(2) {
+  section #hojas-hs span:nth-child(2) {
     top: 790px; }
-  section #hojas span:nth-child(3) {
+  section #hojas-hs span:nth-child(3) {
     top: 920px; }
-  section #hojas span:nth-child(4) {
+  section #hojas-hs span:nth-child(4) {
     top: 870px; }
-  section #hojas span:nth-child(5) {
+  section #hojas-hs span:nth-child(5) {
     left: -90px;
     top: 1290px; }
-    section #hojas span:nth-child(5) img {
-      width: 25%; }
-  section #hojas span:nth-child(6) {
+  section #hojas-hs span:nth-child(6) {
     right: -70px;
     top: 1510px; }
-    section #hojas span:nth-child(6) img {
+    section #hojas-hs span:nth-child(6) img {
       width: 100%; }
-  section #hojas span:last-child {
+  section #hojas-hs span:last-child {
     top: 1600px; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-hab::after {
@@ -570,26 +570,24 @@ section {
         right: 22px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child img {
         width: 80%; }
-  section #hojas span:first-child {
+  section #hojas-hs span:first-child {
     left: 100px;
     top: 660px; }
-  section #hojas span:nth-child(2) {
+  section #hojas-hs span:nth-child(2) {
     right: -130px;
     top: 690px; }
-  section #hojas span:nth-child(3) {
+  section #hojas-hs span:nth-child(3) {
     left: 130px;
     top: 810px; }
-  section #hojas span:nth-child(4) {
+  section #hojas-hs span:nth-child(4) {
     right: 0;
     top: 770px; }
-  section #hojas span:nth-child(5) {
+  section #hojas-hs span:nth-child(5) {
     left: -10px;
     top: 1290px; }
-    section #hojas span:nth-child(5) img {
-      width: 15%; }
-  section #hojas span:nth-child(6) {
+  section #hojas-hs span:nth-child(6) {
     top: 1670px; }
-  section #hojas span:last-child {
+  section #hojas-hs span:last-child {
     top: 1690px; } }
 
 /*# sourceMappingURL=hab_Suites.css.map */

@@ -39,6 +39,7 @@
 }
 
 @mixin verMas{
+  border-radius: 5px;
   border: 1px solid $morado;
   color: $morado;
   display: block;
