@@ -366,7 +366,7 @@ section
           width: 60%
 
     #equipamiento
-      height: 900px
+      height: 870px
       margin: 70px auto 100px
       position: relative
       h2
@@ -375,6 +375,7 @@ section
         top: 270px
         width: 50%
       section
+        height: 100%
         position: relative
         img
           position: absolute
@@ -382,10 +383,36 @@ section
           width: 50%
           z-index: 1
         section
+          height: 100%
           position: absolute
           width: 50%
           ul
+            position: absolute
             width: 100%
+          ul.listado-equipamiento:first-child
+            border-radius: 5px
+            top: 190px
+          ul.listado-equipamiento:nth-child(2)
+            bottom: 0
+          ul.listado-equipamiento:last-child
+            bottom: 70px
+            right: -420px
+            width: 100%
+    #galeria::before
+      border-right: 833px solid transparent
+    #galeria
+      section:first-child
+        height: 210px
+        section:first-child
+          left: 70px
+          width: 35%
+        section:last-child
+          right: 30px
+          @include centrarVerticalmente
+          width: 50%
+      section:last-child
+        div.img-galeria-hab
+          height: 350px
 
     #hojas-h
       span
@@ -438,6 +465,35 @@ section
         top: 50%
         transform: translateY(-50%)
     #equipamiento
+      height: 950px
+      h2
+        right: 40px
+        top: 360px
+        width: 40%
+      section
+        section
+          ul.listado-equipamiento:first-child
+            top: 260px
+          ul.listado-equipamiento:last-child
+            right: -540px
+    #galeria::before
+      border-right: 1063px solid transparent
+    #galeria
+      section:first-child
+        section:first-child
+          width: 30%
+    #formulario
+      @include flexBox
+      width: 85%
+      section
+        &:first-child
+          border-right: 1px solid $morado
+          margin: 20px auto 70px
+          width: 40%
+          p
+            width: 80%
+        &:last-child
+          width: 60%
     #hojas-h
       span
         &:first-child
@@ -478,6 +534,36 @@ section
       section
         padding: 80px 0
     #equipamiento
+      height: 1030px
+      h2
+        right: 190px
+        top: 420px
+        width: 30%
+      section
+        img
+          width: 40%
+        section
+          ul.listado-equipamiento:first-child
+            padding: 70px 30px
+          ul.listado-equipamiento:last-child
+            bottom: 0
+            padding: 70px 30px
+            right: -810px
+    #galeria::before
+      border-right: 1533px solid transparent
+    #galeria
+      section:first-child
+        section:first-child
+          left: 220px
+          width: 20%
+        section:last-child
+          right: 160px
+          width: 40%
+          p
+            text-align: left
+      section:last-child
+        div.img-galeria-hab
+          height: 560px
     #hojas-h
       span
         &:first-child

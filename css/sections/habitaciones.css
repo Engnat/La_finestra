@@ -536,7 +536,7 @@ section {
     font-size: 250%;
     width: 60%; }
   section #equipamiento {
-    height: 900px;
+    height: 870px;
     margin: 70px auto 100px;
     position: relative; }
     section #equipamiento h2 {
@@ -545,6 +545,7 @@ section {
       top: 270px;
       width: 50%; }
     section #equipamiento section {
+      height: 100%;
       position: relative; }
       section #equipamiento section img {
         position: absolute;
@@ -553,10 +554,35 @@ section {
         width: 50%;
         z-index: 1; }
       section #equipamiento section section {
+        height: 100%;
         position: absolute;
         width: 50%; }
         section #equipamiento section section ul {
+          position: absolute;
           width: 100%; }
+        section #equipamiento section section ul.listado-equipamiento:first-child {
+          border-radius: 5px;
+          top: 190px; }
+        section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
+          bottom: 0; }
+        section #equipamiento section section ul.listado-equipamiento:last-child {
+          bottom: 70px;
+          right: -420px;
+          width: 100%; }
+  section #galeria::before {
+    border-right: 833px solid transparent; }
+  section #galeria section:first-child {
+    height: 210px; }
+    section #galeria section:first-child section:first-child {
+      left: 70px;
+      width: 35%; }
+    section #galeria section:first-child section:last-child {
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%; }
+  section #galeria section:last-child div.img-galeria-hab {
+    height: 350px; }
   section #hojas-h span:first-child {
     left: 30px;
     top: 980px; }
@@ -599,6 +625,34 @@ section {
   section #banner-principal-hab-general aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #equipamiento {
+    height: 950px; }
+    section #equipamiento h2 {
+      right: 40px;
+      top: 360px;
+      width: 40%; }
+    section #equipamiento section section ul.listado-equipamiento:first-child {
+      top: 260px; }
+    section #equipamiento section section ul.listado-equipamiento:last-child {
+      right: -540px; }
+  section #galeria::before {
+    border-right: 1063px solid transparent; }
+  section #galeria section:first-child section:first-child {
+    width: 30%; }
+  section #formulario {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 85%; }
+    section #formulario section:first-child {
+      border-right: 1px solid #470052;
+      margin: 20px auto 70px;
+      width: 40%; }
+      section #formulario section:first-child p {
+        width: 80%; }
+    section #formulario section:last-child {
+      width: 60%; }
   section #hojas-h span:first-child {
     top: 760px; }
   section #hojas-h span:nth-child(2) {
@@ -628,6 +682,32 @@ section {
     width: 80%; }
     section #bienvenida-hab section {
       padding: 80px 0; }
+  section #equipamiento {
+    height: 1030px; }
+    section #equipamiento h2 {
+      right: 190px;
+      top: 420px;
+      width: 30%; }
+    section #equipamiento section img {
+      width: 40%; }
+    section #equipamiento section section ul.listado-equipamiento:first-child {
+      padding: 70px 30px; }
+    section #equipamiento section section ul.listado-equipamiento:last-child {
+      bottom: 0;
+      padding: 70px 30px;
+      right: -810px; }
+  section #galeria::before {
+    border-right: 1533px solid transparent; }
+  section #galeria section:first-child section:first-child {
+    left: 220px;
+    width: 20%; }
+  section #galeria section:first-child section:last-child {
+    right: 160px;
+    width: 40%; }
+    section #galeria section:first-child section:last-child p {
+      text-align: left; }
+  section #galeria section:last-child div.img-galeria-hab {
+    height: 560px; }
   section #hojas-h span:first-child {
     left: 100px;
     top: 660px; }
