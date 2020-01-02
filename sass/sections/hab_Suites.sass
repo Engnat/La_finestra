@@ -34,6 +34,7 @@ h2
   font-family: 'madame'
   font-size: 370%
 p
+  font-size: 150%
   font-family: 'Arsenal-Regular'
 
 .desktop, .tablet
@@ -132,11 +133,9 @@ section
       margin-bottom: 30px
       position: relative
       h2
-        font-size: 200%
         text-align: center
       p
         line-height: 1.5
-        font-size: 100%
         text-align: center
       a
         @include verMas
@@ -432,6 +431,12 @@ section
       left: -155px
     #banner-principal-hab
       section.contenido-texto-banner
+        section
+          width: 60%
+          h2
+            font-size: 600%
+        section::after
+          bottom: 45px
         span
           width: 7%
     #bienvenida-hab

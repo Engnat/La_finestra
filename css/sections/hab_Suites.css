@@ -190,6 +190,7 @@ h2 {
   font-size: 370%; }
 
 p {
+  font-size: 150%;
   font-family: "Arsenal-Regular"; }
 
 .desktop, .tablet {
@@ -302,13 +303,12 @@ section {
       margin-bottom: 30px;
       position: relative; }
       section #contenedor-habitaciones section.min-habitacion h2 {
-        font-size: 200%;
         text-align: center; }
       section #contenedor-habitaciones section.min-habitacion p {
         line-height: 1.5;
-        font-size: 100%;
         text-align: center; }
       section #contenedor-habitaciones section.min-habitacion a {
+        border-radius: 5px;
         border: 1px solid #470052;
         color: #470052;
         display: block;
@@ -553,6 +553,12 @@ section {
 @media all and (min-width: 1124px) {
   section #banner-principal-hab::after {
     left: -155px; }
+  section #banner-principal-hab section.contenido-texto-banner section {
+    width: 60%; }
+    section #banner-principal-hab section.contenido-texto-banner section h2 {
+      font-size: 600%; }
+  section #banner-principal-hab section.contenido-texto-banner section::after {
+    bottom: 45px; }
   section #banner-principal-hab section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-hab {

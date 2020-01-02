@@ -187,7 +187,7 @@ section {
   position: relative; }
   section h2 {
     color: #470052; }
-  section #banner-principal-hab-general {
+  section #banner-principal-finestra {
     background-image: url("../images/fotografia/bg-luna-piena.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -199,7 +199,7 @@ section {
     margin: 0;
     position: relative;
     z-index: 1; }
-    section #banner-principal-hab-general aside {
+    section #banner-principal-finestra aside {
       align-content: center;
       display: flex;
       flex-flow: row nowrap;
@@ -212,21 +212,21 @@ section {
       transform: translateY(-25%);
       width: 60px;
       z-index: 3; }
-      section #banner-principal-hab-general aside a:hover {
+      section #banner-principal-finestra aside a:hover {
         border: 0;
         padding: 0; }
-      section #banner-principal-hab-general aside a img {
+      section #banner-principal-finestra aside a img {
         display: block;
         margin: 7px auto 0;
         width: 70%; }
-    section #banner-principal-hab-general section.contenido-texto-banner {
+    section #banner-principal-finestra section.contenido-texto-banner {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       height: auto;
       position: absolute;
       width: 100%; }
-      section #banner-principal-hab-general section.contenido-texto-banner span {
+      section #banner-principal-finestra section.contenido-texto-banner span {
         background-image: url("../images/icono-finestra-blanco.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -239,15 +239,15 @@ section {
         position: absolute;
         width: 20%;
         z-index: 1; }
-      section #banner-principal-hab-general section.contenido-texto-banner section {
+      section #banner-principal-finestra section.contenido-texto-banner section {
         margin: 0 auto;
         width: 80%; }
-        section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+        section #banner-principal-finestra section.contenido-texto-banner section h2 {
           color: #fff;
           font-size: 470%;
           line-height: 0.8;
           text-align: center; }
-    section #banner-principal-hab-general a span {
+    section #banner-principal-finestra a span {
       background-image: url("../images/icono-abajo.png");
       bottom: 40px;
       display: block;
@@ -260,73 +260,81 @@ section {
       transform: translateX(-50%);
       position: absolute;
       width: 65px; }
-  section #banner-principal-hab-general::before {
+  section #banner-principal-finestra::before {
     background-color: rgba(71, 0, 82, 0.4);
     content: "";
     display: block;
     height: 100%; }
-  section #banner-principal-hab-general::after {
+  section #banner-principal-finestra::after {
     content: url("../images/cenefa.png");
     bottom: -5px;
     left: -733px;
     position: absolute;
     width: 100%; }
-  section #bienvenida-hab {
+  section #bienvenida-finestra {
     height: auto;
     margin: 0 auto;
     width: 80%; }
-    section #bienvenida-hab section {
+    section #bienvenida-finestra section {
       padding: 20px 0;
       z-index: 1; }
-      section #bienvenida-hab section h2 {
+      section #bienvenida-finestra section h2 {
         color: #333333;
         font-size: 180%;
         margin: 30px auto;
         text-align: center; }
-  section #equipamiento {
+  section #ubicacion {
     height: auto; }
-    section #equipamiento h2 {
-      line-height: 0.7;
-      margin: 40px auto;
-      text-align: center;
-      width: 80%; }
-    section #equipamiento section img {
-      width: 100%; }
-    section #equipamiento section section ul.listado-equipamiento {
-      list-style: none; }
-      section #equipamiento section section ul.listado-equipamiento li {
-        line-height: 2.5;
-        margin: 0 auto;
-        position: relative;
-        width: 50%; }
-      section #equipamiento section section ul.listado-equipamiento li::before {
-        content: url("../images/bullet.png");
-        left: -34px;
+    section #ubicacion section:first-child {
+      position: relative; }
+      section #ubicacion section:first-child span {
+        background-color: #00A06D;
+        bottom: 0;
+        height: 200px;
+        left: 40px;
+        opacity: 0.7;
         position: absolute;
-        top: 6px; }
-      section #equipamiento section section ul.listado-equipamiento:first-child {
-        background-color: #584880;
-        padding: 30px; }
-        section #equipamiento section section ul.listado-equipamiento:first-child li {
-          color: #fff; }
-    section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
-      padding: 30px; }
-    section #equipamiento section section ul.listado-equipamiento:last-child {
-      border: 3px solid #33CC99;
-      border-radius: 10px;
-      margin-left: 40px;
-      padding: 30px;
-      width: 90%; }
-  section #galeria::before {
-    border-bottom: 61px solid #038A6E;
-    border-right: 553px solid transparent;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: -59px;
-    width: 0; }
-  section #galeria {
+        width: 200px; }
+      section #ubicacion section:first-child section {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 3px 5px 8px #ccc;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        width: 75%;
+        z-index: 1; }
+        section #ubicacion section:first-child section p {
+          text-align: center; }
+    section #ubicacion section:last-child section iframe {
+      height: 300px;
+      width: 100%; }
+  section #pet {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 100px auto 0;
+    width: 80%; }
+    section #pet section:first-child p {
+      margin: 10px auto 40px;
+      text-align: left; }
+    section #pet section:last-child {
+      position: relative; }
+      section #pet section:last-child span {
+        background-color: #00A06D;
+        bottom: -20px;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 200px; }
+      section #pet section:last-child img {
+        position: relative;
+        width: 100%; }
+  section #galeria-finestra {
+    height: auto;
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
@@ -334,59 +342,9 @@ section {
     flex-flow: row wrap;
     margin: 100px auto 70px;
     position: relative; }
-    section #galeria section:first-child {
-      background-color: #038A6E;
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: 380px;
+    section #galeria-finestra section:first-child {
       width: 100%; }
-      section #galeria section:first-child section:first-child {
-        background-color: #fff;
-        box-shadow: 2px 2px 10px #333333;
-        bottom: -38px;
-        border-radius: 5px;
-        flex-direction: column;
-        height: 240px;
-        margin: 0 auto;
-        order: 2;
-        position: absolute;
-        width: 74%;
-        z-index: 2; }
-        section #galeria section:first-child section:first-child h2 {
-          font-size: 240%;
-          line-height: 0.7;
-          text-align: center; }
-        section #galeria section:first-child section:first-child p {
-          margin: 10px auto;
-          text-align: center; }
-        section #galeria section:first-child section:first-child a {
-          border-radius: 5px;
-          border: 1px solid #470052;
-          color: #470052;
-          display: block;
-          height: 35px;
-          margin: 20px auto 0;
-          text-align: center;
-          transition-duration: 0.8s;
-          width: 130px; }
-          section #galeria section:first-child section:first-child a:hover {
-            background-color: #470052;
-            border: 0;
-            color: #fff;
-            padding: 0; }
-      section #galeria section:first-child section:last-child {
-        position: absolute; }
-        section #galeria section:first-child section:last-child p {
-          color: #fff;
-          margin: 0 auto;
-          text-align: center;
-          width: 70%; }
-    section #galeria section:last-child {
-      width: 100%; }
-      section #galeria section:last-child div.img-galeria-hab {
+      section #galeria-finestra section:first-child div.img-galeria-hab {
         background-image: url("../images/fotografia/bg-principal-hab.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -396,15 +354,15 @@ section {
         background-size: cover;
         height: 500px;
         width: 100%; }
-      section #galeria section:last-child .owl-theme .owl-nav {
+      section #galeria-finestra section:first-child .owl-theme .owl-nav {
         margin: 0;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 100%; }
-      section #galeria section:last-child .owl-theme .owl-nav button {
+      section #galeria-finestra section:first-child .owl-theme .owl-nav button {
         width: 45%; }
-        section #galeria section:last-child .owl-theme .owl-nav button span {
+        section #galeria-finestra section:first-child .owl-theme .owl-nav button span {
           display: block;
           height: 50px;
           background-position: center;
@@ -412,33 +370,102 @@ section {
           background-size: contain;
           margin: 3px;
           width: 50px; }
-        section #galeria section:last-child .owl-theme .owl-nav button span.btn-anterior {
+        section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-anterior {
           background-image: url("../images/anterior.png"); }
-        section #galeria section:last-child .owl-theme .owl-nav button span.btn-siguiente {
+        section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-siguiente {
           background-image: url("../images/siguiente.png");
           float: right; }
-      section #galeria section:last-child .owl-theme .owl-nav [class*=owl-]:hover {
+      section #galeria-finestra section:first-child .owl-theme .owl-nav [class*=owl-]:hover {
         background: transparent; }
-      section #galeria section:last-child .owl-theme .owl-dots {
+      section #galeria-finestra section:first-child .owl-theme .owl-dots {
         display: none; }
-  section #formulario {
+    section #galeria-finestra #como-llegar::before {
+      border-bottom: 61px solid #33CC99;
+      border-right: 553px solid transparent;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: -60px;
+      width: 0; }
+    section #galeria-finestra #como-llegar {
+      background-color: #33CC99;
+      height: auto;
+      width: 100%;
+      z-index: 1; }
+      section #galeria-finestra #como-llegar section:first-child {
+        margin: 20px auto;
+        width: 74%;
+        z-index: 2; }
+        section #galeria-finestra #como-llegar section:first-child h2 {
+          color: #fff;
+          line-height: 0.7;
+          text-align: center; }
+        section #galeria-finestra #como-llegar section:first-child p {
+          color: #fff;
+          font-size: 150%;
+          margin: 10px auto;
+          text-align: center; }
+      section #galeria-finestra #como-llegar section:last-child section.transporte {
+        background-color: #fff;
+        border-radius: 5px;
+        height: 200px;
+        margin: 100px auto;
+        position: relative;
+        transform: rotate(45deg);
+        width: 200px; }
+        section #galeria-finestra #como-llegar section:last-child section.transporte div {
+          background-color: #584880;
+          border-radius: 5px;
+          bottom: 18px;
+          height: 166px;
+          margin: 0 auto;
+          position: absolute;
+          right: 18px;
+          transform: rotate(360deg);
+          width: 166px; }
+          section #galeria-finestra #como-llegar section:last-child section.transporte div p {
+            color: #fff;
+            font-size: 115%;
+            left: -2px;
+            margin: 0;
+            position: absolute;
+            top: 30px;
+            text-align: center;
+            transform: rotate(-45deg); }
+          section #galeria-finestra #como-llegar section:last-child section.transporte div img {
+            transform: rotate(-45deg);
+            margin-left: 50px;
+            margin-top: 65px;
+            width: 60%; }
+      section #galeria-finestra #como-llegar section:last-child section.transporte:nth-child(2) div img {
+        margin-top: 77px;
+        margin-left: 55px; }
+      section #galeria-finestra #como-llegar section:last-child section.transporte:last-child div img {
+        margin-top: 48px;
+        margin-left: 50px; }
+  section #formulario-contacto {
     height: auto;
     margin: 0 auto 100px;
     width: 80%; }
-    section #formulario h2 {
+    section #formulario-contacto h2 {
+      background-color: #038A6E;
+      border-radius: 5px;
+      color: #fff;
+      padding: 15px 30px;
       text-align: center; }
-    section #formulario p {
+    section #formulario-contacto p {
       color: #333333;
       margin: 20px auto 50px;
       text-align: center; }
-    section #formulario section:last-child {
+    section #formulario-contacto section:last-child {
       height: auto;
       margin: 20px auto;
       width: 100%; }
-      section #formulario section:last-child form {
+      section #formulario-contacto section:last-child form {
         margin: 0 auto;
         width: 90%; }
-        section #formulario section:last-child form label {
+        section #formulario-contacto section:last-child form label {
           color: #333333;
           display: block;
           font-family: "Arsenal-Regular";
@@ -446,13 +473,13 @@ section {
           height: 80px;
           padding-bottom: 5px;
           width: 100%; }
-          section #formulario section:last-child form label input {
+          section #formulario-contacto section:last-child form label input {
             border: 1px solid #470052;
             border-radius: 5px;
             height: 40px;
             padding-left: 5px;
             width: 100%; }
-        section #formulario section:last-child form button {
+        section #formulario-contacto section:last-child form button {
           background-color: #33CC99;
           -webkit-appearance: none;
           border-radius: 5px;
@@ -466,7 +493,7 @@ section {
           width: 130px;
           color: #fff;
           border: 0; }
-          section #formulario section:last-child form button:hover {
+          section #formulario-contacto section:last-child form button:hover {
             background-color: #470052;
             border: 0;
             color: #fff;
@@ -500,11 +527,11 @@ section {
   section #hojas-h span:nth-child(4) {
     top: 660px; } }
 @media all and (min-width: 480px) {
-  section #banner-principal-hab-general a span {
+  section #banner-principal-finestra a span {
     bottom: 30px; }
-  section #banner-principal-hab-general::after {
+  section #banner-principal-finestra::after {
     left: -663px; }
-  section #bienvenida-hab section:nth-child(2) section span {
+  section #bienvenida-finestra section:nth-child(2) section span {
     right: 43px; }
   section #hojas-h span:first-child {
     top: 270px; }
@@ -521,67 +548,19 @@ section {
   .tablet {
     display: block; }
 
-  section #banner-principal-hab-general::after {
+  section #banner-principal-finestra::after {
     left: -480px; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-finestra section.contenido-texto-banner span {
     bottom: -35px;
     width: 15%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
+  section #banner-principal-finestra section.contenido-texto-banner section {
     padding: 60px 20px;
     width: 60%; }
-    section #banner-principal-hab-general section.contenido-texto-banner section p {
+    section #banner-principal-finestra section.contenido-texto-banner section p {
       font-size: 130%; }
-  section #bienvenida-hab section h2 {
+  section #bienvenida-finestra section h2 {
     font-size: 250%;
     width: 60%; }
-  section #equipamiento {
-    height: 870px;
-    margin: 70px auto 100px;
-    position: relative; }
-    section #equipamiento h2 {
-      position: absolute;
-      right: 0;
-      top: 270px;
-      width: 50%; }
-    section #equipamiento section {
-      height: 100%;
-      position: relative; }
-      section #equipamiento section img {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50%;
-        z-index: 1; }
-      section #equipamiento section section {
-        height: 100%;
-        position: absolute;
-        width: 50%; }
-        section #equipamiento section section ul {
-          position: absolute;
-          width: 100%; }
-        section #equipamiento section section ul.listado-equipamiento:first-child {
-          border-radius: 5px;
-          top: 190px; }
-        section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
-          bottom: 0; }
-        section #equipamiento section section ul.listado-equipamiento:last-child {
-          bottom: 70px;
-          right: -420px;
-          width: 100%; }
-  section #galeria::before {
-    border-right: 833px solid transparent; }
-  section #galeria section:first-child {
-    height: 210px; }
-    section #galeria section:first-child section:first-child {
-      left: 70px;
-      width: 35%; }
-    section #galeria section:first-child section:last-child {
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 50%; }
-  section #galeria section:last-child div.img-galeria-hab {
-    height: 350px; }
   section #hojas-h span:first-child {
     left: 30px;
     top: 980px; }
@@ -608,49 +587,35 @@ section {
   .tablet {
     display: none; }
 
-  section #banner-principal-hab-general::after {
+  section #banner-principal-finestra::after {
     left: -361px; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
+  section #banner-principal-finestra section.contenido-texto-banner section {
     width: 40%; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-finestra section.contenido-texto-banner span {
     bottom: -20px;
     width: 10%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section::after {
+  section #banner-principal-finestra section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
-  section #banner-principal-hab-general aside {
+  section #banner-principal-finestra aside {
     top: 50%;
     transform: translateY(-50%); }
-  section #equipamiento {
-    height: 950px; }
-    section #equipamiento h2 {
-      right: 40px;
-      top: 360px;
-      width: 40%; }
-    section #equipamiento section section ul.listado-equipamiento:first-child {
-      top: 260px; }
-    section #equipamiento section section ul.listado-equipamiento:last-child {
-      right: -540px; }
-  section #galeria::before {
-    border-right: 1063px solid transparent; }
-  section #galeria section:first-child section:first-child {
-    width: 30%; }
-  section #formulario {
+  section #formulario-contacto {
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     width: 85%; }
-    section #formulario section:first-child {
+    section #formulario-contacto section:first-child {
       border-right: 1px solid #470052;
       margin: 20px auto 70px;
       width: 40%; }
-      section #formulario section:first-child p {
+      section #formulario-contacto section:first-child p {
         width: 80%; }
-    section #formulario section:last-child {
+    section #formulario-contacto section:last-child {
       width: 60%; }
   section #hojas-h span:first-child {
     top: 760px; }
@@ -671,48 +636,22 @@ section {
     section #hojas-h span:nth-child(6) img {
       width: 100%; } }
 @media all and (min-width: 1124px) {
-  section #banner-principal-hab-general::after {
+  section #banner-principal-finestra::after {
     left: -155px; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
+  section #banner-principal-finestra section.contenido-texto-banner section {
     width: 60%; }
-    section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+    section #banner-principal-finestra section.contenido-texto-banner section h2 {
       font-size: 600%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section::after {
+  section #banner-principal-finestra section.contenido-texto-banner section::after {
     bottom: 50px; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-finestra section.contenido-texto-banner span {
     width: 7%; }
-  section #bienvenida-hab {
+  section #bienvenida-finestra {
     height: auto;
     margin: 0 auto 130px;
     width: 80%; }
-    section #bienvenida-hab section {
+    section #bienvenida-finestra section {
       padding: 80px 0; }
-  section #equipamiento {
-    height: 1030px; }
-    section #equipamiento h2 {
-      right: 190px;
-      top: 420px;
-      width: 30%; }
-    section #equipamiento section img {
-      width: 40%; }
-    section #equipamiento section section ul.listado-equipamiento:first-child {
-      padding: 70px 30px; }
-    section #equipamiento section section ul.listado-equipamiento:last-child {
-      bottom: 0;
-      padding: 70px 30px;
-      right: -810px; }
-  section #galeria::before {
-    border-right: 1533px solid transparent; }
-  section #galeria section:first-child section:first-child {
-    left: 220px;
-    width: 20%; }
-  section #galeria section:first-child section:last-child {
-    right: 160px;
-    width: 40%; }
-    section #galeria section:first-child section:last-child p {
-      text-align: left; }
-  section #galeria section:last-child div.img-galeria-hab {
-    height: 560px; }
   section #hojas-h span:first-child {
     left: 100px;
     top: 660px; }
@@ -733,4 +672,4 @@ section {
   section #hojas-h span:nth-child(6) {
     top: 1670px; } }
 
-/*# sourceMappingURL=habitaciones.css.map */
+/*# sourceMappingURL=finestra.css.map */
