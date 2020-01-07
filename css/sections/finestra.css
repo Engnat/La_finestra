@@ -381,7 +381,7 @@ section {
         display: none; }
     section #galeria-finestra #como-llegar::before {
       border-bottom: 61px solid #33CC99;
-      border-right: 553px solid transparent;
+      border-left: 553px solid transparent;
       content: "";
       height: 0;
       left: 0;
@@ -561,6 +561,55 @@ section {
   section #bienvenida-finestra section h2 {
     font-size: 250%;
     width: 60%; }
+  section #ubicacion {
+    height: 650px;
+    position: relative; }
+    section #ubicacion section:first-child {
+      height: 330px;
+      width: 100%; }
+      section #ubicacion section:first-child span {
+        height: 190px;
+        left: auto;
+        right: 390px; }
+      section #ubicacion section:first-child section {
+        height: 270px;
+        left: 10px;
+        padding: 40px;
+        position: absolute;
+        top: 169px;
+        width: 340px; }
+    section #ubicacion section:last-child {
+      bottom: 0;
+      position: absolute;
+      width: 100%; }
+  section #pet {
+    width: 87%; }
+    section #pet section {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center; }
+      section #pet section:first-child {
+        flex-direction: column;
+        width: 40%; }
+      section #pet section:last-child {
+        width: 60%; }
+        section #pet section:last-child span {
+          left: -30px;
+          transform: none; }
+  section #galeria-finestra #como-llegar::before {
+    border-bottom: 62px solid #33CC99;
+    border-left: 793px solid transparent; }
+  section #galeria-finestra #como-llegar {
+    height: 310px;
+    margin-bottom: 150px; }
+    section #galeria-finestra #como-llegar section:last-child {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      position: absolute;
+      width: 100%; }
   section #hojas-h span:first-child {
     left: 30px;
     top: 980px; }
@@ -603,6 +652,8 @@ section {
   section #banner-principal-finestra aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #galeria-finestra #como-llegar::before {
+    border-left: 1033px solid transparent; }
   section #formulario-contacto {
     align-content: center;
     display: flex;

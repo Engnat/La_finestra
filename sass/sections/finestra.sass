@@ -205,7 +205,7 @@ section
           display: none
     #como-llegar::before
       border-bottom: 61px solid $verde-claro
-      border-right: 553px solid transparent
+      border-left: 553px solid transparent
       content: ''
       height: 0
       left: 0
@@ -413,10 +413,53 @@ section
           width: 60%
 
     #ubicacion
+      height: 650px
+      position: relative
+      section
+        &:first-child
+          height: 330px
+          width: 100%
+          span
+            height: 190px
+            left: auto
+            right: 390px
+          section
+            height: 270px
+            left: 10px
+            padding: 40px
+            position: absolute
+            top: 169px
+            width: 340px
+        &:last-child
+          bottom: 0
+          position: absolute
+          width: 100%
+
+    #pet
+      width: 87%
+      section
+        @include flexBox
+        &:first-child
+          flex-direction: column
+          width: 40%
+        &:last-child
+          width: 60%
+          span
+            left: -30px
+            transform: none
 
     #galeria-finestra::before
     #galeria-finestra
-
+      #como-llegar::before
+        border-bottom: 62px solid $verde-claro
+        border-left: 793px solid transparent
+      #como-llegar
+        height: 310px
+        margin-bottom: 150px
+        section:last-child
+          @include flexBox
+          position: absolute
+          width: 100%
 
     #hojas-h
       span
@@ -472,6 +515,8 @@ section
 
     #galeria-finestra::before
     #galeria-finestra
+      #como-llegar::before
+        border-left: 1033px solid transparent
     #formulario-contacto
       @include flexBox
       width: 85%
