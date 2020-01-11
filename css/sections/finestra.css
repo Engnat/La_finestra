@@ -652,8 +652,41 @@ section {
   section #banner-principal-finestra aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #ubicacion {
+    height: 580px; }
+    section #ubicacion section:first-child {
+      height: 290px; }
+      section #ubicacion section:first-child span {
+        height: 220px;
+        left: 130px;
+        right: auto;
+        width: 290px; }
+      section #ubicacion section:first-child section {
+        height: 340px;
+        left: 50px;
+        top: 100px;
+        width: 340px; }
+        section #ubicacion section:first-child section p {
+          font-size: 170%; }
+  section #pet {
+    height: 490px; }
+    section #pet section:first-child {
+      bottom: 0;
+      left: 0;
+      position: absolute; }
+    section #pet section:last-child {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      section #pet section:last-child span {
+        left: 30px; }
+      section #pet section:last-child img {
+        width: 80%; }
   section #galeria-finestra #como-llegar::before {
     border-left: 1033px solid transparent; }
+  section #galeria-finestra #como-llegar section:first-child {
+    margin: 20px 50px 0 420px;
+    width: 60%; }
   section #formulario-contacto {
     align-content: center;
     display: flex;

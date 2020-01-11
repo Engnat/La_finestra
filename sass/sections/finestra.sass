@@ -512,11 +512,46 @@ section
         top: 50%
         transform: translateY(-50%)
     #ubicacion
+      height: 580px
+      section
+        &:first-child
+          height: 290px
+          span
+            height: 220px
+            left: 130px
+            right: auto
+            width: 290px
+          section
+            height: 340px
+            left: 50px
+            top: 100px
+            width: 340px
+            p
+              font-size: 170%
+    #pet
+      height: 490px
+      section
+        &:first-child
+          bottom: 0
+          left: 0
+          position: absolute
+        &:last-child
+          position: absolute
+          right: 0
+          top: 0
+          span
+            left: 30px
+          img
+            width: 80%
 
     #galeria-finestra::before
     #galeria-finestra
       #como-llegar::before
         border-left: 1033px solid transparent
+      #como-llegar
+        section:first-child
+          margin: 20px 50px 0 420px
+          width: 60%
     #formulario-contacto
       @include flexBox
       width: 85%
