@@ -27,11 +27,11 @@ html, body
   height: 100%
 
 h1
+  font-family: 'Arsenal-Regular'
   margin: 0
 
 h2
   font-family: 'madame'
-  font-size: 370%
 p
   font-family: 'Arsenal-Regular'
 
@@ -51,10 +51,24 @@ p
     article
       border: 2px solid $verde-claro
       border-radius: 5px
-      height: 250px
+      height: 230px
+      @include centrarHorizontalmente
       margin: 0 auto
+      padding: 65px 0
+      position: absolute
+      top: 35px
       width: 90%
-
+      h1
+        color: $verde-claro
+        padding: 10px
+        text-align: center
+      p
+        color: #fff
+        font-size: 150%
+        line-height: 1
+        margin: 0 auto
+        text-align: center
+        width: 75%
 
 
   footer
@@ -62,17 +76,66 @@ p
     clear: both
     display: block
     height: auto
-    padding: 50px
+    padding: 10px 50px
     position: absolute
     width: 100%
     section#logo
       border-bottom: 2px solid $verde-claro
+      img
+        display: block
+        margin: 0 auto
+        width: 80%
+    section:last-child
+      section#redes-footer
+        @include flexBox
+        margin: 10px auto
+        width: 100%
+        a
+          align-self: center
+          font-size: 70%
+          img
+            width: 85%
+      section:last-child
+        @include flexBox
+        span
+          background-image: url("../images/icono-telefono.png")
+          @include backgroundImage
+          display: block
+          height: 15px
+          width: 15px
+        a
+          align-self: center
+          color: #fff
+          font-size: 80%
+          text-decoration: none
 
 
 
 
 
 @media all and (min-width: 480px)
+  #contenedor
+    section#bg-principal
+      article
+        height: auto
+        padding: 25px 0
+        width: 80%
+    footer
+      padding: 0 50px
+      section#logo
+        img
+          width: 30%
+      section:last-child
+        @include flexBox
+        section#redes-footer
+          justify-content: flex-start
+          width: 50%
+          a
+            img
+              width: 60%
+        section:last-child
+          justify-content: flex-end
+          width: 50%
 
 
 
@@ -82,13 +145,65 @@ p
     display: none
   .tablet
     display: block
-
+  #contenedor
+    section#bg-principal
+      article
+        @include centrarVH
+        padding: 55px 0
+        width: 60%
+        h1
+          font-size: 280%
+        p
+          font-size: 200%
+    footer
+      section#logo
+        img
+          width: 40%
+      section:last-child
+        section#redes-footer
+          a
+            img
+              width: 100%
+        section:last-child
+          a
+            font-size: 100%
 
 @media all and (min-width: 1024px)
   .desktop
     display: block
   .tablet
     display: none
+
+  #contenedor
+    section#bg-principal
+      article
+        @include centrarVerticalmente
+        left: auto
+        right: 70px
+        width: 40%
+
+    footer
+      section#logo
+        position: relative
+        img
+          left: 0
+          position: absolute
+          top: -160px
+          width: 30%
+      section:last-child
+        @include flexBox
+        section#redes-footer
+          justify-content: flex-start
+          width: 50%
+        section:last-child
+          justify-content: flex-end
+          width: 50%
+          span
+            margin: 13px 3px
+            height: 25px
+            width: 25px
+
+
 
 
 
@@ -97,7 +212,29 @@ p
 //DESKTOP
 @media all and (min-width:1124px)
 
+  #contenedor
+    section#bg-principal
+      article
+        height: 300px
+        padding: 65px 0
+        width: 35%
+        h1
+          font-size: 300%
+        p
+          font-size: 250%
+    footer
+      section#logo
+        img
+          top: -146px
+          width: 20%
+
 
 
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)
+  #contenedor
+    footer
+      section#logo
+        img
+          top: -120px
+          width: 15%

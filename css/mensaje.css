@@ -183,11 +183,11 @@ html, body {
   height: 100%; }
 
 h1 {
+  font-family: "Arsenal-Regular";
   margin: 0; }
 
 h2 {
-  font-family: "madame";
-  font-size: 370%; }
+  font-family: "madame"; }
 
 p {
   font-family: "Arsenal-Regular"; }
@@ -209,31 +209,166 @@ p {
     #contenedor section#bg-principal article {
       border: 2px solid #33CC99;
       border-radius: 5px;
-      height: 250px;
+      height: 230px;
+      left: 50%;
+      transform: translateX(-50%);
       margin: 0 auto;
+      padding: 65px 0;
+      position: absolute;
+      top: 35px;
       width: 90%; }
+      #contenedor section#bg-principal article h1 {
+        color: #33CC99;
+        padding: 10px;
+        text-align: center; }
+      #contenedor section#bg-principal article p {
+        color: #fff;
+        font-size: 150%;
+        line-height: 1;
+        margin: 0 auto;
+        text-align: center;
+        width: 75%; }
   #contenedor footer {
     bottom: 0;
     clear: both;
     display: block;
     height: auto;
-    padding: 50px;
+    padding: 10px 50px;
     position: absolute;
     width: 100%; }
     #contenedor footer section#logo {
       border-bottom: 2px solid #33CC99; }
+      #contenedor footer section#logo img {
+        display: block;
+        margin: 0 auto;
+        width: 80%; }
+    #contenedor footer section:last-child section#redes-footer {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin: 10px auto;
+      width: 100%; }
+      #contenedor footer section:last-child section#redes-footer a {
+        align-self: center;
+        font-size: 70%; }
+        #contenedor footer section:last-child section#redes-footer a img {
+          width: 85%; }
+    #contenedor footer section:last-child section:last-child {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center; }
+      #contenedor footer section:last-child section:last-child span {
+        background-image: url("../images/icono-telefono.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        display: block;
+        height: 15px;
+        width: 15px; }
+      #contenedor footer section:last-child section:last-child a {
+        align-self: center;
+        color: #fff;
+        font-size: 80%;
+        text-decoration: none; }
 
+@media all and (min-width: 480px) {
+  #contenedor section#bg-principal article {
+    height: auto;
+    padding: 25px 0;
+    width: 80%; }
+  #contenedor footer {
+    padding: 0 50px; }
+    #contenedor footer section#logo img {
+      width: 30%; }
+    #contenedor footer section:last-child {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center; }
+      #contenedor footer section:last-child section#redes-footer {
+        justify-content: flex-start;
+        width: 50%; }
+        #contenedor footer section:last-child section#redes-footer a img {
+          width: 60%; }
+      #contenedor footer section:last-child section:last-child {
+        justify-content: flex-end;
+        width: 50%; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
 
   .tablet {
-    display: block; } }
+    display: block; }
+
+  #contenedor section#bg-principal article {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 55px 0;
+    width: 60%; }
+    #contenedor section#bg-principal article h1 {
+      font-size: 280%; }
+    #contenedor section#bg-principal article p {
+      font-size: 200%; }
+  #contenedor footer section#logo img {
+    width: 40%; }
+  #contenedor footer section:last-child section#redes-footer a img {
+    width: 100%; }
+  #contenedor footer section:last-child section:last-child a {
+    font-size: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
 
   .tablet {
-    display: none; } }
+    display: none; }
+
+  #contenedor section#bg-principal article {
+    top: 50%;
+    transform: translateY(-50%);
+    left: auto;
+    right: 70px;
+    width: 40%; }
+  #contenedor footer section#logo {
+    position: relative; }
+    #contenedor footer section#logo img {
+      left: 0;
+      position: absolute;
+      top: -160px;
+      width: 30%; }
+  #contenedor footer section:last-child {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+    #contenedor footer section:last-child section#redes-footer {
+      justify-content: flex-start;
+      width: 50%; }
+    #contenedor footer section:last-child section:last-child {
+      justify-content: flex-end;
+      width: 50%; }
+      #contenedor footer section:last-child section:last-child span {
+        margin: 13px 3px;
+        height: 25px;
+        width: 25px; } }
+@media all and (min-width: 1124px) {
+  #contenedor section#bg-principal article {
+    height: 300px;
+    padding: 65px 0;
+    width: 35%; }
+    #contenedor section#bg-principal article h1 {
+      font-size: 300%; }
+    #contenedor section#bg-principal article p {
+      font-size: 250%; }
+  #contenedor footer section#logo img {
+    top: -146px;
+    width: 20%; } }
+@media all and (min-width: 1440px) {
+  #contenedor footer section#logo img {
+    top: -120px;
+    width: 15%; } }
 
 /*# sourceMappingURL=mensaje.css.map */
