@@ -127,6 +127,7 @@ a {
 	z-index: $z-nav;
 	&.expanded {
 		left: 0;
+		overflow: auto;
 		width: 100%;
 	}
 

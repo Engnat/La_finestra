@@ -1,0 +1,467 @@
+@import "../helpers/fonts"
+@import "../helpers/normalize"
+@import "../helpers/bourbon"
+@import "../helpers/mixins"
+
+
+
+$lila: #584880
+$morado: #470052
+$verde-claro: #33CC99
+$verde-oscuro: #038A6E
+$verde-medio: #00A06D
+$gris-texto: #333333
+
+$font-nav: 'Arsenal-Italic'
+
+h1
+  margin: 0
+
+h2
+  font-family: 'madame'
+  font-size: 370%
+p
+  font-size: 150%
+  font-family: 'Arsenal-Regular'
+
+.desktop, .tablet
+  display: none
+
+section
+  position: relative
+  h2
+    color: $morado
+  #banner-principal-restaurante
+    background-image: url("../images/fotografia/bg-restaurante.jpg")
+    background-attachment: fixed
+    @include backgroundImage
+    background-size: cover
+    height: 100vh
+    margin: 0
+    position: relative
+    z-index: 1
+    aside
+      @include flexBox
+      flex-flow: row wrap
+      height: auto
+      position: fixed
+      right: 0
+      top: 25%
+      transform: translateY(-25%)
+      width: 60px
+      z-index: 3
+      a:hover
+        border: 0
+        padding: 0
+      a
+        img
+          display: block
+          margin: 7px auto 0
+          width: 70%
+    section.contenido-texto-banner
+      @include centrarVH
+      height: auto
+      position: absolute
+      width: 100%
+      span
+        background-image: url("../images/icono-finestra-blanco.png")
+        @include backgroundImage
+        @include centrarHorizontalmente
+        bottom: -80px
+        height: 90px
+        position: absolute
+        width: 20%
+        z-index: 1
+      section
+        margin: 0 auto
+        width: 80%
+        h2
+          color: #fff
+          font-size: 470%
+          line-height: 0.8
+          text-align: center
+    a
+      span
+        background-image: url("../images/icono-abajo.png")
+        bottom: 40px
+        display: block
+        height: 48px
+        @include backgroundImage
+        @include centrarHorizontalmente
+        position: absolute
+        width: 65px
+  #banner-principal-restaurante::before
+    background-color: rgba(71, 0, 82, 0.4)
+    content: ''
+    display: block
+    height: 100%
+  #banner-principal-restaurante::after
+    content: url("../images/cenefa.png")
+    bottom: -5px
+    left: -733px
+    position: absolute
+    width: 100%
+  #bienvenida-restaurante
+    height: auto
+    margin: 0 auto
+    width: 80%
+    section
+      padding: 20px 0
+      z-index: 1
+      h2
+        color: $gris-texto
+        font-size: 180%
+        margin: 30px auto
+        text-align: center
+  #galeria-restaurante
+    @include flexBox
+    flex-flow: row wrap
+    margin: 100px auto 70px
+    position: relative
+    section:first-child
+      width: 100%
+      div.img-galeria-hab
+        background-image: url("../images/fotografia/bg-principal-hab.jpg")
+        @include backgroundImage
+        margin: 0
+        background-size: cover
+        height: 500px
+        width: 100%
+      .owl-theme .owl-nav
+        margin: 0
+        position: absolute
+        @include centrarVerticalmente
+        width: 100%
+      .owl-theme
+        .owl-nav
+          button
+            width: 45%
+            span
+              display: block
+              height: 50px
+              @include backgroundImage
+              width: 50px
+            span.btn-anterior
+              background-image: url("../images/anterior.png")
+            span.btn-siguiente
+              background-image: url("../images/siguiente.png")
+              float: right
+          [class*=owl-]:hover
+            background: transparent
+        .owl-dots
+          display: none
+
+  #especialidad
+    height: auto
+    margin: 0 auto
+    width: 85%
+    section
+      &:first-child
+        h2
+          line-height: 0.8
+        p
+          margin: 30px auto
+      &:last-child
+        margin-top: 20px
+        padding-bottom: 100px
+        div
+          margin: 30px auto
+          position: relative
+          span
+            background-color: $lila
+            height: 40px
+            @include centrarHorizontalmente
+            position: absolute
+            width: 170px
+          img
+            display: block
+            margin: 0 auto
+            position: relative
+        div:first-child
+          span
+            bottom: -14px
+          img
+            width: 85%
+        div:last-child
+          span
+            bottom: -14px
+          img
+            width: 70%
+
+
+
+  #hojas-r
+    span
+      position: absolute
+      &:first-child , &:nth-child(2)
+        top: 420px
+        img
+          width: 20%
+      &:first-child , &:nth-child(3)
+        right: auto
+        left: 0
+      &:nth-child(3) , &:nth-child(4)
+        top: 560px
+        img
+          width: 30%
+      &:first-child
+        top: 410px
+      &:nth-child(4)
+        top: 490px
+
+
+
+@media all and (min-width: 360px)
+  section
+    #hojas-r
+      span
+        &:first-child
+          top: 600px
+        &:nth-child(2)
+          top: 620px
+        &:nth-child(3)
+          top: 700px
+        &:nth-child(4)
+          top: 660px
+
+
+
+
+@media all and (min-width: 480px)
+  section
+    #banner-principal-restaurante
+      a
+        span
+          bottom: 30px
+    #banner-principal-restaurante::after
+      left: -663px
+    #bienvenida-restaurante
+      section:nth-child(2)
+        section
+          span
+            right: 43px
+    #especialidad
+      section
+        &:last-child
+          div:first-child
+            img
+              width: 65%
+          div:last-child
+            img
+              width: 50%
+    #hojas-r
+      span
+        &:first-child
+          top: 270px
+        &:nth-child(2)
+          top: 250px
+        &:nth-child(3)
+          top: 370px
+        &:nth-child(4)
+          top: 230px
+
+
+
+
+
+//TABLETS
+@media all and (min-width: 737px)
+  .desktop
+    display: none
+  .tablet
+    display: block
+
+
+  section
+    #banner-principal-restaurante::after
+      left: -480px
+    #banner-principal-restaurante
+      section.contenido-texto-banner
+        span
+          bottom: -35px
+          width: 15%
+        section
+          padding: 60px 20px
+          width: 60%
+          p
+            font-size: 130%
+    #bienvenida-restaurante
+      section
+        h2
+          font-size: 250%
+          width: 60%
+
+    #galeria-restaurante
+      section:first-child
+        section:first-child
+          left: 70px
+          width: 35%
+        section:last-child
+          right: 30px
+          @include centrarVerticalmente
+          width: 50%
+      section:last-child
+        div.img-galeria-hab
+          height: 350px
+
+    #especialidad
+      @include flexBox
+      section
+        &:first-child
+          align-self: center
+          width: 50%
+        &:last-child
+          width: 50%
+          div:first-child
+            float: left
+            width: 90%
+            img
+              width: 80%
+          div:last-child
+            float: right
+            width: 85%
+            img
+              width: 70%
+
+
+    #hojas-r
+      span
+        &:first-child
+          left: 30px
+          top: 980px
+          img
+            width: 30%
+        &:nth-child(2)
+          right: -180px
+          top: 1000px
+          img
+            width: 30%
+        &:nth-child(3)
+          top: 1100px
+          img
+            width: 50%
+        &:nth-child(4)
+          right: -180px
+          top: 1030px
+          img
+            width: 50%
+
+
+
+
+@media all and (min-width: 1024px)
+  .desktop
+    display: block
+  .tablet
+    display: none
+
+
+  section
+    #banner-principal-restaurante::after
+      left: -361px
+    #banner-principal-restaurante
+      section.contenido-texto-banner
+        section
+          width: 40%
+        span
+          bottom: -20px
+          width: 10%
+        section::after
+          content: url("../images/deco-titulos.png")
+          bottom: 40px
+          @include centrarHorizontalmente
+          position: absolute
+      aside
+        top: 50%
+        transform: translateY(-50%)
+    #galeria-restaurante
+    #especialidad
+      section
+        &:first-child
+          width: 30%
+        &:last-child
+          width: 70%
+          div:first-child
+            width: 70%
+          div:last-child
+            width: 65%
+    #hojas-r
+      span
+        &:first-child
+          top: 760px
+        &:nth-child(2)
+          top: 790px
+        &:nth-child(3)
+          top: 920px
+        &:nth-child(4)
+          top: 870px
+        &:nth-child(5)
+          right: -90px
+          top: 1480px
+          img
+            width: 75%
+        &:nth-child(6)
+          right: -70px
+          top: 1510px
+          img
+            width: 100%
+
+
+
+//DESKTOP
+@media all and (min-width:1124px)
+
+  section
+    #banner-principal-restaurante::after
+      left: -155px
+    #banner-principal-restaurante
+      section.contenido-texto-banner
+        section
+          width: 60%
+          h2
+            font-size: 600%
+        section::after
+          bottom: 50px
+        span
+          width: 7%
+    #bienvenida-restaurante
+      height: auto
+      margin: 0 auto 130px
+      width: 80%
+      section
+        padding: 80px 0
+    #galeria-restaurante
+      section:first-child
+        div.img-galeria-hab
+          height: 560px
+    #especialidad
+      section
+        &:last-child
+          div:first-child
+            margin-left: 90px
+            width: 50%
+          div:last-child
+            width: 52%
+    #hojas-r
+      span
+        &:first-child
+          left: 100px
+          top: 660px
+        &:nth-child(2)
+          right: -130px
+          top: 690px
+        &:nth-child(3)
+          left: 130px
+          top: 810px
+        &:nth-child(4)
+          right: 0
+          top: 770px
+        &:nth-child(5)
+          top: 1820px
+        &:nth-child(6)
+          top: 1670px
+
+
+
+//DESKTOP Hi-Res
+@media all and (min-width:1440px)

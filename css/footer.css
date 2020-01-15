@@ -7,6 +7,9 @@
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -270,6 +273,8 @@ p {
     #contenido-footer section:last-child section#redes-footer a:hover {
       border: 0;
       padding: 0; }
+    #contenido-footer section:last-child section#redes-footer div {
+      align-self: center; }
   #contenido-footer section:last-child hr {
     border: 1px solid #33CC99;
     width: 100%; }

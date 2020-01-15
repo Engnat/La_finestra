@@ -498,41 +498,41 @@ section {
             border: 0;
             color: #fff;
             padding: 0; }
-  section #hojas-h span {
+  section #hojas-f span {
     position: absolute;
     right: -260px; }
-    section #hojas-h span:first-child, section #hojas-h span:nth-child(2) {
+    section #hojas-f span:first-child, section #hojas-f span:nth-child(2) {
       top: 420px; }
-      section #hojas-h span:first-child img, section #hojas-h span:nth-child(2) img {
+      section #hojas-f span:first-child img, section #hojas-f span:nth-child(2) img {
         width: 20%; }
-    section #hojas-h span:first-child, section #hojas-h span:nth-child(3) {
+    section #hojas-f span:first-child, section #hojas-f span:nth-child(3) {
       right: auto;
       left: 0; }
-    section #hojas-h span:nth-child(3) img, section #hojas-h span:nth-child(4) img {
+    section #hojas-f span:nth-child(3) img, section #hojas-f span:nth-child(4) img {
       width: 30%; }
-    section #hojas-h span:first-child {
+    section #hojas-f span:first-child {
       top: 860px; }
-    section #hojas-h span:nth-child(2) img {
+    section #hojas-f span:nth-child(2) img {
       transform: scale(1, -1); }
-    section #hojas-h span:nth-child(3) {
+    section #hojas-f span:nth-child(3) {
       top: 660px; }
-      section #hojas-h span:nth-child(3) img {
+      section #hojas-f span:nth-child(3) img {
         transform: scaleX(-1); }
-    section #hojas-h span:nth-child(4) {
+    section #hojas-f span:nth-child(4) {
       top: 1080px; }
-    section #hojas-h span:nth-child(7) {
+    section #hojas-f span:nth-child(7) {
       right: 150px; }
-      section #hojas-h span:nth-child(7) img {
+      section #hojas-f span:nth-child(7) img {
         transform: scaleX(-1); }
 
 @media all and (min-width: 360px) {
-  section #hojas-h span:first-child {
+  section #hojas-f span:first-child {
     top: 840px; }
-  section #hojas-h span:nth-child(2) {
+  section #hojas-f span:nth-child(2) {
     top: 620px; }
-  section #hojas-h span:nth-child(3) {
+  section #hojas-f span:nth-child(3) {
     top: 700px; }
-  section #hojas-h span:nth-child(4) {
+  section #hojas-f span:nth-child(4) {
     top: 1100px; } }
 @media all and (min-width: 480px) {
   section #banner-principal-finestra a span {
@@ -541,13 +541,13 @@ section {
     left: -663px; }
   section #bienvenida-finestra section:nth-child(2) section span {
     right: 43px; }
-  section #hojas-h span:first-child {
+  section #hojas-f span:first-child {
     top: 270px; }
-  section #hojas-h span:nth-child(2) {
+  section #hojas-f span:nth-child(2) {
     top: 250px; }
-  section #hojas-h span:nth-child(3) {
+  section #hojas-f span:nth-child(3) {
     top: 370px; }
-  section #hojas-h span:nth-child(4) {
+  section #hojas-f span:nth-child(4) {
     top: 230px; } }
 @media all and (min-width: 568px) {
   section #ubicacion section:first-child span {
@@ -624,24 +624,24 @@ section {
       justify-content: center;
       position: absolute;
       width: 100%; }
-  section #hojas-h span:first-child {
+  section #hojas-f span:first-child {
     left: 110px;
     top: 1290px; }
-    section #hojas-h span:first-child img {
+    section #hojas-f span:first-child img {
       width: 30%; }
-  section #hojas-h span:nth-child(2) {
+  section #hojas-f span:nth-child(2) {
     right: -130px;
     top: 1000px; }
-    section #hojas-h span:nth-child(2) img {
+    section #hojas-f span:nth-child(2) img {
       width: 30%; }
-  section #hojas-h span:nth-child(3) {
+  section #hojas-f span:nth-child(3) {
     top: 1100px; }
-    section #hojas-h span:nth-child(3) img {
+    section #hojas-f span:nth-child(3) img {
       width: 50%; }
-  section #hojas-h span:nth-child(4) {
+  section #hojas-f span:nth-child(4) {
     right: -180px;
     top: 1540px; }
-    section #hojas-h span:nth-child(4) img {
+    section #hojas-f span:nth-child(4) img {
       width: 50%; } }
 @media all and (min-width: 1024px) {
   .desktop {
@@ -733,29 +733,29 @@ section {
         width: 50%; }
         section #formulario-contacto section:last-child form button {
           float: left; }
-  section #hojas-h span:first-child {
+  section #hojas-f span:first-child {
     left: 110px;
     top: 1000px; }
-  section #hojas-h span:nth-child(2) {
+  section #hojas-f span:nth-child(2) {
     right: -80px;
     top: 720px; }
-  section #hojas-h span:nth-child(3) {
+  section #hojas-f span:nth-child(3) {
     top: 830px; }
-  section #hojas-h span:nth-child(4) {
+  section #hojas-f span:nth-child(4) {
     top: 1110px; }
-  section #hojas-h span:nth-child(5) {
+  section #hojas-f span:nth-child(5) {
     left: 0;
     top: 1370px; }
-    section #hojas-h span:nth-child(5) img {
+    section #hojas-f span:nth-child(5) img {
       width: 15%; }
-  section #hojas-h span:nth-child(6) {
+  section #hojas-f span:nth-child(6) {
     right: 0;
     top: 4140px; }
-    section #hojas-h span:nth-child(6) img {
+    section #hojas-f span:nth-child(6) img {
       width: 100%; }
-  section #hojas-h span:nth-child(7) {
+  section #hojas-f span:nth-child(7) {
     top: 2250px; }
-    section #hojas-h span:nth-child(7) img {
+    section #hojas-f span:nth-child(7) img {
       width: 40%; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-finestra::after {
@@ -802,35 +802,35 @@ section {
     width: 35%; }
   section #formulario-contacto section:last-child form {
     width: 40%; }
-  section #hojas-h span:first-child {
+  section #hojas-f span:first-child {
     left: 100px;
     top: 1010px; }
-    section #hojas-h span:first-child img {
+    section #hojas-f span:first-child img {
       width: 70%; }
-  section #hojas-h span:nth-child(2) {
+  section #hojas-f span:nth-child(2) {
     right: -130px;
     top: 690px; }
-  section #hojas-h span:nth-child(3) {
+  section #hojas-f span:nth-child(3) {
     left: 130px;
     top: 980px; }
-    section #hojas-h span:nth-child(3) img {
+    section #hojas-f span:nth-child(3) img {
       width: 30%; }
-  section #hojas-h span:nth-child(4) {
+  section #hojas-f span:nth-child(4) {
     right: 0;
     top: 1470px; }
-    section #hojas-h span:nth-child(4) img {
+    section #hojas-f span:nth-child(4) img {
       width: 70%; }
-  section #hojas-h span:nth-child(5) {
+  section #hojas-f span:nth-child(5) {
     left: 0;
     top: 1525px; }
-    section #hojas-h span:nth-child(5) img {
+    section #hojas-f span:nth-child(5) img {
       width: 13%; }
-  section #hojas-h span:nth-child(6) {
+  section #hojas-f span:nth-child(6) {
     top: 4630px; }
-  section #hojas-h span:nth-child(7) {
+  section #hojas-f span:nth-child(7) {
     right: 430px;
     top: 2280px; }
-    section #hojas-h span:nth-child(7) img {
+    section #hojas-f span:nth-child(7) img {
       width: 50%; } }
 
 /*# sourceMappingURL=finestra.css.map */
