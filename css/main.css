@@ -2,8 +2,17 @@
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -173,8 +182,17 @@ template, [hidden] {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -428,6 +446,7 @@ section {
         width: 80%; }
         section #banner-principal-hab section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
           line-height: 0.8;
           text-align: center; }
@@ -464,6 +483,7 @@ section {
       section #bienvenida-hab section h2 {
         color: #333333;
         font-size: 180%;
+        font-family: "allura";
         margin: 30px auto;
         text-align: center; }
   section #contenedor-habitaciones {
@@ -770,8 +790,17 @@ section {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -1012,8 +1041,8 @@ section {
         width: 80%; }
         section #banner-principal-hab-general section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
-          line-height: 0.8;
           text-align: center; }
     section #banner-principal-hab-general a span {
       background-image: url("../images/icono-abajo.png");
@@ -1381,11 +1410,11 @@ section {
   section #banner-principal-hab-general section.contenido-texto-banner section {
     width: 40%; }
   section #banner-principal-hab-general section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-hab-general section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -1446,7 +1475,7 @@ section {
     section #banner-principal-hab-general section.contenido-texto-banner section h2 {
       font-size: 600%; }
   section #banner-principal-hab-general section.contenido-texto-banner section::after {
-    bottom: 50px; }
+    bottom: 65px; }
   section #banner-principal-hab-general section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-hab {
@@ -1504,8 +1533,17 @@ section {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -1747,6 +1785,7 @@ section {
         section #banner-principal-finestra section.contenido-texto-banner section h2 {
           color: #fff;
           font-size: 470%;
+          font-family: "blackjack";
           line-height: 0.8;
           text-align: center; }
     section #banner-principal-finestra a span {
@@ -1774,17 +1813,31 @@ section {
     position: absolute;
     width: 100%; }
   section #bienvenida-finestra {
-    height: auto;
+    height: 230px;
     margin: 0 auto;
+    position: relative;
     width: 80%; }
     section #bienvenida-finestra section {
       padding: 20px 0;
       z-index: 1; }
       section #bienvenida-finestra section h2 {
         color: #333333;
+        font-family: "allura";
         font-size: 180%;
         margin: 30px auto;
         text-align: center; }
+    section #bienvenida-finestra div span {
+      position: absolute; }
+      section #bienvenida-finestra div span img {
+        width: 30%; }
+      section #bienvenida-finestra div span:first-child {
+        left: 0; }
+      section #bienvenida-finestra div span:nth-child(2) {
+        right: 0; }
+      section #bienvenida-finestra div span:nth-child(3) {
+        left: 0; }
+      section #bienvenida-finestra div span:last-child {
+        right: 0; }
   section #ubicacion {
     height: auto; }
     section #ubicacion section:first-child {
@@ -1804,7 +1857,7 @@ section {
         height: auto;
         margin: 0 auto;
         padding: 20px;
-        width: 75%;
+        width: 62%;
         z-index: 1; }
         section #ubicacion section:first-child section p {
           text-align: center; }
@@ -1883,7 +1936,7 @@ section {
         display: none; }
     section #galeria-finestra #como-llegar::before {
       border-bottom: 61px solid #33CC99;
-      border-left: 553px solid transparent;
+      border-left: 693px solid transparent;
       content: "";
       height: 0;
       left: 0;
@@ -1897,7 +1950,7 @@ section {
       z-index: 1; }
       section #galeria-finestra #como-llegar section:first-child {
         margin: 20px auto;
-        width: 74%;
+        width: 80%;
         z-index: 2; }
         section #galeria-finestra #como-llegar section:first-child h2 {
           color: #fff;
@@ -2028,6 +2081,15 @@ section {
         transform: scaleX(-1); }
 
 @media all and (min-width: 360px) {
+  section #bienvenida-finestra section h2 {
+    width: 80%; }
+  section #ubicacion section:first-child span {
+    height: 186px;
+    left: 60px; }
+  section #ubicacion section:first-child section {
+    width: 56%; }
+  section #galeria-finestra #como-llegar section:first-child {
+    margin: 50px auto 0; }
   section #hojas-f span:first-child {
     top: 840px; }
   section #hojas-f span:nth-child(2) {
@@ -2063,6 +2125,8 @@ section {
   .tablet {
     display: block; }
 
+  section p {
+    font-size: 150%; }
   section #banner-principal-finestra::after {
     left: -480px; }
   section #banner-principal-finestra section.contenido-texto-banner span {
@@ -2338,8 +2402,17 @@ section {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -2580,6 +2653,7 @@ section {
         width: 80%; }
         section #banner-principal-restaurante section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
           line-height: 0.8;
           text-align: center; }
@@ -2616,6 +2690,7 @@ section {
       z-index: 1; }
       section #bienvenida-restaurante section h2 {
         color: #333333;
+        font-family: "allura";
         font-size: 180%;
         margin: 30px auto;
         text-align: center; }
@@ -2905,8 +2980,17 @@ section {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -3160,6 +3244,7 @@ section {
         width: 80%; }
         section #banner-principal-servicios section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
           line-height: 0.8;
           text-align: center; }
@@ -3196,6 +3281,7 @@ section {
       section #bienvenida-servicios section h2 {
         color: #333333;
         font-size: 180%;
+        font-family: "allura";
         margin: 30px auto;
         text-align: center; }
   section #contenedor-servicios {
@@ -3621,10 +3707,11 @@ h1 {
   margin: 0; }
 
 h2 {
-  font-family: "madame";
-  font-size: 370%; }
+  font-family: "playball";
+  font-size: 280%; }
 
 p {
+  font-size: 100%;
   font-family: "Arsenal-Regular"; }
 
 img {
@@ -3724,6 +3811,7 @@ section {
   section #bienvenida {
     height: auto;
     margin: 0 auto;
+    position: relative;
     width: 80%; }
     section #bienvenida section {
       padding: 20px 0; }
@@ -3742,8 +3830,9 @@ section {
         right: 40px;
         width: 290px; }
       section #bienvenida section:first-child p {
+        margin: 20px 0;
         text-align: left;
-        width: 67%; }
+        width: 77%; }
       section #bienvenida section:nth-child(2) section {
         position: relative; }
         section #bienvenida section:nth-child(2) section span {
@@ -3759,11 +3848,32 @@ section {
           height: 250px;
           margin: 0 auto;
           position: relative;
-          width: 250px;
-          z-index: 1; }
+          width: 250px; }
       section #bienvenida section:last-child p {
         text-align: center;
         width: 79%; }
+    section #bienvenida div {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      section #bienvenida div span {
+        position: absolute; }
+        section #bienvenida div span:first-child {
+          right: -41px; }
+          section #bienvenida div span:first-child img {
+            float: right;
+            width: 30%; }
+        section #bienvenida div span:nth-child(2) {
+          left: -150px;
+          top: 160px; }
+          section #bienvenida div span:nth-child(2) img {
+            width: 50%; }
+        section #bienvenida div span:last-child {
+          right: -60px;
+          top: 340px; }
+          section #bienvenida div span:last-child img {
+            float: right;
+            width: 80%; }
   section #servicios {
     height: 590px;
     position: relative; }
@@ -3776,9 +3886,8 @@ section {
       background-size: cover;
       display: block;
       width: 100%;
-      height: 300px;
-      z-index: 1; }
-    section #servicios section:last-child {
+      height: 300px; }
+    section #servicios section:nth-child(2) {
       background-color: #fff;
       border-radius: 5px;
       bottom: 40px;
@@ -3789,17 +3898,16 @@ section {
       margin: 0 auto;
       padding: 20px;
       position: absolute;
-      width: 75%;
-      z-index: 2; }
-      section #servicios section:last-child h2 {
+      width: 73%; }
+      section #servicios section:nth-child(2) h2 {
         padding: 10px 0 5px;
         text-align: center; }
-      section #servicios section:last-child p {
+      section #servicios section:nth-child(2) p {
         line-height: 1.5;
         margin: 0 auto;
         text-align: center;
         width: 90%; }
-      section #servicios section:last-child a {
+      section #servicios section:nth-child(2) a {
         border-radius: 5px;
         border: 1px solid #470052;
         color: #470052;
@@ -3809,14 +3917,25 @@ section {
         text-align: center;
         transition-duration: 0.8s;
         width: 130px; }
-        section #servicios section:last-child a:hover {
+        section #servicios section:nth-child(2) a:hover {
           background-color: #470052;
           border: 0;
           color: #fff;
           padding: 0; }
+    section #servicios div {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      section #servicios div span {
+        left: -50px;
+        position: absolute;
+        top: -10px; }
+        section #servicios div span img {
+          width: 30%; }
   section #habitaciones {
     height: auto;
     margin: 70px auto;
+    position: relative;
     width: 80%; }
     section #habitaciones section {
       position: relative; }
@@ -3837,11 +3956,10 @@ section {
           right: 0px;
           top: -20px; }
       section #habitaciones section:nth-child(2) {
-        height: 250px;
-        z-index: 1; }
+        height: 250px; }
         section #habitaciones section:nth-child(2) span {
           background-color: #584880;
-          bottom: 30px;
+          bottom: 80px;
           display: block;
           height: 50px;
           left: 50%;
@@ -3853,10 +3971,10 @@ section {
           margin: 0 auto;
           position: relative;
           width: 90%; }
-      section #habitaciones section:last-child p {
+      section #habitaciones section:nth-child(3) p {
         line-height: 1.5;
         text-align: center; }
-      section #habitaciones section:last-child a {
+      section #habitaciones section:nth-child(3) a {
         border-radius: 5px;
         border: 1px solid #470052;
         color: #470052;
@@ -3866,76 +3984,84 @@ section {
         text-align: center;
         transition-duration: 0.8s;
         width: 130px; }
-        section #habitaciones section:last-child a:hover {
+        section #habitaciones section:nth-child(3) a:hover {
           background-color: #470052;
           border: 0;
           color: #fff;
           padding: 0; }
+    section #habitaciones div {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      section #habitaciones div span {
+        position: absolute; }
+        section #habitaciones div span img {
+          width: 50%; }
+        section #habitaciones div span:first-child {
+          right: -130px;
+          top: -480px; }
+          section #habitaciones div span:first-child img {
+            float: right; }
+        section #habitaciones div span:last-child {
+          left: -100px;
+          top: -320px; }
   section #slogan {
     height: auto;
     margin: 0 auto 100px;
     width: 80%; }
     section #slogan p {
       font-size: 150%;
+      font-family: "allura";
       text-align: center; }
-  section #hojas {
-    position: absolute;
-    top: 0;
-    width: 100%; }
-    section #hojas span {
-      position: absolute; }
-      section #hojas span:first-child {
-        left: auto;
-        right: -245px;
-        top: 570px; }
-        section #hojas span:first-child img {
-          width: 30%; }
-    section #hojas span.left {
-      right: auto;
-      left: -30px;
-      top: 720px; }
-      section #hojas span.left img {
-        width: 50%; }
-    section #hojas span#morada {
-      left: auto;
-      right: -90px;
-      top: 1000px; }
-      section #hojas span#morada img {
-        width: 80%; }
-    section #hojas span#hoja-hab {
-      top: 1450px; }
-      section #hojas span#hoja-hab img {
-        width: 30%; }
-    section #hojas span#hoja-der-slogan {
-      left: auto;
-      top: 1780px; }
-      section #hojas span#hoja-der-slogan img {
-        width: 50%; }
-    section #hojas span#hoja-pino-slogan {
-      left: -80px;
-      top: 1480px; }
-      section #hojas span#hoja-pino-slogan img {
-        width: 50%; }
 
+@media all and (min-width: 360px) {
+  section #habitaciones section:nth-child(2) span {
+    bottom: 50px; } }
+@media all and (min-width: 412px) {
+  section #habitaciones section:nth-child(2) span {
+    bottom: 30px; } }
 @media all and (min-width: 480px) {
   section #banner-principal a span {
     bottom: 30px; }
   section #banner-principal::after {
     left: -663px; }
+  section #bienvenida {
+    height: 780px; }
+    section #bienvenida section:nth-child(2) section span {
+      right: 43px; }
+    section #bienvenida div span:first-child {
+      right: -61px; }
+    section #bienvenida div span:nth-child(2) {
+      left: -160px;
+      top: 60px; }
+    section #bienvenida div span:last-child {
+      right: -60px;
+      top: 200px; }
+  section #servicios section:nth-child(2) {
+    bottom: 66px;
+    width: 55%; }
+  section #servicios div span {
+    top: -250px; }
+  section #habitaciones {
+    height: 530px; }
+    section #habitaciones section:nth-child(2) img {
+      width: 80%; }
+    section #habitaciones div span:first-child {
+      top: -800px; }
+    section #habitaciones div span:last-child {
+      top: -900px; } }
+@media all and (min-width: 567px) {
   section #bienvenida section:nth-child(2) section span {
-    right: 43px; }
-  section #hojas span {
-    top: 320px; }
-  section #hojas span.left {
-    top: 400px; }
-  section #hojas span#morada {
-    top: 550px; }
-  section #hojas span#hoja-hab {
-    top: 880px; }
-  section #hojas span#hoja-der-slogan {
-    top: 830px; }
-  section #hojas span#hoja-pino-slogan {
-    top: 850px; } }
+    right: 83px; }
+  section #habitaciones section:nth-child(2) {
+    height: 295px; } }
+@media all and (min-width: 640px) {
+  section #bienvenida section:nth-child(2) section span {
+    right: 123px; }
+  section #habitaciones section:nth-child(2) {
+    height: 350px; }
+    section #habitaciones section:nth-child(2) span {
+      bottom: 15px; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -3963,19 +4089,30 @@ section {
     right: 140px; }
   section #bienvenida section:nth-child(2) section img {
     width: 50%; }
-  section #bienvenida section:last-child {
+  section #bienvenida section:nth-child(3) {
     width: 50%; }
-    section #bienvenida section:last-child p {
+    section #bienvenida section:nth-child(3) p {
       text-align: left; }
+  section #bienvenida div {
+    height: 100%; }
+    section #bienvenida div span:nth-child(2) {
+      left: -70px;
+      top: 130px; }
+    section #bienvenida div span:last-child {
+      right: -130px;
+      top: 350px; }
   section #servicios {
     height: 400px; }
-    section #servicios section:last-child {
+    section #servicios section:nth-child(2) {
       bottom: 0;
       left: auto;
       padding: 20px;
       right: 0;
       transform: none;
       width: 41%; }
+    section #servicios div span {
+      left: -10px;
+      top: 0; }
   section #habitaciones {
     height: 330px;
     margin: 0 auto;
@@ -4003,41 +4140,25 @@ section {
         left: auto;
         transform: none;
         right: 0; }
-    section #habitaciones section:last-child {
+    section #habitaciones section:nth-child(3) {
       position: absolute;
       right: 0;
       top: 120px;
       width: 40%; }
-      section #habitaciones section:last-child p {
+      section #habitaciones section:nth-child(3) p {
         text-align: left; }
-      section #habitaciones section:last-child a {
+      section #habitaciones section:nth-child(3) a {
         float: left; }
+    section #habitaciones div span:first-child {
+      right: -70px;
+      top: -200px; }
+    section #habitaciones div span:last-child {
+      left: -70px;
+      top: -210px; }
   section #slogan {
     height: 165px;
     margin: 100px auto 0;
-    width: 70%; }
-  section #hojas span:first-child {
-    right: -220px;
-    top: 1020px; }
-    section #hojas span:first-child img {
-      width: 40%; }
-  section #hojas span.left {
-    left: -30px;
-    top: 1120px; }
-    section #hojas span.left img {
-      width: 70%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1450px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 1780px; }
-  section #hojas span#hoja-der-slogan {
-    top: 1980px; }
-  section #hojas span#hoja-pino-slogan {
-    left: -80px;
-    top: 1980px; } }
+    width: 70%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -4086,7 +4207,8 @@ section {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%);
-          z-index: 2; }
+          z-index: 2;
+          width: 40%; }
           section #bienvenida section:nth-child(2) section:nth-child(2) span {
             height: 110px;
             left: auto;
@@ -4109,56 +4231,51 @@ section {
             height: 220px;
             margin: 0 24px;
             width: 400px; }
-    section #bienvenida section:last-child {
+    section #bienvenida section:nth-child(3) {
       bottom: 0;
       position: absolute;
       width: 33%; }
+    section #bienvenida div span:first-child {
+      right: 0; }
+    section #bienvenida div span:nth-child(2) {
+      top: 20px; }
+    section #bienvenida div span:last-child {
+      top: 440px; }
+      section #bienvenida div span:last-child img {
+        width: 100%; }
   section #servicios {
     height: 500px; }
     section #servicios section:first-child {
       height: 370px; }
-    section #servicios section:last-child {
+    section #servicios section:nth-child(2) {
       width: 30%; }
+    section #servicios div span {
+      left: 0;
+      top: 90px; }
   section #habitaciones {
     height: 450px; }
+    section #habitaciones section:first-child h2 {
+      padding-left: 60px; }
     section #habitaciones section:first-child span {
       left: 167px; }
     section #habitaciones section:nth-child(2) {
-      height: 288px; }
+      height: 258px; }
       section #habitaciones section:nth-child(2) span {
         bottom: 0; }
       section #habitaciones section:nth-child(2) img {
-        float: left; }
+        float: none; }
     section #habitaciones section:last-child {
       right: 50px;
       width: 35%; }
+    section #habitaciones div span:first-child {
+      top: -270px; }
+    section #habitaciones div span:last-child {
+      top: -260px; }
   section #slogan {
     height: 255px;
     width: 50%; }
     section #slogan p {
-      font-size: 200%; }
-  section #hojas span:first-child {
-    right: -139px;
-    top: 760px; }
-    section #hojas span:first-child img {
-      width: 40%; }
-  section #hojas span.left {
-    left: -30px;
-    top: 780px; }
-    section #hojas span.left img {
-      width: 50%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1200px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 1580px; }
-  section #hojas span#hoja-der-slogan {
-    top: 1780px; }
-  section #hojas span#hoja-pino-slogan {
-    left: -10px;
-    top: 1880px; } }
+      font-size: 200%; } }
 @media all and (min-width: 1124px) {
   section #banner-principal::after {
     left: -155px; }
@@ -4172,52 +4289,59 @@ section {
       section #bienvenida section:first-child p {
         margin-right: 60px;
         width: 40%; }
+    section #bienvenida div span:first-child {
+      right: -90px; }
+    section #bienvenida div span:nth-child(2) {
+      left: -160px; }
+    section #bienvenida div span:last-child {
+      right: -171px; }
   section #servicios {
     height: 700px; }
     section #servicios section:first-child {
       height: 520px; }
-    section #servicios section:last-child {
+    section #servicios section:nth-child(2) {
       height: 390px;
-      padding: 40px; }
-      section #servicios section:last-child p {
+      padding: 40px;
+      right: 70px; }
+      section #servicios section:nth-child(2) p {
         font-size: 120%;
         margin: 30px auto; }
+    section #servicios div span {
+      left: 120px; }
   section #habitaciones {
-    height: 490px;
+    height: 570px;
     width: 80%; }
     section #habitaciones section p {
       font-size: 120%; }
+    section #habitaciones section:first-child {
+      left: 120px; }
     section #habitaciones section:nth-child(2) {
-      height: 300px;
+      height: 320px;
       width: 40%; }
-    section #habitaciones section:last-child {
+      section #habitaciones section:nth-child(2) span {
+        bottom: 11px;
+        right: -20px; }
+      section #habitaciones section:nth-child(2) img {
+        width: 100%; }
+    section #habitaciones section:nth-child(3) {
       margin-right: 170px;
       top: 190px;
       width: 25%; }
-  section #hojas span {
-    top: 1050px; }
-  section #hojas span.left {
-    left: -10px;
-    top: 1160px; }
-    section #hojas span.left img {
-      width: 50%; }
-  section #hojas span#morada {
-    right: -20px;
-    top: 1540px; }
-    section #hojas span#morada img {
-      width: 100%; }
-  section #hojas span#hoja-hab {
-    top: 2130px; }
-  section #hojas span#hoja-der-slogan {
-    right: -50px;
-    top: 2420px; }
-    section #hojas span#hoja-der-slogan img {
-      width: 70%; }
-  section #hojas span#hoja-pino-slogan {
-    left: -20px;
-    top: 2420px; }
-    section #hojas span#hoja-pino-slogan img {
-      width: 70%; } }
+    section #habitaciones div span:first-child {
+      right: -130px;
+      top: -490px; }
+      section #habitaciones div span:first-child img {
+        width: 60%; }
+    section #habitaciones div span:last-child {
+      left: -180px;
+      top: -460px; }
+      section #habitaciones div span:last-child img {
+        width: 70%; }
+  section #slogan {
+    height: 385px; }
+    section #slogan p {
+      font-size: 300%;
+      padding-top: 80px; } }
 @media all and (min-width: 1440px) {
   section #hojas span {
     top: 680px; }

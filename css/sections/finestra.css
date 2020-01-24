@@ -2,8 +2,17 @@
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -245,6 +254,7 @@ section {
         section #banner-principal-finestra section.contenido-texto-banner section h2 {
           color: #fff;
           font-size: 470%;
+          font-family: "blackjack";
           line-height: 0.8;
           text-align: center; }
     section #banner-principal-finestra a span {
@@ -272,17 +282,31 @@ section {
     position: absolute;
     width: 100%; }
   section #bienvenida-finestra {
-    height: auto;
+    height: 230px;
     margin: 0 auto;
+    position: relative;
     width: 80%; }
     section #bienvenida-finestra section {
       padding: 20px 0;
       z-index: 1; }
       section #bienvenida-finestra section h2 {
         color: #333333;
+        font-family: "allura";
         font-size: 180%;
         margin: 30px auto;
         text-align: center; }
+    section #bienvenida-finestra div span {
+      position: absolute; }
+      section #bienvenida-finestra div span img {
+        width: 30%; }
+      section #bienvenida-finestra div span:first-child {
+        left: 0; }
+      section #bienvenida-finestra div span:nth-child(2) {
+        right: 0; }
+      section #bienvenida-finestra div span:nth-child(3) {
+        left: 0; }
+      section #bienvenida-finestra div span:last-child {
+        right: 0; }
   section #ubicacion {
     height: auto; }
     section #ubicacion section:first-child {
@@ -302,7 +326,7 @@ section {
         height: auto;
         margin: 0 auto;
         padding: 20px;
-        width: 75%;
+        width: 62%;
         z-index: 1; }
         section #ubicacion section:first-child section p {
           text-align: center; }
@@ -381,7 +405,7 @@ section {
         display: none; }
     section #galeria-finestra #como-llegar::before {
       border-bottom: 61px solid #33CC99;
-      border-left: 553px solid transparent;
+      border-left: 693px solid transparent;
       content: "";
       height: 0;
       left: 0;
@@ -395,7 +419,7 @@ section {
       z-index: 1; }
       section #galeria-finestra #como-llegar section:first-child {
         margin: 20px auto;
-        width: 74%;
+        width: 80%;
         z-index: 2; }
         section #galeria-finestra #como-llegar section:first-child h2 {
           color: #fff;
@@ -526,6 +550,15 @@ section {
         transform: scaleX(-1); }
 
 @media all and (min-width: 360px) {
+  section #bienvenida-finestra section h2 {
+    width: 80%; }
+  section #ubicacion section:first-child span {
+    height: 186px;
+    left: 60px; }
+  section #ubicacion section:first-child section {
+    width: 56%; }
+  section #galeria-finestra #como-llegar section:first-child {
+    margin: 50px auto 0; }
   section #hojas-f span:first-child {
     top: 840px; }
   section #hojas-f span:nth-child(2) {
@@ -561,6 +594,8 @@ section {
   .tablet {
     display: block; }
 
+  section p {
+    font-size: 150%; }
   section #banner-principal-finestra::after {
     left: -480px; }
   section #banner-principal-finestra section.contenido-texto-banner span {

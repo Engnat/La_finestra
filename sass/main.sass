@@ -33,9 +33,10 @@ h1
   margin: 0
 
 h2
-  font-family: 'madame'
-  font-size: 370%
+  font-family: 'playball'
+  font-size: 280%
 p
+  font-size: 100%
   font-family: 'Arsenal-Regular'
 
 img
@@ -121,6 +122,7 @@ section
   #bienvenida
     height: auto
     margin: 0 auto
+    position: relative
     width: 80%
     section
       padding: 20px 0
@@ -132,8 +134,9 @@ section
           @include backgroundImage
           @include separador
         p
+          margin: 20px 0
           text-align: left
-          width: 67%
+          width: 77%
       &:nth-child(2)
         section
           position: relative
@@ -151,11 +154,33 @@ section
             margin: 0 auto
             position: relative
             width: 250px
-            z-index: 1
       &:last-child
         p
           text-align: center
           width: 79%
+    div
+      position: absolute
+      top: 0
+      width: 100%
+      span
+        position: absolute
+        &:first-child
+          right: -41px
+          img
+            float: right
+            width: 30%
+        &:nth-child(2)
+          left: -150px
+          top: 160px
+          img
+            width: 50%
+        &:last-child
+          right: -60px
+          top: 340px
+          img
+            float: right
+            width: 80%
+
   #servicios
     height: 590px
     position: relative
@@ -167,9 +192,8 @@ section
         display: block
         width: 100%
         height: 300px
-        z-index: 1
 
-      &:last-child
+      &:nth-child(2)
         background-color: #fff
         border-radius: 5px
         bottom: 40px
@@ -179,8 +203,7 @@ section
         margin: 0 auto
         padding: 20px
         position: absolute
-        width: 75%
-        z-index: 2
+        width: 73%
         h2
           padding: 10px 0 5px
           text-align: center
@@ -191,9 +214,20 @@ section
           width: 90%
         a
           @include verMas
+    div
+      position: absolute
+      top: 0
+      width: 100%
+      span
+        left: -50px
+        position: absolute
+        top: -10px
+        img
+          width: 30%
   #habitaciones
     height: auto
     margin: 70px auto
+    position: relative
     width: 80%
     section
       position: relative
@@ -210,10 +244,9 @@ section
           top: -20px
       &:nth-child(2)
         height: 250px
-        z-index: 1
         span
           background-color: $lila
-          bottom: 30px
+          bottom: 80px
           display: block
           height: 50px
           left: 50%
@@ -225,58 +258,50 @@ section
           margin: 0 auto
           position: relative
           width: 90%
-      &:last-child
+      &:nth-child(3)
         p
           line-height: 1.5
           text-align: center
         a
           @include verMas
+    div
+      position: absolute
+      top: 0
+      width: 100%
+      span
+        position: absolute
+        img
+          width: 50%
+        &:first-child
+          right: -130px
+          top: -480px
+          img
+            float: right
+        &:last-child
+          left: -100px
+          top: -320px
   #slogan
     height: auto
     margin: 0 auto 100px
     width: 80%
     p
       font-size: 150%
+      font-family: 'allura'
       text-align: center
-  #hojas
-    position: absolute
-    top: 0
-    width: 100%
-    span
-      position: absolute
-      &:first-child
-        left: auto
-        right: -245px
-        top: 570px
-        img
-          width: 30%
-    span.left
-      right: auto
-      left: -30px
-      top: 720px
-      img
-        width: 50%
-    span#morada
-      left: auto
-      right: -90px
-      top: 1000px
-      img
-        width: 80%
-    span#hoja-hab
-      top: 1450px
-      img
-        width: 30%
-    span#hoja-der-slogan
-      left: auto
-      top: 1780px
-      img
-        width: 50%
-    span#hoja-pino-slogan
-      left: -80px
-      top: 1480px
-      img
-        width: 50%
 
+@media all and (min-width: 360px)
+  section
+    #habitaciones
+      section:nth-child(2)
+        span
+          bottom: 50px
+
+@media all and (min-width: 412px)
+  section
+    #habitaciones
+      section:nth-child(2)
+        span
+          bottom: 30px
 
 @media all and (min-width: 480px)
   section
@@ -287,23 +312,69 @@ section
     #banner-principal::after
       left: -663px
     #bienvenida
+      height: 780px
       section:nth-child(2)
         section
           span
             right: 43px
-    #hojas
-      span
-        top: 320px
-      span.left
-        top: 400px
-      span#morada
-        top: 550px
-      span#hoja-hab
-        top: 880px
-      span#hoja-der-slogan
-        top: 830px
-      span#hoja-pino-slogan
-        top: 850px
+      div
+        span
+          &:first-child
+            right: -61px
+          &:nth-child(2)
+            left: -160px
+            top: 60px
+          &:last-child
+            right: -60px
+            top: 200px
+
+    #servicios
+      section
+        &:nth-child(2)
+          bottom: 66px
+          width: 55%
+      div
+        span
+          top: -250px
+
+    #habitaciones
+      height: 530px
+      section
+        &:nth-child(2)
+          img
+            width: 80%
+      div
+        span
+          &:first-child
+            top: -800px
+          &:last-child
+            top: -900px
+
+@media all and (min-width: 567px)
+  section
+    #bienvenida
+      section:nth-child(2)
+        section
+          span
+            right: 83px
+    #habitaciones
+      section
+        &:nth-child(2)
+          height: 295px
+
+@media all and (min-width: 640px)
+  section
+    #bienvenida
+      section:nth-child(2)
+        section
+          span
+            right: 123px
+    #habitaciones
+      section
+        &:nth-child(2)
+          height: 350px
+          span
+            bottom: 15px
 
 
 //TABLETS
@@ -341,20 +412,33 @@ section
               right: 140px
             img
               width: 50%
-        &:last-child
+        &:nth-child(3)
           width: 50%
           p
             text-align: left
+      div
+        height: 100%
+        span
+          &:nth-child(2)
+            left: -70px
+            top: 130px
+          &:last-child
+            right: -130px
+            top: 350px
     #servicios
       height: 400px
       section
-        &:last-child
+        &:nth-child(2)
           bottom: 0
           left: auto
           padding: 20px
           right: 0
           transform: none
           width: 41%
+      div
+        span
+          left: -10px
+          top: 0
     #habitaciones
       height: 330px
       margin: 0 auto
@@ -383,7 +467,7 @@ section
             left: auto
             transform: none
             right: 0
-        &:last-child
+        &:nth-child(3)
           position: absolute
           right: 0
           top: 120px
@@ -392,34 +476,18 @@ section
             text-align: left
           a
             float: left
+      div
+        span
+          &:first-child
+            right: -70px
+            top: -200px
+          &:last-child
+            left: -70px
+            top: -210px
     #slogan
       height: 165px
       margin: 100px auto 0
       width: 70%
-    #hojas
-
-      span:first-child
-        right: -220px
-        top: 1020px
-        img
-          width: 40%
-      span.left
-        left: -30px
-        top: 1120px
-        img
-          width: 70%
-      span#morada
-        right: -20px
-        top: 1450px
-        img
-          width: 100%
-      span#hoja-hab
-        top: 1780px
-      span#hoja-der-slogan
-        top: 1980px
-      span#hoja-pino-slogan
-        left: -80px
-        top: 1980px
 
 
 @media all and (min-width: 1024px)
@@ -475,6 +543,7 @@ section
               bottom: 0
               @include centrarHorizontalmente
               z-index: 2
+              width: 40%
               span
                 height: 110px
                 left: auto
@@ -497,60 +566,59 @@ section
                 height: 220px
                 margin: 0 24px
                 width: 400px
-        &:last-child
+        &:nth-child(3)
           bottom: 0
           position: absolute
           width: 33%
+      div
+        span
+          &:first-child
+            right: 0
+          &:nth-child(2)
+            top: 20px
+          &:last-child
+            top: 440px
+            img
+              width: 100%
     #servicios
       height: 500px
       section
         &:first-child
           height: 370px
-        &:last-child
+        &:nth-child(2)
           width: 30%
+      div
+        span
+          left: 0
+          top: 90px
     #habitaciones
       height: 450px
       section
         &:first-child
+          h2
+            padding-left: 60px
           span
             left: 167px
         &:nth-child(2)
-          height: 288px
+          height: 258px
           span
             bottom: 0
           img
-            float: left
+            float: none
         &:last-child
           right: 50px
           width: 35%
+      div
+        span
+          &:first-child
+            top: -270px
+          &:last-child
+            top: -260px
     #slogan
       height: 255px
       width: 50%
       p
         font-size: 200%
-    #hojas
-      span:first-child
-        right: -139px
-        top: 760px
-        img
-          width: 40%
-      span.left
-        left: -30px
-        top: 780px
-        img
-          width: 50%
-      span#morada
-        right: -20px
-        top: 1200px
-        img
-          width: 100%
-      span#hoja-hab
-        top: 1580px
-      span#hoja-der-slogan
-        top: 1780px
-      span#hoja-pino-slogan
-        left: -10px
-        top: 1880px
 
 //DESKTOP
 @media all and (min-width:1124px)
@@ -569,56 +637,67 @@ section
           p
             margin-right: 60px
             width: 40%
+      div
+        span
+          &:first-child
+            right: -90px
+          &:nth-child(2)
+            left: -160px
+          &:last-child
+            right: -171px
     #servicios
       height: 700px
       section
         &:first-child
           height: 520px
-        &:last-child
+        &:nth-child(2)
           height: 390px
           padding: 40px
+          right: 70px
           p
             font-size: 120%
             margin: 30px auto
+      div
+        span
+          left: 120px
     #habitaciones
-      height: 490px
+      height: 570px
       width: 80%
       section
         p
           font-size: 120%
+        &:first-child
+          left: 120px
         &:nth-child(2)
-          height: 300px
+          height: 320px
           width: 40%
-        &:last-child
+          span
+            bottom: 11px
+            right: -20px
+          img
+            width: 100%
+        &:nth-child(3)
           margin-right: 170px
           top: 190px
           width: 25%
-    #hojas
-      span
-        top: 1050px
-      span.left
-        left: -10px
-        top: 1160px
-        img
-          width: 50%
-      span#morada
-        right: -20px
-        top: 1540px
-        img
-          width: 100%
-      span#hoja-hab
-        top: 2130px
-      span#hoja-der-slogan
-        right: -50px
-        top: 2420px
-        img
-          width: 70%
-      span#hoja-pino-slogan
-        left: -20px
-        top: 2420px
-        img
-          width: 70%
+      div
+        span
+          &:first-child
+            right: -130px
+            top: -490px
+            img
+              width: 60%
+          &:last-child
+            left: -180px
+            top: -460px
+            img
+              width: 70%
 
+    #slogan
+      height: 385px
+      p
+        font-size: 300%
+        padding-top: 80px
 
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)

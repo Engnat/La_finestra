@@ -5,6 +5,9 @@
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
 @font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
+@font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
 @font-face {
@@ -244,8 +247,8 @@ section {
         width: 80%; }
         section #banner-principal-hab-general section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
-          line-height: 0.8;
           text-align: center; }
     section #banner-principal-hab-general a span {
       background-image: url("../images/icono-abajo.png");
@@ -613,11 +616,11 @@ section {
   section #banner-principal-hab-general section.contenido-texto-banner section {
     width: 40%; }
   section #banner-principal-hab-general section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-hab-general section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -678,7 +681,7 @@ section {
     section #banner-principal-hab-general section.contenido-texto-banner section h2 {
       font-size: 600%; }
   section #banner-principal-hab-general section.contenido-texto-banner section::after {
-    bottom: 50px; }
+    bottom: 65px; }
   section #banner-principal-hab-general section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-hab {

@@ -2,8 +2,17 @@
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
 @font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: 'Arsenal-Italic';
   src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
@@ -257,6 +266,7 @@ section {
         width: 80%; }
         section #banner-principal-servicios section.contenido-texto-banner section h2 {
           color: #fff;
+          font-family: "blackjack";
           font-size: 470%;
           line-height: 0.8;
           text-align: center; }
@@ -293,6 +303,7 @@ section {
       section #bienvenida-servicios section h2 {
         color: #333333;
         font-size: 180%;
+        font-family: "allura";
         margin: 30px auto;
         text-align: center; }
   section #contenedor-servicios {
