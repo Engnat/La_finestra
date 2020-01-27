@@ -100,20 +100,20 @@
           <p>Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
         </section>
         <section>
-          <form class="" action="index.html" method="post">
+          <form class="" action="reserva.php" method="post">
             <label for="nombre-completo">Nombre completo
-              <input id="nombre-completo" type="text" name="" value="">
+              <input id="nombre-completo" type="text" name="nombreUser" value="" required>
             </label>
             <label for="correo">Correo electrónico
-              <input id="correo" type="email" name="" value="">
+              <input id="correo" type="email" name="correoUser" value="" required>
             </label>
             <label for="telefono">Telefóno
-              <input id="telefono" type="number" name="" value="">
+              <input id="telefono" type="number" name="telefonoUser" value="">
             </label>
             <label for="mensaje">Mensaje
-              <input id="mensaje" type="text" name="" value="">
+              <textarea id="mensaje" type="text" name="mensajeUser" value="" required></textarea>
             </label>
-            <button type="button" name="button">Enviar</button>
+            <input id="botonFormulario" type="submit" name="button" value="ENVIAR">
           </form>
         </section>
       </section>
@@ -128,14 +128,12 @@
 
     <footer id="footer">
     </footer>
-
       <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/rellax.min.js"></script>
       <script src="js/scripts.js"></script>
       <script>
         var rellax = new Rellax('.rellax');
-
         $(function(){
           $("#menu-principal").load("header.html");
           $("#footer").load("footer.html");
@@ -160,11 +158,6 @@
             }
           });
         });
-
-
-
-
   </script>
-
   </body>
 </html>

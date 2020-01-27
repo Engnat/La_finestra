@@ -1,0 +1,505 @@
+@import "../helpers/fonts"
+@import "../helpers/normalize"
+@import "../helpers/bourbon"
+@import "../helpers/mixins"
+
+
+
+$lila: #584880
+$morado: #470052
+$verde-claro: #33CC99
+$verde-oscuro: #038A6E
+$verde-medio: #00A06D
+$gris-texto: #333333
+
+
+
+.desktop, .tablet
+  display: none
+
+section
+  #banner-principal-contacto
+    background-image: url("../images/fotografia/bg-luna-piena.jpg")
+    background-attachment: fixed
+    @include backgroundImage
+    background-size: cover
+    height: 100vh
+    margin: 0
+    position: relative
+    z-index: 1
+    aside
+      @include flexBox
+      flex-flow: row wrap
+      height: auto
+      position: fixed
+      right: 0
+      top: 25%
+      transform: translateY(-25%)
+      width: 60px
+      z-index: 3
+      a:hover
+        border: 0
+        padding: 0
+      a
+        img
+          display: block
+          margin: 7px auto 0
+          width: 70%
+    section.contenido-texto-banner
+      @include centrarVH
+      height: auto
+      position: absolute
+      width: 100%
+      span
+        background-image: url("../images/icono-finestra-blanco.png")
+        @include backgroundImage
+        @include centrarHorizontalmente
+        bottom: -80px
+        height: 90px
+        position: absolute
+        width: 20%
+        z-index: 1
+      section
+        margin: 0 auto
+        width: 80%
+        h2
+          color: #fff
+          font-size: 330%
+          font-family: 'blackjack'
+          text-align: center
+    a
+      span
+        background-image: url("../images/icono-abajo.png")
+        bottom: 40px
+        display: block
+        height: 48px
+        @include backgroundImage
+        @include centrarHorizontalmente
+        position: absolute
+        width: 65px
+  #banner-principal-contacto::before
+    background-color: rgba(71, 0, 82, 0.4)
+    content: ''
+    display: block
+    height: 100%
+  #banner-principal-contacto::after
+    content: url("../images/cenefa.png")
+    bottom: -5px
+    left: -733px
+    position: absolute
+    width: 100%
+  #formulario-c
+    height: auto
+    margin: 0 auto 100px
+    width: 80%
+    p#intro
+      background-color: $verde-oscuro
+      border-radius: 5px
+      color: #fff
+      padding: 15px 30px
+      text-align: center
+    section
+      &:first-child
+        section
+          margin: 50px auto
+          div
+            @include flexBox
+            flex-flow: row wrap
+            justify-content: flex-start
+            margin: 0 auto
+            width: 85%
+            span
+              display: block
+              @include backgroundImage
+              margin: 3px 5px
+            p
+              color: $gris-texto
+              font-size: 130%
+              line-height: 1.3
+              margin-left: 15px
+              width: 70%
+            a
+              color: $gris-texto
+              font-family: "Arsenal-Regular"
+            &:first-child
+              span
+                background-image: url("../images/icono-ubicacion.png")
+                height: 40px
+                width: 40px
+            &:last-child
+              margin-top: 10px
+              span
+                background-image: url("../images/icono-telefono.png")
+                height: 30px
+                width: 30px
+              a
+                align-self: center
+                font-size: 130%
+                line-height: 1
+                margin-left: 23px
+                width: 70%
+                &:last-child
+                  margin-left: 63px
+
+      &:last-child
+        height: auto
+        margin: 20px auto
+        width: 100%
+        form
+          margin: 0 auto
+          width: 90%
+          label
+            color: $gris-texto
+            display: block
+            font-family: 'Arsenal-Regular'
+            font-size: 100%
+            height: 80px
+            padding-bottom: 5px
+            width: 100%
+            input , textarea
+              border: 1px solid $morado
+              border-radius: 5px
+              height: 40px
+              padding-left: 5px
+              width: 100%
+            textarea
+              padding-top: 5px
+              height: 100px
+          label:nth-child(4)
+            height: auto
+          input#botonFormulario
+            background-color: $verde-claro
+            -webkit-appearance: none
+            @include verMas
+            color: #fff
+            border: 0
+  #hojas-f
+    span
+      position: absolute
+      right: -260px
+      &:first-child , &:nth-child(2)
+        top: 420px
+        img
+          width: 20%
+      &:first-child , &:nth-child(3)
+        right: auto
+        left: 0
+      &:nth-child(3) , &:nth-child(4)
+        img
+          width: 30%
+      &:first-child
+        top: 860px
+      &:nth-child(2)
+        img
+          transform: scale(1 , -1)
+      &:nth-child(3)
+        top: 660px
+        img
+          transform: scaleX(-1)
+      &:nth-child(4)
+        top: 1080px
+      &:nth-child(7)
+        right: 150px
+        img
+          transform: scaleX(-1)
+
+
+
+@media all and (min-width: 360px)
+  section
+    #hojas-f
+      span
+        &:first-child
+          top: 840px
+        &:nth-child(2)
+          top: 620px
+        &:nth-child(3)
+          top: 700px
+        &:nth-child(4)
+          top: 1100px
+
+@media all and (min-width: 480px)
+  section
+    #banner-principal-contacto
+      a
+        span
+          bottom: 30px
+    #banner-principal-contacto::after
+      left: -663px
+    #hojas-f
+      span
+        &:first-child
+          top: 270px
+        &:nth-child(2)
+          top: 250px
+        &:nth-child(3)
+          top: 370px
+        &:nth-child(4)
+          top: 230px
+
+@media all and (min-width: 568px)
+
+
+
+//TABLETS
+@media all and (min-width: 737px)
+  .desktop
+    display: none
+  .tablet
+    display: block
+  section
+    p
+      font-size: 150%
+    #banner-principal-contacto::after
+      left: -480px
+    #banner-principal-contacto
+      section.contenido-texto-banner
+        span
+          bottom: -35px
+          width: 15%
+        section
+          padding: 60px 20px
+          width: 60%
+          h2
+            font-size: 570%
+          p
+            font-size: 130%
+    #formulario-c
+      p#intro
+        padding: 50px 70px
+      section
+        &:first-child
+          section
+            div
+              width: 45%
+              &:first-child
+                span
+                  left: 0
+              &:last-child
+                span
+                  left: 0
+                  top: 80px
+        &:last-child
+          form
+            label
+              font-size: 150%
+    #hojas-f
+      span
+        &:first-child
+          left: 110px
+          top: 1290px
+          img
+            width: 30%
+        &:nth-child(2)
+          right: -130px
+          top: 1000px
+          img
+            width: 30%
+        &:nth-child(3)
+          top: 1100px
+          img
+            width: 50%
+        &:nth-child(4)
+          right: -180px
+          top: 1540px
+          img
+            width: 50%
+
+@media all and (min-width: 1024px)
+  .desktop
+    display: block
+  .tablet
+    display: none
+  section
+    #banner-principal-contacto::after
+      left: -361px
+    #banner-principal-contacto
+      section.contenido-texto-banner
+        section
+          width: 60%
+          h2
+            font-size: 640%
+        span
+          bottom: 0
+          width: 10%
+        section::after
+          content: url("../images/deco-titulos.png")
+          bottom: 70px
+          @include centrarHorizontalmente
+          position: absolute
+      aside
+        top: 50%
+        transform: translateY(-50%)
+    #formulario-c
+      @include flexBox
+      flex-flow: row wrap
+      height: auto
+      margin: 0 auto 150px
+      width: 85%
+      p#intro
+        float: left
+        margin: 75px 30px 0
+        padding: 40px
+        position: relative
+        width: 50%
+        z-index: 1
+      section
+        &:first-child
+          border-right: 0
+          margin: 20px auto
+          width: 100%
+          p
+            text-align: left
+          span
+            background-image: url("../images/forma-formulario.png")
+            @include backgroundImage
+            height: 381px
+            left: -100px
+            position: absolute
+            top: 0
+            width: 1050px
+          section
+            bottom: -40px
+            position: absolute
+            right: -70px
+            width: 45%
+            div
+              width: 55%
+              &:first-child
+                span
+                  left: 30px
+              &:last-child
+                span
+                  left: 30px
+                a
+                  margin-left: 15px
+                  &:last-child
+                    margin-left: 15px
+
+
+        &:last-child
+          margin: 150px auto 0
+          position: relative
+          width: 100%
+          form
+            width: 50%
+            button
+              float: left
+    #hojas-f
+      span
+        &:first-child
+          left: 110px
+          top: 1000px
+        &:nth-child(2)
+          right: -80px
+          top: 720px
+        &:nth-child(3)
+          top: 830px
+        &:nth-child(4)
+          top: 1110px
+        &:nth-child(5)
+          left: 0
+          top: 1370px
+          img
+            width: 15%
+        &:nth-child(6)
+          right: 0
+          top: 4140px
+          img
+            width: 100%
+        &:nth-child(7)
+          top: 2250px
+          img
+            width: 40%
+
+
+//DESKTOP
+@media all and (min-width:1124px)
+  section
+    h2
+      font-size: 300%
+    #banner-principal-contacto::after
+      left: -155px
+    #banner-principal-contacto
+      section.contenido-texto-banner
+        section
+          width: 60%
+          h2
+            font-size: 600%
+        section::after
+          bottom: 68px
+        span
+          width: 7%
+    #formulario-c
+      section
+        &:first-child
+          p
+            margin-right: 50px
+            width: 35%
+          span
+            left: -220px
+            width: 1484px
+          section
+            div
+              p
+                font-size: 150%
+              &:first-child , &:last-child
+                span
+                  left: 60px
+              &:last-child
+                span
+                  top: 102px
+                a
+                  font-size: 150%
+        &:last-child
+          form
+            width: 40%
+            label
+              font-size: 150%
+    #hojas-f
+      span
+        &:first-child
+          left: 100px
+          top: 1010px
+          img
+            width: 70%
+        &:nth-child(2)
+          right: -130px
+          top: 690px
+
+        &:nth-child(3)
+          left: 130px
+          top: 980px
+          img
+            width: 30%
+        &:nth-child(4)
+          right: 0
+          top: 1470px
+          img
+            width: 70%
+        &:nth-child(5)
+          left: 0
+          top: 1525px
+          img
+            width: 13%
+        &:nth-child(6)
+          top: 4630px
+        &:nth-child(7)
+          right: 430px
+          top: 2280px
+          img
+            width: 50%
+
+
+
+
+//DESKTOP Hi-Res
+@media all and (min-width:1440px)
+  section
+    #formulario-c
+      p#intro
+        padding: 60px
+      section
+        &:first-child
+          span
+            left: -150px

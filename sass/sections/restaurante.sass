@@ -12,25 +12,12 @@ $verde-oscuro: #038A6E
 $verde-medio: #00A06D
 $gris-texto: #333333
 
-$font-nav: 'Arsenal-Italic'
-
-h1
-  margin: 0
-
-h2
-  font-family: 'madame'
-  font-size: 370%
-p
-  font-size: 150%
-  font-family: 'Arsenal-Regular'
 
 .desktop, .tablet
   display: none
 
+
 section
-  position: relative
-  h2
-    color: $morado
   #banner-principal-restaurante
     background-image: url("../images/fotografia/bg-restaurante.jpg")
     background-attachment: fixed
@@ -78,8 +65,7 @@ section
         h2
           color: #fff
           font-family: 'blackjack'
-          font-size: 470%
-          line-height: 0.8
+          font-size: 330%
           text-align: center
     a
       span
@@ -159,8 +145,6 @@ section
     width: 85%
     section
       &:first-child
-        h2
-          line-height: 0.8
         p
           margin: 30px auto
       &:last-child
@@ -273,18 +257,16 @@ section
   .tablet
     display: block
 
-
   section
     #banner-principal-restaurante::after
       left: -480px
     #banner-principal-restaurante
       section.contenido-texto-banner
-        span
-          bottom: -35px
-          width: 15%
         section
           padding: 60px 20px
-          width: 60%
+          width: 80%
+          h2
+            font-size: 570%
           p
             font-size: 130%
     #bienvenida-restaurante
@@ -325,7 +307,6 @@ section
             img
               width: 70%
 
-
     #hojas-r
       span
         &:first-child
@@ -348,29 +329,22 @@ section
           img
             width: 50%
 
-
-
-
 @media all and (min-width: 1024px)
   .desktop
     display: block
   .tablet
     display: none
-
-
   section
     #banner-principal-restaurante::after
       left: -361px
     #banner-principal-restaurante
       section.contenido-texto-banner
-        section
-          width: 40%
         span
-          bottom: -20px
+          bottom: 0
           width: 10%
         section::after
           content: url("../images/deco-titulos.png")
-          bottom: 40px
+          bottom: 60px
           @include centrarHorizontalmente
           position: absolute
       aside
@@ -418,12 +392,6 @@ section
       left: -155px
     #banner-principal-restaurante
       section.contenido-texto-banner
-        section
-          width: 60%
-          h2
-            font-size: 600%
-        section::after
-          bottom: 50px
         span
           width: 7%
     #bienvenida-restaurante

@@ -12,25 +12,11 @@ $verde-oscuro: #038A6E
 $verde-medio: #00A06D
 $gris-texto: #333333
 
-$font-nav: 'Arsenal-Italic'
-
-h1
-  margin: 0
-
-h2
-  font-family: 'madame'
-  font-size: 370%
-p
-  font-size: 150%
-  font-family: 'Arsenal-Regular'
 
 .desktop, .tablet
   display: none
 
 section
-  position: relative
-  h2
-    color: $morado
   #banner-principal-hab-general
     background-image: url("../images/fotografia/bg-luna-piena.jpg")
     background-attachment: fixed
@@ -77,8 +63,8 @@ section
         width: 80%
         h2
           color: #fff
+          font-size: 330%
           font-family: 'blackjack'
-          font-size: 470%
           text-align: center
     a
       span
@@ -116,7 +102,6 @@ section
   #equipamiento
     height: auto
     h2
-      line-height: .7
       margin: 40px auto
       text-align: center
       width: 80%
@@ -167,7 +152,7 @@ section
       background-color: $verde-oscuro
       @include flexBox
       flex-flow: row wrap
-      height: 380px
+      height: 330px
       width: 100%
       section:first-child
         background-color: #fff
@@ -183,9 +168,9 @@ section
         z-index: 2
         h2
           font-size: 240%
-          line-height: .7
           text-align: center
         p
+          font-size: 240%
           margin: 10px auto
           text-align: center
         a
@@ -231,7 +216,7 @@ section
           display: none
   #formulario
     height: auto
-    margin: 0 auto 100px
+    margin: 0 auto 180px
     width: 80%
     h2
       text-align: center
@@ -251,17 +236,21 @@ section
             color: $gris-texto
             display: block
             font-family: 'Arsenal-Regular'
-            font-size: 150%
             height: 80px
             padding-bottom: 5px
             width: 100%
-            input
+            input , textarea
               border: 1px solid $morado
               border-radius: 5px
               height: 40px
               padding-left: 5px
               width: 100%
-          button
+            textarea
+              padding-top: 5px
+              height: 100px
+          label:nth-child(4)
+            height: auto
+          input#botonFormulario
             background-color: $verde-claro
             -webkit-appearance: none
             @include verMas
@@ -294,6 +283,11 @@ section
 
 @media all and (min-width: 360px)
   section
+    #galeria
+      section:first-child
+        section:first-child
+          h2
+            width: 90%
     #hojas-h
       span
         &:first-child
@@ -321,7 +315,6 @@ section
         section
           span
             right: 43px
-    #equipamiento
     #hojas-h
       span
         &:first-child
@@ -334,8 +327,23 @@ section
           top: 230px
 
 
-
-
+@media all and (min-width: 530px)
+  section
+    #equipamiento
+      section
+        img
+          display: block
+          margin: 0 auto
+          width: 60%
+    #galeria::before
+      border-right: 683px solid transparent
+    #galeria
+      section:first-child
+        section:first-child
+          width: 44%
+        section:last-child
+          p
+            margin: 30px auto
 
 //TABLETS
 @media all and (min-width: 737px)
@@ -355,7 +363,9 @@ section
           width: 15%
         section
           padding: 60px 20px
-          width: 60%
+          width: 70%
+          h2
+            font-size: 570%
           p
             font-size: 130%
     #bienvenida-hab
@@ -372,7 +382,8 @@ section
         position: absolute
         right: 0
         top: 270px
-        width: 50%
+        text-align: left
+        width: 40%
       section
         height: 100%
         position: relative
@@ -450,8 +461,6 @@ section
       left: -361px
     #banner-principal-hab-general
       section.contenido-texto-banner
-        section
-          width: 40%
         span
           bottom: 0
           width: 10%
@@ -466,6 +475,7 @@ section
     #equipamiento
       height: 950px
       h2
+        font-size: 250%
         right: 40px
         top: 360px
         width: 40%
@@ -484,6 +494,8 @@ section
     #formulario
       @include flexBox
       width: 85%
+      h2
+        font-size: 250%
       section
         &:first-child
           border-right: 1px solid $morado
@@ -541,7 +553,7 @@ section
     #equipamiento
       height: 1030px
       h2
-        right: 190px
+        right: 130px
         top: 420px
         width: 30%
       section

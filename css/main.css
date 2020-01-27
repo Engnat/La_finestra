@@ -358,220 +358,192 @@ canvas {
 template, [hidden] {
   display: none; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  box-sizing: border-box;
-  overflow-x: hidden; }
-
-html, body {
-  width: 100%;
-  height: 100%; }
-
-h1 {
-  margin: 0; }
-
-h2 {
-  font-family: "madame";
-  font-size: 370%; }
-
-p {
-  font-size: 150%;
-  font-family: "Arsenal-Regular"; }
-
 .desktop, .tablet {
   display: none; }
 
-section {
-  position: relative; }
-  section h2 {
-    color: #470052; }
-  section #banner-principal-hab {
-    background-image: url("../images/fotografia/bg-principal-hab.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    z-index: 1; }
-    section #banner-principal-hab aside {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: auto;
-      position: fixed;
-      right: 0;
-      top: 25%;
-      transform: translateY(-25%);
-      width: 60px;
-      z-index: 3; }
-      section #banner-principal-hab aside a:hover {
-        border: 0;
-        padding: 0; }
-      section #banner-principal-hab aside a img {
-        display: block;
-        margin: 7px auto 0;
-        width: 70%; }
-    section #banner-principal-hab section.contenido-texto-banner {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-      position: absolute;
-      width: 100%; }
-      section #banner-principal-hab section.contenido-texto-banner span {
-        background-image: url("../images/icono-finestra-blanco.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
-        height: 90px;
-        position: absolute;
-        width: 20%;
-        z-index: 1; }
-      section #banner-principal-hab section.contenido-texto-banner section {
-        margin: 0 auto;
-        width: 80%; }
-        section #banner-principal-hab section.contenido-texto-banner section h2 {
-          color: #fff;
-          font-family: "blackjack";
-          font-size: 470%;
-          line-height: 0.8;
-          text-align: center; }
-    section #banner-principal-hab a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 40px;
+section #banner-principal-hab {
+  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-hab aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-hab aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-hab aside a img {
       display: block;
-      height: 48px;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-hab section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-hab section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
       position: absolute;
-      width: 65px; }
-  section #banner-principal-hab::before {
-    background-color: rgba(71, 0, 82, 0.4);
-    content: "";
+      width: 20%;
+      z-index: 1; }
+    section #banner-principal-hab section.contenido-texto-banner section {
+      margin: 0 auto;
+      width: 80%; }
+      section #banner-principal-hab section.contenido-texto-banner section h2 {
+        color: #fff;
+        font-family: "blackjack";
+        font-size: 330%;
+        text-align: center; }
+  section #banner-principal-hab a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
     display: block;
-    height: 100%; }
-  section #banner-principal-hab::after {
-    content: url("../images/cenefa.png");
-    bottom: -5px;
-    left: -733px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
-    width: 100%; }
-  section #bienvenida-hab {
-    height: auto;
-    margin: 0 auto;
-    width: 80%; }
-    section #bienvenida-hab section {
-      padding: 20px 0; }
-      section #bienvenida-hab section h2 {
-        color: #333333;
-        font-size: 180%;
-        font-family: "allura";
-        margin: 30px auto;
-        text-align: center; }
-  section #contenedor-habitaciones {
-    height: auto;
-    margin: 70px auto;
-    width: 80%; }
-    section #contenedor-habitaciones section.min-habitacion {
-      margin-bottom: 30px;
-      position: relative; }
-      section #contenedor-habitaciones section.min-habitacion h2 {
-        text-align: center; }
-      section #contenedor-habitaciones section.min-habitacion p {
-        line-height: 1.5;
-        text-align: center; }
-      section #contenedor-habitaciones section.min-habitacion a {
-        border-radius: 5px;
-        border: 1px solid #470052;
-        color: #470052;
+    width: 65px; }
+section #banner-principal-hab::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-hab::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #bienvenida-hab {
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
+  section #bienvenida-hab section {
+    padding: 20px 0; }
+    section #bienvenida-hab section h2 {
+      color: #333333;
+      font-size: 180%;
+      font-family: "allura";
+      margin: 30px auto;
+      text-align: center; }
+section #contenedor-habitaciones {
+  height: auto;
+  margin: 70px auto;
+  width: 80%; }
+  section #contenedor-habitaciones section.min-habitacion {
+    margin-bottom: 30px;
+    position: relative; }
+    section #contenedor-habitaciones section.min-habitacion h2 {
+      text-align: center; }
+    section #contenedor-habitaciones section.min-habitacion p {
+      line-height: 1.5;
+      text-align: center; }
+    section #contenedor-habitaciones section.min-habitacion a {
+      border-radius: 5px;
+      border: 1px solid #470052;
+      color: #470052;
+      display: block;
+      height: 35px;
+      margin: 20px auto 0;
+      text-align: center;
+      transition-duration: 0.8s;
+      width: 130px; }
+      section #contenedor-habitaciones section.min-habitacion a:hover {
+        background-color: #470052;
+        border: 0;
+        color: #fff;
+        padding: 0; }
+    section #contenedor-habitaciones section.min-habitacion section:first-child {
+      height: 250px; }
+      section #contenedor-habitaciones section.min-habitacion section:first-child span {
+        background-color: #584880;
+        bottom: 60px;
         display: block;
-        height: 35px;
-        margin: 20px auto 0;
-        text-align: center;
-        transition-duration: 0.8s;
-        width: 130px; }
-        section #contenedor-habitaciones section.min-habitacion a:hover {
-          background-color: #470052;
-          border: 0;
-          color: #fff;
-          padding: 0; }
-      section #contenedor-habitaciones section.min-habitacion section:first-child {
-        height: 250px;
-        z-index: 1; }
-        section #contenedor-habitaciones section.min-habitacion section:first-child span {
-          background-color: #584880;
-          bottom: 30px;
-          display: block;
-          height: 50px;
-          left: 50%;
-          transform: translateX(-50%);
-          position: absolute;
-          width: 230px; }
-        section #contenedor-habitaciones section.min-habitacion section:first-child img {
-          display: block;
-          margin: 0 auto;
-          position: relative;
-          width: 100%; }
-    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
-      background-color: #038A6E; }
-    section #contenedor-habitaciones section.min-habitacion:nth-child(3) section:first-child span {
-      background-color: #00A06D; }
-    section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
-      background-color: #33CC99; }
-  section #hojas-hs span {
-    position: absolute; }
-    section #hojas-hs span:first-child, section #hojas-hs span:nth-child(2) {
-      right: -250px;
-      top: 420px; }
-      section #hojas-hs span:first-child img, section #hojas-hs span:nth-child(2) img {
-        width: 20%; }
-    section #hojas-hs span:first-child, section #hojas-hs span:nth-child(3) {
-      right: auto;
-      left: 0; }
-    section #hojas-hs span:nth-child(3), section #hojas-hs span:nth-child(4) {
-      top: 560px; }
-      section #hojas-hs span:nth-child(3) img, section #hojas-hs span:nth-child(4) img {
-        width: 30%; }
-    section #hojas-hs span:first-child {
-      left: auto;
-      top: 410px; }
-    section #hojas-hs span:nth-child(4) {
-      right: -240px;
-      top: 490px; }
-    section #hojas-hs span:nth-child(5) {
-      left: -150px;
-      top: 1110px; }
-      section #hojas-hs span:nth-child(5) img {
-        width: 70%; }
-    section #hojas-hs span:nth-child(6) {
-      right: -170px;
-      top: 1330px; }
-      section #hojas-hs span:nth-child(6) img {
-        width: 80%; }
-    section #hojas-hs span:last-child {
-      top: 1280px; }
-      section #hojas-hs span:last-child img {
-        width: 30%; }
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 230px; }
+      section #contenedor-habitaciones section.min-habitacion section:first-child img {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 100%; }
+  section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
+    background-color: #038A6E; }
+  section #contenedor-habitaciones section.min-habitacion:nth-child(3) section:first-child span {
+    background-color: #00A06D; }
+  section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
+    background-color: #33CC99; }
+section #hojas-hs span {
+  position: absolute; }
+  section #hojas-hs span:first-child, section #hojas-hs span:nth-child(2) {
+    right: -250px;
+    top: 420px; }
+    section #hojas-hs span:first-child img, section #hojas-hs span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-hs span:first-child, section #hojas-hs span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-hs span:nth-child(3), section #hojas-hs span:nth-child(4) {
+    top: 560px; }
+    section #hojas-hs span:nth-child(3) img, section #hojas-hs span:nth-child(4) img {
+      width: 30%; }
+  section #hojas-hs span:first-child {
+    left: auto;
+    top: 410px; }
+  section #hojas-hs span:nth-child(4) {
+    right: -240px;
+    top: 490px; }
+  section #hojas-hs span:nth-child(5) {
+    left: -150px;
+    top: 1110px; }
+    section #hojas-hs span:nth-child(5) img {
+      width: 70%; }
+  section #hojas-hs span:nth-child(6) {
+    right: -170px;
+    top: 1330px; }
+    section #hojas-hs span:nth-child(6) img {
+      width: 80%; }
+  section #hojas-hs span:last-child {
+    top: 1280px; }
+    section #hojas-hs span:last-child img {
+      width: 30%; }
 
 @media all and (min-width: 360px) {
+  section #contenedor-habitaciones section.min-habitacion section:first-child img {
+    width: 90%; }
   section #hojas-hs span:first-child {
     top: 600px; }
   section #hojas-hs span:nth-child(2) {
@@ -588,6 +560,9 @@ section {
     top: 1630px; }
   section #hojas-hs span:last-child {
     top: 1780px; } }
+@media all and (min-width: 410px) {
+  section #contenedor-habitaciones section.min-habitacion section:first-child span {
+    bottom: 30px; } }
 @media all and (min-width: 480px) {
   section #banner-principal-hab a span {
     bottom: 30px; }
@@ -598,9 +573,9 @@ section {
   section #contenedor-habitaciones section.min-habitacion section:first-child img {
     width: 80%; }
   section #contenedor-habitaciones section.min-habitacion section:first-child span {
-    bottom: 15px;
+    bottom: 25px;
     left: auto;
-    right: -20px;
+    right: 15px;
     transform: none; }
   section #hojas-hs span:first-child {
     top: 270px; }
@@ -617,6 +592,17 @@ section {
     top: 800px; }
   section #hojas-hs span:last-child {
     top: 810px; } }
+@media all and (min-width: 530px) {
+  section #contenedor-habitaciones section.min-habitacion section:first-child img {
+    width: 70%; }
+  section #contenedor-habitaciones section.min-habitacion section:first-child span {
+    right: 45px; } }
+@media all and (min-width: 640px) {
+  section #contenedor-habitaciones section.min-habitacion section:first-child img {
+    width: 60%; }
+  section #contenedor-habitaciones section.min-habitacion section:first-child span {
+    bottom: 10px;
+    right: 80px; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -632,6 +618,8 @@ section {
   section #banner-principal-hab section.contenido-texto-banner section {
     padding: 60px 20px;
     width: 60%; }
+    section #banner-principal-hab section.contenido-texto-banner section h2 {
+      font-size: 570%; }
     section #banner-principal-hab section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-hab section h2 {
@@ -690,13 +678,15 @@ section {
   section #banner-principal-hab::after {
     left: -361px; }
   section #banner-principal-hab section.contenido-texto-banner section {
-    width: 40%; }
+    width: 80%; }
+    section #banner-principal-hab section.contenido-texto-banner section h2 {
+      font-size: 570%; }
   section #banner-principal-hab section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-hab section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -745,12 +735,13 @@ section {
   section #banner-principal-hab::after {
     left: -155px; }
   section #banner-principal-hab section.contenido-texto-banner section {
-    width: 60%; }
+    width: 70%; }
     section #banner-principal-hab section.contenido-texto-banner section h2 {
       font-size: 600%; }
   section #banner-principal-hab section.contenido-texto-banner section::after {
-    bottom: 45px; }
+    bottom: 75px; }
   section #banner-principal-hab section.contenido-texto-banner span {
+    bottom: 0;
     width: 7%; }
   section #bienvenida-hab {
     height: auto;
@@ -763,10 +754,12 @@ section {
     section #contenedor-habitaciones section.min-habitacion section:first-child {
       height: 440px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child span {
-        bottom: 90px;
-        right: 22px; }
+        bottom: 130px;
+        right: 34px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child img {
         width: 80%; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span, section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
+      left: 34px; }
   section #hojas-hs span:first-child {
     left: 100px;
     top: 660px; }
@@ -966,328 +959,318 @@ canvas {
 template, [hidden] {
   display: none; }
 
-h1 {
-  margin: 0; }
-
-h2 {
-  font-family: "madame";
-  font-size: 370%; }
-
-p {
-  font-size: 150%;
-  font-family: "Arsenal-Regular"; }
-
 .desktop, .tablet {
   display: none; }
 
-section {
-  position: relative; }
-  section h2 {
-    color: #470052; }
-  section #banner-principal-hab-general {
-    background-image: url("../images/fotografia/bg-luna-piena.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    z-index: 1; }
-    section #banner-principal-hab-general aside {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: auto;
-      position: fixed;
-      right: 0;
-      top: 25%;
-      transform: translateY(-25%);
-      width: 60px;
-      z-index: 3; }
-      section #banner-principal-hab-general aside a:hover {
-        border: 0;
-        padding: 0; }
-      section #banner-principal-hab-general aside a img {
-        display: block;
-        margin: 7px auto 0;
-        width: 70%; }
-    section #banner-principal-hab-general section.contenido-texto-banner {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-      position: absolute;
-      width: 100%; }
-      section #banner-principal-hab-general section.contenido-texto-banner span {
-        background-image: url("../images/icono-finestra-blanco.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
-        height: 90px;
-        position: absolute;
-        width: 20%;
-        z-index: 1; }
-      section #banner-principal-hab-general section.contenido-texto-banner section {
-        margin: 0 auto;
-        width: 80%; }
-        section #banner-principal-hab-general section.contenido-texto-banner section h2 {
-          color: #fff;
-          font-family: "blackjack";
-          font-size: 470%;
-          text-align: center; }
-    section #banner-principal-hab-general a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 40px;
+section #banner-principal-hab-general {
+  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-hab-general aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-hab-general aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-hab-general aside a img {
       display: block;
-      height: 48px;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-hab-general section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-hab-general section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
       position: absolute;
-      width: 65px; }
-  section #banner-principal-hab-general::before {
-    background-color: rgba(71, 0, 82, 0.4);
-    content: "";
-    display: block;
-    height: 100%; }
-  section #banner-principal-hab-general::after {
-    content: url("../images/cenefa.png");
-    bottom: -5px;
-    left: -733px;
-    position: absolute;
-    width: 100%; }
-  section #bienvenida-hab {
-    height: auto;
-    margin: 0 auto;
-    width: 80%; }
-    section #bienvenida-hab section {
-      padding: 20px 0;
+      width: 20%;
       z-index: 1; }
-      section #bienvenida-hab section h2 {
-        color: #333333;
-        font-size: 180%;
-        margin: 30px auto;
-        text-align: center; }
-  section #equipamiento {
-    height: auto; }
-    section #equipamiento h2 {
-      line-height: 0.7;
-      margin: 40px auto;
-      text-align: center;
+    section #banner-principal-hab-general section.contenido-texto-banner section {
+      margin: 0 auto;
       width: 80%; }
-    section #equipamiento section img {
-      width: 100%; }
-    section #equipamiento section section ul.listado-equipamiento {
-      list-style: none; }
-      section #equipamiento section section ul.listado-equipamiento li {
-        line-height: 2.5;
-        margin: 0 auto;
-        position: relative;
-        width: 50%; }
-      section #equipamiento section section ul.listado-equipamiento li::before {
-        content: url("../images/bullet.png");
-        left: -34px;
-        position: absolute;
-        top: 6px; }
-      section #equipamiento section section ul.listado-equipamiento:first-child {
-        background-color: #584880;
-        padding: 30px; }
-        section #equipamiento section section ul.listado-equipamiento:first-child li {
-          color: #fff; }
-    section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
-      padding: 30px; }
-    section #equipamiento section section ul.listado-equipamiento:last-child {
-      border: 3px solid #33CC99;
-      border-radius: 10px;
-      margin-left: 40px;
-      padding: 30px;
-      width: 90%; }
-  section #galeria::before {
-    border-bottom: 61px solid #038A6E;
-    border-right: 553px solid transparent;
-    content: "";
-    height: 0;
-    left: 0;
+      section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+        color: #fff;
+        font-size: 330%;
+        font-family: "blackjack";
+        text-align: center; }
+  section #banner-principal-hab-general a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
+    display: block;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
-    top: -59px;
-    width: 0; }
-  section #galeria {
+    width: 65px; }
+section #banner-principal-hab-general::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-hab-general::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #bienvenida-hab {
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
+  section #bienvenida-hab section {
+    padding: 20px 0;
+    z-index: 1; }
+    section #bienvenida-hab section h2 {
+      color: #333333;
+      font-size: 180%;
+      margin: 30px auto;
+      text-align: center; }
+section #equipamiento {
+  height: auto; }
+  section #equipamiento h2 {
+    margin: 40px auto;
+    text-align: center;
+    width: 80%; }
+  section #equipamiento section img {
+    width: 100%; }
+  section #equipamiento section section ul.listado-equipamiento {
+    list-style: none; }
+    section #equipamiento section section ul.listado-equipamiento li {
+      line-height: 2.5;
+      margin: 0 auto;
+      position: relative;
+      width: 50%; }
+    section #equipamiento section section ul.listado-equipamiento li::before {
+      content: url("../images/bullet.png");
+      left: -34px;
+      position: absolute;
+      top: 6px; }
+    section #equipamiento section section ul.listado-equipamiento:first-child {
+      background-color: #584880;
+      padding: 30px; }
+      section #equipamiento section section ul.listado-equipamiento:first-child li {
+        color: #fff; }
+  section #equipamiento section section ul.listado-equipamiento:nth-child(2) {
+    padding: 30px; }
+  section #equipamiento section section ul.listado-equipamiento:last-child {
+    border: 3px solid #33CC99;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 30px;
+    width: 90%; }
+section #galeria::before {
+  border-bottom: 61px solid #038A6E;
+  border-right: 553px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -59px;
+  width: 0; }
+section #galeria {
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 100px auto 70px;
+  position: relative; }
+  section #galeria section:first-child {
+    background-color: #038A6E;
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     flex-flow: row wrap;
-    margin: 100px auto 70px;
-    position: relative; }
-    section #galeria section:first-child {
-      background-color: #038A6E;
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: 380px;
-      width: 100%; }
-      section #galeria section:first-child section:first-child {
-        background-color: #fff;
-        box-shadow: 2px 2px 10px #333333;
-        bottom: -38px;
+    height: 330px;
+    width: 100%; }
+    section #galeria section:first-child section:first-child {
+      background-color: #fff;
+      box-shadow: 2px 2px 10px #333333;
+      bottom: -38px;
+      border-radius: 5px;
+      flex-direction: column;
+      height: 240px;
+      margin: 0 auto;
+      order: 2;
+      position: absolute;
+      width: 74%;
+      z-index: 2; }
+      section #galeria section:first-child section:first-child h2 {
+        font-size: 240%;
+        text-align: center; }
+      section #galeria section:first-child section:first-child p {
+        font-size: 240%;
+        margin: 10px auto;
+        text-align: center; }
+      section #galeria section:first-child section:first-child a {
         border-radius: 5px;
-        flex-direction: column;
-        height: 240px;
-        margin: 0 auto;
-        order: 2;
-        position: absolute;
-        width: 74%;
-        z-index: 2; }
-        section #galeria section:first-child section:first-child h2 {
-          font-size: 240%;
-          line-height: 0.7;
-          text-align: center; }
-        section #galeria section:first-child section:first-child p {
-          margin: 10px auto;
-          text-align: center; }
-        section #galeria section:first-child section:first-child a {
-          border-radius: 5px;
-          border: 1px solid #470052;
-          color: #470052;
-          display: block;
-          height: 35px;
-          margin: 20px auto 0;
-          text-align: center;
-          transition-duration: 0.8s;
-          width: 130px; }
-          section #galeria section:first-child section:first-child a:hover {
-            background-color: #470052;
-            border: 0;
-            color: #fff;
-            padding: 0; }
-      section #galeria section:first-child section:last-child {
-        position: absolute; }
-        section #galeria section:first-child section:last-child p {
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px; }
+        section #galeria section:first-child section:first-child a:hover {
+          background-color: #470052;
+          border: 0;
           color: #fff;
-          margin: 0 auto;
-          text-align: center;
-          width: 70%; }
-    section #galeria section:last-child {
+          padding: 0; }
+    section #galeria section:first-child section:last-child {
+      position: absolute; }
+      section #galeria section:first-child section:last-child p {
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%; }
+  section #galeria section:last-child {
+    width: 100%; }
+    section #galeria section:last-child div.img-galeria-hab {
+      background-image: url("../images/fotografia/bg-principal-hab.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      margin: 0;
+      background-size: cover;
+      height: 500px;
       width: 100%; }
-      section #galeria section:last-child div.img-galeria-hab {
-        background-image: url("../images/fotografia/bg-principal-hab.jpg");
+    section #galeria section:last-child .owl-theme .owl-nav {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%; }
+    section #galeria section:last-child .owl-theme .owl-nav button {
+      width: 45%; }
+      section #galeria section:last-child .owl-theme .owl-nav button span {
+        display: block;
+        height: 50px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 3px;
-        margin: 0;
-        background-size: cover;
-        height: 500px;
-        width: 100%; }
-      section #galeria section:last-child .owl-theme .owl-nav {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%; }
-      section #galeria section:last-child .owl-theme .owl-nav button {
-        width: 45%; }
-        section #galeria section:last-child .owl-theme .owl-nav button span {
-          display: block;
-          height: 50px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          margin: 3px;
-          width: 50px; }
-        section #galeria section:last-child .owl-theme .owl-nav button span.btn-anterior {
-          background-image: url("../images/anterior.png"); }
-        section #galeria section:last-child .owl-theme .owl-nav button span.btn-siguiente {
-          background-image: url("../images/siguiente.png");
-          float: right; }
-      section #galeria section:last-child .owl-theme .owl-nav [class*=owl-]:hover {
-        background: transparent; }
-      section #galeria section:last-child .owl-theme .owl-dots {
-        display: none; }
-  section #formulario {
+        width: 50px; }
+      section #galeria section:last-child .owl-theme .owl-nav button span.btn-anterior {
+        background-image: url("../images/anterior.png"); }
+      section #galeria section:last-child .owl-theme .owl-nav button span.btn-siguiente {
+        background-image: url("../images/siguiente.png");
+        float: right; }
+    section #galeria section:last-child .owl-theme .owl-nav [class*=owl-]:hover {
+      background: transparent; }
+    section #galeria section:last-child .owl-theme .owl-dots {
+      display: none; }
+section #formulario {
+  height: auto;
+  margin: 0 auto 180px;
+  width: 80%; }
+  section #formulario h2 {
+    text-align: center; }
+  section #formulario p {
+    color: #333333;
+    margin: 20px auto 50px;
+    text-align: center; }
+  section #formulario section:last-child {
     height: auto;
-    margin: 0 auto 100px;
-    width: 80%; }
-    section #formulario h2 {
-      text-align: center; }
-    section #formulario p {
-      color: #333333;
-      margin: 20px auto 50px;
-      text-align: center; }
-    section #formulario section:last-child {
-      height: auto;
-      margin: 20px auto;
-      width: 100%; }
-      section #formulario section:last-child form {
-        margin: 0 auto;
-        width: 90%; }
-        section #formulario section:last-child form label {
-          color: #333333;
-          display: block;
-          font-family: "Arsenal-Regular";
-          font-size: 150%;
-          height: 80px;
-          padding-bottom: 5px;
-          width: 100%; }
-          section #formulario section:last-child form label input {
-            border: 1px solid #470052;
-            border-radius: 5px;
-            height: 40px;
-            padding-left: 5px;
-            width: 100%; }
-        section #formulario section:last-child form button {
-          background-color: #33CC99;
-          -webkit-appearance: none;
-          border-radius: 5px;
+    margin: 20px auto;
+    width: 100%; }
+    section #formulario section:last-child form {
+      margin: 0 auto;
+      width: 90%; }
+      section #formulario section:last-child form label {
+        color: #333333;
+        display: block;
+        font-family: "Arsenal-Regular";
+        height: 80px;
+        padding-bottom: 5px;
+        width: 100%; }
+        section #formulario section:last-child form label input, section #formulario section:last-child form label textarea {
           border: 1px solid #470052;
-          color: #470052;
-          display: block;
-          height: 35px;
-          margin: 20px auto 0;
-          text-align: center;
-          transition-duration: 0.8s;
-          width: 130px;
+          border-radius: 5px;
+          height: 40px;
+          padding-left: 5px;
+          width: 100%; }
+        section #formulario section:last-child form label textarea {
+          padding-top: 5px;
+          height: 100px; }
+      section #formulario section:last-child form label:nth-child(4) {
+        height: auto; }
+      section #formulario section:last-child form input#botonFormulario {
+        background-color: #33CC99;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px;
+        color: #fff;
+        border: 0; }
+        section #formulario section:last-child form input#botonFormulario:hover {
+          background-color: #470052;
+          border: 0;
           color: #fff;
-          border: 0; }
-          section #formulario section:last-child form button:hover {
-            background-color: #470052;
-            border: 0;
-            color: #fff;
-            padding: 0; }
-  section #hojas-h span {
-    position: absolute;
-    right: -260px; }
-    section #hojas-h span:first-child, section #hojas-h span:nth-child(2) {
-      top: 420px; }
-      section #hojas-h span:first-child img, section #hojas-h span:nth-child(2) img {
-        width: 20%; }
-    section #hojas-h span:first-child, section #hojas-h span:nth-child(3) {
-      right: auto;
-      left: 0; }
-    section #hojas-h span:nth-child(3), section #hojas-h span:nth-child(4) {
-      top: 560px; }
-      section #hojas-h span:nth-child(3) img, section #hojas-h span:nth-child(4) img {
-        width: 30%; }
-    section #hojas-h span:first-child {
-      top: 410px; }
-    section #hojas-h span:nth-child(4) {
-      top: 490px; }
+          padding: 0; }
+section #hojas-h span {
+  position: absolute;
+  right: -260px; }
+  section #hojas-h span:first-child, section #hojas-h span:nth-child(2) {
+    top: 420px; }
+    section #hojas-h span:first-child img, section #hojas-h span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-h span:first-child, section #hojas-h span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-h span:nth-child(3), section #hojas-h span:nth-child(4) {
+    top: 560px; }
+    section #hojas-h span:nth-child(3) img, section #hojas-h span:nth-child(4) img {
+      width: 30%; }
+  section #hojas-h span:first-child {
+    top: 410px; }
+  section #hojas-h span:nth-child(4) {
+    top: 490px; }
 
 @media all and (min-width: 360px) {
+  section #galeria section:first-child section:first-child h2 {
+    width: 90%; }
   section #hojas-h span:first-child {
     top: 600px; }
   section #hojas-h span:nth-child(2) {
@@ -1311,6 +1294,17 @@ section {
     top: 370px; }
   section #hojas-h span:nth-child(4) {
     top: 230px; } }
+@media all and (min-width: 530px) {
+  section #equipamiento section img {
+    display: block;
+    margin: 0 auto;
+    width: 60%; }
+  section #galeria::before {
+    border-right: 683px solid transparent; }
+  section #galeria section:first-child section:first-child {
+    width: 44%; }
+  section #galeria section:first-child section:last-child p {
+    margin: 30px auto; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -1325,7 +1319,9 @@ section {
     width: 15%; }
   section #banner-principal-hab-general section.contenido-texto-banner section {
     padding: 60px 20px;
-    width: 60%; }
+    width: 70%; }
+    section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+      font-size: 570%; }
     section #banner-principal-hab-general section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-hab section h2 {
@@ -1339,7 +1335,8 @@ section {
       position: absolute;
       right: 0;
       top: 270px;
-      width: 50%; }
+      text-align: left;
+      width: 40%; }
     section #equipamiento section {
       height: 100%;
       position: relative; }
@@ -1407,8 +1404,6 @@ section {
 
   section #banner-principal-hab-general::after {
     left: -361px; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
-    width: 40%; }
   section #banner-principal-hab-general section.contenido-texto-banner span {
     bottom: 0;
     width: 10%; }
@@ -1424,6 +1419,7 @@ section {
   section #equipamiento {
     height: 950px; }
     section #equipamiento h2 {
+      font-size: 250%;
       right: 40px;
       top: 360px;
       width: 40%; }
@@ -1441,6 +1437,8 @@ section {
     flex-flow: row nowrap;
     justify-content: center;
     width: 85%; }
+    section #formulario h2 {
+      font-size: 250%; }
     section #formulario section:first-child {
       border-right: 1px solid #470052;
       margin: 20px auto 70px;
@@ -1487,7 +1485,7 @@ section {
   section #equipamiento {
     height: 1030px; }
     section #equipamiento h2 {
-      right: 190px;
+      right: 130px;
       top: 420px;
       width: 30%; }
     section #equipamiento section img {
@@ -1709,376 +1707,359 @@ canvas {
 template, [hidden] {
   display: none; }
 
-h1 {
-  margin: 0; }
-
-h2 {
-  font-family: "madame";
-  font-size: 370%; }
-
-p {
-  font-size: 150%;
-  font-family: "Arsenal-Regular"; }
-
 .desktop, .tablet {
   display: none; }
 
-section {
-  position: relative; }
-  section h2 {
-    color: #470052; }
-  section #banner-principal-finestra {
-    background-image: url("../images/fotografia/bg-luna-piena.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    z-index: 1; }
-    section #banner-principal-finestra aside {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: auto;
-      position: fixed;
-      right: 0;
-      top: 25%;
-      transform: translateY(-25%);
-      width: 60px;
-      z-index: 3; }
-      section #banner-principal-finestra aside a:hover {
-        border: 0;
-        padding: 0; }
-      section #banner-principal-finestra aside a img {
-        display: block;
-        margin: 7px auto 0;
-        width: 70%; }
-    section #banner-principal-finestra section.contenido-texto-banner {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-      position: absolute;
-      width: 100%; }
-      section #banner-principal-finestra section.contenido-texto-banner span {
-        background-image: url("../images/icono-finestra-blanco.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
-        height: 90px;
-        position: absolute;
-        width: 20%;
-        z-index: 1; }
-      section #banner-principal-finestra section.contenido-texto-banner section {
-        margin: 0 auto;
-        width: 80%; }
-        section #banner-principal-finestra section.contenido-texto-banner section h2 {
-          color: #fff;
-          font-size: 470%;
-          font-family: "blackjack";
-          line-height: 0.8;
-          text-align: center; }
-    section #banner-principal-finestra a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 40px;
+section #banner-principal-finestra {
+  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-finestra aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-finestra aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-finestra aside a img {
       display: block;
-      height: 48px;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-finestra section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-finestra section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
       position: absolute;
-      width: 65px; }
-  section #banner-principal-finestra::before {
-    background-color: rgba(71, 0, 82, 0.4);
-    content: "";
-    display: block;
-    height: 100%; }
-  section #banner-principal-finestra::after {
-    content: url("../images/cenefa.png");
-    bottom: -5px;
-    left: -733px;
-    position: absolute;
-    width: 100%; }
-  section #bienvenida-finestra {
-    height: 230px;
-    margin: 0 auto;
-    position: relative;
-    width: 80%; }
-    section #bienvenida-finestra section {
-      padding: 20px 0;
+      width: 20%;
       z-index: 1; }
-      section #bienvenida-finestra section h2 {
-        color: #333333;
-        font-family: "allura";
-        font-size: 180%;
-        margin: 30px auto;
+    section #banner-principal-finestra section.contenido-texto-banner section {
+      margin: 0 auto;
+      width: 80%; }
+      section #banner-principal-finestra section.contenido-texto-banner section h2 {
+        color: #fff;
+        font-size: 330%;
+        font-family: "blackjack";
         text-align: center; }
-    section #bienvenida-finestra div span {
-      position: absolute; }
-      section #bienvenida-finestra div span img {
-        width: 30%; }
-      section #bienvenida-finestra div span:first-child {
-        left: 0; }
-      section #bienvenida-finestra div span:nth-child(2) {
-        right: 0; }
-      section #bienvenida-finestra div span:nth-child(3) {
-        left: 0; }
-      section #bienvenida-finestra div span:last-child {
-        right: 0; }
-  section #ubicacion {
-    height: auto; }
-    section #ubicacion section:first-child {
-      position: relative; }
-      section #ubicacion section:first-child span {
-        background-color: #00A06D;
-        bottom: 0;
-        height: 200px;
-        left: 40px;
-        opacity: 0.7;
-        position: absolute;
-        width: 200px; }
-      section #ubicacion section:first-child section {
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 3px 5px 8px #ccc;
-        height: auto;
-        margin: 0 auto;
-        padding: 20px;
-        width: 62%;
-        z-index: 1; }
-        section #ubicacion section:first-child section p {
-          text-align: center; }
-    section #ubicacion section:last-child section iframe {
-      height: 300px;
-      width: 100%; }
-  section #pet {
-    align-content: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 100px auto 0;
-    width: 80%; }
-    section #pet section:first-child p {
-      margin: 10px auto 40px;
-      text-align: left; }
-    section #pet section:last-child {
-      position: relative; }
-      section #pet section:last-child span {
-        background-color: #00A06D;
-        bottom: -20px;
-        height: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        width: 200px; }
-      section #pet section:last-child img {
-        position: relative;
-        width: 100%; }
-  section #galeria-finestra {
-    height: auto;
-    align-content: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 100px auto 70px;
+  section #banner-principal-finestra a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
+    display: block;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 65px; }
+section #banner-principal-finestra::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-finestra::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #bienvenida-finestra {
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+  width: 80%; }
+  section #bienvenida-finestra section {
+    padding: 20px 0;
+    z-index: 1; }
+    section #bienvenida-finestra section h2 {
+      color: #333333;
+      font-family: "allura";
+      font-size: 180%;
+      margin: 30px auto;
+      text-align: center; }
+  section #bienvenida-finestra div span {
+    position: absolute; }
+    section #bienvenida-finestra div span img {
+      width: 30%; }
+    section #bienvenida-finestra div span:first-child {
+      left: 0; }
+    section #bienvenida-finestra div span:nth-child(2) {
+      right: 0; }
+    section #bienvenida-finestra div span:nth-child(3) {
+      left: 0; }
+    section #bienvenida-finestra div span:last-child {
+      right: 0; }
+section #ubicacion {
+  height: auto; }
+  section #ubicacion section:first-child {
     position: relative; }
-    section #galeria-finestra section:first-child {
+    section #ubicacion section:first-child span {
+      background-color: #00A06D;
+      bottom: 0;
+      height: 200px;
+      left: 40px;
+      opacity: 0.7;
+      position: absolute;
+      width: 200px; }
+    section #ubicacion section:first-child section {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 3px 5px 8px #ccc;
+      height: auto;
+      margin: 0 auto;
+      padding: 20px;
+      width: 62%;
+      z-index: 1; }
+      section #ubicacion section:first-child section p {
+        text-align: center; }
+  section #ubicacion section:last-child section iframe {
+    height: 300px;
+    width: 100%; }
+section #pet {
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 100px auto 0;
+  width: 80%; }
+  section #pet section:first-child p {
+    margin: 10px auto 40px;
+    text-align: left; }
+  section #pet section:last-child {
+    position: relative; }
+    section #pet section:last-child span {
+      background-color: #00A06D;
+      bottom: -20px;
+      height: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 200px; }
+    section #pet section:last-child img {
+      position: relative;
       width: 100%; }
-      section #galeria-finestra section:first-child div.img-galeria-hab {
-        background-image: url("../images/fotografia/bg-principal-hab.jpg");
+section #galeria-finestra {
+  height: auto;
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 100px auto 70px;
+  position: relative; }
+  section #galeria-finestra section:first-child {
+    width: 100%; }
+    section #galeria-finestra section:first-child div.img-galeria-hab {
+      background-image: url("../images/fotografia/bg-principal-hab.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      margin: 0;
+      background-size: cover;
+      height: 500px;
+      width: 100%; }
+    section #galeria-finestra section:first-child .owl-theme .owl-nav {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%; }
+    section #galeria-finestra section:first-child .owl-theme .owl-nav button {
+      width: 45%; }
+      section #galeria-finestra section:first-child .owl-theme .owl-nav button span {
+        display: block;
+        height: 50px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 3px;
-        margin: 0;
-        background-size: cover;
-        height: 500px;
-        width: 100%; }
-      section #galeria-finestra section:first-child .owl-theme .owl-nav {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%; }
-      section #galeria-finestra section:first-child .owl-theme .owl-nav button {
-        width: 45%; }
-        section #galeria-finestra section:first-child .owl-theme .owl-nav button span {
-          display: block;
-          height: 50px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          margin: 3px;
-          width: 50px; }
-        section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-anterior {
-          background-image: url("../images/anterior.png"); }
-        section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-siguiente {
-          background-image: url("../images/siguiente.png");
-          float: right; }
-      section #galeria-finestra section:first-child .owl-theme .owl-nav [class*=owl-]:hover {
-        background: transparent; }
-      section #galeria-finestra section:first-child .owl-theme .owl-dots {
-        display: none; }
-    section #galeria-finestra #como-llegar::before {
-      border-bottom: 61px solid #33CC99;
-      border-left: 693px solid transparent;
-      content: "";
-      height: 0;
-      left: 0;
-      position: absolute;
-      top: -60px;
-      width: 0; }
-    section #galeria-finestra #como-llegar {
-      background-color: #33CC99;
-      height: auto;
-      width: 100%;
-      z-index: 1; }
-      section #galeria-finestra #como-llegar section:first-child {
-        margin: 20px auto;
-        width: 80%;
-        z-index: 2; }
-        section #galeria-finestra #como-llegar section:first-child h2 {
-          color: #fff;
-          line-height: 0.7;
-          text-align: center; }
-        section #galeria-finestra #como-llegar section:first-child p {
-          color: #fff;
-          font-size: 150%;
-          margin: 10px auto;
-          text-align: center; }
-      section #galeria-finestra #como-llegar section:last-child section.transporte {
-        background-color: #fff;
-        border-radius: 5px;
-        height: 200px;
-        margin: 100px auto;
-        position: relative;
-        transform: rotate(45deg);
-        width: 200px; }
-        section #galeria-finestra #como-llegar section:last-child section.transporte div {
-          background-color: #584880;
-          border-radius: 5px;
-          bottom: 18px;
-          height: 166px;
-          margin: 0 auto;
-          position: absolute;
-          right: 18px;
-          transform: rotate(360deg);
-          width: 166px; }
-          section #galeria-finestra #como-llegar section:last-child section.transporte div p {
-            color: #fff;
-            font-size: 115%;
-            left: -2px;
-            margin: 0;
-            position: absolute;
-            top: 30px;
-            text-align: center;
-            transform: rotate(-45deg); }
-          section #galeria-finestra #como-llegar section:last-child section.transporte div img {
-            transform: rotate(-45deg);
-            margin-left: 50px;
-            margin-top: 65px;
-            width: 60%; }
-      section #galeria-finestra #como-llegar section:last-child section.transporte:nth-child(2) div img {
-        margin-top: 77px;
-        margin-left: 55px; }
-      section #galeria-finestra #como-llegar section:last-child section.transporte:last-child div img {
-        margin-top: 48px;
-        margin-left: 50px; }
-  section #formulario-contacto {
-    height: auto;
-    margin: 0 auto 100px;
-    width: 80%; }
-    section #formulario-contacto h2 {
-      background-color: #038A6E;
-      border-radius: 5px;
-      color: #fff;
-      padding: 15px 30px;
-      text-align: center; }
-    section #formulario-contacto p {
-      color: #333333;
-      margin: 20px auto 50px;
-      text-align: center; }
-    section #formulario-contacto section:last-child {
-      height: auto;
-      margin: 20px auto;
-      width: 100%; }
-      section #formulario-contacto section:last-child form {
-        margin: 0 auto;
-        width: 90%; }
-        section #formulario-contacto section:last-child form label {
-          color: #333333;
-          display: block;
-          font-family: "Arsenal-Regular";
-          font-size: 150%;
-          height: 80px;
-          padding-bottom: 5px;
-          width: 100%; }
-          section #formulario-contacto section:last-child form label input {
-            border: 1px solid #470052;
-            border-radius: 5px;
-            height: 40px;
-            padding-left: 5px;
-            width: 100%; }
-        section #formulario-contacto section:last-child form button {
-          background-color: #33CC99;
-          -webkit-appearance: none;
-          border-radius: 5px;
-          border: 1px solid #470052;
-          color: #470052;
-          display: block;
-          height: 35px;
-          margin: 20px auto 0;
-          text-align: center;
-          transition-duration: 0.8s;
-          width: 130px;
-          color: #fff;
-          border: 0; }
-          section #formulario-contacto section:last-child form button:hover {
-            background-color: #470052;
-            border: 0;
-            color: #fff;
-            padding: 0; }
-  section #hojas-f span {
+        width: 50px; }
+      section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-anterior {
+        background-image: url("../images/anterior.png"); }
+      section #galeria-finestra section:first-child .owl-theme .owl-nav button span.btn-siguiente {
+        background-image: url("../images/siguiente.png");
+        float: right; }
+    section #galeria-finestra section:first-child .owl-theme .owl-nav [class*=owl-]:hover {
+      background: transparent; }
+    section #galeria-finestra section:first-child .owl-theme .owl-dots {
+      display: none; }
+  section #galeria-finestra #como-llegar::before {
+    border-bottom: 61px solid #33CC99;
+    border-left: 693px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
     position: absolute;
-    right: -260px; }
-    section #hojas-f span:first-child, section #hojas-f span:nth-child(2) {
-      top: 420px; }
-      section #hojas-f span:first-child img, section #hojas-f span:nth-child(2) img {
-        width: 20%; }
-    section #hojas-f span:first-child, section #hojas-f span:nth-child(3) {
-      right: auto;
-      left: 0; }
-    section #hojas-f span:nth-child(3) img, section #hojas-f span:nth-child(4) img {
-      width: 30%; }
-    section #hojas-f span:first-child {
-      top: 860px; }
-    section #hojas-f span:nth-child(2) img {
-      transform: scale(1, -1); }
-    section #hojas-f span:nth-child(3) {
-      top: 660px; }
-      section #hojas-f span:nth-child(3) img {
-        transform: scaleX(-1); }
-    section #hojas-f span:nth-child(4) {
-      top: 1080px; }
-    section #hojas-f span:nth-child(7) {
-      right: 150px; }
-      section #hojas-f span:nth-child(7) img {
-        transform: scaleX(-1); }
+    top: -60px;
+    width: 0; }
+  section #galeria-finestra #como-llegar {
+    background-color: #33CC99;
+    height: auto;
+    width: 100%;
+    z-index: 1; }
+    section #galeria-finestra #como-llegar section:first-child {
+      margin: 50px auto;
+      width: 80%;
+      z-index: 2; }
+      section #galeria-finestra #como-llegar section:first-child h2 {
+        color: #fff;
+        text-align: center; }
+      section #galeria-finestra #como-llegar section:first-child p {
+        color: #fff;
+        margin: 10px auto;
+        text-align: center; }
+    section #galeria-finestra #como-llegar section:last-child section.transporte {
+      background-color: #fff;
+      border-radius: 5px;
+      height: 150px;
+      margin: 100px auto;
+      position: relative;
+      transform: rotate(45deg);
+      width: 150px; }
+      section #galeria-finestra #como-llegar section:last-child section.transporte div {
+        background-color: #584880;
+        border-radius: 5px;
+        bottom: 15px;
+        height: 120px;
+        margin: 0 auto;
+        position: absolute;
+        right: 15px;
+        transform: rotate(360deg);
+        width: 120px; }
+        section #galeria-finestra #como-llegar section:last-child section.transporte div p {
+          color: #fff;
+          font-size: 115%;
+          left: -2px;
+          margin: 0;
+          position: absolute;
+          top: 30px;
+          text-align: center;
+          transform: rotate(-45deg); }
+        section #galeria-finestra #como-llegar section:last-child section.transporte div img {
+          transform: rotate(-45deg);
+          margin-left: 40px;
+          margin-top: 50px;
+          width: 55%; }
+    section #galeria-finestra #como-llegar section:last-child section.transporte:nth-child(2) div img {
+      margin-top: 58px;
+      margin-left: 44px; }
+    section #galeria-finestra #como-llegar section:last-child section.transporte:last-child div img {
+      margin-top: 48px;
+      margin-left: 50px;
+      width: 50%; }
+section #formulario-contacto {
+  height: auto;
+  margin: 0 auto 100px;
+  width: 80%; }
+  section #formulario-contacto h2 {
+    background-color: #038A6E;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center; }
+  section #formulario-contacto p {
+    color: #333333;
+    margin: 20px auto 50px;
+    text-align: center; }
+  section #formulario-contacto section:last-child {
+    height: auto;
+    margin: 20px auto;
+    width: 100%; }
+    section #formulario-contacto section:last-child form {
+      margin: 0 auto;
+      width: 90%; }
+      section #formulario-contacto section:last-child form label {
+        color: #333333;
+        display: block;
+        font-family: "Arsenal-Regular";
+        font-size: 100%;
+        height: 80px;
+        padding-bottom: 5px;
+        width: 100%; }
+        section #formulario-contacto section:last-child form label input {
+          border: 1px solid #470052;
+          border-radius: 5px;
+          height: 40px;
+          padding-left: 5px;
+          width: 100%; }
+      section #formulario-contacto section:last-child form button {
+        background-color: #33CC99;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px;
+        color: #fff;
+        border: 0; }
+        section #formulario-contacto section:last-child form button:hover {
+          background-color: #470052;
+          border: 0;
+          color: #fff;
+          padding: 0; }
+section #hojas-f span {
+  position: absolute;
+  right: -260px; }
+  section #hojas-f span:first-child, section #hojas-f span:nth-child(2) {
+    top: 420px; }
+    section #hojas-f span:first-child img, section #hojas-f span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-f span:first-child, section #hojas-f span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-f span:nth-child(3) img, section #hojas-f span:nth-child(4) img {
+    width: 30%; }
+  section #hojas-f span:first-child {
+    top: 860px; }
+  section #hojas-f span:nth-child(2) img {
+    transform: scale(1, -1); }
+  section #hojas-f span:nth-child(3) {
+    top: 660px; }
+    section #hojas-f span:nth-child(3) img {
+      transform: scaleX(-1); }
+  section #hojas-f span:nth-child(4) {
+    top: 1080px; }
+  section #hojas-f span:nth-child(7) {
+    right: 150px; }
+    section #hojas-f span:nth-child(7) img {
+      transform: scaleX(-1); }
 
 @media all and (min-width: 360px) {
   section #bienvenida-finestra section h2 {
@@ -2135,6 +2116,8 @@ section {
   section #banner-principal-finestra section.contenido-texto-banner section {
     padding: 60px 20px;
     width: 60%; }
+    section #banner-principal-finestra section.contenido-texto-banner section h2 {
+      font-size: 570%; }
     section #banner-principal-finestra section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-finestra section h2 {
@@ -2219,13 +2202,15 @@ section {
   section #banner-principal-finestra::after {
     left: -361px; }
   section #banner-principal-finestra section.contenido-texto-banner section {
-    width: 40%; }
+    width: 60%; }
+    section #banner-principal-finestra section.contenido-texto-banner section h2 {
+      font-size: 640%; }
   section #banner-principal-finestra section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-finestra section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -2252,6 +2237,8 @@ section {
           font-size: 170%; }
   section #pet {
     height: 490px; }
+    section #pet section h2 {
+      font-size: 250%; }
     section #pet section:first-child {
       bottom: 0;
       left: 0;
@@ -2269,6 +2256,8 @@ section {
   section #galeria-finestra #como-llegar section:first-child {
     margin: 20px 50px 0 420px;
     width: 60%; }
+    section #galeria-finestra #como-llegar section:first-child h2 {
+      font-size: 250%; }
   section #formulario-contacto {
     align-content: center;
     display: flex;
@@ -2285,11 +2274,27 @@ section {
       top: 0;
       width: 100%; }
       section #formulario-contacto section:first-child h2 {
-        width: 50%; }
+        font-size: 250%;
+        margin-left: 30px;
+        position: relative;
+        width: 50%;
+        z-index: 1; }
       section #formulario-contacto section:first-child p {
         float: right;
+        margin: 0 auto 50px;
         text-align: right;
         width: 45%; }
+      section #formulario-contacto section:first-child span {
+        background-image: url("../images/forma-formulario.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        height: 381px;
+        left: -100px;
+        position: absolute;
+        top: -128px;
+        width: 1050px; }
     section #formulario-contacto section:last-child {
       bottom: 0;
       position: absolute;
@@ -2324,6 +2329,8 @@ section {
     section #hojas-f span:nth-child(7) img {
       width: 40%; } }
 @media all and (min-width: 1124px) {
+  section h2 {
+    font-size: 300%; }
   section #banner-principal-finestra::after {
     left: -155px; }
   section #banner-principal-finestra section.contenido-texto-banner section {
@@ -2331,7 +2338,7 @@ section {
     section #banner-principal-finestra section.contenido-texto-banner section h2 {
       font-size: 600%; }
   section #banner-principal-finestra section.contenido-texto-banner section::after {
-    bottom: 50px; }
+    bottom: 68px; }
   section #banner-principal-finestra section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-finestra {
@@ -2347,27 +2354,36 @@ section {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
+  section #pet section:first-child h2 {
+    padding-bottom: 10px; }
   section #pet section:first-child p {
     float: left;
     margin: 0;
     width: 75%; }
   section #galeria-finestra #como-llegar::before {
     border-left: 1623px solid transparent; }
-  section #galeria-finestra #como-llegar section:first-child {
-    float: right;
-    margin: 20px 230px;
-    width: 40%; }
-    section #galeria-finestra #como-llegar section:first-child h2 {
-      text-align: right; }
-    section #galeria-finestra #como-llegar section:first-child p {
-      text-align: right; }
-  section #galeria-finestra #como-llegar section:last-child {
-    margin-top: 112px; }
+  section #galeria-finestra #como-llegar {
+    height: 284px; }
+    section #galeria-finestra #como-llegar section:first-child {
+      float: right;
+      margin: 20px 230px;
+      width: 40%; }
+      section #galeria-finestra #como-llegar section:first-child h2 {
+        text-align: right; }
+      section #galeria-finestra #como-llegar section:first-child p {
+        text-align: right; }
+    section #galeria-finestra #como-llegar section:last-child {
+      margin-top: 112px; }
   section #formulario-contacto section:first-child p {
     margin-right: 50px;
     width: 35%; }
+  section #formulario-contacto section:first-child span {
+    left: -220px;
+    width: 1484px; }
   section #formulario-contacto section:last-child form {
     width: 40%; }
+    section #formulario-contacto section:last-child form label {
+      font-size: 150%; }
   section #hojas-f span:first-child {
     left: 100px;
     top: 1010px; }
@@ -2398,6 +2414,9 @@ section {
     top: 2280px; }
     section #hojas-f span:nth-child(7) img {
       width: 50%; } }
+@media all and (min-width: 1440px) {
+  section #formulario-contacto section:first-child span {
+    left: -150px; } }
 @font-face {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
@@ -2578,217 +2597,199 @@ canvas {
 template, [hidden] {
   display: none; }
 
-h1 {
-  margin: 0; }
-
-h2 {
-  font-family: "madame";
-  font-size: 370%; }
-
-p {
-  font-size: 150%;
-  font-family: "Arsenal-Regular"; }
-
 .desktop, .tablet {
   display: none; }
 
-section {
-  position: relative; }
-  section h2 {
-    color: #470052; }
-  section #banner-principal-restaurante {
-    background-image: url("../images/fotografia/bg-restaurante.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    z-index: 1; }
-    section #banner-principal-restaurante aside {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: auto;
-      position: fixed;
-      right: 0;
-      top: 25%;
-      transform: translateY(-25%);
-      width: 60px;
-      z-index: 3; }
-      section #banner-principal-restaurante aside a:hover {
-        border: 0;
-        padding: 0; }
-      section #banner-principal-restaurante aside a img {
-        display: block;
-        margin: 7px auto 0;
-        width: 70%; }
-    section #banner-principal-restaurante section.contenido-texto-banner {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-      position: absolute;
-      width: 100%; }
-      section #banner-principal-restaurante section.contenido-texto-banner span {
-        background-image: url("../images/icono-finestra-blanco.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
-        height: 90px;
-        position: absolute;
-        width: 20%;
-        z-index: 1; }
-      section #banner-principal-restaurante section.contenido-texto-banner section {
-        margin: 0 auto;
-        width: 80%; }
-        section #banner-principal-restaurante section.contenido-texto-banner section h2 {
-          color: #fff;
-          font-family: "blackjack";
-          font-size: 470%;
-          line-height: 0.8;
-          text-align: center; }
-    section #banner-principal-restaurante a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 40px;
+section #banner-principal-restaurante {
+  background-image: url("../images/fotografia/bg-restaurante.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-restaurante aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-restaurante aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-restaurante aside a img {
       display: block;
-      height: 48px;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-restaurante section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-restaurante section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
       position: absolute;
-      width: 65px; }
-  section #banner-principal-restaurante::before {
-    background-color: rgba(71, 0, 82, 0.4);
-    content: "";
-    display: block;
-    height: 100%; }
-  section #banner-principal-restaurante::after {
-    content: url("../images/cenefa.png");
-    bottom: -5px;
-    left: -733px;
-    position: absolute;
-    width: 100%; }
-  section #bienvenida-restaurante {
-    height: auto;
-    margin: 0 auto;
-    width: 80%; }
-    section #bienvenida-restaurante section {
-      padding: 20px 0;
+      width: 20%;
       z-index: 1; }
-      section #bienvenida-restaurante section h2 {
-        color: #333333;
-        font-family: "allura";
-        font-size: 180%;
-        margin: 30px auto;
+    section #banner-principal-restaurante section.contenido-texto-banner section {
+      margin: 0 auto;
+      width: 80%; }
+      section #banner-principal-restaurante section.contenido-texto-banner section h2 {
+        color: #fff;
+        font-family: "blackjack";
+        font-size: 330%;
         text-align: center; }
-  section #galeria-restaurante {
-    align-content: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 100px auto 70px;
-    position: relative; }
-    section #galeria-restaurante section:first-child {
+  section #banner-principal-restaurante a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
+    display: block;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 65px; }
+section #banner-principal-restaurante::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-restaurante::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #bienvenida-restaurante {
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
+  section #bienvenida-restaurante section {
+    padding: 20px 0;
+    z-index: 1; }
+    section #bienvenida-restaurante section h2 {
+      color: #333333;
+      font-family: "allura";
+      font-size: 180%;
+      margin: 30px auto;
+      text-align: center; }
+section #galeria-restaurante {
+  align-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 100px auto 70px;
+  position: relative; }
+  section #galeria-restaurante section:first-child {
+    width: 100%; }
+    section #galeria-restaurante section:first-child div.img-galeria-hab {
+      background-image: url("../images/fotografia/bg-principal-hab.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      margin: 0;
+      background-size: cover;
+      height: 500px;
       width: 100%; }
-      section #galeria-restaurante section:first-child div.img-galeria-hab {
-        background-image: url("../images/fotografia/bg-principal-hab.jpg");
+    section #galeria-restaurante section:first-child .owl-theme .owl-nav {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%; }
+    section #galeria-restaurante section:first-child .owl-theme .owl-nav button {
+      width: 45%; }
+      section #galeria-restaurante section:first-child .owl-theme .owl-nav button span {
+        display: block;
+        height: 50px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 3px;
-        margin: 0;
-        background-size: cover;
-        height: 500px;
-        width: 100%; }
-      section #galeria-restaurante section:first-child .owl-theme .owl-nav {
-        margin: 0;
+        width: 50px; }
+      section #galeria-restaurante section:first-child .owl-theme .owl-nav button span.btn-anterior {
+        background-image: url("../images/anterior.png"); }
+      section #galeria-restaurante section:first-child .owl-theme .owl-nav button span.btn-siguiente {
+        background-image: url("../images/siguiente.png");
+        float: right; }
+    section #galeria-restaurante section:first-child .owl-theme .owl-nav [class*=owl-]:hover {
+      background: transparent; }
+    section #galeria-restaurante section:first-child .owl-theme .owl-dots {
+      display: none; }
+section #especialidad {
+  height: auto;
+  margin: 0 auto;
+  width: 85%; }
+  section #especialidad section:first-child p {
+    margin: 30px auto; }
+  section #especialidad section:last-child {
+    margin-top: 20px;
+    padding-bottom: 100px; }
+    section #especialidad section:last-child div {
+      margin: 30px auto;
+      position: relative; }
+      section #especialidad section:last-child div span {
+        background-color: #584880;
+        height: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%; }
-      section #galeria-restaurante section:first-child .owl-theme .owl-nav button {
-        width: 45%; }
-        section #galeria-restaurante section:first-child .owl-theme .owl-nav button span {
-          display: block;
-          height: 50px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          margin: 3px;
-          width: 50px; }
-        section #galeria-restaurante section:first-child .owl-theme .owl-nav button span.btn-anterior {
-          background-image: url("../images/anterior.png"); }
-        section #galeria-restaurante section:first-child .owl-theme .owl-nav button span.btn-siguiente {
-          background-image: url("../images/siguiente.png");
-          float: right; }
-      section #galeria-restaurante section:first-child .owl-theme .owl-nav [class*=owl-]:hover {
-        background: transparent; }
-      section #galeria-restaurante section:first-child .owl-theme .owl-dots {
-        display: none; }
-  section #especialidad {
-    height: auto;
-    margin: 0 auto;
-    width: 85%; }
-    section #especialidad section:first-child h2 {
-      line-height: 0.8; }
-    section #especialidad section:first-child p {
-      margin: 30px auto; }
-    section #especialidad section:last-child {
-      margin-top: 20px;
-      padding-bottom: 100px; }
-      section #especialidad section:last-child div {
-        margin: 30px auto;
+        width: 170px; }
+      section #especialidad section:last-child div img {
+        display: block;
+        margin: 0 auto;
         position: relative; }
-        section #especialidad section:last-child div span {
-          background-color: #584880;
-          height: 40px;
-          left: 50%;
-          transform: translateX(-50%);
-          position: absolute;
-          width: 170px; }
-        section #especialidad section:last-child div img {
-          display: block;
-          margin: 0 auto;
-          position: relative; }
-      section #especialidad section:last-child div:first-child span {
-        bottom: -14px; }
-      section #especialidad section:last-child div:first-child img {
-        width: 85%; }
-      section #especialidad section:last-child div:last-child span {
-        bottom: -14px; }
-      section #especialidad section:last-child div:last-child img {
-        width: 70%; }
-  section #hojas-r span {
-    position: absolute; }
-    section #hojas-r span:first-child, section #hojas-r span:nth-child(2) {
-      top: 420px; }
-      section #hojas-r span:first-child img, section #hojas-r span:nth-child(2) img {
-        width: 20%; }
-    section #hojas-r span:first-child, section #hojas-r span:nth-child(3) {
-      right: auto;
-      left: 0; }
-    section #hojas-r span:nth-child(3), section #hojas-r span:nth-child(4) {
-      top: 560px; }
-      section #hojas-r span:nth-child(3) img, section #hojas-r span:nth-child(4) img {
-        width: 30%; }
-    section #hojas-r span:first-child {
-      top: 410px; }
-    section #hojas-r span:nth-child(4) {
-      top: 490px; }
+    section #especialidad section:last-child div:first-child span {
+      bottom: -14px; }
+    section #especialidad section:last-child div:first-child img {
+      width: 85%; }
+    section #especialidad section:last-child div:last-child span {
+      bottom: -14px; }
+    section #especialidad section:last-child div:last-child img {
+      width: 70%; }
+section #hojas-r span {
+  position: absolute; }
+  section #hojas-r span:first-child, section #hojas-r span:nth-child(2) {
+    top: 420px; }
+    section #hojas-r span:first-child img, section #hojas-r span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-r span:first-child, section #hojas-r span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-r span:nth-child(3), section #hojas-r span:nth-child(4) {
+    top: 560px; }
+    section #hojas-r span:nth-child(3) img, section #hojas-r span:nth-child(4) img {
+      width: 30%; }
+  section #hojas-r span:first-child {
+    top: 410px; }
+  section #hojas-r span:nth-child(4) {
+    top: 490px; }
 
 @media all and (min-width: 360px) {
   section #hojas-r span:first-child {
@@ -2827,12 +2828,11 @@ section {
 
   section #banner-principal-restaurante::after {
     left: -480px; }
-  section #banner-principal-restaurante section.contenido-texto-banner span {
-    bottom: -35px;
-    width: 15%; }
   section #banner-principal-restaurante section.contenido-texto-banner section {
     padding: 60px 20px;
-    width: 60%; }
+    width: 80%; }
+    section #banner-principal-restaurante section.contenido-texto-banner section h2 {
+      font-size: 570%; }
     section #banner-principal-restaurante section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-restaurante section h2 {
@@ -2896,14 +2896,12 @@ section {
 
   section #banner-principal-restaurante::after {
     left: -361px; }
-  section #banner-principal-restaurante section.contenido-texto-banner section {
-    width: 40%; }
   section #banner-principal-restaurante section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-restaurante section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -2939,12 +2937,6 @@ section {
 @media all and (min-width: 1124px) {
   section #banner-principal-restaurante::after {
     left: -155px; }
-  section #banner-principal-restaurante section.contenido-texto-banner section {
-    width: 60%; }
-    section #banner-principal-restaurante section.contenido-texto-banner section h2 {
-      font-size: 600%; }
-  section #banner-principal-restaurante section.contenido-texto-banner section::after {
-    bottom: 50px; }
   section #banner-principal-restaurante section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-restaurante {
@@ -3156,283 +3148,258 @@ canvas {
 template, [hidden] {
   display: none; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  box-sizing: border-box;
-  overflow-x: hidden; }
-
-html, body {
-  width: 100%;
-  height: 100%; }
-
-h1 {
-  margin: 0; }
-
-h2 {
-  font-family: "madame";
-  font-size: 370%; }
-
-p {
-  font-size: 150%;
-  font-family: "Arsenal-Regular"; }
-
 .desktop, .tablet {
   display: none; }
 
-section {
-  position: relative; }
-  section h2 {
-    color: #470052; }
-  section #banner-principal-servicios {
-    background-image: url("../images/fotografia/bg-principal-hab.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    z-index: 1; }
-    section #banner-principal-servicios aside {
-      align-content: center;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      flex-flow: row wrap;
-      height: auto;
-      position: fixed;
-      right: 0;
-      top: 25%;
-      transform: translateY(-25%);
-      width: 60px;
-      z-index: 3; }
-      section #banner-principal-servicios aside a:hover {
-        border: 0;
-        padding: 0; }
-      section #banner-principal-servicios aside a img {
-        display: block;
-        margin: 7px auto 0;
-        width: 70%; }
-    section #banner-principal-servicios section.contenido-texto-banner {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-      position: absolute;
-      width: 100%; }
-      section #banner-principal-servicios section.contenido-texto-banner span {
-        background-image: url("../images/icono-finestra-blanco.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
-        height: 90px;
-        position: absolute;
-        width: 20%;
-        z-index: 1; }
-      section #banner-principal-servicios section.contenido-texto-banner section {
-        margin: 0 auto;
-        width: 80%; }
-        section #banner-principal-servicios section.contenido-texto-banner section h2 {
-          color: #fff;
-          font-family: "blackjack";
-          font-size: 470%;
-          line-height: 0.8;
-          text-align: center; }
-    section #banner-principal-servicios a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 40px;
+section #banner-principal-servicios {
+  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-servicios aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-servicios aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-servicios aside a img {
       display: block;
-      height: 48px;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-servicios section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-servicios section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       margin: 3px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
       position: absolute;
-      width: 65px; }
-  section #banner-principal-servicios::before {
-    background-color: rgba(71, 0, 82, 0.4);
-    content: "";
-    display: block;
-    height: 100%; }
-  section #banner-principal-servicios::after {
-    content: url("../images/cenefa.png");
-    bottom: -5px;
-    left: -733px;
-    position: absolute;
-    width: 100%; }
-  section #bienvenida-servicios {
-    height: auto;
-    margin: 0 auto;
-    width: 80%; }
-    section #bienvenida-servicios section {
-      padding: 20px 0; }
-      section #bienvenida-servicios section h2 {
-        color: #333333;
-        font-size: 180%;
-        font-family: "allura";
-        margin: 30px auto;
-        text-align: center; }
-  section #contenedor-servicios {
-    height: auto;
-    margin: 70px auto;
-    width: 80%; }
-    section #contenedor-servicios section.min-servicios {
-      margin-bottom: 30px;
-      position: relative; }
-      section #contenedor-servicios section.min-servicios h2 {
-        text-align: center; }
-      section #contenedor-servicios section.min-servicios p {
-        line-height: 1.5;
-        text-align: center; }
-      section #contenedor-servicios section.min-servicios a {
-        border-radius: 5px;
-        border: 1px solid #470052;
-        color: #470052;
-        display: block;
-        height: 35px;
-        margin: 20px auto 0;
-        text-align: center;
-        transition-duration: 0.8s;
-        width: 130px; }
-        section #contenedor-servicios section.min-servicios a:hover {
-          background-color: #470052;
-          border: 0;
-          color: #fff;
-          padding: 0; }
-      section #contenedor-servicios section.min-servicios section:first-child {
-        height: 250px;
-        z-index: 1; }
-        section #contenedor-servicios section.min-servicios section:first-child span {
-          background-color: #584880;
-          bottom: 30px;
-          display: block;
-          height: 50px;
-          left: 50%;
-          transform: translateX(-50%);
-          position: absolute;
-          width: 230px; }
-        section #contenedor-servicios section.min-servicios section:first-child img {
-          display: block;
-          margin: 0 auto;
-          position: relative;
-          width: 100%; }
-    section #contenedor-servicios section.min-servicios:nth-child(2) section:first-child span {
-      background-color: #038A6E; }
-    section #contenedor-servicios section.min-servicios:nth-child(3) section:first-child span {
-      background-color: #00A06D; }
-    section #contenedor-servicios section.min-servicios:nth-child(4) section:first-child span {
-      background-color: #33CC99; }
-  section #planes::before {
-    border-bottom: 61px solid #584880;
-    border-right: 480px solid transparent;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: -60px;
-    width: 0; }
-  section #planes {
-    height: auto;
-    position: relative; }
-    section #planes section:first-child {
-      background-color: #584880;
-      height: 130px; }
-      section #planes section:first-child h2 {
+      width: 20%;
+      z-index: 1; }
+    section #banner-principal-servicios section.contenido-texto-banner section {
+      margin: 0 auto;
+      width: 80%; }
+      section #banner-principal-servicios section.contenido-texto-banner section h2 {
         color: #fff;
-        margin: 0 auto;
-        width: 70%; }
-    section #planes section:last-child {
-      background-color: transparent;
+        font-family: "blackjack";
+        font-size: 330%;
+        text-align: center; }
+  section #banner-principal-servicios a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
+    display: block;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 65px; }
+section #banner-principal-servicios::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-servicios::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #bienvenida-servicios {
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
+  section #bienvenida-servicios section {
+    padding: 20px 0; }
+    section #bienvenida-servicios section h2 {
+      color: #333333;
+      font-size: 180%;
+      font-family: "allura";
+      margin: 30px auto;
+      text-align: center; }
+section #contenedor-servicios {
+  height: auto;
+  margin: 70px auto;
+  width: 80%; }
+  section #contenedor-servicios section.min-servicios {
+    margin-bottom: 30px;
+    position: relative; }
+    section #contenedor-servicios section.min-servicios h2 {
+      text-align: center; }
+    section #contenedor-servicios section.min-servicios p {
+      line-height: 1.5;
+      text-align: center; }
+    section #contenedor-servicios section.min-servicios a {
+      border-radius: 5px;
+      border: 1px solid #470052;
+      color: #470052;
+      display: block;
+      height: 35px;
+      margin: 20px auto 0;
+      text-align: center;
+      transition-duration: 0.8s;
+      width: 130px; }
+      section #contenedor-servicios section.min-servicios a:hover {
+        background-color: #470052;
+        border: 0;
+        color: #fff;
+        padding: 0; }
+    section #contenedor-servicios section.min-servicios section:first-child {
       height: auto;
-      left: 50%;
-      transform: translateX(-50%);
-      top: -20px;
-      width: 75%; }
-      section #planes section:last-child section {
-        background-color: transparent; }
-      section #planes section:last-child section.contenido-planes {
-        background-color: #fff;
-        box-shadow: 1px 1px 10px #333333;
-        border-radius: 5px;
-        height: 348px;
-        margin: 0 0 70px;
-        padding: 30px;
-        top: 0;
-        width: 100%; }
-        section #planes section:last-child section.contenido-planes section:first-child {
-          height: 60px; }
-          section #planes section:last-child section.contenido-planes section:first-child h3 {
-            border-bottom: 2px solid #470052;
-            color: #584880;
-            font-family: "madame";
-            font-size: 300%;
-            text-align: center; }
-        section #planes section:last-child section.contenido-planes section:nth-child(2) {
+      z-index: 1; }
+      section #contenedor-servicios section.min-servicios section:first-child span {
+        background-color: #584880;
+        bottom: -18px;
+        display: block;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 180px; }
+      section #contenedor-servicios section.min-servicios section:first-child img {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 85%; }
+    section #contenedor-servicios section.min-servicios section:last-child {
+      margin-top: 30px; }
+  section #contenedor-servicios section.min-servicios:nth-child(2) section:first-child span {
+    background-color: #038A6E; }
+  section #contenedor-servicios section.min-servicios:nth-child(3) section:first-child span {
+    background-color: #00A06D; }
+  section #contenedor-servicios section.min-servicios:nth-child(4) section:first-child span {
+    background-color: #33CC99; }
+section #planes::before {
+  border-bottom: 62px solid #584880;
+  border-right: 480px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -60px;
+  width: 0; }
+section #planes {
+  height: auto;
+  position: relative;
+  padding-bottom: 60px; }
+  section #planes section:first-child {
+    background-color: #584880;
+    height: 90px; }
+    section #planes section:first-child h2 {
+      color: #fff;
+      margin: 0 auto;
+      width: 70%; }
+  section #planes section:last-child {
+    background-color: transparent;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    width: 75%; }
+    section #planes section:last-child section {
+      background-color: transparent; }
+    section #planes section:last-child section.contenido-planes {
+      background-color: #fff;
+      box-shadow: 1px 1px 10px #333333;
+      border-radius: 5px;
+      height: 250px;
+      margin: 0 0 70px;
+      padding: 30px;
+      top: 0;
+      width: 100%; }
+      section #planes section:last-child section.contenido-planes section:first-child {
+        height: 60px; }
+        section #planes section:last-child section.contenido-planes section:first-child h3 {
+          border-bottom: 2px solid #470052;
+          color: #584880;
+          font-family: "playball";
+          font-size: 170%;
+          padding-bottom: 10px;
+          text-align: center; }
+      section #planes section:last-child section.contenido-planes section:nth-child(2) {
+        height: auto;
+        margin: 20px auto 30px; }
+        section #planes section:last-child section.contenido-planes section:nth-child(2) p {
+          text-align: center; }
+      section #planes section:last-child section.contenido-planes section:last-child {
+        position: relative;
+        top: 0; }
+        section #planes section:last-child section.contenido-planes section:last-child span {
+          background-color: #00A06D;
+          border-radius: 5px;
+          display: block;
           height: auto;
-          margin: 30px auto; }
-          section #planes section:last-child section.contenido-planes section:nth-child(2) p {
+          margin: 0 auto;
+          padding: 10px;
+          width: 150px; }
+          section #planes section:last-child section.contenido-planes section:last-child span p {
+            color: #fff;
+            font-size: 200%;
             text-align: center; }
-        section #planes section:last-child section.contenido-planes section:last-child {
-          position: relative;
-          top: -20px; }
-          section #planes section:last-child section.contenido-planes section:last-child span {
-            background-color: #00A06D;
-            border-radius: 5px;
-            display: block;
-            height: auto;
-            margin: 0 auto;
-            padding: 10px;
-            width: 150px; }
-            section #planes section:last-child section.contenido-planes section:last-child span p {
-              color: #fff;
-              font-size: 200%;
-              text-align: center; }
-  section #hojas-servicios span {
-    position: absolute; }
-    section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(2) {
-      right: -250px;
-      top: 420px; }
-      section #hojas-servicios span:first-child img, section #hojas-servicios span:nth-child(2) img {
-        width: 20%; }
-    section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(3) {
-      right: auto;
-      left: 0; }
-    section #hojas-servicios span:nth-child(3), section #hojas-servicios span:nth-child(4) {
-      top: 560px; }
-      section #hojas-servicios span:nth-child(3) img, section #hojas-servicios span:nth-child(4) img {
-        width: 30%; }
-    section #hojas-servicios span:first-child {
-      left: auto;
-      top: 410px; }
-    section #hojas-servicios span:nth-child(4) {
-      right: -240px;
-      top: 490px; }
-    section #hojas-servicios span:nth-child(5) {
-      left: -150px;
-      top: 1110px; }
-      section #hojas-servicios span:nth-child(5) img {
-        width: 70%; }
-    section #hojas-servicios span:nth-child(6) {
-      right: -170px;
-      top: 1330px; }
-      section #hojas-servicios span:nth-child(6) img {
-        width: 80%; }
-    section #hojas-servicios span:last-child {
-      top: 1280px; }
-      section #hojas-servicios span:last-child img {
-        width: 30%; }
+section #hojas-servicios span {
+  position: absolute; }
+  section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(2) {
+    right: -250px;
+    top: 420px; }
+    section #hojas-servicios span:first-child img, section #hojas-servicios span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-servicios span:nth-child(3), section #hojas-servicios span:nth-child(4) {
+    top: 560px; }
+    section #hojas-servicios span:nth-child(3) img, section #hojas-servicios span:nth-child(4) img {
+      width: 30%; }
+  section #hojas-servicios span:first-child {
+    left: auto;
+    top: 410px; }
+  section #hojas-servicios span:nth-child(4) {
+    right: -240px;
+    top: 490px; }
+  section #hojas-servicios span:nth-child(5) {
+    left: -150px;
+    top: 1110px; }
+    section #hojas-servicios span:nth-child(5) img {
+      width: 70%; }
+  section #hojas-servicios span:nth-child(6) {
+    right: -170px;
+    top: 1330px; }
+    section #hojas-servicios span:nth-child(6) img {
+      width: 80%; }
+  section #hojas-servicios span:last-child {
+    top: 1280px; }
+    section #hojas-servicios span:last-child img {
+      width: 30%; }
 
 @media all and (min-width: 360px) {
   section #hojas-servicios span:first-child {
@@ -3459,11 +3426,10 @@ section {
   section #bienvenida-servicios section:nth-child(2) section span {
     right: 43px; }
   section #contenedor-servicios section.min-servicios section:first-child img {
-    width: 80%; }
+    width: 70%; }
   section #contenedor-servicios section.min-servicios section:first-child span {
-    bottom: 15px;
     left: auto;
-    right: -20px;
+    right: 50px;
     transform: none; }
   section #hojas-servicios span:first-child {
     top: 270px; }
@@ -3480,6 +3446,14 @@ section {
     top: 800px; }
   section #hojas-servicios span:last-child {
     top: 810px; } }
+@media all and (min-width: 530px) {
+  section #planes::before {
+    border-right: 670px solid transparent; }
+  section #planes section:last-child {
+    width: 50%; } }
+@media all and (min-width: 640px) {
+  section #planes::before {
+    border-right: 750px solid transparent; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -3494,7 +3468,9 @@ section {
     width: 15%; }
   section #banner-principal-servicios section.contenido-texto-banner section {
     padding: 60px 20px;
-    width: 60%; }
+    width: 80%; }
+    section #banner-principal-servicios section.contenido-texto-banner section h2 {
+      font-size: 570%; }
     section #banner-principal-servicios section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-servicios section h2 {
@@ -3511,19 +3487,25 @@ section {
         font-size: 120%; }
       section #contenedor-servicios section.min-servicios section:first-child {
         height: 320px; }
+        section #contenedor-servicios section.min-servicios section:first-child span {
+          bottom: 13px;
+          right: -20px; }
         section #contenedor-servicios section.min-servicios section:first-child img {
           width: 100%; }
   section #planes::before {
     border-right: 796px solid transparent; }
   section #planes {
     padding-bottom: 100px; }
-    section #planes section:last-child section.contenido-planes {
-      left: auto;
-      margin: 0 auto 70px;
-      transform: none;
-      width: 58%; }
-      section #planes section:last-child section.contenido-planes section:last-child {
-        top: 0; }
+    section #planes section:last-child {
+      width: 75%; }
+      section #planes section:last-child section.contenido-planes {
+        height: auto;
+        left: auto;
+        margin: 0 auto 70px;
+        transform: none;
+        width: 58%; }
+        section #planes section:last-child section.contenido-planes section:last-child {
+          top: 50px; }
   section #hojas-servicios span:first-child {
     left: 30px;
     top: 980px; }
@@ -3563,14 +3545,12 @@ section {
 
   section #banner-principal-servicios::after {
     left: -361px; }
-  section #banner-principal-servicios section.contenido-texto-banner section {
-    width: 40%; }
   section #banner-principal-servicios section.contenido-texto-banner span {
-    bottom: -20px;
+    bottom: 0;
     width: 10%; }
   section #banner-principal-servicios section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
@@ -3601,8 +3581,6 @@ section {
     border-right: 1056px solid transparent; }
   section #planes {
     padding-bottom: 150px; }
-    section #planes section:first-child {
-      width: 83%; }
     section #planes section:last-child {
       align-content: center;
       display: flex;
@@ -3615,6 +3593,8 @@ section {
         left: auto;
         transform: none;
         width: 29%; }
+        section #planes section:last-child section.contenido-planes section:last-child {
+          top: 0; }
       section #planes section:last-child section.contenido-planes:last-child {
         display: block; }
   section #hojas-servicios span:first-child {
@@ -3640,10 +3620,6 @@ section {
     left: -155px; }
   section #banner-principal-servicios section.contenido-texto-banner section {
     width: 60%; }
-    section #banner-principal-servicios section.contenido-texto-banner section h2 {
-      font-size: 600%; }
-  section #banner-principal-servicios section.contenido-texto-banner section::after {
-    bottom: 45px; }
   section #banner-principal-servicios section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-servicios {
@@ -3657,8 +3633,8 @@ section {
     section #contenedor-servicios section.min-servicios section:first-child {
       height: 440px; }
       section #contenedor-servicios section.min-servicios section:first-child span {
-        bottom: 90px;
-        right: 22px; }
+        bottom: 128px;
+        right: 28px; }
       section #contenedor-servicios section.min-servicios section:first-child img {
         width: 80%; }
   section #planes::before {
@@ -3690,6 +3666,649 @@ section {
     top: 1670px; }
   section #hojas-servicios span:last-child {
     top: 1690px; } }
+@media all and (min-width: 1440px) {
+  section #contenedor-servicios section.min-servicios section:first-child span {
+    bottom: 116px; }
+  section #contenedor-servicios section.min-servicios:nth-child(2) section:first-child span {
+    left: 30px; } }
+@font-face {
+  font-family: 'madame';
+  src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
+@font-face {
+  font-family: 'playball';
+  src: url("../fonts/playball-regular-webfont.woff2") format("woff2"), url("../fonts/playball-regular-webfont.woff") format("woff"), url("../fonts/Playball-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'allura';
+  src: url("../fonts/allura-regular-webfont.woff2") format("woff2"), url("../fonts/allura-regular-webfont.woff") format("woff"), url("../fonts/Allura-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-Italic';
+  src: url("../fonts/arsenal-italic-webfont.woff2") format("woff2"), url("../fonts/arsenal-italic-webfont.woff") format("woff"), url("../fonts/Arsenal-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Arsenal-bold';
+  src: url("../fonts/arsenal-bold-webfont.woff2") format("woff2"), url("../fonts/arsenal-bold-webfont.woff") format("woff"), url("../fonts/Arsenal-Bold.otf") format("otf"); }
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url("../fonts/arsenal-regular-webfont.woff2") format("woff2"), url("../fonts/arsenal-regular-webfont.woff") format("woff"), url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
+    outline-width: 0; }
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template, [hidden] {
+  display: none; }
+
+.desktop, .tablet {
+  display: none; }
+
+section #banner-principal-contacto {
+  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 3px;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1; }
+  section #banner-principal-contacto aside {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+    width: 60px;
+    z-index: 3; }
+    section #banner-principal-contacto aside a:hover {
+      border: 0;
+      padding: 0; }
+    section #banner-principal-contacto aside a img {
+      display: block;
+      margin: 7px auto 0;
+      width: 70%; }
+  section #banner-principal-contacto section.contenido-texto-banner {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    position: absolute;
+    width: 100%; }
+    section #banner-principal-contacto section.contenido-texto-banner span {
+      background-image: url("../images/icono-finestra-blanco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -80px;
+      height: 90px;
+      position: absolute;
+      width: 20%;
+      z-index: 1; }
+    section #banner-principal-contacto section.contenido-texto-banner section {
+      margin: 0 auto;
+      width: 80%; }
+      section #banner-principal-contacto section.contenido-texto-banner section h2 {
+        color: #fff;
+        font-size: 330%;
+        font-family: "blackjack";
+        text-align: center; }
+  section #banner-principal-contacto a span {
+    background-image: url("../images/icono-abajo.png");
+    bottom: 40px;
+    display: block;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 65px; }
+section #banner-principal-contacto::before {
+  background-color: rgba(71, 0, 82, 0.4);
+  content: "";
+  display: block;
+  height: 100%; }
+section #banner-principal-contacto::after {
+  content: url("../images/cenefa.png");
+  bottom: -5px;
+  left: -733px;
+  position: absolute;
+  width: 100%; }
+section #formulario-c {
+  height: auto;
+  margin: 0 auto 100px;
+  width: 80%; }
+  section #formulario-c p#intro {
+    background-color: #038A6E;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center; }
+  section #formulario-c section:first-child section {
+    margin: 50px auto; }
+    section #formulario-c section:first-child section div {
+      align-content: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 85%; }
+      section #formulario-c section:first-child section div span {
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        margin: 3px 5px; }
+      section #formulario-c section:first-child section div p {
+        color: #333333;
+        font-size: 130%;
+        line-height: 1.3;
+        margin-left: 15px;
+        width: 70%; }
+      section #formulario-c section:first-child section div a {
+        color: #333333;
+        font-family: "Arsenal-Regular"; }
+      section #formulario-c section:first-child section div:first-child span {
+        background-image: url("../images/icono-ubicacion.png");
+        height: 40px;
+        width: 40px; }
+      section #formulario-c section:first-child section div:last-child {
+        margin-top: 10px; }
+        section #formulario-c section:first-child section div:last-child span {
+          background-image: url("../images/icono-telefono.png");
+          height: 30px;
+          width: 30px; }
+        section #formulario-c section:first-child section div:last-child a {
+          align-self: center;
+          font-size: 130%;
+          line-height: 1;
+          margin-left: 23px;
+          width: 70%; }
+          section #formulario-c section:first-child section div:last-child a:last-child {
+            margin-left: 63px; }
+  section #formulario-c section:last-child {
+    height: auto;
+    margin: 20px auto;
+    width: 100%; }
+    section #formulario-c section:last-child form {
+      margin: 0 auto;
+      width: 90%; }
+      section #formulario-c section:last-child form label {
+        color: #333333;
+        display: block;
+        font-family: "Arsenal-Regular";
+        font-size: 100%;
+        height: 80px;
+        padding-bottom: 5px;
+        width: 100%; }
+        section #formulario-c section:last-child form label input, section #formulario-c section:last-child form label textarea {
+          border: 1px solid #470052;
+          border-radius: 5px;
+          height: 40px;
+          padding-left: 5px;
+          width: 100%; }
+        section #formulario-c section:last-child form label textarea {
+          padding-top: 5px;
+          height: 100px; }
+      section #formulario-c section:last-child form label:nth-child(4) {
+        height: auto; }
+      section #formulario-c section:last-child form input#botonFormulario {
+        background-color: #33CC99;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        border: 1px solid #470052;
+        color: #470052;
+        display: block;
+        height: 35px;
+        margin: 20px auto 0;
+        text-align: center;
+        transition-duration: 0.8s;
+        width: 130px;
+        color: #fff;
+        border: 0; }
+        section #formulario-c section:last-child form input#botonFormulario:hover {
+          background-color: #470052;
+          border: 0;
+          color: #fff;
+          padding: 0; }
+section #hojas-f span {
+  position: absolute;
+  right: -260px; }
+  section #hojas-f span:first-child, section #hojas-f span:nth-child(2) {
+    top: 420px; }
+    section #hojas-f span:first-child img, section #hojas-f span:nth-child(2) img {
+      width: 20%; }
+  section #hojas-f span:first-child, section #hojas-f span:nth-child(3) {
+    right: auto;
+    left: 0; }
+  section #hojas-f span:nth-child(3) img, section #hojas-f span:nth-child(4) img {
+    width: 30%; }
+  section #hojas-f span:first-child {
+    top: 860px; }
+  section #hojas-f span:nth-child(2) img {
+    transform: scale(1, -1); }
+  section #hojas-f span:nth-child(3) {
+    top: 660px; }
+    section #hojas-f span:nth-child(3) img {
+      transform: scaleX(-1); }
+  section #hojas-f span:nth-child(4) {
+    top: 1080px; }
+  section #hojas-f span:nth-child(7) {
+    right: 150px; }
+    section #hojas-f span:nth-child(7) img {
+      transform: scaleX(-1); }
+
+@media all and (min-width: 360px) {
+  section #hojas-f span:first-child {
+    top: 840px; }
+  section #hojas-f span:nth-child(2) {
+    top: 620px; }
+  section #hojas-f span:nth-child(3) {
+    top: 700px; }
+  section #hojas-f span:nth-child(4) {
+    top: 1100px; } }
+@media all and (min-width: 480px) {
+  section #banner-principal-contacto a span {
+    bottom: 30px; }
+  section #banner-principal-contacto::after {
+    left: -663px; }
+  section #hojas-f span:first-child {
+    top: 270px; }
+  section #hojas-f span:nth-child(2) {
+    top: 250px; }
+  section #hojas-f span:nth-child(3) {
+    top: 370px; }
+  section #hojas-f span:nth-child(4) {
+    top: 230px; } }
+@media all and (min-width: 737px) {
+  .desktop {
+    display: none; }
+
+  .tablet {
+    display: block; }
+
+  section p {
+    font-size: 150%; }
+  section #banner-principal-contacto::after {
+    left: -480px; }
+  section #banner-principal-contacto section.contenido-texto-banner span {
+    bottom: -35px;
+    width: 15%; }
+  section #banner-principal-contacto section.contenido-texto-banner section {
+    padding: 60px 20px;
+    width: 60%; }
+    section #banner-principal-contacto section.contenido-texto-banner section h2 {
+      font-size: 570%; }
+    section #banner-principal-contacto section.contenido-texto-banner section p {
+      font-size: 130%; }
+  section #formulario-c p#intro {
+    padding: 50px 70px; }
+  section #formulario-c section:first-child section div {
+    width: 45%; }
+    section #formulario-c section:first-child section div:first-child span {
+      left: 0; }
+    section #formulario-c section:first-child section div:last-child span {
+      left: 0;
+      top: 80px; }
+  section #formulario-c section:last-child form label {
+    font-size: 150%; }
+  section #hojas-f span:first-child {
+    left: 110px;
+    top: 1290px; }
+    section #hojas-f span:first-child img {
+      width: 30%; }
+  section #hojas-f span:nth-child(2) {
+    right: -130px;
+    top: 1000px; }
+    section #hojas-f span:nth-child(2) img {
+      width: 30%; }
+  section #hojas-f span:nth-child(3) {
+    top: 1100px; }
+    section #hojas-f span:nth-child(3) img {
+      width: 50%; }
+  section #hojas-f span:nth-child(4) {
+    right: -180px;
+    top: 1540px; }
+    section #hojas-f span:nth-child(4) img {
+      width: 50%; } }
+@media all and (min-width: 1024px) {
+  .desktop {
+    display: block; }
+
+  .tablet {
+    display: none; }
+
+  section #banner-principal-contacto::after {
+    left: -361px; }
+  section #banner-principal-contacto section.contenido-texto-banner section {
+    width: 60%; }
+    section #banner-principal-contacto section.contenido-texto-banner section h2 {
+      font-size: 640%; }
+  section #banner-principal-contacto section.contenido-texto-banner span {
+    bottom: 0;
+    width: 10%; }
+  section #banner-principal-contacto section.contenido-texto-banner section::after {
+    content: url("../images/deco-titulos.png");
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; }
+  section #banner-principal-contacto aside {
+    top: 50%;
+    transform: translateY(-50%); }
+  section #formulario-c {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto 150px;
+    width: 85%; }
+    section #formulario-c p#intro {
+      float: left;
+      margin: 75px 30px 0;
+      padding: 40px;
+      position: relative;
+      width: 50%;
+      z-index: 1; }
+    section #formulario-c section:first-child {
+      border-right: 0;
+      margin: 20px auto;
+      width: 100%; }
+      section #formulario-c section:first-child p {
+        text-align: left; }
+      section #formulario-c section:first-child span {
+        background-image: url("../images/forma-formulario.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        height: 381px;
+        left: -100px;
+        position: absolute;
+        top: 0;
+        width: 1050px; }
+      section #formulario-c section:first-child section {
+        bottom: -40px;
+        position: absolute;
+        right: -70px;
+        width: 45%; }
+        section #formulario-c section:first-child section div {
+          width: 55%; }
+          section #formulario-c section:first-child section div:first-child span {
+            left: 30px; }
+          section #formulario-c section:first-child section div:last-child span {
+            left: 30px; }
+          section #formulario-c section:first-child section div:last-child a {
+            margin-left: 15px; }
+            section #formulario-c section:first-child section div:last-child a:last-child {
+              margin-left: 15px; }
+    section #formulario-c section:last-child {
+      margin: 150px auto 0;
+      position: relative;
+      width: 100%; }
+      section #formulario-c section:last-child form {
+        width: 50%; }
+        section #formulario-c section:last-child form button {
+          float: left; }
+  section #hojas-f span:first-child {
+    left: 110px;
+    top: 1000px; }
+  section #hojas-f span:nth-child(2) {
+    right: -80px;
+    top: 720px; }
+  section #hojas-f span:nth-child(3) {
+    top: 830px; }
+  section #hojas-f span:nth-child(4) {
+    top: 1110px; }
+  section #hojas-f span:nth-child(5) {
+    left: 0;
+    top: 1370px; }
+    section #hojas-f span:nth-child(5) img {
+      width: 15%; }
+  section #hojas-f span:nth-child(6) {
+    right: 0;
+    top: 4140px; }
+    section #hojas-f span:nth-child(6) img {
+      width: 100%; }
+  section #hojas-f span:nth-child(7) {
+    top: 2250px; }
+    section #hojas-f span:nth-child(7) img {
+      width: 40%; } }
+@media all and (min-width: 1124px) {
+  section h2 {
+    font-size: 300%; }
+  section #banner-principal-contacto::after {
+    left: -155px; }
+  section #banner-principal-contacto section.contenido-texto-banner section {
+    width: 60%; }
+    section #banner-principal-contacto section.contenido-texto-banner section h2 {
+      font-size: 600%; }
+  section #banner-principal-contacto section.contenido-texto-banner section::after {
+    bottom: 68px; }
+  section #banner-principal-contacto section.contenido-texto-banner span {
+    width: 7%; }
+  section #formulario-c section:first-child p {
+    margin-right: 50px;
+    width: 35%; }
+  section #formulario-c section:first-child span {
+    left: -220px;
+    width: 1484px; }
+  section #formulario-c section:first-child section div p {
+    font-size: 150%; }
+  section #formulario-c section:first-child section div:first-child span, section #formulario-c section:first-child section div:last-child span {
+    left: 60px; }
+  section #formulario-c section:first-child section div:last-child span {
+    top: 102px; }
+  section #formulario-c section:first-child section div:last-child a {
+    font-size: 150%; }
+  section #formulario-c section:last-child form {
+    width: 40%; }
+    section #formulario-c section:last-child form label {
+      font-size: 150%; }
+  section #hojas-f span:first-child {
+    left: 100px;
+    top: 1010px; }
+    section #hojas-f span:first-child img {
+      width: 70%; }
+  section #hojas-f span:nth-child(2) {
+    right: -130px;
+    top: 690px; }
+  section #hojas-f span:nth-child(3) {
+    left: 130px;
+    top: 980px; }
+    section #hojas-f span:nth-child(3) img {
+      width: 30%; }
+  section #hojas-f span:nth-child(4) {
+    right: 0;
+    top: 1470px; }
+    section #hojas-f span:nth-child(4) img {
+      width: 70%; }
+  section #hojas-f span:nth-child(5) {
+    left: 0;
+    top: 1525px; }
+    section #hojas-f span:nth-child(5) img {
+      width: 13%; }
+  section #hojas-f span:nth-child(6) {
+    top: 4630px; }
+  section #hojas-f span:nth-child(7) {
+    right: 430px;
+    top: 2280px; }
+    section #hojas-f span:nth-child(7) img {
+      width: 50%; } }
+@media all and (min-width: 1440px) {
+  section #formulario-c p#intro {
+    padding: 60px; }
+  section #formulario-c section:first-child span {
+    left: -150px; } }
 * {
   padding: 0;
   margin: 0;
@@ -3708,7 +4327,7 @@ h1 {
 
 h2 {
   font-family: "playball";
-  font-size: 280%; }
+  font-size: 200%; }
 
 p {
   font-size: 100%;
@@ -4078,38 +4697,43 @@ section {
     width: 60%; }
     section #banner-principal section.contenido-texto-banner section p {
       font-size: 130%; }
-  section #bienvenida section:first-child {
-    height: 245px; }
-    section #bienvenida section:first-child span {
-      right: auto; }
-    section #bienvenida section:first-child p {
-      float: right;
+  section #bienvenida {
+    height: auto; }
+    section #bienvenida section:first-child {
+      height: 245px; }
+      section #bienvenida section:first-child span {
+        right: auto; }
+      section #bienvenida section:first-child p {
+        float: right;
+        width: 50%; }
+    section #bienvenida section:nth-child(2) section {
+      margin: 0 auto;
       width: 50%; }
-  section #bienvenida section:nth-child(2) section span {
-    right: 140px; }
-  section #bienvenida section:nth-child(2) section img {
-    width: 50%; }
-  section #bienvenida section:nth-child(3) {
-    width: 50%; }
-    section #bienvenida section:nth-child(3) p {
-      text-align: left; }
-  section #bienvenida div {
-    height: 100%; }
-    section #bienvenida div span:nth-child(2) {
-      left: -70px;
-      top: 130px; }
-    section #bienvenida div span:last-child {
-      right: -130px;
-      top: 350px; }
+      section #bienvenida section:nth-child(2) section span {
+        right: -30px; }
+      section #bienvenida section:nth-child(2) section img {
+        width: 100%; }
+    section #bienvenida section:nth-child(3) {
+      width: 50%; }
+      section #bienvenida section:nth-child(3) p {
+        text-align: left; }
+    section #bienvenida div {
+      height: 100%; }
+      section #bienvenida div span:nth-child(2) {
+        left: -70px;
+        top: 130px; }
+      section #bienvenida div span:last-child {
+        right: -130px;
+        top: 350px; }
   section #servicios {
-    height: 400px; }
+    height: 500px; }
     section #servicios section:nth-child(2) {
       bottom: 0;
       left: auto;
       padding: 20px;
-      right: 0;
+      right: 70px;
       transform: none;
-      width: 41%; }
+      width: 50%; }
     section #servicios div span {
       left: -10px;
       top: 0; }
@@ -4121,13 +4745,13 @@ section {
     section #habitaciones section:first-child {
       margin: 0;
       position: absolute;
-      top: -40px; }
+      top: -20px; }
       section #habitaciones section:first-child h2 {
-        margin: 0;
+        margin: 35px 0 0 0;
         text-align: left;
         width: 80%; }
       section #habitaciones section:first-child span {
-        left: 90px;
+        left: 50px;
         right: 0;
         top: 130px; }
     section #habitaciones section:nth-child(2) {
@@ -4157,8 +4781,10 @@ section {
       top: -210px; }
   section #slogan {
     height: 165px;
-    margin: 100px auto 0;
-    width: 70%; } }
+    margin: 160px auto 50px;
+    width: 70%; }
+    section #slogan p {
+      font-size: 200%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }

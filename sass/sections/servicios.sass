@@ -12,38 +12,10 @@ $verde-oscuro: #038A6E
 $verde-medio: #00A06D
 $gris-texto: #333333
 
-$font-nav: 'Arsenal-Italic'
-
-*
-  padding: 0
-  margin: 0
-  box-sizing: border-box
-
-html
-  box-sizing: border-box
-  overflow-x: hidden
-
-html, body
-  width: 100%
-  height: 100%
-
-h1
-  margin: 0
-
-h2
-  font-family: 'madame'
-  font-size: 370%
-p
-  font-size: 150%
-  font-family: 'Arsenal-Regular'
-
 .desktop, .tablet
   display: none
 
 section
-  position: relative
-  h2
-    color: $morado
   #banner-principal-servicios
     background-image: url("../images/fotografia/bg-principal-hab.jpg")
     background-attachment: fixed
@@ -91,8 +63,7 @@ section
         h2
           color: #fff
           font-family: 'blackjack'
-          font-size: 470%
-          line-height: 0.8
+          font-size: 330%
           text-align: center
     a
       span
@@ -143,21 +114,23 @@ section
         @include verMas
       section
         &:first-child
-          height: 250px
+          height: auto
           z-index: 1
           span
             background-color: $lila
-            bottom: 30px
+            bottom: -18px
             display: block
             height: 50px
             @include centrarHorizontalmente
             position: absolute
-            width: 230px
+            width: 180px
           img
             display: block
             margin: 0 auto
             position: relative
-            width: 100%
+            width: 85%
+        &:last-child
+          margin-top: 30px
 
     section.min-servicios:nth-child(2)
       section
@@ -175,7 +148,7 @@ section
           span
             background-color: $verde-claro
   #planes::before
-    border-bottom: 61px solid $lila
+    border-bottom: 62px solid $lila
     border-right: 480px solid transparent
     content: ''
     height: 0
@@ -186,10 +159,11 @@ section
   #planes
     height: auto
     position: relative
+    padding-bottom: 60px
     section
       &:first-child
         background-color: $lila
-        height: 130px
+        height: 90px
         h2
           color: #fff
           margin: 0 auto
@@ -206,7 +180,7 @@ section
           background-color: #fff
           box-shadow: 1px 1px 10px $gris-texto
           border-radius: 5px
-          height: 348px
+          height: 250px
           margin: 0 0 70px
           padding: 30px
           top: 0
@@ -216,17 +190,18 @@ section
             h3
               border-bottom: 2px solid $morado
               color: $lila
-              font-family: 'madame'
-              font-size: 300%
+              font-family: 'playball'
+              font-size: 170%
+              padding-bottom: 10px
               text-align: center
           section:nth-child(2)
             height: auto
-            margin: 30px auto
+            margin: 20px auto 30px
             p
               text-align: center
           section:last-child
             position: relative
-            top: -20px
+            top: 0
             span
               background-color: $verde-medio
               border-radius: 5px
@@ -299,7 +274,6 @@ section
         &:last-child
           top: 1780px
 
-
 @media all and (min-width: 480px)
   section
     #banner-principal-servicios
@@ -318,11 +292,10 @@ section
         section
           &:first-child
             img
-              width: 80%
+              width: 70%
             span
-              bottom: 15px
               left: auto
-              right: -20px
+              right: 50px
               transform: none
     #hojas-servicios
       span
@@ -342,7 +315,19 @@ section
         &:last-child
           top: 810px
 
+@media all and (min-width: 530px)
+  section
+    #planes::before
+      border-right: 670px solid transparent
+    #planes
+      section
+        &:last-child
+          width: 50%
 
+@media all and (min-width: 640px)
+  section
+    #planes::before
+      border-right: 750px solid transparent
 
 //TABLETS
 @media all and (min-width: 737px)
@@ -350,8 +335,6 @@ section
     display: none
   .tablet
     display: block
-
-
   section
     #banner-principal-servicios::after
       left: -480px
@@ -362,7 +345,9 @@ section
           width: 15%
         section
           padding: 60px 20px
-          width: 60%
+          width: 80%
+          h2
+            font-size: 570%
           p
             font-size: 130%
     #bienvenida-servicios
@@ -383,6 +368,9 @@ section
         section
           &:first-child
             height: 320px
+            span
+              bottom: 13px
+              right: -20px
             img
               width: 100%
 
@@ -392,13 +380,15 @@ section
       padding-bottom: 100px
       section
         &:last-child
+          width: 75%
           section.contenido-planes
+            height: auto
             left: auto
             margin: 0 auto 70px
             transform: none
             width: 58%
             section:last-child
-              top: 0
+              top: 50px
 
     #hojas-servicios
       span
@@ -433,28 +423,22 @@ section
           right: auto
           top: 2480px
 
-
-
 @media all and (min-width: 1024px)
   .desktop
     display: block
   .tablet
     display: none
-
-
   section
     #banner-principal-servicios::after
       left: -361px
     #banner-principal-servicios
       section.contenido-texto-banner
-        section
-          width: 40%
         span
-          bottom: -20px
+          bottom: 0
           width: 10%
         section::after
           content: url("../images/deco-titulos.png")
-          bottom: 40px
+          bottom: 60px
           @include centrarHorizontalmente
           position: absolute
       aside
@@ -489,8 +473,6 @@ section
     #planes
       padding-bottom: 150px
       section
-        &:first-child
-          width: 83%
         &:last-child
           @include flexBox
           justify-content: space-evenly
@@ -500,6 +482,8 @@ section
             left: auto
             transform: none
             width: 29%
+            section:last-child
+              top: 0
           section.contenido-planes:last-child
             display: block
     #hojas-servicios
@@ -523,10 +507,8 @@ section
         &:last-child
           top: 1600px
 
-
 //DESKTOP
 @media all and (min-width:1124px)
-
   section
     #banner-principal-servicios::after
       left: -155px
@@ -534,10 +516,6 @@ section
       section.contenido-texto-banner
         section
           width: 60%
-          h2
-            font-size: 600%
-        section::after
-          bottom: 45px
         span
           width: 7%
     #bienvenida-servicios
@@ -553,8 +531,8 @@ section
           &:first-child
             height: 440px
             span
-              bottom: 90px
-              right: 22px
+              bottom: 128px
+              right: 28px
             img
               width: 80%
     #planes::before
@@ -591,7 +569,17 @@ section
         &:last-child
           top: 1690px
 
-
-
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)
+  section
+    #contenedor-servicios
+      section.min-servicios
+        section
+          &:first-child
+            span
+              bottom: 116px
+        &:nth-child(2)
+          section
+            &:first-child
+              span
+                left: 30px
