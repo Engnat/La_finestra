@@ -595,6 +595,8 @@ section #hojas-h span {
       width: 50%; }
   section #galeria section:last-child div.img-galeria-hab {
     height: 350px; }
+  section #formulario section:last-child form label {
+    font-size: 150%; }
   section #hojas-h span:first-child {
     left: 30px;
     top: 980px; }

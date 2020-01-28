@@ -279,18 +279,36 @@ section #bienvenida-finestra {
       font-size: 180%;
       margin: 30px auto;
       text-align: center; }
-  section #bienvenida-finestra div span {
-    position: absolute; }
-    section #bienvenida-finestra div span img {
-      width: 30%; }
-    section #bienvenida-finestra div span:first-child {
-      left: 0; }
-    section #bienvenida-finestra div span:nth-child(2) {
-      right: 0; }
-    section #bienvenida-finestra div span:nth-child(3) {
-      left: 0; }
-    section #bienvenida-finestra div span:last-child {
-      right: 0; }
+  section #bienvenida-finestra div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #bienvenida-finestra div span {
+      position: absolute; }
+      section #bienvenida-finestra div span:first-child {
+        left: -140px;
+        top: 140px; }
+        section #bienvenida-finestra div span:first-child img {
+          width: 50%; }
+      section #bienvenida-finestra div span:nth-child(2) {
+        right: -320px;
+        top: 0; }
+        section #bienvenida-finestra div span:nth-child(2) img {
+          filter: blur(2px);
+          transform: scaleY(-1);
+          width: 20%; }
+      section #bienvenida-finestra div span:nth-child(3) {
+        left: -50px;
+        top: 130px; }
+        section #bienvenida-finestra div span:nth-child(3) img {
+          filter: blur(2px);
+          width: 30%; }
+      section #bienvenida-finestra div span:nth-child(4) {
+        right: -290px;
+        top: 210px; }
+        section #bienvenida-finestra div span:nth-child(4) img {
+          width: 50%; }
 section #ubicacion {
   height: auto; }
   section #ubicacion section:first-child {
@@ -306,7 +324,7 @@ section #ubicacion {
     section #ubicacion section:first-child section {
       background-color: #fff;
       border-radius: 5px;
-      box-shadow: 3px 5px 8px #ccc;
+      box-shadow: 3px 5px 8px #333;
       height: auto;
       margin: 0 auto;
       padding: 20px;
@@ -314,9 +332,33 @@ section #ubicacion {
       z-index: 1; }
       section #ubicacion section:first-child section p {
         text-align: center; }
-  section #ubicacion section:last-child section iframe {
-    height: 300px;
-    width: 100%; }
+  section #ubicacion section:last-child section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px;
+    background-image: url("../images/mapa.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 300px; }
+    section #ubicacion section:last-child section a span {
+      background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      background-image: url("../images/pin-finestra.png");
+      bottom: 90px;
+      cursor: pointer;
+      height: 70px;
+      left: auto;
+      opacity: 1;
+      right: 60px;
+      transition-duration: 0.8s;
+      transform: none;
+      width: 100px; }
+    section #ubicacion section:last-child section a:hover span {
+      transform: scale(1.3); }
 section #pet {
   align-content: center;
   display: flex;
@@ -328,9 +370,9 @@ section #pet {
   section #pet section:first-child p {
     margin: 10px auto 40px;
     text-align: left; }
-  section #pet section:last-child {
+  section #pet section:nth-child(2) {
     position: relative; }
-    section #pet section:last-child span {
+    section #pet section:nth-child(2) span {
       background-color: #00A06D;
       bottom: -20px;
       height: 50px;
@@ -338,7 +380,7 @@ section #pet {
       transform: translateX(-50%);
       position: absolute;
       width: 200px; }
-    section #pet section:last-child img {
+    section #pet section:nth-child(2) img {
       position: relative;
       width: 100%; }
 section #galeria-finestra {
@@ -453,7 +495,7 @@ section #galeria-finestra {
       width: 50%; }
 section #formulario-contacto {
   height: auto;
-  margin: 0 auto 100px;
+  margin: 0 auto 180px;
   width: 80%; }
   section #formulario-contacto h2 {
     background-color: #038A6E;
@@ -465,14 +507,14 @@ section #formulario-contacto {
     color: #333333;
     margin: 20px auto 50px;
     text-align: center; }
-  section #formulario-contacto section:last-child {
+  section #formulario-contacto section:nth-child(2) {
     height: auto;
     margin: 20px auto;
     width: 100%; }
-    section #formulario-contacto section:last-child form {
+    section #formulario-contacto section:nth-child(2) form {
       margin: 0 auto;
       width: 90%; }
-      section #formulario-contacto section:last-child form label {
+      section #formulario-contacto section:nth-child(2) form label {
         color: #333333;
         display: block;
         font-family: "Arsenal-Regular";
@@ -480,13 +522,18 @@ section #formulario-contacto {
         height: 80px;
         padding-bottom: 5px;
         width: 100%; }
-        section #formulario-contacto section:last-child form label input {
+        section #formulario-contacto section:nth-child(2) form label input, section #formulario-contacto section:nth-child(2) form label textarea {
           border: 1px solid #470052;
           border-radius: 5px;
           height: 40px;
           padding-left: 5px;
           width: 100%; }
-      section #formulario-contacto section:last-child form button {
+        section #formulario-contacto section:nth-child(2) form label textarea {
+          padding-top: 5px;
+          height: 100px; }
+      section #formulario-contacto section:nth-child(2) form label:nth-child(4) {
+        height: auto; }
+      section #formulario-contacto section:nth-child(2) form input#botonFormulario {
         background-color: #33CC99;
         -webkit-appearance: none;
         border-radius: 5px;
@@ -500,37 +547,11 @@ section #formulario-contacto {
         width: 130px;
         color: #fff;
         border: 0; }
-        section #formulario-contacto section:last-child form button:hover {
+        section #formulario-contacto section:nth-child(2) form input#botonFormulario:hover {
           background-color: #470052;
           border: 0;
           color: #fff;
           padding: 0; }
-section #hojas-f span {
-  position: absolute;
-  right: -260px; }
-  section #hojas-f span:first-child, section #hojas-f span:nth-child(2) {
-    top: 420px; }
-    section #hojas-f span:first-child img, section #hojas-f span:nth-child(2) img {
-      width: 20%; }
-  section #hojas-f span:first-child, section #hojas-f span:nth-child(3) {
-    right: auto;
-    left: 0; }
-  section #hojas-f span:nth-child(3) img, section #hojas-f span:nth-child(4) img {
-    width: 30%; }
-  section #hojas-f span:first-child {
-    top: 860px; }
-  section #hojas-f span:nth-child(2) img {
-    transform: scale(1, -1); }
-  section #hojas-f span:nth-child(3) {
-    top: 660px; }
-    section #hojas-f span:nth-child(3) img {
-      transform: scaleX(-1); }
-  section #hojas-f span:nth-child(4) {
-    top: 1080px; }
-  section #hojas-f span:nth-child(7) {
-    right: 150px; }
-    section #hojas-f span:nth-child(7) img {
-      transform: scaleX(-1); }
 
 @media all and (min-width: 360px) {
   section #bienvenida-finestra section h2 {
@@ -540,16 +561,10 @@ section #hojas-f span {
     left: 60px; }
   section #ubicacion section:first-child section {
     width: 56%; }
+  section #ubicacion section:last-child section a span {
+    right: 80px; }
   section #galeria-finestra #como-llegar section:first-child {
-    margin: 50px auto 0; }
-  section #hojas-f span:first-child {
-    top: 840px; }
-  section #hojas-f span:nth-child(2) {
-    top: 620px; }
-  section #hojas-f span:nth-child(3) {
-    top: 700px; }
-  section #hojas-f span:nth-child(4) {
-    top: 1100px; } }
+    margin: 50px auto 0; } }
 @media all and (min-width: 480px) {
   section #banner-principal-finestra a span {
     bottom: 30px; }
@@ -557,19 +572,15 @@ section #hojas-f span {
     left: -663px; }
   section #bienvenida-finestra section:nth-child(2) section span {
     right: 43px; }
-  section #hojas-f span:first-child {
-    top: 270px; }
-  section #hojas-f span:nth-child(2) {
-    top: 250px; }
-  section #hojas-f span:nth-child(3) {
-    top: 370px; }
-  section #hojas-f span:nth-child(4) {
-    top: 230px; } }
+  section #ubicacion section:last-child section a span {
+    right: 140px; } }
 @media all and (min-width: 568px) {
   section #ubicacion section:first-child span {
     height: 161px;
     left: 73px;
-    width: 200px; } }
+    width: 200px; }
+  section #ubicacion section:last-child section a span {
+    right: 180px; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -616,6 +627,11 @@ section #hojas-f span {
       bottom: 0;
       position: absolute;
       width: 100%; }
+      section #ubicacion section:last-child section {
+        height: 330px; }
+        section #ubicacion section:last-child section a span {
+          bottom: 85px;
+          right: 262px; }
   section #pet {
     width: 87%; }
     section #pet section {
@@ -626,9 +642,9 @@ section #hojas-f span {
       section #pet section:first-child {
         flex-direction: column;
         width: 40%; }
-      section #pet section:last-child {
+      section #pet section:nth-child(2) {
         width: 60%; }
-        section #pet section:last-child span {
+        section #pet section:nth-child(2) span {
           left: -30px;
           transform: none; }
   section #galeria-finestra #como-llegar::before {
@@ -643,26 +659,7 @@ section #hojas-f span {
       flex-flow: row nowrap;
       justify-content: center;
       position: absolute;
-      width: 100%; }
-  section #hojas-f span:first-child {
-    left: 110px;
-    top: 1290px; }
-    section #hojas-f span:first-child img {
-      width: 30%; }
-  section #hojas-f span:nth-child(2) {
-    right: -130px;
-    top: 1000px; }
-    section #hojas-f span:nth-child(2) img {
-      width: 30%; }
-  section #hojas-f span:nth-child(3) {
-    top: 1100px; }
-    section #hojas-f span:nth-child(3) img {
-      width: 50%; }
-  section #hojas-f span:nth-child(4) {
-    right: -180px;
-    top: 1540px; }
-    section #hojas-f span:nth-child(4) img {
-      width: 50%; } }
+      width: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -688,24 +685,44 @@ section #hojas-f span {
   section #banner-principal-finestra aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #bienvenida-finestra div span:first-child {
+    left: -200px;
+    top: 210px; }
+    section #bienvenida-finestra div span:first-child img {
+      width: 70%; }
+  section #bienvenida-finestra div span:nth-child(2) {
+    right: -250px;
+    top: -90px; }
+    section #bienvenida-finestra div span:nth-child(2) img {
+      width: 30%; }
+  section #bienvenida-finestra div span:nth-child(3) {
+    left: 10px;
+    top: 20px; }
+  section #bienvenida-finestra div span:nth-child(4) {
+    right: 20px;
+    top: 300px; }
+    section #bienvenida-finestra div span:nth-child(4) img {
+      width: 80%; }
   section #ubicacion {
     height: 580px; }
     section #ubicacion section:first-child {
       height: 290px; }
       section #ubicacion section:first-child span {
         height: 280px;
-        left: 50%;
-        transform: translateX(-50%);
-        right: auto;
+        left: 70px;
+        transform: none;
         width: 400px; }
       section #ubicacion section:first-child section {
         height: 340px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 100px;
         top: 40px;
+        transform: none;
         width: 340px; }
         section #ubicacion section:first-child section p {
           font-size: 170%; }
+    section #ubicacion section:last-child section a span {
+      bottom: 55px;
+      right: 362px; }
   section #pet {
     height: 490px; }
     section #pet section h2 {
@@ -713,35 +730,54 @@ section #hojas-f span {
     section #pet section:first-child {
       bottom: 0;
       left: 0;
-      position: absolute; }
-    section #pet section:last-child {
+      position: absolute;
+      z-index: 1; }
+    section #pet section:nth-child(2) {
       position: absolute;
       right: 0;
       top: 0; }
-      section #pet section:last-child span {
+      section #pet section:nth-child(2) span {
         left: 30px; }
-      section #pet section:last-child img {
+      section #pet section:nth-child(2) img {
         width: 80%; }
-  section #galeria-finestra #como-llegar::before {
-    border-left: 1033px solid transparent; }
-  section #galeria-finestra #como-llegar section:first-child {
-    margin: 20px 50px 0 420px;
-    width: 60%; }
-    section #galeria-finestra #como-llegar section:first-child h2 {
-      font-size: 250%; }
+    section #pet div {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 0; }
+      section #pet div span {
+        position: absolute; }
+        section #pet div span:first-child {
+          left: -120px;
+          top: 480px; }
+          section #pet div span:first-child img {
+            filter: blur(3px); }
+        section #pet div span:last-child {
+          right: -40px;
+          top: 940px; }
+  section #galeria-finestra {
+    margin: 100px auto 150px; }
+    section #galeria-finestra #como-llegar::before {
+      border-left: 1033px solid transparent; }
+    section #galeria-finestra #como-llegar {
+      height: 287px; }
+      section #galeria-finestra #como-llegar section:first-child {
+        margin: 20px 50px 0 420px;
+        width: 60%; }
+        section #galeria-finestra #como-llegar section:first-child h2 {
+          font-size: 250%; }
   section #formulario-contacto {
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     flex-flow: row wrap;
-    height: 620px;
-    margin: 0 auto 150px;
+    height: 870px;
+    margin: 150px auto 100px;
     width: 85%; }
     section #formulario-contacto section:first-child {
       border-right: 0;
       margin: 20px auto;
-      position: absolute;
       top: 0;
       width: 100%; }
       section #formulario-contacto section:first-child h2 {
@@ -766,39 +802,23 @@ section #hojas-f span {
         position: absolute;
         top: -128px;
         width: 1050px; }
-    section #formulario-contacto section:last-child {
+    section #formulario-contacto section:nth-child(2) {
       bottom: 0;
-      position: absolute;
       width: 100%; }
-      section #formulario-contacto section:last-child form {
+      section #formulario-contacto section:nth-child(2) form {
         float: left;
         width: 50%; }
-        section #formulario-contacto section:last-child form button {
+        section #formulario-contacto section:nth-child(2) form button {
           float: left; }
-  section #hojas-f span:first-child {
-    left: 110px;
-    top: 1000px; }
-  section #hojas-f span:nth-child(2) {
-    right: -80px;
-    top: 720px; }
-  section #hojas-f span:nth-child(3) {
-    top: 830px; }
-  section #hojas-f span:nth-child(4) {
-    top: 1110px; }
-  section #hojas-f span:nth-child(5) {
-    left: 0;
-    top: 1370px; }
-    section #hojas-f span:nth-child(5) img {
-      width: 15%; }
-  section #hojas-f span:nth-child(6) {
-    right: 0;
-    top: 4140px; }
-    section #hojas-f span:nth-child(6) img {
+    section #formulario-contacto div {
+      height: 100%;
+      position: absolute;
+      top: 0;
       width: 100%; }
-  section #hojas-f span:nth-child(7) {
-    top: 2250px; }
-    section #hojas-f span:nth-child(7) img {
-      width: 40%; } }
+      section #formulario-contacto div span {
+        position: absolute;
+        right: 0;
+        top: -200px; } }
 @media all and (min-width: 1124px) {
   section h2 {
     font-size: 300%; }
@@ -817,7 +837,7 @@ section #hojas-f span {
     margin: 0 auto 150px;
     width: 80%; }
     section #bienvenida-finestra section {
-      padding: 80px 0; }
+      padding: 80px 0 0; }
       section #bienvenida-finestra section h2 {
         font-size: 320%;
         width: 50%; }
@@ -825,6 +845,9 @@ section #hojas-f span {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
+  section #ubicacion section:last-child section a span {
+    bottom: 20px;
+    right: 558px; }
   section #pet section:first-child h2 {
     padding-bottom: 10px; }
   section #pet section:first-child p {
@@ -852,6 +875,7 @@ section #hojas-f span {
     left: -220px;
     width: 1484px; }
   section #formulario-contacto section:last-child form {
+    margin: 0 0 0 70px;
     width: 40%; }
     section #formulario-contacto section:last-child form label {
       font-size: 150%; }
@@ -886,6 +910,9 @@ section #hojas-f span {
     section #hojas-f span:nth-child(7) img {
       width: 50%; } }
 @media all and (min-width: 1440px) {
+  section #ubicacion section:last-child section a span {
+    bottom: 19px;
+    right: 558px; }
   section #formulario-contacto section:first-child span {
     left: -150px; } }
 
