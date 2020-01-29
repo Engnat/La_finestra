@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <title>La Finestra | Hotel Boutique</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <header id="menu-principal">
@@ -19,20 +20,20 @@
           <a href="#" class="correo"><img src="images/icono-correo.png" alt="Icono correo"></a>
         </aside>
         <section class="contenido-texto-banner">
-          <span></span>
-          <section>
+          <span class="wow fadeInDown"></span>
+          <section class="wow fadeInUp">
             <p>Ice cream topping dragée.Chocolate cake lollipop jujubes tootsie roll dragée.</p>
           </section>
         </section>
-        <a href="#">
+        <a href="#bienvenida">
           <span></span>
         </a>
       </section>
       <section id="bienvenida">
         <section>
-          <h2>Bienvenidos</h2>
+          <h2 class="wow fadeInLeft">Bienvenidos</h2>
           <span></span>
-          <p>Ice cream topping dragée. Chocholate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
+          <p class="wow fadeInRight" data-wow-delay="0.5s">Ice cream topping dragée. Chocholate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
         </section>
         <section>
           <section class="desktop">
@@ -48,7 +49,7 @@
             <img src="images/fotografia/bg-bienvenida-3.jpg" alt="imagen 2">
           </section>
         </section>
-        <section>
+        <section class="wow fadeInLeft" data-wow-delay="1s">
           <p>Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
         </section>
         <div>
@@ -58,12 +59,12 @@
         </div>
 
       </section>
-      <section id="servicios">
+      <section id="servicios" >
         <section></section>
-        <section>
-          <h2>Servicios</h2>
-          <p>Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
-          <a href="servicios.html">
+        <section >
+          <h2 class="wow fadeInRight">Servicios</h2>
+          <p class="wow fadeInLeft">Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
+          <a class="wow flipInY" data-wow-delay="0.5s" href="servicios.html">
             Ver más
           </a>
         </section>
@@ -73,7 +74,7 @@
       </section>
       <section id="habitaciones">
         <section>
-          <h2>Habitaciones & Suites</h2>
+          <h2 class="wow fadeInLeft">Habitaciones & Suites</h2>
           <span></span>
         </section>
         <section>
@@ -81,8 +82,8 @@
           <img src="images/fotografia/bg-habitaciones.jpg" alt="imagen 4">
         </section>
         <section>
-          <p>Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes. </p>
-          <a href="habitaciones&suites.html">
+          <p class="wow fadeInRight" >Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes. </p>
+          <a class="wow flipInY" data-wow-delay="0.5s" href="habitaciones&suites.html">
             Ver más
           </a>
         </section>
@@ -101,6 +102,19 @@
       <script src="js/rellax.min.js"></script>
       <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
       <script src="js/scripts.js"></script>
+      <script src="js/wow.js"></script>
+      <script>
+        wow = new WOW(
+          {
+            boxClass:     'wow',
+            animateClass: 'animated',
+            offset:       10,
+            mobile:       true,
+            live:         true
+          }
+        );
+        wow.init();
+      </script>
       <script>
         var rellax = new Rellax('.rellax');
 

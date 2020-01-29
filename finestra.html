@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <header id="menu-principal"></header>
@@ -19,12 +20,12 @@
           <a href="#" class="correo"><img src="images/icono-correo.png" alt="Icono correo"></a>
         </aside>
         <section class="contenido-texto-banner">
-          <span class="desktop"></span>
+          <span class="desktop wow zoomIn" data-wow-delay="0.5s"></span>
           <section>
-            <h2>La Finestra</h2>
+            <h2 class="wow slideInDown">La Finestra</h2>
           </section>
         </section>
-        <a href="#">
+        <a href="#bienvenida-finestra">
           <span></span>
         </a>
       </section>
@@ -92,17 +93,16 @@
           </section>
         </section>
         <section>
-          <section>
-            <a href="https://g.page/Lafinestrahotel?share" target="_blank">
-              <span></span>
-            </a>
-          </section>
+          <a href="https://g.page/Lafinestrahotel?share" target="_blank">
+            <section>
+            </section>
+          </a>
         </section>
       </section>
       <section id="pet">
         <section>
-          <h2>Pet friendly</h2>
-          <p>Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
+          <h2 class="wow fadeInLeft">Pet friendly</h2>
+          <p class="wow fadeInUp" data-wow-delay="0.5s">Ice cream topping dragée. Chocolate cake lollipop jujubes tootsie roll dragée. Gingerbread marshmallow macaroon cookie dragée candy canes.</p>
         </section>
         <section>
           <span></span>
@@ -133,19 +133,19 @@
           </section>
 
           <section id="medio-transporte">
-            <section class="transporte">
+            <section class="transporte wow zoomIn">
               <div>
                 <p>120 minutos</p>
                 <img src="images/icono-taxi.png" alt="Icono Taxi">
               </div>
             </section>
-            <section class="transporte">
+            <section class="transporte wow zoomIn" data-wow-delay="0.5s">
               <div>
                 <p>110 minutos</p>
                 <img src="images/icono-carro.png" alt="Icono carro">
               </div>
             </section>
-            <section class="transporte">
+            <section class="transporte wow zoomIn" data-wow-delay="1s">
               <div>
                 <p>120 minutos</p>
                 <img src="images/icono-bus.png" alt="Icono bus">
@@ -182,7 +182,6 @@
         </div>
       </section>
     </section>
-
     <footer id="footer">
     </footer>
 
@@ -190,6 +189,7 @@
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/rellax.min.js"></script>
       <script src="js/scripts.js"></script>
+      <script src="js/wow.js"></script>
       <script>
         var rellax = new Rellax('.rellax');
         $(function(){
@@ -217,6 +217,20 @@
           });
         });
       </script>
+      <script>
+        wow = new WOW(
+          {
+            boxClass:     'wow',
+            animateClass: 'animated',
+            offset:       10,
+            mobile:       true,
+            live:         true
+          }
+        );
+        wow.init();
+      </script>
+
+      <!-- TRIPADVISOR -->
       <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=266&amp;locationId=3249655&amp;lang=es_CO&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
       <script async src="https://www.jscache.com/wejs?wtype=tchotel&amp;uniq=448&amp;locationId=3249655&amp;lang=es_CO&amp;year=2019&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
       <script async src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=863&amp;locationId=3249655&amp;lang=es_CO&amp;year=2019&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>

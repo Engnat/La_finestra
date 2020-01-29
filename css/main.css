@@ -178,6 +178,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 @font-face {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
@@ -358,6 +386,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -421,19 +477,41 @@ section #banner-principal-hab {
         font-family: "blackjack";
         font-size: 330%;
         text-align: center; }
-  section #banner-principal-hab a span {
-    background-image: url("../images/icono-abajo.png");
-    bottom: 40px;
-    display: block;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 65px; }
+  section #banner-principal-hab a {
+    cursor: pointer; }
+    section #banner-principal-hab a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 40px;
+      display: block;
+      height: 48px;
+      -webkit-animation-duration: 0.6s;
+      -moz-animation-duration: 0.6s;
+      -o-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: flechaMov;
+      -moz-animation-name: flechaMov;
+      -o-animation-name: flechaMov;
+      animation-name: flechaMov;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      -o-animation-direction: alternate;
+      animation-direction: alternate;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px;
+      z-index: 1; }
+  section #banner-principal-hab a:hover {
+    border: 0;
+    padding: 0; }
 section #banner-principal-hab::before {
   background-color: rgba(71, 0, 82, 0.4);
   content: "";
@@ -457,9 +535,39 @@ section #bienvenida-hab {
       font-family: "allura";
       margin: 30px auto;
       text-align: center; }
+  section #bienvenida-hab div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #bienvenida-hab div span {
+      position: absolute; }
+      section #bienvenida-hab div span:first-child {
+        left: -140px;
+        top: 90px; }
+        section #bienvenida-hab div span:first-child img {
+          width: 50%; }
+      section #bienvenida-hab div span:nth-child(2) {
+        right: -320px;
+        top: -70px; }
+        section #bienvenida-hab div span:nth-child(2) img {
+          filter: blur(2px);
+          transform: scaleY(-1);
+          width: 20%; }
+      section #bienvenida-hab div span:nth-child(3) {
+        left: -50px;
+        top: -70px; }
+        section #bienvenida-hab div span:nth-child(3) img {
+          filter: blur(2px);
+          width: 30%; }
+      section #bienvenida-hab div span:nth-child(4) {
+        right: -290px;
+        top: -20px; }
+        section #bienvenida-hab div span:nth-child(4) img {
+          width: 50%; }
 section #contenedor-habitaciones {
   height: auto;
-  margin: 70px auto;
+  margin: 70px auto 180px;
   width: 80%; }
   section #contenedor-habitaciones section.min-habitacion {
     margin-bottom: 30px;
@@ -506,60 +614,10 @@ section #contenedor-habitaciones {
     background-color: #00A06D; }
   section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
     background-color: #33CC99; }
-section #hojas-hs span {
-  position: absolute; }
-  section #hojas-hs span:first-child, section #hojas-hs span:nth-child(2) {
-    right: -250px;
-    top: 420px; }
-    section #hojas-hs span:first-child img, section #hojas-hs span:nth-child(2) img {
-      width: 20%; }
-  section #hojas-hs span:first-child, section #hojas-hs span:nth-child(3) {
-    right: auto;
-    left: 0; }
-  section #hojas-hs span:nth-child(3), section #hojas-hs span:nth-child(4) {
-    top: 560px; }
-    section #hojas-hs span:nth-child(3) img, section #hojas-hs span:nth-child(4) img {
-      width: 30%; }
-  section #hojas-hs span:first-child {
-    left: auto;
-    top: 410px; }
-  section #hojas-hs span:nth-child(4) {
-    right: -240px;
-    top: 490px; }
-  section #hojas-hs span:nth-child(5) {
-    left: -150px;
-    top: 1110px; }
-    section #hojas-hs span:nth-child(5) img {
-      width: 70%; }
-  section #hojas-hs span:nth-child(6) {
-    right: -170px;
-    top: 1330px; }
-    section #hojas-hs span:nth-child(6) img {
-      width: 80%; }
-  section #hojas-hs span:last-child {
-    top: 1280px; }
-    section #hojas-hs span:last-child img {
-      width: 30%; }
 
 @media all and (min-width: 360px) {
   section #contenedor-habitaciones section.min-habitacion section:first-child img {
-    width: 90%; }
-  section #hojas-hs span:first-child {
-    top: 600px; }
-  section #hojas-hs span:nth-child(2) {
-    top: 620px; }
-  section #hojas-hs span:nth-child(3) {
-    top: 700px; }
-  section #hojas-hs span:nth-child(4) {
-    top: 660px; }
-  section #hojas-hs span:nth-child(5) {
-    left: -170px;
-    top: 1380px; }
-  section #hojas-hs span:nth-child(6) {
-    right: -170px;
-    top: 1630px; }
-  section #hojas-hs span:last-child {
-    top: 1780px; } }
+    width: 90%; } }
 @media all and (min-width: 410px) {
   section #contenedor-habitaciones section.min-habitacion section:first-child span {
     bottom: 30px; } }
@@ -693,13 +751,32 @@ section #hojas-hs span {
   section #banner-principal-hab aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #bienvenida-hab div span:first-child {
+    left: -70px;
+    top: -50px; }
+    section #bienvenida-hab div span:first-child img {
+      width: 60%; }
+  section #bienvenida-hab div span:nth-child(2) {
+    right: -250px;
+    top: -90px; }
+    section #bienvenida-hab div span:nth-child(2) img {
+      width: 30%; }
+  section #bienvenida-hab div span:nth-child(3) {
+    left: 30px;
+    top: 140px; }
+  section #bienvenida-hab div span:nth-child(4) {
+    right: -140px;
+    top: 0; }
+    section #bienvenida-hab div span:nth-child(4) img {
+      width: 50%; }
   section #contenedor-habitaciones section.min-habitacion {
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     justify-content: space-between;
-    width: 85%; }
+    width: 85%;
+    z-index: 1; }
     section #contenedor-habitaciones section.min-habitacion section:first-child span {
       bottom: 48px;
       right: -8px; }
@@ -709,28 +786,31 @@ section #hojas-hs span {
       order: 2; }
       section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
         right: auto; }
-    section #contenedor-habitaciones section.min-habitacion:last-child section:first-child {
+    section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child {
       order: 2; }
-      section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
+      section #contenedor-habitaciones section.min-habitacion:nth-child(4) section:first-child span {
         right: auto; }
-  section #hojas-hs span:first-child {
-    top: 760px; }
-  section #hojas-hs span:nth-child(2) {
-    top: 790px; }
-  section #hojas-hs span:nth-child(3) {
-    top: 920px; }
-  section #hojas-hs span:nth-child(4) {
-    top: 870px; }
-  section #hojas-hs span:nth-child(5) {
-    left: -90px;
-    top: 1290px; }
-  section #hojas-hs span:nth-child(6) {
-    right: -70px;
-    top: 1510px; }
-    section #hojas-hs span:nth-child(6) img {
-      width: 100%; }
-  section #hojas-hs span:last-child {
-    top: 1600px; } }
+  section #contenedor-habitaciones div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #contenedor-habitaciones div span {
+      position: absolute; }
+      section #contenedor-habitaciones div span:first-child {
+        left: -120px;
+        top: 220px; }
+        section #contenedor-habitaciones div span:first-child img {
+          width: 70%; }
+      section #contenedor-habitaciones div span:nth-child(2) {
+        right: -200px;
+        top: 400px; }
+      section #contenedor-habitaciones div span:last-child {
+        left: 0;
+        top: 460px; }
+        section #contenedor-habitaciones div span:last-child img {
+          filter: blur(2px);
+          width: 30%; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-hab::after {
     left: -155px; }
@@ -749,6 +829,15 @@ section #hojas-hs span {
     width: 80%; }
     section #bienvenida-hab section {
       padding: 80px 0; }
+    section #bienvenida-hab div span:first-child {
+      top: 0; }
+    section #bienvenida-hab div span:nth-child(2) {
+      top: -20px; }
+    section #bienvenida-hab div span:nth-child(3) {
+      left: 270px;
+      top: 230px; }
+    section #bienvenida-hab div span:nth-child(4) {
+      top: 110px; }
   section #contenedor-habitaciones section.min-habitacion {
     height: auto; }
     section #contenedor-habitaciones section.min-habitacion section:first-child {
@@ -760,25 +849,15 @@ section #hojas-hs span {
         width: 80%; }
     section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span, section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
       left: 34px; }
-  section #hojas-hs span:first-child {
-    left: 100px;
-    top: 660px; }
-  section #hojas-hs span:nth-child(2) {
-    right: -130px;
-    top: 690px; }
-  section #hojas-hs span:nth-child(3) {
-    left: 130px;
-    top: 810px; }
-  section #hojas-hs span:nth-child(4) {
-    right: 0;
-    top: 770px; }
-  section #hojas-hs span:nth-child(5) {
-    left: -10px;
-    top: 1290px; }
-  section #hojas-hs span:nth-child(6) {
-    top: 1670px; }
-  section #hojas-hs span:last-child {
-    top: 1690px; } }
+  section #contenedor-habitaciones div span:first-child {
+    left: -170px;
+    top: 290px; }
+    section #contenedor-habitaciones div span:first-child img {
+      width: 90%; }
+  section #contenedor-habitaciones div span:nth-child(2) {
+    top: 570px; }
+  section #contenedor-habitaciones div span:last-child {
+    top: 520px; } }
 @font-face {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
@@ -959,6 +1038,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -1022,19 +1129,41 @@ section #banner-principal-hab-general {
         font-size: 330%;
         font-family: "blackjack";
         text-align: center; }
-  section #banner-principal-hab-general a span {
-    background-image: url("../images/icono-abajo.png");
-    bottom: 40px;
-    display: block;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 65px; }
+  section #banner-principal-hab-general a {
+    cursor: pointer; }
+    section #banner-principal-hab-general a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 40px;
+      display: block;
+      height: 48px;
+      -webkit-animation-duration: 0.6s;
+      -moz-animation-duration: 0.6s;
+      -o-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: flechaMov;
+      -moz-animation-name: flechaMov;
+      -o-animation-name: flechaMov;
+      animation-name: flechaMov;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      -o-animation-direction: alternate;
+      animation-direction: alternate;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px;
+      z-index: 1; }
+  section #banner-principal-hab-general a:hover {
+    border: 0;
+    padding: 0; }
 section #banner-principal-hab-general::before {
   background-color: rgba(71, 0, 82, 0.4);
   content: "";
@@ -1058,6 +1187,36 @@ section #bienvenida-hab {
       font-size: 180%;
       margin: 30px auto;
       text-align: center; }
+  section #bienvenida-hab div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #bienvenida-hab div span {
+      position: absolute; }
+      section #bienvenida-hab div span:first-child {
+        left: -140px;
+        top: 90px; }
+        section #bienvenida-hab div span:first-child img {
+          width: 50%; }
+      section #bienvenida-hab div span:nth-child(2) {
+        right: -320px;
+        top: -70px; }
+        section #bienvenida-hab div span:nth-child(2) img {
+          filter: blur(2px);
+          transform: scaleY(-1);
+          width: 20%; }
+      section #bienvenida-hab div span:nth-child(3) {
+        left: -50px;
+        top: -70px; }
+        section #bienvenida-hab div span:nth-child(3) img {
+          filter: blur(2px);
+          width: 30%; }
+      section #bienvenida-hab div span:nth-child(4) {
+        right: -290px;
+        top: -20px; }
+        section #bienvenida-hab div span:nth-child(4) img {
+          width: 50%; }
 section #equipamiento {
   height: auto; }
   section #equipamiento h2 {
@@ -1249,51 +1408,17 @@ section #formulario {
           border: 0;
           color: #fff;
           padding: 0; }
-section #hojas-h span {
-  position: absolute;
-  right: -260px; }
-  section #hojas-h span:first-child, section #hojas-h span:nth-child(2) {
-    top: 420px; }
-    section #hojas-h span:first-child img, section #hojas-h span:nth-child(2) img {
-      width: 20%; }
-  section #hojas-h span:first-child, section #hojas-h span:nth-child(3) {
-    right: auto;
-    left: 0; }
-  section #hojas-h span:nth-child(3), section #hojas-h span:nth-child(4) {
-    top: 560px; }
-    section #hojas-h span:nth-child(3) img, section #hojas-h span:nth-child(4) img {
-      width: 30%; }
-  section #hojas-h span:first-child {
-    top: 410px; }
-  section #hojas-h span:nth-child(4) {
-    top: 490px; }
 
 @media all and (min-width: 360px) {
   section #galeria section:first-child section:first-child h2 {
-    width: 90%; }
-  section #hojas-h span:first-child {
-    top: 600px; }
-  section #hojas-h span:nth-child(2) {
-    top: 620px; }
-  section #hojas-h span:nth-child(3) {
-    top: 700px; }
-  section #hojas-h span:nth-child(4) {
-    top: 660px; } }
+    width: 90%; } }
 @media all and (min-width: 480px) {
   section #banner-principal-hab-general a span {
     bottom: 30px; }
   section #banner-principal-hab-general::after {
     left: -663px; }
   section #bienvenida-hab section:nth-child(2) section span {
-    right: 43px; }
-  section #hojas-h span:first-child {
-    top: 270px; }
-  section #hojas-h span:nth-child(2) {
-    top: 250px; }
-  section #hojas-h span:nth-child(3) {
-    top: 370px; }
-  section #hojas-h span:nth-child(4) {
-    top: 230px; } }
+    right: 43px; } }
 @media all and (min-width: 530px) {
   section #equipamiento section img {
     display: block;
@@ -1377,26 +1502,7 @@ section #hojas-h span {
   section #galeria section:last-child div.img-galeria-hab {
     height: 350px; }
   section #formulario section:last-child form label {
-    font-size: 150%; }
-  section #hojas-h span:first-child {
-    left: 30px;
-    top: 980px; }
-    section #hojas-h span:first-child img {
-      width: 30%; }
-  section #hojas-h span:nth-child(2) {
-    right: -180px;
-    top: 1000px; }
-    section #hojas-h span:nth-child(2) img {
-      width: 30%; }
-  section #hojas-h span:nth-child(3) {
-    top: 1100px; }
-    section #hojas-h span:nth-child(3) img {
-      width: 50%; }
-  section #hojas-h span:nth-child(4) {
-    right: -180px;
-    top: 1030px; }
-    section #hojas-h span:nth-child(4) img {
-      width: 50%; } }
+    font-size: 150%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -1418,6 +1524,24 @@ section #hojas-h span {
   section #banner-principal-hab-general aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #bienvenida-hab div span:first-child {
+    left: -70px;
+    top: -50px; }
+    section #bienvenida-hab div span:first-child img {
+      width: 60%; }
+  section #bienvenida-hab div span:nth-child(2) {
+    right: -250px;
+    top: -90px; }
+    section #bienvenida-hab div span:nth-child(2) img {
+      width: 30%; }
+  section #bienvenida-hab div span:nth-child(3) {
+    left: 30px;
+    top: 140px; }
+  section #bienvenida-hab div span:nth-child(4) {
+    right: -140px;
+    top: 0; }
+    section #bienvenida-hab div span:nth-child(4) img {
+      width: 50%; }
   section #equipamiento {
     height: 950px; }
     section #equipamiento h2 {
@@ -1448,25 +1572,7 @@ section #hojas-h span {
       section #formulario section:first-child p {
         width: 80%; }
     section #formulario section:last-child {
-      width: 60%; }
-  section #hojas-h span:first-child {
-    top: 760px; }
-  section #hojas-h span:nth-child(2) {
-    top: 790px; }
-  section #hojas-h span:nth-child(3) {
-    top: 920px; }
-  section #hojas-h span:nth-child(4) {
-    top: 870px; }
-  section #hojas-h span:nth-child(5) {
-    left: -90px;
-    top: 1290px; }
-    section #hojas-h span:nth-child(5) img {
-      width: 25%; }
-  section #hojas-h span:nth-child(6) {
-    right: -70px;
-    top: 1510px; }
-    section #hojas-h span:nth-child(6) img {
-      width: 100%; } }
+      width: 60%; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-hab-general::after {
     left: -155px; }
@@ -1484,6 +1590,18 @@ section #hojas-h span {
     width: 80%; }
     section #bienvenida-hab section {
       padding: 80px 0; }
+    section #bienvenida-hab div span:first-child {
+      top: 0; }
+    section #bienvenida-hab div span:nth-child(2) {
+      top: -20px; }
+    section #bienvenida-hab div span:nth-child(3) {
+      left: 270px;
+      top: 230px; }
+    section #bienvenida-hab div span:nth-child(4) {
+      right: -70px;
+      top: 110px; }
+      section #bienvenida-hab div span:nth-child(4) img {
+        width: 70%; }
   section #equipamiento {
     height: 1030px; }
     section #equipamiento h2 {
@@ -1509,26 +1627,7 @@ section #hojas-h span {
     section #galeria section:first-child section:last-child p {
       text-align: left; }
   section #galeria section:last-child div.img-galeria-hab {
-    height: 560px; }
-  section #hojas-h span:first-child {
-    left: 100px;
-    top: 660px; }
-  section #hojas-h span:nth-child(2) {
-    right: -130px;
-    top: 690px; }
-  section #hojas-h span:nth-child(3) {
-    left: 130px;
-    top: 810px; }
-  section #hojas-h span:nth-child(4) {
-    right: 0;
-    top: 770px; }
-  section #hojas-h span:nth-child(5) {
-    left: -10px;
-    top: 1290px; }
-    section #hojas-h span:nth-child(5) img {
-      width: 15%; }
-  section #hojas-h span:nth-child(6) {
-    top: 1670px; } }
+    height: 560px; } }
 @font-face {
   font-family: 'madame';
   src: url("../fonts/madame-webfont.woff2") format("woff2"), url("../fonts/madame-webfont.woff") format("woff"), url("../fonts/Madame.ttf") format("truetype"); }
@@ -1709,6 +1808,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -1772,19 +1899,38 @@ section #banner-principal-finestra {
         font-size: 330%;
         font-family: "blackjack";
         text-align: center; }
-  section #banner-principal-finestra a span {
-    background-image: url("../images/icono-abajo.png");
-    bottom: 40px;
-    display: block;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 65px; }
+  section #banner-principal-finestra a {
+    cursor: pointer; }
+    section #banner-principal-finestra a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 40px;
+      display: block;
+      height: 48px;
+      -webkit-animation-duration: 0.6s;
+      -moz-animation-duration: 0.6s;
+      -o-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: flechaMov;
+      -moz-animation-name: flechaMov;
+      -o-animation-name: flechaMov;
+      animation-name: flechaMov;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      -o-animation-direction: alternate;
+      animation-direction: alternate;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px;
+      z-index: 1; }
 section #banner-principal-finestra::before {
   background-color: rgba(71, 0, 82, 0.4);
   content: "";
@@ -1872,24 +2018,6 @@ section #ubicacion {
     background-size: cover;
     margin: 0;
     height: 300px; }
-    section #ubicacion section:last-child section a span {
-      background-color: transparent;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      margin: 3px;
-      background-image: url("../images/pin-finestra.png");
-      bottom: 90px;
-      cursor: pointer;
-      height: 70px;
-      left: auto;
-      opacity: 1;
-      right: 60px;
-      transition-duration: 0.8s;
-      transform: none;
-      width: 100px; }
-    section #ubicacion section:last-child section a:hover span {
-      transform: scale(1.3); }
 section #pet {
   align-content: center;
   display: flex;
@@ -2046,7 +2174,7 @@ section #formulario-contacto {
       margin: 0 auto;
       width: 90%; }
       section #formulario-contacto section:nth-child(2) form label {
-        color: #333333;
+        color: #470052;
         display: block;
         font-family: "Arsenal-Regular";
         font-size: 100%;
@@ -2056,12 +2184,18 @@ section #formulario-contacto {
         section #formulario-contacto section:nth-child(2) form label input, section #formulario-contacto section:nth-child(2) form label textarea {
           border: 1px solid #470052;
           border-radius: 5px;
+          color: #333333;
+          font-family: "Arsenal-Regular";
           height: 40px;
           padding-left: 5px;
           width: 100%; }
         section #formulario-contacto section:nth-child(2) form label textarea {
+          font-size: 100%;
           padding-top: 5px;
           height: 100px; }
+        section #formulario-contacto section:nth-child(2) form label textarea::placeholder {
+          color: #333333;
+          font-family: "Arsenal-Regular"; }
       section #formulario-contacto section:nth-child(2) form label:nth-child(4) {
         height: auto; }
       section #formulario-contacto section:nth-child(2) form input#botonFormulario {
@@ -2092,8 +2226,6 @@ section #formulario-contacto {
     left: 60px; }
   section #ubicacion section:first-child section {
     width: 56%; }
-  section #ubicacion section:last-child section a span {
-    right: 80px; }
   section #galeria-finestra #como-llegar section:first-child {
     margin: 50px auto 0; } }
 @media all and (min-width: 480px) {
@@ -2102,9 +2234,7 @@ section #formulario-contacto {
   section #banner-principal-finestra::after {
     left: -663px; }
   section #bienvenida-finestra section:nth-child(2) section span {
-    right: 43px; }
-  section #ubicacion section:last-child section a span {
-    right: 140px; } }
+    right: 43px; } }
 @media all and (min-width: 568px) {
   section #ubicacion section:first-child span {
     height: 161px;
@@ -2160,9 +2290,6 @@ section #formulario-contacto {
       width: 100%; }
       section #ubicacion section:last-child section {
         height: 330px; }
-        section #ubicacion section:last-child section a span {
-          bottom: 85px;
-          right: 262px; }
   section #pet {
     width: 87%; }
     section #pet section {
@@ -2190,7 +2317,9 @@ section #formulario-contacto {
       flex-flow: row nowrap;
       justify-content: center;
       position: absolute;
-      width: 100%; } }
+      width: 100%; }
+  section #formulario-contacto section:nth-child(2) form label {
+    font-size: 150%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -2251,9 +2380,6 @@ section #formulario-contacto {
         width: 340px; }
         section #ubicacion section:first-child section p {
           font-size: 170%; }
-    section #ubicacion section:last-child section a span {
-      bottom: 55px;
-      right: 362px; }
   section #pet {
     height: 490px; }
     section #pet section h2 {
@@ -2270,7 +2396,8 @@ section #formulario-contacto {
       section #pet section:nth-child(2) span {
         left: 30px; }
       section #pet section:nth-child(2) img {
-        width: 80%; }
+        width: 80%;
+        z-index: 1; }
     section #pet div {
       height: 100%;
       position: absolute;
@@ -2335,7 +2462,8 @@ section #formulario-contacto {
         width: 1050px; }
     section #formulario-contacto section:nth-child(2) {
       bottom: 0;
-      width: 100%; }
+      width: 100%;
+      z-index: 1; }
       section #formulario-contacto section:nth-child(2) form {
         float: left;
         width: 50%; }
@@ -2376,9 +2504,6 @@ section #formulario-contacto {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
-  section #ubicacion section:last-child section a span {
-    bottom: 20px;
-    right: 558px; }
   section #pet section:first-child h2 {
     padding-bottom: 10px; }
   section #pet section:first-child p {
@@ -2441,9 +2566,6 @@ section #formulario-contacto {
     section #hojas-f span:nth-child(7) img {
       width: 50%; } }
 @media all and (min-width: 1440px) {
-  section #ubicacion section:last-child section a span {
-    bottom: 19px;
-    right: 558px; }
   section #formulario-contacto section:first-child span {
     left: -150px; } }
 @font-face {
@@ -2626,6 +2748,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -3177,6 +3327,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -3880,6 +4058,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -4348,8 +4554,8 @@ html {
   overflow-x: hidden; }
 
 html, body {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 h1 {
   margin: 0; }
@@ -4417,8 +4623,6 @@ section {
         background-repeat: no-repeat;
         background-size: contain;
         margin: 3px;
-        left: 50%;
-        transform: translateX(-50%);
         height: 110px;
         position: absolute;
         top: -90px;
@@ -4432,19 +4636,38 @@ section {
         section #banner-principal section.contenido-texto-banner section p {
           color: #fff;
           text-align: center; }
-    section #banner-principal a span {
-      background-image: url("../images/icono-abajo.png");
-      bottom: 100px;
-      display: block;
-      height: 48px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      margin: 3px;
-      left: 50%;
-      transform: translateX(-50%);
-      position: absolute;
-      width: 65px; }
+    section #banner-principal a {
+      cursor: pointer; }
+      section #banner-principal a span {
+        background-image: url("../images/icono-abajo.png");
+        bottom: 100px;
+        display: block;
+        height: 48px;
+        -webkit-animation-duration: 0.6s;
+        -moz-animation-duration: 0.6s;
+        -o-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: flechaMov;
+        -moz-animation-name: flechaMov;
+        -o-animation-name: flechaMov;
+        animation-name: flechaMov;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-direction: alternate;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 65px;
+        z-index: 1; }
   section #banner-principal::before {
     background-color: rgba(71, 0, 82, 0.4);
     content: "";
@@ -4509,6 +4732,7 @@ section {
         section #bienvenida div span:first-child {
           right: -41px; }
           section #bienvenida div span:first-child img {
+            filter: blur(2px);
             float: right;
             width: 30%; }
         section #bienvenida div span:nth-child(2) {
@@ -4579,6 +4803,7 @@ section {
         position: absolute;
         top: -10px; }
         section #servicios div span img {
+          filter: blur(2px);
           width: 30%; }
   section #habitaciones {
     height: auto;

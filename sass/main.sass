@@ -27,8 +27,8 @@ html
   overflow-x: hidden
 
 html, body
-  width: 100%
   height: 100%
+  width: 100%
 
 h1
   margin: 0
@@ -85,7 +85,7 @@ section
       span
         background-image: url("../images/logo-finestra-blanco.png")
         @include backgroundImage
-        @include centrarHorizontalmente
+        //@include centrarHorizontalmente
         height: 110px
         position: absolute
         top: -90px
@@ -100,15 +100,18 @@ section
           color: #fff
           text-align: center
     a
+      cursor: pointer
       span
         background-image: url("../images/icono-abajo.png")
         bottom: 100px
         display: block
         height: 48px
+        @include flechaMov
         @include backgroundImage
         @include centrarHorizontalmente
         position: absolute
         width: 65px
+        z-index: 1
   #banner-principal::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
@@ -168,6 +171,7 @@ section
         &:first-child
           right: -41px
           img
+            filter: blur(2px)
             float: right
             width: 30%
         &:nth-child(2)
@@ -224,6 +228,7 @@ section
         position: absolute
         top: -10px
         img
+          filter: blur(2px)
           width: 30%
   #habitaciones
     height: auto

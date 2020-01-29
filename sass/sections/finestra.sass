@@ -68,15 +68,18 @@ section
           font-family: 'blackjack'
           text-align: center
     a
+      cursor: pointer
       span
         background-image: url("../images/icono-abajo.png")
         bottom: 40px
         display: block
         height: 48px
+        @include flechaMov
         @include backgroundImage
         @include centrarHorizontalmente
         position: absolute
         width: 65px
+        z-index: 1
   #banner-principal-finestra::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
@@ -132,7 +135,6 @@ section
           top: 210px
           img
             width: 50%
-
   #ubicacion
     height: auto
     section
@@ -164,23 +166,6 @@ section
           background-size: cover
           margin: 0
           height: 300px
-          a
-            span
-              background-color: transparent
-              @include backgroundImage
-              background-image: url("../images/pin-finestra.png")
-              bottom: 90px
-              cursor: pointer
-              height: 70px
-              left: auto
-              opacity: 1
-              right: 60px
-              transition-duration: 0.8s
-              transform: none
-              width: 100px
-          a:hover
-            span
-              transform: scale(1.3)
   #pet
     @include flexBox
     flex-flow: row wrap
@@ -333,7 +318,7 @@ section
           margin: 0 auto
           width: 90%
           label
-            color: $gris-texto
+            color: $morado
             display: block
             font-family: 'Arsenal-Regular'
             font-size: 100%
@@ -343,12 +328,18 @@ section
             input , textarea
               border: 1px solid $morado
               border-radius: 5px
+              color: $gris-texto
+              font-family: 'Arsenal-Regular'
               height: 40px
               padding-left: 5px
               width: 100%
             textarea
+              font-size: 100%
               padding-top: 5px
               height: 100px
+            textarea::placeholder
+              color: $gris-texto
+              font-family: 'Arsenal-Regular'
           label:nth-child(4)
             height: auto
           input#botonFormulario
@@ -374,11 +365,6 @@ section
             left: 60px
           section
             width: 56%
-        &:last-child
-          section
-            a
-              span
-                right: 80px
     #galeria-finestra
       #como-llegar
         section:first-child
@@ -397,13 +383,6 @@ section
         section
           span
             right: 43px
-    #ubicacion
-      section
-        &:last-child
-          section
-            a
-              span
-                right: 140px
 
 @media all and (min-width: 568px)
   section
@@ -419,7 +398,6 @@ section
             a
               span
                 right: 180px
-
 
 //TABLETS
 @media all and (min-width: 737px)
@@ -472,10 +450,6 @@ section
           width: 100%
           section
             height: 330px
-            a
-              span
-                bottom: 85px
-                right: 262px
     #pet
       width: 87%
       section
@@ -499,7 +473,12 @@ section
           @include flexBox
           position: absolute
           width: 100%
-
+    #formulario-contacto
+      section
+        &:nth-child(2)
+          form
+            label
+              font-size: 150%
 
 @media all and (min-width: 1024px)
   .desktop
@@ -565,12 +544,6 @@ section
             width: 340px
             p
               font-size: 170%
-        &:last-child
-          section
-            a
-              span
-                bottom: 55px
-                right: 362px
     #pet
       height: 490px
       section
@@ -589,6 +562,7 @@ section
             left: 30px
           img
             width: 80%
+            z-index: 1
       div
         height: 100%
         position: absolute
@@ -649,6 +623,7 @@ section
         &:nth-child(2)
           bottom: 0
           width: 100%
+          z-index: 1
           form
             float: left
             width: 50%
@@ -697,12 +672,6 @@ section
             height: 320px
           section
             top: 0
-        &:last-child
-          section
-            a
-              span
-                bottom: 20px
-                right: 558px
     #pet
       section
         &:first-child
@@ -779,14 +748,6 @@ section
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)
   section
-    #ubicacion
-      section
-        &:last-child
-          section
-            a
-              span
-                bottom: 19px
-                right: 558px
     #formulario-contacto
       section
         &:first-child
