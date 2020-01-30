@@ -68,15 +68,21 @@ section
           font-size: 330%
           text-align: center
     a
+      cursor: pointer
       span
         background-image: url("../images/icono-abajo.png")
         bottom: 40px
         display: block
         height: 48px
+        @include flechaMov
         @include backgroundImage
         @include centrarHorizontalmente
         position: absolute
         width: 65px
+        z-index: 1
+    a:hover
+      border: 0
+      padding: 0
   #banner-principal-restaurante::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
@@ -101,6 +107,36 @@ section
         font-size: 180%
         margin: 30px auto
         text-align: center
+    div
+      height: 100%
+      position: absolute
+      top: 0
+      width: 100%
+      span
+        position: absolute
+        &:first-child
+          left: -140px
+          top: 90px
+          img
+            width: 50%
+        &:nth-child(2)
+          right: -320px
+          top: -70px
+          img
+            filter: blur(2px)
+            transform: scaleY(-1)
+            width: 20%
+        &:nth-child(3)
+          left: -50px
+          top: -70px
+          img
+            filter: blur(2px)
+            width: 30%
+        &:nth-child(4)
+          right: -290px
+          top: -20px
+          img
+            width: 50%
   #galeria-restaurante
     @include flexBox
     flex-flow: row wrap
@@ -138,7 +174,6 @@ section
             background: transparent
         .owl-dots
           display: none
-
   #especialidad
     height: auto
     margin: 0 auto
@@ -147,10 +182,11 @@ section
       &:first-child
         p
           margin: 30px auto
-      &:last-child
+      &:nth-child(2)
         margin-top: 20px
         padding-bottom: 100px
         div
+          height: auto
           margin: 30px auto
           position: relative
           span
@@ -158,6 +194,7 @@ section
             height: 40px
             @include centrarHorizontalmente
             position: absolute
+            top: auto
             width: 170px
           img
             display: block
@@ -174,43 +211,7 @@ section
           img
             width: 70%
 
-
-
-  #hojas-r
-    span
-      position: absolute
-      &:first-child , &:nth-child(2)
-        top: 420px
-        img
-          width: 20%
-      &:first-child , &:nth-child(3)
-        right: auto
-        left: 0
-      &:nth-child(3) , &:nth-child(4)
-        top: 560px
-        img
-          width: 30%
-      &:first-child
-        top: 410px
-      &:nth-child(4)
-        top: 490px
-
-
-
 @media all and (min-width: 360px)
-  section
-    #hojas-r
-      span
-        &:first-child
-          top: 600px
-        &:nth-child(2)
-          top: 620px
-        &:nth-child(3)
-          top: 700px
-        &:nth-child(4)
-          top: 660px
-
-
 
 
 @media all and (min-width: 480px)
@@ -228,26 +229,13 @@ section
             right: 43px
     #especialidad
       section
-        &:last-child
+        &:nth-child(2)
           div:first-child
             img
               width: 65%
           div:last-child
             img
               width: 50%
-    #hojas-r
-      span
-        &:first-child
-          top: 270px
-        &:nth-child(2)
-          top: 250px
-        &:nth-child(3)
-          top: 370px
-        &:nth-child(4)
-          top: 230px
-
-
-
 
 
 //TABLETS
@@ -256,7 +244,6 @@ section
     display: none
   .tablet
     display: block
-
   section
     #banner-principal-restaurante::after
       left: -480px
@@ -274,7 +261,6 @@ section
         h2
           font-size: 250%
           width: 60%
-
     #galeria-restaurante
       section:first-child
         section:first-child
@@ -287,14 +273,13 @@ section
       section:last-child
         div.img-galeria-hab
           height: 350px
-
     #especialidad
       @include flexBox
       section
         &:first-child
           align-self: center
           width: 50%
-        &:last-child
+        &:nth-child(2)
           width: 50%
           div:first-child
             float: left
@@ -306,28 +291,6 @@ section
             width: 85%
             img
               width: 70%
-
-    #hojas-r
-      span
-        &:first-child
-          left: 30px
-          top: 980px
-          img
-            width: 30%
-        &:nth-child(2)
-          right: -180px
-          top: 1000px
-          img
-            width: 30%
-        &:nth-child(3)
-          top: 1100px
-          img
-            width: 50%
-        &:nth-child(4)
-          right: -180px
-          top: 1030px
-          img
-            width: 50%
 
 @media all and (min-width: 1024px)
   .desktop
@@ -350,43 +313,54 @@ section
       aside
         top: 50%
         transform: translateY(-50%)
+    #bienvenida-restaurante
+      div
+        span
+          &:first-child
+            left: -60px
+            top: -50px
+          &:nth-child(2)
+            right: -290px
+            top: -40px
+          &:nth-child(3)
+            left: 100px
+            top: 150px
+          &:nth-child(4)
+            right: -110px
+            top: 0
     #galeria-restaurante
     #especialidad
       section
         &:first-child
           width: 30%
-        &:last-child
+        &:nth-child(2)
           width: 70%
           div:first-child
             width: 70%
           div:last-child
             width: 65%
-    #hojas-r
-      span
-        &:first-child
-          top: 760px
-        &:nth-child(2)
-          top: 790px
-        &:nth-child(3)
-          top: 920px
-        &:nth-child(4)
-          top: 870px
-        &:nth-child(5)
-          right: -90px
-          top: 1480px
-          img
-            width: 75%
-        &:nth-child(6)
-          right: -70px
-          top: 1510px
-          img
-            width: 100%
-
+      div
+        height: 100%
+        position: absolute
+        top: 0
+        width: 100%
+        span
+          position: absolute
+          &:first-child
+            left: -100px
+            top: -140px
+            img
+              width: 50%
+          &:last-child
+            right: -170px
+            top: 320px
+            img
+              filter: blur(4px)
+              width: 60%
 
 
 //DESKTOP
 @media all and (min-width:1124px)
-
   section
     #banner-principal-restaurante::after
       left: -155px
@@ -400,37 +374,35 @@ section
       width: 80%
       section
         padding: 80px 0
+      div
+        span
+          &:first-child
+            img
+              width: 60%
+          &:nth-child(4)
+            right: -10px
+            img
+              width: 70%
     #galeria-restaurante
       section:first-child
         div.img-galeria-hab
           height: 560px
     #especialidad
       section
-        &:last-child
+        &:nth-child(2)
           div:first-child
             margin-left: 90px
             width: 50%
           div:last-child
             width: 52%
-    #hojas-r
-      span
-        &:first-child
-          left: 100px
-          top: 660px
-        &:nth-child(2)
-          right: -130px
-          top: 690px
-        &:nth-child(3)
-          left: 130px
-          top: 810px
-        &:nth-child(4)
-          right: 0
-          top: 770px
-        &:nth-child(5)
-          top: 1820px
-        &:nth-child(6)
-          top: 1670px
-
+      div
+        span
+          &:first-child
+            top: -320px
+          &:last-child
+            top: 480px
+            img
+              width: 80%
 
 
 //DESKTOP Hi-Res

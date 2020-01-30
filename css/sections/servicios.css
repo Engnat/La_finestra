@@ -178,6 +178,34 @@ canvas {
 template, [hidden] {
   display: none; }
 
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -241,19 +269,41 @@ section #banner-principal-servicios {
         font-family: "blackjack";
         font-size: 330%;
         text-align: center; }
-  section #banner-principal-servicios a span {
-    background-image: url("../images/icono-abajo.png");
-    bottom: 40px;
-    display: block;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 65px; }
+  section #banner-principal-servicios a {
+    cursor: pointer; }
+    section #banner-principal-servicios a span {
+      background-image: url("../images/icono-abajo.png");
+      bottom: 40px;
+      display: block;
+      height: 48px;
+      -webkit-animation-duration: 0.6s;
+      -moz-animation-duration: 0.6s;
+      -o-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: flechaMov;
+      -moz-animation-name: flechaMov;
+      -o-animation-name: flechaMov;
+      animation-name: flechaMov;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      -o-animation-direction: alternate;
+      animation-direction: alternate;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 65px;
+      z-index: 1; }
+  section #banner-principal-servicios a:hover {
+    border: 0;
+    padding: 0; }
 section #banner-principal-servicios::before {
   background-color: rgba(71, 0, 82, 0.4);
   content: "";
@@ -277,6 +327,36 @@ section #bienvenida-servicios {
       font-family: "allura";
       margin: 30px auto;
       text-align: center; }
+  section #bienvenida-servicios div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #bienvenida-servicios div span {
+      position: absolute; }
+      section #bienvenida-servicios div span:first-child {
+        left: -140px;
+        top: 90px; }
+        section #bienvenida-servicios div span:first-child img {
+          width: 50%; }
+      section #bienvenida-servicios div span:nth-child(2) {
+        right: -320px;
+        top: -70px; }
+        section #bienvenida-servicios div span:nth-child(2) img {
+          filter: blur(2px);
+          transform: scaleY(-1);
+          width: 20%; }
+      section #bienvenida-servicios div span:nth-child(3) {
+        left: -50px;
+        top: -70px; }
+        section #bienvenida-servicios div span:nth-child(3) img {
+          filter: blur(2px);
+          width: 30%; }
+      section #bienvenida-servicios div span:nth-child(4) {
+        right: -290px;
+        top: -20px; }
+        section #bienvenida-servicios div span:nth-child(4) img {
+          width: 50%; }
 section #contenedor-servicios {
   height: auto;
   margin: 70px auto;
@@ -349,42 +429,45 @@ section #planes {
       color: #fff;
       margin: 0 auto;
       width: 70%; }
-  section #planes section:last-child {
+  section #planes section:nth-child(2) {
     background-color: transparent;
     height: auto;
     left: 50%;
     transform: translateX(-50%);
     top: -20px;
     width: 75%; }
-    section #planes section:last-child section {
+    section #planes section:nth-child(2) section {
       background-color: transparent; }
-    section #planes section:last-child section.contenido-planes {
+    section #planes section:nth-child(2) section.contenido-planes {
       background-color: #fff;
       box-shadow: 1px 1px 10px #333333;
       border-radius: 5px;
       height: 250px;
-      margin: 0 0 70px;
+      left: auto;
+      margin: 0 auto 70px;
       padding: 30px;
       top: 0;
+      transform: none;
       width: 100%; }
-      section #planes section:last-child section.contenido-planes section:first-child {
+      section #planes section:nth-child(2) section.contenido-planes section:first-child {
         height: 60px; }
-        section #planes section:last-child section.contenido-planes section:first-child h3 {
+        section #planes section:nth-child(2) section.contenido-planes section:first-child h3 {
           border-bottom: 2px solid #470052;
           color: #584880;
           font-family: "playball";
           font-size: 170%;
           padding-bottom: 10px;
           text-align: center; }
-      section #planes section:last-child section.contenido-planes section:nth-child(2) {
+      section #planes section:nth-child(2) section.contenido-planes section:nth-child(2) {
         height: auto;
-        margin: 20px auto 30px; }
-        section #planes section:last-child section.contenido-planes section:nth-child(2) p {
+        margin: 30px 0 10px;
+        width: 100%; }
+        section #planes section:nth-child(2) section.contenido-planes section:nth-child(2) p {
           text-align: center; }
-      section #planes section:last-child section.contenido-planes section:last-child {
+      section #planes section:nth-child(2) section.contenido-planes section:last-child {
         position: relative;
         top: 0; }
-        section #planes section:last-child section.contenido-planes section:last-child span {
+        section #planes section:nth-child(2) section.contenido-planes section:last-child span {
           background-color: #00A06D;
           border-radius: 5px;
           display: block;
@@ -392,62 +475,11 @@ section #planes {
           margin: 0 auto;
           padding: 10px;
           width: 150px; }
-          section #planes section:last-child section.contenido-planes section:last-child span p {
+          section #planes section:nth-child(2) section.contenido-planes section:last-child span p {
             color: #fff;
             font-size: 200%;
             text-align: center; }
-section #hojas-servicios span {
-  position: absolute; }
-  section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(2) {
-    right: -250px;
-    top: 420px; }
-    section #hojas-servicios span:first-child img, section #hojas-servicios span:nth-child(2) img {
-      width: 20%; }
-  section #hojas-servicios span:first-child, section #hojas-servicios span:nth-child(3) {
-    right: auto;
-    left: 0; }
-  section #hojas-servicios span:nth-child(3), section #hojas-servicios span:nth-child(4) {
-    top: 560px; }
-    section #hojas-servicios span:nth-child(3) img, section #hojas-servicios span:nth-child(4) img {
-      width: 30%; }
-  section #hojas-servicios span:first-child {
-    left: auto;
-    top: 410px; }
-  section #hojas-servicios span:nth-child(4) {
-    right: -240px;
-    top: 490px; }
-  section #hojas-servicios span:nth-child(5) {
-    left: -150px;
-    top: 1110px; }
-    section #hojas-servicios span:nth-child(5) img {
-      width: 70%; }
-  section #hojas-servicios span:nth-child(6) {
-    right: -170px;
-    top: 1330px; }
-    section #hojas-servicios span:nth-child(6) img {
-      width: 80%; }
-  section #hojas-servicios span:last-child {
-    top: 1280px; }
-    section #hojas-servicios span:last-child img {
-      width: 30%; }
 
-@media all and (min-width: 360px) {
-  section #hojas-servicios span:first-child {
-    top: 600px; }
-  section #hojas-servicios span:nth-child(2) {
-    top: 620px; }
-  section #hojas-servicios span:nth-child(3) {
-    top: 700px; }
-  section #hojas-servicios span:nth-child(4) {
-    top: 660px; }
-  section #hojas-servicios span:nth-child(5) {
-    left: -170px;
-    top: 1380px; }
-  section #hojas-servicios span:nth-child(6) {
-    right: -170px;
-    top: 1630px; }
-  section #hojas-servicios span:last-child {
-    top: 1780px; } }
 @media all and (min-width: 480px) {
   section #banner-principal-servicios a span {
     bottom: 30px; }
@@ -479,8 +511,12 @@ section #hojas-servicios span {
 @media all and (min-width: 530px) {
   section #planes::before {
     border-right: 670px solid transparent; }
-  section #planes section:last-child {
-    width: 50%; } }
+  section #planes section:nth-child(2) {
+    width: 50%; }
+    section #planes section:nth-child(2) section.contenido-planes {
+      width: 100%; }
+      section #planes section:nth-child(2) section.contenido-planes section:last-child {
+        width: 100%; } }
 @media all and (min-width: 640px) {
   section #planes::before {
     border-right: 750px solid transparent; } }
@@ -526,46 +562,16 @@ section #hojas-servicios span {
     border-right: 796px solid transparent; }
   section #planes {
     padding-bottom: 100px; }
-    section #planes section:last-child {
+    section #planes section:nth-child(2) {
       width: 75%; }
-      section #planes section:last-child section.contenido-planes {
+      section #planes section:nth-child(2) section.contenido-planes {
         height: auto;
         left: auto;
         margin: 0 auto 70px;
         transform: none;
         width: 58%; }
-        section #planes section:last-child section.contenido-planes section:last-child {
-          top: 50px; }
-  section #hojas-servicios span:first-child {
-    left: 30px;
-    top: 980px; }
-    section #hojas-servicios span:first-child img {
-      width: 30%; }
-  section #hojas-servicios span:nth-child(2) {
-    right: -180px;
-    top: 1000px; }
-    section #hojas-servicios span:nth-child(2) img {
-      width: 30%; }
-  section #hojas-servicios span:nth-child(3) {
-    top: 1100px; }
-    section #hojas-servicios span:nth-child(3) img {
-      width: 50%; }
-  section #hojas-servicios span:nth-child(4) {
-    right: -180px;
-    top: 1030px; }
-    section #hojas-servicios span:nth-child(4) img {
-      width: 50%; }
-  section #hojas-servicios span:nth-child(5) {
-    left: -60px;
-    top: 1830px; }
-    section #hojas-servicios span:nth-child(5) img {
-      width: 75%; }
-  section #hojas-servicios span:nth-child(6) {
-    right: -100px;
-    top: 2200px; }
-  section #hojas-servicios span:last-child {
-    right: auto;
-    top: 2480px; } }
+        section #planes section:nth-child(2) section.contenido-planes section:last-child {
+          top: 50px; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -587,6 +593,18 @@ section #hojas-servicios span {
   section #banner-principal-servicios aside {
     top: 50%;
     transform: translateY(-50%); }
+  section #bienvenida-servicios div span:first-child {
+    left: -60px;
+    top: -50px; }
+  section #bienvenida-servicios div span:nth-child(2) {
+    right: -290px;
+    top: -40px; }
+  section #bienvenida-servicios div span:nth-child(3) {
+    left: 100px;
+    top: 120px; }
+  section #bienvenida-servicios div span:nth-child(4) {
+    right: -110px;
+    top: 0; }
   section #contenedor-servicios section.min-servicios {
     align-content: center;
     display: flex;
@@ -603,48 +621,46 @@ section #hojas-servicios span {
       order: 2; }
       section #contenedor-servicios section.min-servicios:nth-child(2) section:first-child span {
         right: auto; }
-    section #contenedor-servicios section.min-servicios:last-child section:last-child {
+    section #contenedor-servicios section.min-servicios:nth-child(3) section:last-child {
       order: 2; }
-      section #contenedor-servicios section.min-servicios:last-child section:last-child span {
+      section #contenedor-servicios section.min-servicios:nth-child(3) section:last-child span {
         right: auto; }
+  section #contenedor-servicios div {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    section #contenedor-servicios div span {
+      position: absolute; }
+      section #contenedor-servicios div span:first-child {
+        left: -130px;
+        top: 170px; }
+        section #contenedor-servicios div span:first-child img {
+          width: 70%; }
+      section #contenedor-servicios div span:last-child {
+        right: -160px;
+        top: 340px; }
   section #planes::before {
     border-right: 1056px solid transparent; }
   section #planes {
     padding-bottom: 150px; }
-    section #planes section:last-child {
+    section #planes section:nth-child(2) {
       align-content: center;
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
       justify-content: space-evenly;
       width: 90%; }
-      section #planes section:last-child section.contenido-planes {
+      section #planes section:nth-child(2) section.contenido-planes {
+        display: block;
         height: 395px;
         left: auto;
         transform: none;
         width: 29%; }
-        section #planes section:last-child section.contenido-planes section:last-child {
+        section #planes section:nth-child(2) section.contenido-planes section:last-child {
           top: 0; }
-      section #planes section:last-child section.contenido-planes:last-child {
-        display: block; }
-  section #hojas-servicios span:first-child {
-    top: 760px; }
-  section #hojas-servicios span:nth-child(2) {
-    top: 790px; }
-  section #hojas-servicios span:nth-child(3) {
-    top: 920px; }
-  section #hojas-servicios span:nth-child(4) {
-    top: 870px; }
-  section #hojas-servicios span:nth-child(5) {
-    left: -90px;
-    top: 1290px; }
-  section #hojas-servicios span:nth-child(6) {
-    right: -70px;
-    top: 1510px; }
-    section #hojas-servicios span:nth-child(6) img {
-      width: 100%; }
-  section #hojas-servicios span:last-child {
-    top: 1600px; } }
+      section #planes section:nth-child(2) section.contenido-planes:last-child {
+        display: block; } }
 @media all and (min-width: 1124px) {
   section #banner-principal-servicios::after {
     left: -155px; }
@@ -658,6 +674,16 @@ section #hojas-servicios span {
     width: 80%; }
     section #bienvenida-servicios section {
       padding: 80px 0; }
+    section #bienvenida-servicios div span:first-child img {
+      width: 60%; }
+    section #bienvenida-servicios div span:nth-child(3) {
+      left: 150px;
+      top: 190px; }
+    section #bienvenida-servicios div span:nth-child(4) {
+      right: -80px;
+      top: 100px; }
+      section #bienvenida-servicios div span:nth-child(4) img {
+        width: 70%; }
   section #contenedor-servicios section.min-servicios {
     height: auto; }
     section #contenedor-servicios section.min-servicios section:first-child {
@@ -667,39 +693,27 @@ section #hojas-servicios span {
         right: 28px; }
       section #contenedor-servicios section.min-servicios section:first-child img {
         width: 80%; }
+  section #contenedor-servicios div span:first-child {
+    left: -160px;
+    top: 260px; }
+    section #contenedor-servicios div span:first-child img {
+      width: 100%; }
   section #planes::before {
     border-right: 1686px solid transparent; }
   section #planes section:first-child {
     width: 100%; }
     section #planes section:first-child h2 {
       width: 75%; }
-  section #planes section:last-child {
+  section #planes section:nth-child(2) {
     width: 80%; }
-    section #planes section:last-child section.contenido-planes {
-      height: 340px; }
-  section #hojas-servicios span:first-child {
-    left: 100px;
-    top: 660px; }
-  section #hojas-servicios span:nth-child(2) {
-    right: -130px;
-    top: 690px; }
-  section #hojas-servicios span:nth-child(3) {
-    left: 130px;
-    top: 810px; }
-  section #hojas-servicios span:nth-child(4) {
-    right: 0;
-    top: 770px; }
-  section #hojas-servicios span:nth-child(5) {
-    left: -10px;
-    top: 1290px; }
-  section #hojas-servicios span:nth-child(6) {
-    top: 1670px; }
-  section #hojas-servicios span:last-child {
-    top: 1690px; } }
+    section #planes section:nth-child(2) section.contenido-planes {
+      height: 320px; } }
 @media all and (min-width: 1440px) {
   section #contenedor-servicios section.min-servicios section:first-child span {
     bottom: 116px; }
   section #contenedor-servicios section.min-servicios:nth-child(2) section:first-child span {
-    left: 30px; } }
+    left: 30px; }
+  section #planes section:nth-child(2) section.contenido-planes {
+    width: 26%; } }
 
 /*# sourceMappingURL=servicios.css.map */
