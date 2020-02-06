@@ -19,6 +19,34 @@
 @font-face {
   font-family: 'blackjack';
   src: url("../fonts/blackjack-webfont.woff2") format("woff2"), url("../fonts/blackjack-webfont.woff") format("woff"); }
+@-webkit-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-moz-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-o-keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes flechaMov {
+  from {
+    bottom: 40px;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
 .desktop, .tablet {
   display: none; }
 
@@ -44,9 +72,13 @@
       font-size: 130%; }
     #contenido-footer section:first-child section hr {
       border: 3px solid #33CC99;
+      margin-bottom: 10px;
       width: 20%; }
     #contenido-footer section:first-child section p, #contenido-footer section:first-child section a, #contenido-footer section:first-child section li {
       font-family: "Arsenal-Regular"; }
+    #contenido-footer section:first-child section a:hover {
+      border: 0;
+      padding: 0; }
     #contenido-footer section:first-child section p, #contenido-footer section:first-child section li {
       color: #fff; }
     #contenido-footer section:first-child section p b {
@@ -194,8 +226,7 @@
   #contenido-footer section:first-child section:last-child section:first-child img {
     width: 25%; }
   #contenido-footer section:first-child section:last-child section:last-child section:last-child div:last-child a:hover {
-    border: 0;
-    margin-left: -11px; }
+    border: 0; }
     #contenido-footer section:first-child section:last-child section:last-child section:last-child div:last-child a:hover:last-child {
       margin-left: 38px;
       padding: 0; } }

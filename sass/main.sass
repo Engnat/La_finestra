@@ -93,11 +93,13 @@ section
         z-index: 1
       section
         background-color: rgba(3, 138, 110, 0.5)
+        border-radius: 5px
         margin: 0 auto
         padding: 40px 20px
         width: 80%
         p
           color: #fff
+          font-family: 'Arsenal-bold'
           text-align: center
     a
       cursor: pointer
@@ -112,6 +114,9 @@ section
         position: absolute
         width: 65px
         z-index: 1
+    a:hover
+      border: 0
+      padding: 0
   #banner-principal::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
@@ -130,6 +135,8 @@ section
     width: 80%
     section
       padding: 20px 0
+      h2
+        margin-left: 25px
       p
         line-height: 1.5
         margin: 30px auto
@@ -137,8 +144,9 @@ section
         span
           @include backgroundImage
           @include separador
+          right: 20px
         p
-          margin: 20px 0
+          margin: 20px
           text-align: left
           width: 77%
       &:nth-child(2)
@@ -318,7 +326,7 @@ section
     #banner-principal::after
       left: -663px
     #bienvenida
-      height: 780px
+      height: 820px
       section:nth-child(2)
         section
           span
@@ -338,7 +346,7 @@ section
       section
         &:nth-child(2)
           bottom: 66px
-          width: 55%
+          width: 65%
       div
         span
           top: -250px
@@ -392,6 +400,8 @@ section
 
 
   section
+    p
+      font-size: 100%
     #banner-principal::after
       left: -480px
     #banner-principal
@@ -402,7 +412,7 @@ section
           padding: 60px 20px
           width: 60%
           p
-            font-size: 130%
+            font-size: 200%
     #bienvenida
       height: auto
       section
@@ -412,7 +422,7 @@ section
             right: auto
           p
             float: right
-            width: 50%
+            width: 46%
         &:nth-child(2)
           section
             margin: 0 auto
@@ -495,11 +505,11 @@ section
             top: -210px
     #slogan
       height: 165px
-      margin: 160px auto 50px
+      margin: 160px auto
       width: 70%
       p
         font-size: 200%
-
+        line-height: 1
 
 @media all and (min-width: 1024px)
   .desktop
@@ -627,7 +637,7 @@ section
             top: -260px
     #slogan
       height: 255px
-      width: 50%
+      width: 80%
       p
         font-size: 200%
 
@@ -640,8 +650,6 @@ section
     #bienvenida
       width: 80%
       section
-        p
-          font-size: 120%
         &:first-child
           margin: 0 auto
           width: 90%
@@ -666,7 +674,6 @@ section
           padding: 40px
           right: 70px
           p
-            font-size: 120%
             margin: 30px auto
       div
         span
@@ -675,8 +682,6 @@ section
       height: 570px
       width: 80%
       section
-        p
-          font-size: 120%
         &:first-child
           left: 120px
         &:nth-child(2)
@@ -706,8 +711,8 @@ section
 
     #slogan
       height: 385px
+      width: 60%
       p
-        font-size: 300%
         padding-top: 80px
 
 //DESKTOP Hi-Res

@@ -1839,6 +1839,10 @@ template, [hidden] {
 .desktop, .tablet {
   display: none; }
 
+a:hover {
+  border: 0;
+  padding: 0; }
+
 section #banner-principal-finestra {
   background-image: url("../images/fotografia/bg-luna-piena.jpg");
   background-attachment: fixed;
@@ -1946,14 +1950,14 @@ section #bienvenida-finestra {
   height: 230px;
   margin: 0 auto;
   position: relative;
-  width: 80%; }
+  width: 70%; }
   section #bienvenida-finestra section {
     padding: 20px 0;
     z-index: 1; }
     section #bienvenida-finestra section h2 {
       color: #333333;
       font-family: "allura";
-      font-size: 180%;
+      font-size: 130%;
       margin: 30px auto;
       text-align: center; }
   section #bienvenida-finestra div {
@@ -2018,7 +2022,7 @@ section #ubicacion {
     background-size: cover;
     margin: 0;
     height: 300px; }
-section #pet {
+section #pet, section #finestra {
   align-content: center;
   display: flex;
   flex-flow: row nowrap;
@@ -2026,22 +2030,47 @@ section #pet {
   flex-flow: row wrap;
   margin: 100px auto 0;
   width: 80%; }
-  section #pet section:first-child p {
-    margin: 10px auto 40px;
-    text-align: left; }
-  section #pet section:nth-child(2) {
-    position: relative; }
-    section #pet section:nth-child(2) span {
-      background-color: #00A06D;
-      bottom: -20px;
-      height: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      position: absolute;
-      width: 200px; }
-    section #pet section:nth-child(2) img {
-      position: relative;
-      width: 100%; }
+  section #pet section, section #finestra section {
+    width: 100%; }
+    section #pet section:first-child p, section #finestra section:first-child p {
+      margin: 10px auto 40px;
+      text-align: left; }
+    section #pet section:nth-child(2), section #finestra section:nth-child(2) {
+      position: relative; }
+      section #pet section:nth-child(2) span, section #finestra section:nth-child(2) span {
+        background-color: #00A06D;
+        bottom: -20px;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 200px; }
+      section #pet section:nth-child(2) img, section #finestra section:nth-child(2) img {
+        position: relative;
+        width: 100%; }
+section #reconocimientos {
+  margin: 60px auto;
+  width: 80%; }
+  section #reconocimientos .contenedor-reco {
+    box-shadow: 1px 2px 10px #bbb;
+    border-radius: 10px;
+    display: block;
+    height: 200px;
+    margin: 40px auto 0;
+    padding: 20px;
+    width: 80%; }
+  section #reconocimientos #CDSWIDFRR, section #reconocimientos #CDSWIDTC {
+    border: 0;
+    margin: 35px auto; }
+  section #reconocimientos #CDSWIDCOE {
+    border: 0;
+    margin: 21px auto; }
+  section #reconocimientos #CDSWIDGRN, section #reconocimientos #CDSWIDEXC {
+    border: 0;
+    margin: 0 auto; }
+  section #reconocimientos #TA_tchotel448 a:hover {
+    border: 0;
+    padding: 0; }
 section #galeria-finestra {
   height: auto;
   align-content: center;
@@ -2241,7 +2270,15 @@ section #formulario-contacto {
     left: 73px;
     width: 200px; }
   section #ubicacion section:last-child section a span {
-    right: 180px; } }
+    right: 180px; }
+  section #reconocimientos section:last-child {
+    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap; }
+  section #reconocimientos .contenedor-reco {
+    width: 45%; } }
 @media all and (min-width: 737px) {
   .desktop {
     display: none; }
@@ -2264,8 +2301,8 @@ section #formulario-contacto {
     section #banner-principal-finestra section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-finestra section h2 {
-    font-size: 250%;
-    width: 60%; }
+    font-size: 200%;
+    width: 70%; }
   section #ubicacion {
     height: 650px;
     position: relative; }
@@ -2273,38 +2310,47 @@ section #formulario-contacto {
       height: 330px;
       width: 100%; }
       section #ubicacion section:first-child span {
-        height: 300px;
+        height: 250px;
         left: 50%;
         transform: translateX(-50%);
-        width: 400px; }
+        width: 350px; }
       section #ubicacion section:first-child section {
-        height: 270px;
+        height: 210px;
         padding: 40px;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
-        width: 340px; }
+        width: 270px; }
     section #ubicacion section:last-child {
       bottom: 0;
       position: absolute;
       width: 100%; }
       section #ubicacion section:last-child section {
         height: 330px; }
-  section #pet {
+  section #pet, section #finestra {
     width: 87%; }
-    section #pet section {
+    section #pet section, section #finestra section {
       align-content: center;
       display: flex;
       flex-flow: row nowrap;
       justify-content: center; }
-      section #pet section:first-child {
+      section #pet section:first-child, section #finestra section:first-child {
         flex-direction: column;
         width: 40%; }
-      section #pet section:nth-child(2) {
+      section #pet section:nth-child(2), section #finestra section:nth-child(2) {
         width: 60%; }
-        section #pet section:nth-child(2) span {
+        section #pet section:nth-child(2) span, section #finestra section:nth-child(2) span {
           left: -30px;
           transform: none; }
+  section #finestra section:first-child {
+    margin: 0 30px;
+    order: 2;
+    width: 45%; }
+  section #finestra section:nth-child(2) {
+    height: 200px;
+    width: 40%; }
+  section #reconocimientos section h2 {
+    text-align: center; }
   section #galeria-finestra #como-llegar::before {
     border-bottom: 62px solid #33CC99;
     border-left: 793px solid transparent; }
@@ -2380,39 +2426,47 @@ section #formulario-contacto {
         width: 340px; }
         section #ubicacion section:first-child section p {
           font-size: 170%; }
-  section #pet {
+  section #pet, section #finestra {
     height: 490px; }
-    section #pet section h2 {
+    section #pet section h2, section #finestra section h2 {
       font-size: 250%; }
-    section #pet section:first-child {
+    section #pet section:first-child, section #finestra section:first-child {
       bottom: 0;
       left: 0;
       position: absolute;
       z-index: 1; }
-    section #pet section:nth-child(2) {
+    section #pet section:nth-child(2), section #finestra section:nth-child(2) {
       position: absolute;
       right: 0;
       top: 0; }
-      section #pet section:nth-child(2) span {
+      section #pet section:nth-child(2) span, section #finestra section:nth-child(2) span {
         left: 30px; }
-      section #pet section:nth-child(2) img {
+      section #pet section:nth-child(2) img, section #finestra section:nth-child(2) img {
         width: 80%;
         z-index: 1; }
-    section #pet div {
+    section #pet div, section #finestra div {
       height: 100%;
       position: absolute;
       width: 100%;
       top: 0; }
-      section #pet div span {
+      section #pet div span, section #finestra div span {
         position: absolute; }
-        section #pet div span:first-child {
+        section #pet div span:first-child, section #finestra div span:first-child {
           left: -120px;
           top: 480px; }
-          section #pet div span:first-child img {
+          section #pet div span:first-child img, section #finestra div span:first-child img {
             filter: blur(3px); }
-        section #pet div span:last-child {
+        section #pet div span:last-child, section #finestra div span:last-child {
           right: -40px;
           top: 940px; }
+  section #reconocimientos {
+    width: 87%; }
+    section #reconocimientos section h2 {
+      font-size: 250%; }
+    section #reconocimientos section:last-child {
+      flex-flow: row nowrap; }
+    section #reconocimientos .contenedor-reco {
+      width: 30%; }
   section #galeria-finestra {
     margin: 100px auto 150px; }
     section #galeria-finestra #como-llegar::before {
@@ -2498,18 +2552,30 @@ section #formulario-contacto {
     section #bienvenida-finestra section {
       padding: 80px 0 0; }
       section #bienvenida-finestra section h2 {
-        font-size: 320%;
-        width: 50%; }
+        font-size: 300%; }
   section #ubicacion section:first-child span {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
-  section #pet section:first-child h2 {
-    padding-bottom: 10px; }
-  section #pet section:first-child p {
-    float: left;
-    margin: 0;
-    width: 75%; }
+  section #pet section:first-child, section #finestra section:first-child {
+    bottom: 100px; }
+    section #pet section:first-child h2, section #finestra section:first-child h2 {
+      padding-bottom: 10px; }
+    section #pet section:first-child p, section #finestra section:first-child p {
+      float: left;
+      margin: 0;
+      width: 75%; }
+  section #finestra section:first-child {
+    left: auto;
+    right: 0; }
+  section #finestra section:nth-child(2) {
+    height: auto;
+    left: 0;
+    width: 50%; }
+  section #reconocimientos .contenedor-reco {
+    width: 18%; }
+  section #reconocimientos section:last-child {
+    flex-flow: row wrap; }
   section #galeria-finestra #como-llegar::before {
     border-left: 1623px solid transparent; }
   section #galeria-finestra #como-llegar {
@@ -2534,37 +2600,7 @@ section #formulario-contacto {
     margin: 0 0 0 70px;
     width: 40%; }
     section #formulario-contacto section:last-child form label {
-      font-size: 150%; }
-  section #hojas-f span:first-child {
-    left: 100px;
-    top: 1010px; }
-    section #hojas-f span:first-child img {
-      width: 70%; }
-  section #hojas-f span:nth-child(2) {
-    right: -130px;
-    top: 690px; }
-  section #hojas-f span:nth-child(3) {
-    left: 130px;
-    top: 980px; }
-    section #hojas-f span:nth-child(3) img {
-      width: 30%; }
-  section #hojas-f span:nth-child(4) {
-    right: 0;
-    top: 1470px; }
-    section #hojas-f span:nth-child(4) img {
-      width: 70%; }
-  section #hojas-f span:nth-child(5) {
-    left: 0;
-    top: 1525px; }
-    section #hojas-f span:nth-child(5) img {
-      width: 13%; }
-  section #hojas-f span:nth-child(6) {
-    top: 4630px; }
-  section #hojas-f span:nth-child(7) {
-    right: 430px;
-    top: 2280px; }
-    section #hojas-f span:nth-child(7) img {
-      width: 50%; } }
+      font-size: 150%; } }
 @media all and (min-width: 1440px) {
   section #formulario-contacto section:first-child span {
     left: -150px; } }
@@ -3101,7 +3137,8 @@ section #especialidad {
     right: -110px;
     top: 0; }
   section #especialidad section:first-child {
-    width: 30%; }
+    width: 30%;
+    z-index: 1; }
   section #especialidad section:nth-child(2) {
     width: 70%; }
     section #especialidad section:nth-child(2) div:first-child {
@@ -3137,6 +3174,8 @@ section #especialidad {
     width: 80%; }
     section #bienvenida-restaurante section {
       padding: 80px 0; }
+      section #bienvenida-restaurante section h2 {
+        font-size: 300%; }
     section #bienvenida-restaurante div span:first-child img {
       width: 60%; }
     section #bienvenida-restaurante div span:nth-child(4) {
@@ -3706,9 +3745,9 @@ section #planes {
       margin: 0 auto 30px;
       width: 70%; }
       section #contenedor-servicios section.min-servicios h2 {
-        font-size: 250%; }
+        font-size: 200%; }
       section #contenedor-servicios section.min-servicios p {
-        font-size: 120%; }
+        font-size: 100%; }
       section #contenedor-servicios section.min-servicios section:first-child {
         height: 320px; }
         section #contenedor-servicios section.min-servicios section:first-child span {
@@ -4556,11 +4595,13 @@ section {
         z-index: 1; }
       section #banner-principal section.contenido-texto-banner section {
         background-color: rgba(3, 138, 110, 0.5);
+        border-radius: 5px;
         margin: 0 auto;
         padding: 40px 20px;
         width: 80%; }
         section #banner-principal section.contenido-texto-banner section p {
           color: #fff;
+          font-family: "Arsenal-bold";
           text-align: center; }
     section #banner-principal a {
       cursor: pointer; }
@@ -4594,6 +4635,9 @@ section {
         position: absolute;
         width: 65px;
         z-index: 1; }
+    section #banner-principal a:hover {
+      border: 0;
+      padding: 0; }
   section #banner-principal::before {
     background-color: rgba(71, 0, 82, 0.4);
     content: "";
@@ -4612,6 +4656,8 @@ section {
     width: 80%; }
     section #bienvenida section {
       padding: 20px 0; }
+      section #bienvenida section h2 {
+        margin-left: 25px; }
       section #bienvenida section p {
         line-height: 1.5;
         margin: 30px auto; }
@@ -4625,9 +4671,10 @@ section {
         height: 173px;
         position: absolute;
         right: 40px;
-        width: 290px; }
+        width: 290px;
+        right: 20px; }
       section #bienvenida section:first-child p {
-        margin: 20px 0;
+        margin: 20px;
         text-align: left;
         width: 77%; }
       section #bienvenida section:nth-child(2) section {
@@ -4825,7 +4872,7 @@ section {
   section #banner-principal::after {
     left: -663px; }
   section #bienvenida {
-    height: 780px; }
+    height: 820px; }
     section #bienvenida section:nth-child(2) section span {
       right: 43px; }
     section #bienvenida div span:first-child {
@@ -4838,7 +4885,7 @@ section {
       top: 200px; }
   section #servicios section:nth-child(2) {
     bottom: 66px;
-    width: 55%; }
+    width: 65%; }
   section #servicios div span {
     top: -250px; }
   section #habitaciones {
@@ -4868,6 +4915,8 @@ section {
   .tablet {
     display: block; }
 
+  section p {
+    font-size: 100%; }
   section #banner-principal::after {
     left: -480px; }
   section #banner-principal section.contenido-texto-banner span {
@@ -4876,7 +4925,7 @@ section {
     padding: 60px 20px;
     width: 60%; }
     section #banner-principal section.contenido-texto-banner section p {
-      font-size: 130%; }
+      font-size: 200%; }
   section #bienvenida {
     height: auto; }
     section #bienvenida section:first-child {
@@ -4885,7 +4934,7 @@ section {
         right: auto; }
       section #bienvenida section:first-child p {
         float: right;
-        width: 50%; }
+        width: 46%; }
     section #bienvenida section:nth-child(2) section {
       margin: 0 auto;
       width: 50%; }
@@ -4961,10 +5010,11 @@ section {
       top: -210px; }
   section #slogan {
     height: 165px;
-    margin: 160px auto 50px;
+    margin: 160px auto;
     width: 70%; }
     section #slogan p {
-      font-size: 200%; } }
+      font-size: 200%;
+      line-height: 1; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -5079,7 +5129,7 @@ section {
       top: -260px; }
   section #slogan {
     height: 255px;
-    width: 50%; }
+    width: 80%; }
     section #slogan p {
       font-size: 200%; } }
 @media all and (min-width: 1124px) {
@@ -5087,8 +5137,6 @@ section {
     left: -155px; }
   section #bienvenida {
     width: 80%; }
-    section #bienvenida section p {
-      font-size: 120%; }
     section #bienvenida section:first-child {
       margin: 0 auto;
       width: 90%; }
@@ -5110,15 +5158,12 @@ section {
       padding: 40px;
       right: 70px; }
       section #servicios section:nth-child(2) p {
-        font-size: 120%;
         margin: 30px auto; }
     section #servicios div span {
       left: 120px; }
   section #habitaciones {
     height: 570px;
     width: 80%; }
-    section #habitaciones section p {
-      font-size: 120%; }
     section #habitaciones section:first-child {
       left: 120px; }
     section #habitaciones section:nth-child(2) {
@@ -5144,9 +5189,9 @@ section {
       section #habitaciones div span:last-child img {
         width: 70%; }
   section #slogan {
-    height: 385px; }
+    height: 385px;
+    width: 60%; }
     section #slogan p {
-      font-size: 300%;
       padding-top: 80px; } }
 @media all and (min-width: 1440px) {
   section #hojas span {

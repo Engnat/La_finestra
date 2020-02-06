@@ -17,6 +17,10 @@ $gris-texto: #333333
 .desktop, .tablet
   display: none
 
+a:hover
+  border: 0
+  padding: 0
+
 section
   #banner-principal-finestra
     background-image: url("../images/fotografia/bg-luna-piena.jpg")
@@ -95,14 +99,14 @@ section
     height: 230px
     margin: 0 auto
     position: relative
-    width: 80%
+    width: 70%
     section
       padding: 20px 0
       z-index: 1
       h2
         color: $gris-texto
         font-family: 'allura'
-        font-size: 180%
+        font-size: 130%
         margin: 30px auto
         text-align: center
     div
@@ -166,12 +170,13 @@ section
           background-size: cover
           margin: 0
           height: 300px
-  #pet
+  #pet , #finestra
     @include flexBox
     flex-flow: row wrap
     margin: 100px auto 0
     width: 80%
     section
+      width: 100%
       &:first-child
         p
           margin: 10px auto 40px
@@ -188,6 +193,30 @@ section
         img
           position: relative
           width: 100%
+  #reconocimientos
+    margin: 60px auto
+    width: 80%
+    .contenedor-reco
+      box-shadow: 1px 2px 10px #bbb
+      border-radius: 10px
+      display: block
+      height: 200px
+      margin: 40px auto 0
+      padding: 20px
+      width: 80%
+    #CDSWIDFRR , #CDSWIDTC
+      border: 0
+      margin: 35px auto
+    #CDSWIDCOE
+      border: 0
+      margin: 21px auto
+    #CDSWIDGRN , #CDSWIDEXC
+      border: 0
+      margin: 0 auto
+    #TA_tchotel448
+      a:hover
+        border: 0
+        padding: 0
   #galeria-finestra
     height: auto
     @include flexBox
@@ -398,6 +427,13 @@ section
             a
               span
                 right: 180px
+    #reconocimientos
+      section
+        &:last-child
+          @include flexBox
+          flex-flow: row wrap
+      .contenedor-reco
+        width: 45%
 
 //TABLETS
 @media all and (min-width: 737px)
@@ -425,8 +461,8 @@ section
     #bienvenida-finestra
       section
         h2
-          font-size: 250%
-          width: 60%
+          font-size: 200%
+          width: 70%
     #ubicacion
       height: 650px
       position: relative
@@ -435,22 +471,22 @@ section
           height: 330px
           width: 100%
           span
-            height: 300px
+            height: 250px
             @include centrarHorizontalmente
-            width: 400px
+            width: 350px
           section
-            height: 270px
+            height: 210px
             padding: 40px
             @include centrarHorizontalmente
             position: absolute
-            width: 340px
+            width: 270px
         &:last-child
           bottom: 0
           position: absolute
           width: 100%
           section
             height: 330px
-    #pet
+    #pet , #finestra
       width: 87%
       section
         @include flexBox
@@ -462,6 +498,20 @@ section
           span
             left: -30px
             transform: none
+    #finestra
+      section
+        &:first-child
+          margin: 0 30px
+          order: 2
+          width: 45%
+        &:nth-child(2)
+          height: 200px
+          width: 40%
+
+    #reconocimientos
+      section
+        h2
+          text-align: center
     #galeria-finestra
       #como-llegar::before
         border-bottom: 62px solid $verde-claro
@@ -544,7 +594,7 @@ section
             width: 340px
             p
               font-size: 170%
-    #pet
+    #pet , #finestra
       height: 490px
       section
         h2
@@ -578,6 +628,15 @@ section
           &:last-child
             right: -40px
             top: 940px
+    #reconocimientos
+      width: 87%
+      section
+        h2
+          font-size: 250%
+        &:last-child
+          flex-flow: row nowrap
+      .contenedor-reco
+        width: 30%
     #galeria-finestra
       margin: 100px auto 150px
       #como-llegar::before
@@ -663,8 +722,7 @@ section
       section
         padding: 80px 0 0
         h2
-          font-size: 320%
-          width: 50%
+          font-size: 300%
     #ubicacion
       section
         &:first-child
@@ -672,15 +730,31 @@ section
             height: 320px
           section
             top: 0
-    #pet
+    #pet , #finestra
       section
         &:first-child
+          bottom: 100px
           h2
             padding-bottom: 10px
           p
             float: left
             margin: 0
             width: 75%
+    #finestra
+      section
+        &:first-child
+          left: auto
+          right: 0
+        &:nth-child(2)
+          height: auto
+          left: 0
+          width: 50%
+    #reconocimientos
+      .contenedor-reco
+        width: 18%
+      section
+        &:last-child
+          flex-flow: row wrap
     #galeria-finestra
       #como-llegar::before
         border-left: 1623px solid transparent
@@ -711,39 +785,6 @@ section
             width: 40%
             label
               font-size: 150%
-    #hojas-f
-      span
-        &:first-child
-          left: 100px
-          top: 1010px
-          img
-            width: 70%
-        &:nth-child(2)
-          right: -130px
-          top: 690px
-
-        &:nth-child(3)
-          left: 130px
-          top: 980px
-          img
-            width: 30%
-        &:nth-child(4)
-          right: 0
-          top: 1470px
-          img
-            width: 70%
-        &:nth-child(5)
-          left: 0
-          top: 1525px
-          img
-            width: 13%
-        &:nth-child(6)
-          top: 4630px
-        &:nth-child(7)
-          right: 430px
-          top: 2280px
-          img
-            width: 50%
 
 //DESKTOP Hi-Res
 @media all and (min-width:1440px)

@@ -531,7 +531,8 @@ section #especialidad {
     right: -110px;
     top: 0; }
   section #especialidad section:first-child {
-    width: 30%; }
+    width: 30%;
+    z-index: 1; }
   section #especialidad section:nth-child(2) {
     width: 70%; }
     section #especialidad section:nth-child(2) div:first-child {
@@ -567,6 +568,8 @@ section #especialidad {
     width: 80%; }
     section #bienvenida-restaurante section {
       padding: 80px 0; }
+      section #bienvenida-restaurante section h2 {
+        font-size: 300%; }
     section #bienvenida-restaurante div span:first-child img {
       width: 60%; }
     section #bienvenida-restaurante div span:nth-child(4) {
