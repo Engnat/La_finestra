@@ -210,7 +210,7 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-servicios {
-  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-image: url("../images/fotografia/bg-banner-servicios.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -693,6 +693,10 @@ section #planes {
         right: 28px; }
       section #contenedor-servicios section.min-servicios section:first-child img {
         width: 80%; }
+      section #contenedor-servicios section.min-servicios section:first-child img[src="images/fotografia/bg-sauna.jpg"] {
+        width: 55%; }
+    section #contenedor-servicios section.min-servicios section:last-child {
+      align-self: center; }
   section #contenedor-servicios div span:first-child {
     left: -160px;
     top: 260px; }

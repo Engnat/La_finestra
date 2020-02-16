@@ -418,7 +418,7 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-hab {
-  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-image: url("../images/fotografia/bg-habitaciones-suites.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -839,7 +839,8 @@ section #contenedor-habitaciones {
     section #bienvenida-hab div span:nth-child(4) {
       top: 110px; }
   section #contenedor-habitaciones section.min-habitacion {
-    height: auto; }
+    height: auto;
+    width: 100%; }
     section #contenedor-habitaciones section.min-habitacion section:first-child {
       height: 440px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child span {
@@ -1069,8 +1070,13 @@ template, [hidden] {
 .desktop, .tablet {
   display: none; }
 
+section #banner-principal-stelle {
+  background-image: url("../images/fotografia/bg-hs-stelle.jpg"); }
 section #banner-principal-hab-general {
-  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-image: url("../images/fotografia/bg-luna-piena.jpg"); }
+section #banner-principal-cielo {
+  background-image: url("../images/fotografia/bg-hs-cielo.jpg"); }
+section #banner-principal-hab-general, section #banner-principal-stelle, section #banner-principal-cielo {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1081,7 +1087,7 @@ section #banner-principal-hab-general {
   margin: 0;
   position: relative;
   z-index: 1; }
-  section #banner-principal-hab-general aside {
+  section #banner-principal-hab-general aside, section #banner-principal-stelle aside, section #banner-principal-cielo aside {
     align-content: center;
     display: flex;
     flex-flow: row nowrap;
@@ -1094,21 +1100,21 @@ section #banner-principal-hab-general {
     transform: translateY(-25%);
     width: 60px;
     z-index: 3; }
-    section #banner-principal-hab-general aside a:hover {
+    section #banner-principal-hab-general aside a:hover, section #banner-principal-stelle aside a:hover, section #banner-principal-cielo aside a:hover {
       border: 0;
       padding: 0; }
-    section #banner-principal-hab-general aside a img {
+    section #banner-principal-hab-general aside a img, section #banner-principal-stelle aside a img, section #banner-principal-cielo aside a img {
       display: block;
       margin: 7px auto 0;
       width: 70%; }
-  section #banner-principal-hab-general section.contenido-texto-banner {
+  section #banner-principal-hab-general section.contenido-texto-banner, section #banner-principal-stelle section.contenido-texto-banner, section #banner-principal-cielo section.contenido-texto-banner {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: auto;
     position: absolute;
     width: 100%; }
-    section #banner-principal-hab-general section.contenido-texto-banner span {
+    section #banner-principal-hab-general section.contenido-texto-banner span, section #banner-principal-stelle section.contenido-texto-banner span, section #banner-principal-cielo section.contenido-texto-banner span {
       background-image: url("../images/icono-finestra-blanco.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -1121,17 +1127,17 @@ section #banner-principal-hab-general {
       position: absolute;
       width: 20%;
       z-index: 1; }
-    section #banner-principal-hab-general section.contenido-texto-banner section {
+    section #banner-principal-hab-general section.contenido-texto-banner section, section #banner-principal-stelle section.contenido-texto-banner section, section #banner-principal-cielo section.contenido-texto-banner section {
       margin: 0 auto;
       width: 80%; }
-      section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+      section #banner-principal-hab-general section.contenido-texto-banner section h2, section #banner-principal-stelle section.contenido-texto-banner section h2, section #banner-principal-cielo section.contenido-texto-banner section h2 {
         color: #fff;
         font-size: 330%;
         font-family: "blackjack";
         text-align: center; }
-  section #banner-principal-hab-general a {
+  section #banner-principal-hab-general a, section #banner-principal-stelle a, section #banner-principal-cielo a {
     cursor: pointer; }
-    section #banner-principal-hab-general a span {
+    section #banner-principal-hab-general a span, section #banner-principal-stelle a span, section #banner-principal-cielo a span {
       background-image: url("../images/icono-abajo.png");
       bottom: 40px;
       display: block;
@@ -1161,15 +1167,15 @@ section #banner-principal-hab-general {
       position: absolute;
       width: 65px;
       z-index: 1; }
-  section #banner-principal-hab-general a:hover {
+  section #banner-principal-hab-general a:hover, section #banner-principal-stelle a:hover, section #banner-principal-cielo a:hover {
     border: 0;
     padding: 0; }
-section #banner-principal-hab-general::before {
+section #banner-principal-hab-general::before, section #banner-principal-stelle::before, section #banner-principal-cielo::before {
   background-color: rgba(71, 0, 82, 0.4);
   content: "";
   display: block;
   height: 100%; }
-section #banner-principal-hab-general::after {
+section #banner-principal-hab-general::after, section #banner-principal-stelle::after, section #banner-principal-cielo::after {
   content: url("../images/cenefa.png");
   bottom: -5px;
   left: -733px;
@@ -1320,7 +1326,6 @@ section #galeria {
   section #galeria section:last-child {
     width: 100%; }
     section #galeria section:last-child div.img-galeria-hab {
-      background-image: url("../images/fotografia/bg-principal-hab.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -1329,6 +1334,30 @@ section #galeria {
       background-size: cover;
       height: 500px;
       width: 100%; }
+    section #galeria section:last-child div.fotografia1 {
+      background-image: url("../images/fotografia/bg-luna-zona3.jpg"); }
+    section #galeria section:last-child div.fotografia2 {
+      background-image: url("../images/fotografia/bg-luna-zona4.jpg"); }
+    section #galeria section:last-child div.fotografia3 {
+      background-image: url("../images/fotografia/bg-luna-zona5.jpg"); }
+    section #galeria section:last-child div.fotografia4 {
+      background-image: url("../images/fotografia/bg-luna-zona6.jpg"); }
+    section #galeria section:last-child div.fotografia5 {
+      background-image: url("../images/fotografia/bg-stelle-zona1.jpg"); }
+    section #galeria section:last-child div.fotografia6 {
+      background-image: url("../images/fotografia/bg-stelle-zona2.jpg"); }
+    section #galeria section:last-child div.fotografia7 {
+      background-image: url("../images/fotografia/bg-stelle-zona3.jpg"); }
+    section #galeria section:last-child div.fotografia8 {
+      background-image: url("../images/fotografia/bg-stelle-zona4.jpg"); }
+    section #galeria section:last-child div.fotografia9 {
+      background-image: url("../images/fotografia/bg-cielo-zona1.jpg"); }
+    section #galeria section:last-child div.fotografia10 {
+      background-image: url("../images/fotografia/bg-cielo-zona2.jpg"); }
+    section #galeria section:last-child div.fotografia11 {
+      background-image: url("../images/fotografia/bg-cielo-zona3.jpg"); }
+    section #galeria section:last-child div.fotografia12 {
+      background-image: url("../images/fotografia/bg-cielo-zona4.jpg"); }
     section #galeria section:last-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -1413,9 +1442,9 @@ section #formulario {
   section #galeria section:first-child section:first-child h2 {
     width: 90%; } }
 @media all and (min-width: 480px) {
-  section #banner-principal-hab-general a span {
+  section #banner-principal-hab-general a span, section #banner-principal-stelle a span, section #banner-principal-cielo a span {
     bottom: 30px; }
-  section #banner-principal-hab-general::after {
+  section #banner-principal-hab-general::after, section #banner-principal-stelle::after, section #banner-principal-cielo::after {
     left: -663px; }
   section #bienvenida-hab section:nth-child(2) section span {
     right: 43px; } }
@@ -1437,17 +1466,17 @@ section #formulario {
   .tablet {
     display: block; }
 
-  section #banner-principal-hab-general::after {
+  section #banner-principal-hab-general::after, section #banner-principal-stelle::after, section #banner-principal-cielo::after {
     left: -480px; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-hab-general section.contenido-texto-banner span, section #banner-principal-stelle section.contenido-texto-banner span, section #banner-principal-cielo section.contenido-texto-banner span {
     bottom: -35px;
     width: 15%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
+  section #banner-principal-hab-general section.contenido-texto-banner section, section #banner-principal-stelle section.contenido-texto-banner section, section #banner-principal-cielo section.contenido-texto-banner section {
     padding: 60px 20px;
     width: 70%; }
-    section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+    section #banner-principal-hab-general section.contenido-texto-banner section h2, section #banner-principal-stelle section.contenido-texto-banner section h2, section #banner-principal-cielo section.contenido-texto-banner section h2 {
       font-size: 570%; }
-    section #banner-principal-hab-general section.contenido-texto-banner section p {
+    section #banner-principal-hab-general section.contenido-texto-banner section p, section #banner-principal-stelle section.contenido-texto-banner section p, section #banner-principal-cielo section.contenido-texto-banner section p {
       font-size: 130%; }
   section #bienvenida-hab section h2 {
     font-size: 250%;
@@ -1502,7 +1531,7 @@ section #formulario {
   section #galeria section:last-child div.img-galeria-hab {
     height: 350px; }
   section #formulario section:last-child form label {
-    font-size: 150%; } }
+    font-size: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -1510,18 +1539,18 @@ section #formulario {
   .tablet {
     display: none; }
 
-  section #banner-principal-hab-general::after {
+  section #banner-principal-hab-general::after, section #banner-principal-stelle::after, section #banner-principal-cielo::after {
     left: -361px; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-hab-general section.contenido-texto-banner span, section #banner-principal-stelle section.contenido-texto-banner span, section #banner-principal-cielo section.contenido-texto-banner span {
     bottom: 0;
     width: 10%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section::after {
+  section #banner-principal-hab-general section.contenido-texto-banner section::after, section #banner-principal-stelle section.contenido-texto-banner section::after, section #banner-principal-cielo section.contenido-texto-banner section::after {
     content: url("../images/deco-titulos.png");
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute; }
-  section #banner-principal-hab-general aside {
+  section #banner-principal-hab-general aside, section #banner-principal-stelle aside, section #banner-principal-cielo aside {
     top: 50%;
     transform: translateY(-50%); }
   section #bienvenida-hab div span:first-child {
@@ -1574,15 +1603,15 @@ section #formulario {
     section #formulario section:last-child {
       width: 60%; } }
 @media all and (min-width: 1124px) {
-  section #banner-principal-hab-general::after {
+  section #banner-principal-hab-general::after, section #banner-principal-stelle::after, section #banner-principal-cielo::after {
     left: -155px; }
-  section #banner-principal-hab-general section.contenido-texto-banner section {
+  section #banner-principal-hab-general section.contenido-texto-banner section, section #banner-principal-stelle section.contenido-texto-banner section, section #banner-principal-cielo section.contenido-texto-banner section {
     width: 60%; }
-    section #banner-principal-hab-general section.contenido-texto-banner section h2 {
+    section #banner-principal-hab-general section.contenido-texto-banner section h2, section #banner-principal-stelle section.contenido-texto-banner section h2, section #banner-principal-cielo section.contenido-texto-banner section h2 {
       font-size: 600%; }
-  section #banner-principal-hab-general section.contenido-texto-banner section::after {
+  section #banner-principal-hab-general section.contenido-texto-banner section::after, section #banner-principal-stelle section.contenido-texto-banner section::after, section #banner-principal-cielo section.contenido-texto-banner section::after {
     bottom: 65px; }
-  section #banner-principal-hab-general section.contenido-texto-banner span {
+  section #banner-principal-hab-general section.contenido-texto-banner span, section #banner-principal-stelle section.contenido-texto-banner span, section #banner-principal-cielo section.contenido-texto-banner span {
     width: 7%; }
   section #bienvenida-hab {
     height: auto;
@@ -1844,7 +1873,7 @@ a:hover {
   padding: 0; }
 
 section #banner-principal-finestra {
-  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-image: url("../images/fotografia/bg-finestra.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -2082,8 +2111,7 @@ section #galeria-finestra {
   position: relative; }
   section #galeria-finestra section:first-child {
     width: 100%; }
-    section #galeria-finestra section:first-child div.img-galeria-hab {
-      background-image: url("../images/fotografia/bg-principal-hab.jpg");
+    section #galeria-finestra section:first-child div.img-galeria-finestra {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -2092,6 +2120,14 @@ section #galeria-finestra {
       background-size: cover;
       height: 500px;
       width: 100%; }
+    section #galeria-finestra section:first-child div.fotografia1 {
+      background-image: url("../images/fotografia/bg-finestra-zona1.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia2 {
+      background-image: url("../images/fotografia/bg-finestra-zona2.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia3 {
+      background-image: url("../images/fotografia/bg-finestra-zona3.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia4 {
+      background-image: url("../images/fotografia/bg-finestra-zona4.jpg"); }
     section #galeria-finestra section:first-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -2365,7 +2401,7 @@ section #formulario-contacto {
       position: absolute;
       width: 100%; }
   section #formulario-contacto section:nth-child(2) form label {
-    font-size: 150%; } }
+    font-size: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
@@ -2975,7 +3011,6 @@ section #galeria-restaurante {
   section #galeria-restaurante section:first-child {
     width: 100%; }
     section #galeria-restaurante section:first-child div.img-galeria-hab {
-      background-image: url("../images/fotografia/bg-principal-hab.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -2984,6 +3019,15 @@ section #galeria-restaurante {
       background-size: cover;
       height: 500px;
       width: 100%; }
+    section #galeria-restaurante section:first-child div.fotografia1 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor2.jpg");
+      background-position: bottom; }
+    section #galeria-restaurante section:first-child div.fotografia2 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor1.jpg"); }
+    section #galeria-restaurante section:first-child div.fotografia3 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor3.jpg"); }
+    section #galeria-restaurante section:first-child div.fotografia4 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor4.jpg"); }
     section #galeria-restaurante section:first-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -3140,7 +3184,8 @@ section #especialidad {
     width: 30%;
     z-index: 1; }
   section #especialidad section:nth-child(2) {
-    width: 70%; }
+    width: 70%;
+    z-index: 1; }
     section #especialidad section:nth-child(2) div:first-child {
       width: 70%; }
     section #especialidad section:nth-child(2) div:last-child {
@@ -3187,6 +3232,8 @@ section #especialidad {
   section #especialidad section:nth-child(2) div:first-child {
     margin-left: 90px;
     width: 50%; }
+    section #especialidad section:nth-child(2) div:first-child img {
+      width: 95%; }
   section #especialidad section:nth-child(2) div:last-child {
     width: 52%; }
   section #especialidad div span:first-child {
@@ -3407,7 +3454,7 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-servicios {
-  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-image: url("../images/fotografia/bg-banner-servicios.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -3890,6 +3937,10 @@ section #planes {
         right: 28px; }
       section #contenedor-servicios section.min-servicios section:first-child img {
         width: 80%; }
+      section #contenedor-servicios section.min-servicios section:first-child img[src="images/fotografia/bg-sauna.jpg"] {
+        width: 55%; }
+    section #contenedor-servicios section.min-servicios section:last-child {
+      align-self: center; }
   section #contenedor-servicios div span:first-child {
     left: -160px;
     top: 260px; }
@@ -4124,12 +4175,13 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-contacto {
-  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-image: url("../images/fotografia/bg-contacto.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 3px;
+  background-position: bottom;
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -4284,6 +4336,9 @@ section #formulario-c {
           width: 70%; }
           section #formulario-c section:first-child section div:last-child a:last-child {
             margin-left: 63px; }
+        section #formulario-c section:first-child section div:last-child a:hover {
+          border: 0;
+          padding: 0; }
   section #formulario-c section:nth-child(2) {
     height: auto;
     margin: 20px auto;
@@ -4601,7 +4656,7 @@ section {
         width: 80%; }
         section #banner-principal section.contenido-texto-banner section p {
           color: #fff;
-          font-family: "Arsenal-bold";
+          font-family: "Arsenal-Regular";
           text-align: center; }
     section #banner-principal a {
       cursor: pointer; }
@@ -4925,7 +4980,7 @@ section {
     padding: 60px 20px;
     width: 60%; }
     section #banner-principal section.contenido-texto-banner section p {
-      font-size: 200%; }
+      font-size: 24px; }
   section #bienvenida {
     height: auto; }
     section #bienvenida section:first-child {

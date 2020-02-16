@@ -210,12 +210,13 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-contacto {
-  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-image: url("../images/fotografia/bg-contacto.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 3px;
+  background-position: bottom;
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -370,6 +371,9 @@ section #formulario-c {
           width: 70%; }
           section #formulario-c section:first-child section div:last-child a:last-child {
             margin-left: 63px; }
+        section #formulario-c section:first-child section div:last-child a:hover {
+          border: 0;
+          padding: 0; }
   section #formulario-c section:nth-child(2) {
     height: auto;
     margin: 20px auto;

@@ -369,7 +369,6 @@ section #galeria-restaurante {
   section #galeria-restaurante section:first-child {
     width: 100%; }
     section #galeria-restaurante section:first-child div.img-galeria-hab {
-      background-image: url("../images/fotografia/bg-principal-hab.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -378,6 +377,15 @@ section #galeria-restaurante {
       background-size: cover;
       height: 500px;
       width: 100%; }
+    section #galeria-restaurante section:first-child div.fotografia1 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor2.jpg");
+      background-position: bottom; }
+    section #galeria-restaurante section:first-child div.fotografia2 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor1.jpg"); }
+    section #galeria-restaurante section:first-child div.fotografia3 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor3.jpg"); }
+    section #galeria-restaurante section:first-child div.fotografia4 {
+      background-image: url("../images/fotografia/bg-restaurante-comedor4.jpg"); }
     section #galeria-restaurante section:first-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -534,7 +542,8 @@ section #especialidad {
     width: 30%;
     z-index: 1; }
   section #especialidad section:nth-child(2) {
-    width: 70%; }
+    width: 70%;
+    z-index: 1; }
     section #especialidad section:nth-child(2) div:first-child {
       width: 70%; }
     section #especialidad section:nth-child(2) div:last-child {
@@ -581,6 +590,8 @@ section #especialidad {
   section #especialidad section:nth-child(2) div:first-child {
     margin-left: 90px;
     width: 50%; }
+    section #especialidad section:nth-child(2) div:first-child img {
+      width: 95%; }
   section #especialidad section:nth-child(2) div:last-child {
     width: 52%; }
   section #especialidad div span:first-child {

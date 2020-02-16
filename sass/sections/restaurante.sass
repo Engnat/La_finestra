@@ -145,12 +145,20 @@ section
     section:first-child
       width: 100%
       div.img-galeria-hab
-        background-image: url("../images/fotografia/bg-principal-hab.jpg")
         @include backgroundImage
         margin: 0
         background-size: cover
         height: 500px
         width: 100%
+      div.fotografia1
+        background-image: url("../images/fotografia/bg-restaurante-comedor2.jpg")
+        background-position: bottom
+      div.fotografia2
+        background-image: url("../images/fotografia/bg-restaurante-comedor1.jpg")
+      div.fotografia3
+        background-image: url("../images/fotografia/bg-restaurante-comedor3.jpg")
+      div.fotografia4
+        background-image: url("../images/fotografia/bg-restaurante-comedor4.jpg")
       .owl-theme .owl-nav
         margin: 0
         position: absolute
@@ -336,6 +344,7 @@ section
           z-index: 1
         &:nth-child(2)
           width: 70%
+          z-index: 1
           div:first-child
             width: 70%
           div:last-child
@@ -396,6 +405,8 @@ section
           div:first-child
             margin-left: 90px
             width: 50%
+            img
+              width: 95%
           div:last-child
             width: 52%
       div

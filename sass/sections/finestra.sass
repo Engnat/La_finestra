@@ -23,7 +23,7 @@ a:hover
 
 section
   #banner-principal-finestra
-    background-image: url("../images/fotografia/bg-luna-piena.jpg")
+    background-image: url("../images/fotografia/bg-finestra.jpg")
     background-attachment: fixed
     @include backgroundImage
     background-size: cover
@@ -225,13 +225,20 @@ section
     position: relative
     section:first-child
       width: 100%
-      div.img-galeria-hab
-        background-image: url("../images/fotografia/bg-principal-hab.jpg")
+      div.img-galeria-finestra
         @include backgroundImage
         margin: 0
         background-size: cover
         height: 500px
         width: 100%
+      div.fotografia1
+        background-image: url("../images/fotografia/bg-finestra-zona1.jpg")
+      div.fotografia2
+        background-image: url("../images/fotografia/bg-finestra-zona2.jpg")
+      div.fotografia3
+        background-image: url("../images/fotografia/bg-finestra-zona3.jpg")
+      div.fotografia4
+        background-image: url("../images/fotografia/bg-finestra-zona4.jpg")
       .owl-theme .owl-nav
         margin: 0
         position: absolute
@@ -528,7 +535,7 @@ section
         &:nth-child(2)
           form
             label
-              font-size: 150%
+              font-size: 100%
 
 @media all and (min-width: 1024px)
   .desktop

@@ -17,8 +17,14 @@ $gris-texto: #333333
   display: none
 
 section
+  #banner-principal-stelle
+    background-image: url("../images/fotografia/bg-hs-stelle.jpg")
   #banner-principal-hab-general
     background-image: url("../images/fotografia/bg-luna-piena.jpg")
+  #banner-principal-cielo
+    background-image: url("../images/fotografia/bg-hs-cielo.jpg")
+
+  #banner-principal-hab-general , #banner-principal-stelle , #banner-principal-cielo
     background-attachment: fixed
     @include backgroundImage
     background-size: cover
@@ -82,12 +88,12 @@ section
     a:hover
       border: 0
       padding: 0
-  #banner-principal-hab-general::before
+  #banner-principal-hab-general::before , #banner-principal-stelle::before , #banner-principal-cielo::before
     background-color: rgba(71, 0, 82, 0.4)
     content: ''
     display: block
     height: 100%
-  #banner-principal-hab-general::after
+  #banner-principal-hab-general::after , #banner-principal-stelle::after , #banner-principal-cielo::after
     content: url("../images/cenefa.png")
     bottom: -5px
     left: -733px
@@ -221,12 +227,35 @@ section
     section:last-child
       width: 100%
       div.img-galeria-hab
-        background-image: url("../images/fotografia/bg-principal-hab.jpg")
         @include backgroundImage
         margin: 0
         background-size: cover
         height: 500px
         width: 100%
+      div.fotografia1
+        background-image: url("../images/fotografia/bg-luna-zona3.jpg")
+      div.fotografia2
+        background-image: url("../images/fotografia/bg-luna-zona4.jpg")
+      div.fotografia3
+        background-image: url("../images/fotografia/bg-luna-zona5.jpg")
+      div.fotografia4
+        background-image: url("../images/fotografia/bg-luna-zona6.jpg")
+      div.fotografia5
+        background-image: url("../images/fotografia/bg-stelle-zona1.jpg")
+      div.fotografia6
+        background-image: url("../images/fotografia/bg-stelle-zona2.jpg")
+      div.fotografia7
+        background-image: url("../images/fotografia/bg-stelle-zona3.jpg")
+      div.fotografia8
+        background-image: url("../images/fotografia/bg-stelle-zona4.jpg")
+      div.fotografia9
+        background-image: url("../images/fotografia/bg-cielo-zona1.jpg")
+      div.fotografia10
+        background-image: url("../images/fotografia/bg-cielo-zona2.jpg")
+      div.fotografia11
+        background-image: url("../images/fotografia/bg-cielo-zona3.jpg")
+      div.fotografia12
+        background-image: url("../images/fotografia/bg-cielo-zona4.jpg")
       .owl-theme .owl-nav
         margin: 0
         position: absolute
@@ -304,11 +333,11 @@ section
 
 @media all and (min-width: 480px)
   section
-    #banner-principal-hab-general
+    #banner-principal-hab-general , #banner-principal-stelle , #banner-principal-cielo
       a
         span
           bottom: 30px
-    #banner-principal-hab-general::after
+    #banner-principal-hab-general::after , #banner-principal-stelle::after , #banner-principal-cielo::after
       left: -663px
     #bienvenida-hab
       section:nth-child(2)
@@ -341,9 +370,9 @@ section
   .tablet
     display: block
   section
-    #banner-principal-hab-general::after
+    #banner-principal-hab-general::after , #banner-principal-stelle::after , #banner-principal-cielo::after
       left: -480px
-    #banner-principal-hab-general
+    #banner-principal-hab-general , #banner-principal-stelle , #banner-principal-cielo
       section.contenido-texto-banner
         span
           bottom: -35px
@@ -414,7 +443,7 @@ section
         &:last-child
           form
             label
-              font-size: 150%
+              font-size: 100%
 
 @media all and (min-width: 1024px)
   .desktop
@@ -424,9 +453,9 @@ section
 
 
   section
-    #banner-principal-hab-general::after
+    #banner-principal-hab-general::after ,#banner-principal-stelle::after ,#banner-principal-cielo::after
       left: -361px
-    #banner-principal-hab-general
+    #banner-principal-hab-general , #banner-principal-stelle , #banner-principal-cielo
       section.contenido-texto-banner
         span
           bottom: 0
@@ -500,9 +529,9 @@ section
 @media all and (min-width:1124px)
 
   section
-    #banner-principal-hab-general::after
+    #banner-principal-hab-general::after , #banner-principal-stelle::after , #banner-principal-cielo::after
       left: -155px
-    #banner-principal-hab-general
+    #banner-principal-hab-general , #banner-principal-stelle , #banner-principal-cielo
       section.contenido-texto-banner
         section
           width: 60%

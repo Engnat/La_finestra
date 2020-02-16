@@ -1,7 +1,7 @@
 <?php
 $remitente = $_POST['correoUser'];
-$destinatario = 'engnatruve@gmail.com'; // en esta línea va el mail del destinatario.
-$asunto = 'Mensaje Reserva habitacion'; // acá se puede modificar el asunto del mail
+$destinatario = 'mignogna1954@gmail.com'; // en esta línea va el mail del destinatario.
+$asunto = 'Mensaje Reserva habitación A due passi dal cielo'; // acá se puede modificar el asunto del mail
 if (!$_POST){
 ?>
 

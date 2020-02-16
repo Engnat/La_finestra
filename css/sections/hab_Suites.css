@@ -210,7 +210,7 @@ template, [hidden] {
   display: none; }
 
 section #banner-principal-hab {
-  background-image: url("../images/fotografia/bg-principal-hab.jpg");
+  background-image: url("../images/fotografia/bg-habitaciones-suites.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -631,7 +631,8 @@ section #contenedor-habitaciones {
     section #bienvenida-hab div span:nth-child(4) {
       top: 110px; }
   section #contenedor-habitaciones section.min-habitacion {
-    height: auto; }
+    height: auto;
+    width: 100%; }
     section #contenedor-habitaciones section.min-habitacion section:first-child {
       height: 440px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child span {

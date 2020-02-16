@@ -214,7 +214,7 @@ a:hover {
   padding: 0; }
 
 section #banner-principal-finestra {
-  background-image: url("../images/fotografia/bg-luna-piena.jpg");
+  background-image: url("../images/fotografia/bg-finestra.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -452,8 +452,7 @@ section #galeria-finestra {
   position: relative; }
   section #galeria-finestra section:first-child {
     width: 100%; }
-    section #galeria-finestra section:first-child div.img-galeria-hab {
-      background-image: url("../images/fotografia/bg-principal-hab.jpg");
+    section #galeria-finestra section:first-child div.img-galeria-finestra {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -462,6 +461,14 @@ section #galeria-finestra {
       background-size: cover;
       height: 500px;
       width: 100%; }
+    section #galeria-finestra section:first-child div.fotografia1 {
+      background-image: url("../images/fotografia/bg-finestra-zona1.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia2 {
+      background-image: url("../images/fotografia/bg-finestra-zona2.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia3 {
+      background-image: url("../images/fotografia/bg-finestra-zona3.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia4 {
+      background-image: url("../images/fotografia/bg-finestra-zona4.jpg"); }
     section #galeria-finestra section:first-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -735,7 +742,7 @@ section #formulario-contacto {
       position: absolute;
       width: 100%; }
   section #formulario-contacto section:nth-child(2) form label {
-    font-size: 150%; } }
+    font-size: 100%; } }
 @media all and (min-width: 1024px) {
   .desktop {
     display: block; }
