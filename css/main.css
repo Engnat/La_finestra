@@ -2593,6 +2593,9 @@ section #formulario-contacto {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
+  section #pet section:nth-child(2) img {
+    margin-right: 180px;
+    width: 60%; }
   section #pet section:first-child, section #finestra section:first-child {
     bottom: 100px; }
     section #pet section:first-child h2, section #finestra section:first-child h2 {
