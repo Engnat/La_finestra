@@ -1,6 +1,6 @@
 <?php
 $remitente = $_POST['correoUser'];
-$destinatario = 'engnatruve@gmail.com';
+$destinatario = 'reservas@lafinestrahotel.com';
 $asunto = 'Mensaje - Contacto';
 if (!$_POST){
 ?>

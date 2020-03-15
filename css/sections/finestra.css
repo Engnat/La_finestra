@@ -405,6 +405,10 @@ section #pet, section #finestra {
     section #pet section:first-child p, section #finestra section:first-child p {
       margin: 10px auto 40px;
       text-align: left; }
+      section #pet section:first-child p a:hover, section #finestra section:first-child p a:hover {
+        border: 0;
+        padding: 0;
+        text-decoration: underline; }
     section #pet section:nth-child(2), section #finestra section:nth-child(2) {
       position: relative; }
       section #pet section:nth-child(2) span, section #finestra section:nth-child(2) span {
@@ -469,6 +473,16 @@ section #galeria-finestra {
       background-image: url("../images/fotografia/bg-finestra-zona3.jpg"); }
     section #galeria-finestra section:first-child div.fotografia4 {
       background-image: url("../images/fotografia/bg-finestra-zona4.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia5 {
+      background-image: url("../images/fotografia/20200303_100444.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia6 {
+      background-image: url("../images/fotografia/20200303_101403.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia7 {
+      background-image: url("../images/fotografia/20200303_100241.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia8 {
+      background-image: url("../images/fotografia/20200303_101422.jpg"); }
+    section #galeria-finestra section:first-child div.fotografia9 {
+      background-image: url("../images/fotografia/20200303_101442.jpg"); }
     section #galeria-finestra section:first-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
@@ -934,6 +948,9 @@ section #formulario-contacto {
     height: 320px; }
   section #ubicacion section:first-child section {
     top: 0; }
+  section #pet section:nth-child(2) img {
+    margin-right: 180px;
+    width: 60%; }
   section #pet section:first-child, section #finestra section:first-child {
     bottom: 100px; }
     section #pet section:first-child h2, section #finestra section:first-child h2 {

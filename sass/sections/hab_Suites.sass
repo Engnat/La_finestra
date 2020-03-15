@@ -389,7 +389,7 @@ section
       section.min-habitacion
         @include flexBox
         justify-content: space-between
-        width: 85%
+        width: 100%
         z-index: 1
         section
           &:first-child
@@ -478,11 +478,21 @@ section
               right: 34px
             img
               width: 80%
-        &:nth-child(2) , &:last-child
+        &:nth-child(2)
+          section
+            &:first-child
+              span
+                bottom: 170px
+        &:nth-child(2) , &:nth-child(3)
           section
             &:first-child
               span
                 left: 34px
+        &:nth-child(3)
+          section
+            &:first-child
+              span
+                bottom: 180px
       div
         span
           &:first-child

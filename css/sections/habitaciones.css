@@ -481,6 +481,10 @@ section #galeria {
       background-image: url("../images/fotografia/bg-luna-zona5.jpg"); }
     section #galeria section:last-child div.fotografia4 {
       background-image: url("../images/fotografia/bg-luna-zona6.jpg"); }
+    section #galeria section:last-child div.fotografiaLuna5 {
+      background-image: url("../images/fotografia/bg-luna-zona8.jpg"); }
+    section #galeria section:last-child div.fotografiaLuna6 {
+      background-image: url("../images/fotografia/bg-luna-zona9.jpg"); }
     section #galeria section:last-child div.fotografia5 {
       background-image: url("../images/fotografia/bg-stelle-zona1.jpg"); }
     section #galeria section:last-child div.fotografia6 {
@@ -494,9 +498,11 @@ section #galeria {
     section #galeria section:last-child div.fotografia10 {
       background-image: url("../images/fotografia/bg-cielo-zona2.jpg"); }
     section #galeria section:last-child div.fotografia11 {
-      background-image: url("../images/fotografia/bg-cielo-zona3.jpg"); }
+      background-image: url("../images/fotografia/20200303_101142.jpg"); }
     section #galeria section:last-child div.fotografia12 {
-      background-image: url("../images/fotografia/bg-cielo-zona4.jpg"); }
+      background-image: url("../images/fotografia/20200303_100901.jpg"); }
+    section #galeria section:last-child div.fotografia13 {
+      background-image: url("../images/fotografia/20200303_101028.jpg"); }
     section #galeria section:last-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;

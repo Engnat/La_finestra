@@ -1,6 +1,6 @@
 <?php
 $remitente = $_POST['correoUser'];
-$destinatario = 'mignogna1954@gmail.com'; // en esta línea va el mail del destinatario.
+$destinatario = 'reservas@lafinestrahotel.com'; // en esta línea va el mail del destinatario.
 $asunto = 'Mensaje Reserva suite A due passi dalle stelle'; // acá se puede modificar el asunto del mail
 if (!$_POST){
 ?>

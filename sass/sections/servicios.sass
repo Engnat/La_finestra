@@ -356,10 +356,24 @@ section
           &:first-child
             height: 320px
             span
-              bottom: 13px
-              right: -20px
+              bottom: -20px
+              right: 80px
             img
-              width: 100%
+              width: 50%
+      section.min-servicios:nth-child(2)
+        section
+          &:first-child
+            span
+              bottom: 40px
+              right: 20px
+            img
+              width: 80%
+      section.min-servicios:nth-child(3)
+        section
+          &:first-child
+            span
+              bottom: 10px
+              right: 80px
     #planes::before
       border-right: 796px solid transparent
     #planes
@@ -416,26 +430,34 @@ section
       section.min-servicios
         @include flexBox
         justify-content: space-between
-        width: 85%
+        height: auto
+        width: 100%
         section
           &:first-child
+            height: auto
             span
-              bottom: 48px
-              right: -8px
-            img
-              width: 90%
+              bottom: -20px
+              right: 80px
         &:nth-child(2)
           section
             &:first-child
               order: 2
               span
-                right: auto
+                bottom: -20px
+                right: 20px
         &:nth-child(3)
+          height: 400px
           section
+            &:first-child
+              span
+                bottom: 80px
+                left: 0
+                right: auto
+              img
+                width: 80%
             &:last-child
               order: 2
-              span
-                right: auto
+
       div
         height: 100%
         position: absolute
@@ -503,19 +525,30 @@ section
               width: 70%
     #contenedor-servicios
       section.min-servicios
-        height: auto
+        height: 500px
         section
           &:first-child
             height: 440px
             span
-              bottom: 128px
-              right: 28px
+              bottom: -16px
+              right: 78px
             img
               width: 80%
             img[src="images/fotografia/bg-sauna.jpg"]
               width: 55%
           &:last-child
             align-self: center
+      section.min-servicios:nth-child(2)
+        section
+          &:first-child
+            span
+              bottom: 150px
+      section.min-servicios:nth-child(3)
+        height: 500px
+        section
+          &:first-child
+            span
+              bottom: 20px
       div
         span
           &:first-child
@@ -544,12 +577,18 @@ section
         section
           &:first-child
             span
-              bottom: 116px
+              bottom: -40px
         &:nth-child(2)
           section
             &:first-child
               span
-                left: 30px
+                bottom: 136px
+        &:nth-child(3)
+          section
+            &:first-child
+              span
+                bottom: 0
+
     #planes
       section
         &:nth-child(2)

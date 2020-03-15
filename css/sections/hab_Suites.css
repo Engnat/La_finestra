@@ -567,7 +567,7 @@ section #contenedor-habitaciones {
     flex-flow: row nowrap;
     justify-content: center;
     justify-content: space-between;
-    width: 85%;
+    width: 100%;
     z-index: 1; }
     section #contenedor-habitaciones section.min-habitacion section:first-child span {
       bottom: 48px;
@@ -640,8 +640,12 @@ section #contenedor-habitaciones {
         right: 34px; }
       section #contenedor-habitaciones section.min-habitacion section:first-child img {
         width: 80%; }
-    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span, section #contenedor-habitaciones section.min-habitacion:last-child section:first-child span {
+    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span {
+      bottom: 170px; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(2) section:first-child span, section #contenedor-habitaciones section.min-habitacion:nth-child(3) section:first-child span {
       left: 34px; }
+    section #contenedor-habitaciones section.min-habitacion:nth-child(3) section:first-child span {
+      bottom: 180px; }
   section #contenedor-habitaciones div span:first-child {
     left: -170px;
     top: 290px; }
