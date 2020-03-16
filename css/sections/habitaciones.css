@@ -485,6 +485,8 @@ section #galeria {
       background-image: url("../images/fotografia/bg-luna-zona8.jpg"); }
     section #galeria section:last-child div.fotografiaLuna6 {
       background-image: url("../images/fotografia/bg-luna-zona9.jpg"); }
+    section #galeria section:last-child div.fotografiaLuna7 {
+      background-image: url("../images/fotografia/jacuzzi-luna-piena.jpg"); }
     section #galeria section:last-child div.fotografia5 {
       background-image: url("../images/fotografia/bg-stelle-zona1.jpg"); }
     section #galeria section:last-child div.fotografia6 {
@@ -503,6 +505,8 @@ section #galeria {
       background-image: url("../images/fotografia/20200303_100901.jpg"); }
     section #galeria section:last-child div.fotografia13 {
       background-image: url("../images/fotografia/20200303_101028.jpg"); }
+    section #galeria section:last-child div.fotografia14 {
+      background-image: url("../images/fotografia/habitacion-doble.jpg"); }
     section #galeria section:last-child .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
