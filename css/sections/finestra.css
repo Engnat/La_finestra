@@ -433,6 +433,11 @@ section #reconocimientos {
     margin: 40px auto 0;
     padding: 20px;
     width: 80%; }
+  section #reconocimientos #booking img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 160px; }
   section #reconocimientos #CDSWIDFRR, section #reconocimientos #CDSWIDTC {
     border: 0;
     margin: 35px auto; }
@@ -860,8 +865,6 @@ section #formulario-contacto {
     width: 87%; }
     section #reconocimientos section h2 {
       font-size: 250%; }
-    section #reconocimientos section:last-child {
-      flex-flow: row nowrap; }
     section #reconocimientos .contenedor-reco {
       width: 30%; }
   section #galeria-finestra {
@@ -972,10 +975,11 @@ section #formulario-contacto {
     height: auto;
     left: 0;
     width: 50%; }
-  section #reconocimientos .contenedor-reco {
-    width: 18%; }
-  section #reconocimientos section:last-child {
-    flex-flow: row wrap; }
+  section #reconocimientos {
+    width: 90%; }
+    section #reconocimientos .contenedor-reco {
+      margin: 40px 5px 0;
+      width: 25%; }
   section #galeria-finestra #como-llegar::before {
     border-left: 1623px solid transparent; }
   section #galeria-finestra #como-llegar {
